@@ -1,25 +1,25 @@
 {
   "id": "gtl_000440",
   "task": {
-    "prompt": "Neil charges $5.00 to trim up each boxwood.  He charges $15.00 to trim it into a fancy shape.  The customer wants the entire 30 boxwood hedge trimmed up.  He has also asked for 4 specific boxwoods shaped into spheres.  How much will Neil charge?",
-    "gold": "210"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Neil charges $5.00 to trim up each boxwood.  He charges $15.00 to trim it into a fancy shape.  The customer wants the entire 30 boxwood hedge trimmed up.  He has also asked for 4 specific boxwoods shaped into spheres.  How much will Neil charge?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 210"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.824714
+        0.555224
       ],
       [
         0,
         2,
-        0.175286
+        0.444776
       ],
       [
         2,
         3,
-        0.625075
+        0.412548
+      ],
+      [
+        0,
+        3,
+        0.319156
       ],
       [
         1,
         3,
-        0.288759
-      ],
-      [
-        0,
-        3,
-        0.086167
+        0.268296
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

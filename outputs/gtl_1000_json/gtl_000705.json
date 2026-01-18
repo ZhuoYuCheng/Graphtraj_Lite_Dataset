@@ -1,25 +1,25 @@
 {
   "id": "gtl_000705",
   "task": {
-    "prompt": "Val has three times as many dimes as nickels. If she accidentally finds twice as many nickels as she has in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had 20 nickels before finding the new ones from her brother's treasure box?",
-    "gold": "9"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Val has three times as many dimes as nickels. If she accidentally finds twice as many nickels as she has in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had 20 nickels before finding the new ones from her brother's treasure box?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 9"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863126
+        0.624228
       ],
       [
         0,
         2,
-        0.136874
+        0.375772
       ],
       [
         2,
         3,
-        0.626206
+        0.440275
       ],
       [
         1,
         3,
-        0.306419
+        0.29802
       ],
       [
         0,
         3,
-        0.067376
+        0.261704
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

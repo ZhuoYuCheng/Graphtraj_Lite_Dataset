@@ -1,13 +1,13 @@
 {
   "id": "gtl_000943",
   "task": {
-    "prompt": "The number\n\\[\\text{cis } 75^\\circ + \\text{cis } 83^\\circ + \\text{cis } 91^\\circ + \\dots + \\text{cis } 147^\\circ\\]is expressed in the form $r \\, \\text{cis } \\theta$, where $r > 0$ and $0^\\circ \\le \\theta < 360^\\circ$.  Find $\\theta$ in degrees.",
-    "gold": "111^\\circ"
+    "prompt": "Bob and Kate went to a restaurant for dinner. After they were done eating the waitress gave a $30 bill to Bob and a $25 bill to Kate, but told them they were eligible for special discounts; 5% for Bob, 2% for Kate. Considering the discounts, how much do they have to pay in total?",
+    "gold": "53"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: The number\n\\[\\text{cis } 75^\\circ + \\text{cis } 83^\\circ + \\text{cis } 91^\\circ + \\dots + \\text{cis } 147^\\circ\\]is expressed in the form $r \\, \\text{cis } \\theta$, where $r > 0$ and $0^\\circ \\le \\theta < 360^\\circ$.  Find $\\theta$ in degrees."
+      "c": "Plan: identify requirements from task. Task: Bob and Kate went to a restaurant for dinner. After they were done eating the waitress gave a $30 bill to Bob and a $25 bill to Kate, but told them they were eligible for special discounts; 5% for Bob, 2% for Kate. Considering the discounts, how much do they have to pay in total?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 111^\\circ"
+      "c": "Final answer: 53"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.897962
+        0.869405
       ],
       [
         0,
         2,
-        0.102038
+        0.130595
       ],
       [
         2,
         3,
-        0.669522
+        0.631678
       ],
       [
         1,
         3,
-        0.276073
+        0.30413
       ],
       [
         0,
         3,
-        0.054405
+        0.064193
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

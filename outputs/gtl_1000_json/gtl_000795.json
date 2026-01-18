@@ -1,13 +1,13 @@
 {
   "id": "gtl_000795",
   "task": {
-    "prompt": "Find the degree measure of the least positive angle $\\theta$ for which\n\\[\\cos 5^\\circ = \\sin 25^\\circ + \\sin \\theta.\\]",
-    "gold": "35^\\circ"
+    "prompt": "In polar coordinates, the point $\\left( -2, \\frac{3 \\pi}{8} \\right)$ is equivalent to what other point, in the standard polar coordinate representation?  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+    "gold": "\\left( 2, \\frac{11 \\pi"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find the degree measure of the least positive angle $\\theta$ for which\n\\[\\cos 5^\\circ = \\sin 25^\\circ + \\sin \\theta.\\]"
+      "c": "Plan: identify requirements from task. Task: In polar coordinates, the point $\\left( -2, \\frac{3 \\pi}{8} \\right)$ is equivalent to what other point, in the standard polar coordinate representation?  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 35^\\circ"
+      "c": "Final answer: \\left( 2, \\frac{11 \\pi"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.803589
+        0.863626
       ],
       [
         0,
         2,
-        0.196411
+        0.136374
       ],
       [
         2,
         3,
-        0.658318
+        0.628458
       ],
       [
         1,
         3,
-        0.244339
+        0.27041
       ],
       [
         0,
         3,
-        0.097342
+        0.101132
       ]
     ],
     "cfg": {

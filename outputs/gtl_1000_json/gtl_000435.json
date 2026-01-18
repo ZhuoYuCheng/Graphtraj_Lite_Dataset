@@ -1,13 +1,13 @@
 {
   "id": "gtl_000435",
   "task": {
-    "prompt": "A printing press is printing brochures. The press prints 20 single-page spreads, and twice as many double-page spreads. For each 4 pages printed for the spreads, the press prints a block of 4 ads, each of which take up a quarter of a page. The brochures can be arranged in any order as long as they are made up of 5 pages each. How many brochures is the printing press creating?",
-    "gold": "25"
+    "prompt": "Carter has a 14-hour road trip.  He wants to stop every 2 hours to stretch his legs.  He also wants to make 2 additional stops for food and 3 additional stops for gas.  If each pit stop takes 20 minutes, how many hours will his road trip become?",
+    "gold": "18"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A printing press is printing brochures. The press prints 20 single-page spreads, and twice as many double-page spreads. For each 4 pages printed for the spreads, the press prints a block of 4 ads, each of which take up a quarter of a page. The brochures can be arranged in any order as long as they are made up of 5 pages each. How many brochures is the printing press creating?"
+      "c": "Plan: identify requirements from task. Task: Carter has a 14-hour road trip.  He wants to stop every 2 hours to stretch his legs.  He also wants to make 2 additional stops for food and 3 additional stops for gas.  If each pit stop takes 20 minutes, how many hours will his road trip become?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 25"
+      "c": "Final answer: 18"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863359
+        0.815149
       ],
       [
         0,
         2,
-        0.136641
+        0.184851
       ],
       [
         2,
         3,
-        0.650113
+        0.613734
       ],
       [
         1,
         3,
-        0.2849
+        0.29203
       ],
       [
         0,
         3,
-        0.064987
+        0.094237
       ]
     ],
     "cfg": {

@@ -1,25 +1,25 @@
 {
   "id": "gtl_000383",
   "task": {
-    "prompt": "Write a function to count alphabets,digits and special charactes in a given string.",
-    "gold": "def count_alpha_dig_spl(string):\r\n  alphabets=digits = special = 0\r\n  for i in range(len(string)):\r\n    if(string[i].isalpha()):\r\n        alphabets = alphabets + 1\r\n    elif(string[i].isdigit()):\r\n        digits = digits + 1\r\n    else:\r\n        special = special + 1\r\n  return (alphabets,digits,special)"
+    "prompt": "What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ roots of unity?",
+    "gold": "12"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a function to count alphabets,digits and special charactes in a given string."
+      "c": "Plan: identify requirements from task. Task: What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ roots of unity?"
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef count_alpha_dig_spl(string):\r\n  alphabets=digits = special = 0\r\n  for i in range(len(string)):\r\n    if(string[i].isalpha()):\r\n        alphabets = alphabets + 1\r\n    elif(string[i].isdigit()):\r\n        digits = digits + 1\r\n    else:\r\n        special = special + 1\r\n  return (alphabets,digits,special)"
+      "c": "Final answer: 12"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.732037
+        0.760477
       ],
       [
         0,
         2,
-        0.267963
+        0.239523
       ],
       [
         2,
         3,
-        0.413034
+        0.608794
       ],
       [
         1,
         3,
-        0.33023
+        0.268328
       ],
       [
         0,
         3,
-        0.256736
+        0.122878
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert count_alpha_dig_spl(\"abc!@#123\")==(3,3,3)",
-      "assert count_alpha_dig_spl(\"dgsuy@#$%&1255\")==(5,4,5)",
-      "assert count_alpha_dig_spl(\"fjdsif627348#%$^&\")==(6,6,5)"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000825",
   "task": {
-    "prompt": "Compute $\\arccos (\\cos 7).$  All functions are in radians.",
-    "gold": "7 - 2 \\pi"
+    "prompt": "Emma and Briana invested some capital into a business. Emma's investment is supposed to yield 15% of the capital annually while Briana's should yield 10% annually. If Emma invested $300 and Briana invested $500, what will be the difference between their return-on-investment after 2 years?",
+    "gold": "10"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Compute $\\arccos (\\cos 7).$  All functions are in radians."
+      "c": "Plan: identify requirements from task. Task: Emma and Briana invested some capital into a business. Emma's investment is supposed to yield 15% of the capital annually while Briana's should yield 10% annually. If Emma invested $300 and Briana invested $500, what will be the difference between their return-on-investment after 2 years?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 7 - 2 \\pi"
+      "c": "Final answer: 10"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.722982
+        0.861173
       ],
       [
         0,
         2,
-        0.277018
+        0.138827
       ],
       [
         2,
         3,
-        0.569658
+        0.622838
       ],
       [
         1,
         3,
-        0.27414
+        0.30474
       ],
       [
         0,
         3,
-        0.156202
+        0.072422
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

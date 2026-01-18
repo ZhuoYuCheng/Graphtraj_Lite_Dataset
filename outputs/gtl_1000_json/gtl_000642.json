@@ -1,25 +1,25 @@
 {
   "id": "gtl_000642",
   "task": {
-    "prompt": "Lexie and Tom went apple picking. Lexie picked 12 apples and Tom picked twice as many apples. How many apples did they collect altogether?",
-    "gold": "36"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Lexie and Tom went apple picking. Lexie picked 12 apples and Tom picked twice as many apples. How many apples did they collect altogether?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 36"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.752708
+        0.555224
       ],
       [
         0,
         2,
-        0.247292
+        0.444776
       ],
       [
         2,
         3,
-        0.570179
+        0.412548
+      ],
+      [
+        0,
+        3,
+        0.319156
       ],
       [
         1,
         3,
-        0.293913
-      ],
-      [
-        0,
-        3,
-        0.135908
+        0.268296
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

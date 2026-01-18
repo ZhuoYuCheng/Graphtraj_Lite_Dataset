@@ -1,13 +1,13 @@
 {
   "id": "gtl_000274",
   "task": {
-    "prompt": "Crystal wanted to sell everything left in her pastry class before closing for the night.  She reduced her $3.00 cupcakes and her $2.00 cookies by half.  How much money did she make if she sold the last 16 cupcakes and 8 cookies?",
-    "gold": "32"
+    "prompt": "A fan can create an airflow of 10 liters per second. If the fan works for 10 minutes each day, calculate the amount of airflow it will create in one week.",
+    "gold": "42000"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Crystal wanted to sell everything left in her pastry class before closing for the night.  She reduced her $3.00 cupcakes and her $2.00 cookies by half.  How much money did she make if she sold the last 16 cupcakes and 8 cookies?"
+      "c": "Plan: identify requirements from task. Task: A fan can create an airflow of 10 liters per second. If the fan works for 10 minutes each day, calculate the amount of airflow it will create in one week."
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 32"
+      "c": "Final answer: 42000"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.833792
+        0.785896
       ],
       [
         0,
         2,
-        0.166208
+        0.214104
       ],
       [
         2,
         3,
-        0.599716
+        0.593955
       ],
       [
         1,
         3,
-        0.313721
+        0.295037
       ],
       [
         0,
         3,
-        0.086563
+        0.111008
       ]
     ],
     "cfg": {

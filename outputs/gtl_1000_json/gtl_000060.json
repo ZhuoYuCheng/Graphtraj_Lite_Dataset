@@ -1,25 +1,25 @@
 {
   "id": "gtl_000060",
   "task": {
-    "prompt": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
-    "gold": "from itertools import groupby\r\ndef pack_consecutive_duplicates(list1):\r\n    return [list(group) for key, group in groupby(list1)]"
+    "prompt": "If\n\\[\\frac{\\sin x}{\\cos y} + \\frac{\\sin y}{\\cos x} = 1 \\quad \\text{and} \\quad \\frac{\\cos x}{\\sin y} + \\frac{\\cos y}{\\sin x} = 6,\\]then find $\\frac{\\tan x}{\\tan y} + \\frac{\\tan y}{\\tan x}.$",
+    "gold": "\\frac{124"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a function to pack consecutive duplicates of a given list elements into sublists."
+      "c": "Plan: identify requirements from task. Task: If\n\\[\\frac{\\sin x}{\\cos y} + \\frac{\\sin y}{\\cos x} = 1 \\quad \\text{and} \\quad \\frac{\\cos x}{\\sin y} + \\frac{\\cos y}{\\sin x} = 6,\\]then find $\\frac{\\tan x}{\\tan y} + \\frac{\\tan y}{\\tan x}.$"
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nfrom itertools import groupby\r\ndef pack_consecutive_duplicates(list1):\r\n    return [list(group) for key, group in groupby(list1)]"
+      "c": "Final answer: \\frac{124"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.739102
+        0.880997
       ],
       [
         0,
         2,
-        0.260898
+        0.119003
       ],
       [
         2,
         3,
-        0.471661
+        0.657365
       ],
       [
         1,
         3,
-        0.330036
+        0.285841
       ],
       [
         0,
         3,
-        0.198302
+        0.056794
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert pack_consecutive_duplicates([0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4])==[[0, 0], [1], [2], [3], [4, 4], [5], [6, 6, 6], [7], [8], [9], [4, 4]]",
-      "assert pack_consecutive_duplicates([10, 10, 15, 19, 18, 18, 17, 26, 26, 17, 18, 10])==[[10, 10], [15], [19], [18, 18], [17], [26, 26], [17], [18], [10]]",
-      "assert pack_consecutive_duplicates(['a', 'a', 'b', 'c', 'd', 'd'])==[['a', 'a'], ['b'], ['c'], ['d', 'd']]"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

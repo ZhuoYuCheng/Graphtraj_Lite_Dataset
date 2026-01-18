@@ -1,25 +1,25 @@
 {
   "id": "gtl_000286",
   "task": {
-    "prompt": "Write a python function to find the length of the last word in a given string.",
-    "gold": "def length_Of_Last_Word(a): \r\n    l = 0\r\n    x = a.strip() \r\n    for i in range(len(x)): \r\n        if x[i] == \" \": \r\n            l = 0\r\n        else: \r\n            l += 1\r\n    return l"
+    "prompt": "Find the number of ordered pairs $(a,b)$ of complex numbers such that\n\\[a^3 b^5 = a^7 b^2 = 1.\\]",
+    "gold": "29"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python function to find the length of the last word in a given string."
+      "c": "Plan: identify requirements from task. Task: Find the number of ordered pairs $(a,b)$ of complex numbers such that\n\\[a^3 b^5 = a^7 b^2 = 1.\\]"
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef length_Of_Last_Word(a): \r\n    l = 0\r\n    x = a.strip() \r\n    for i in range(len(x)): \r\n        if x[i] == \" \": \r\n            l = 0\r\n        else: \r\n            l += 1\r\n    return l"
+      "c": "Final answer: 29"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.724232
+        0.777748
       ],
       [
         0,
         2,
-        0.275768
+        0.222252
       ],
       [
         2,
         3,
-        0.461214
+        0.644653
       ],
       [
         1,
         3,
-        0.302674
+        0.255945
       ],
       [
         0,
         3,
-        0.236112
+        0.099402
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert length_Of_Last_Word(\"python language\") == 8",
-      "assert length_Of_Last_Word(\"PHP\") == 3",
-      "assert length_Of_Last_Word(\"\") == 0"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

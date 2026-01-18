@@ -1,13 +1,13 @@
 {
   "id": "gtl_000942",
   "task": {
-    "prompt": "Find the integer $n,$ $-90 \\le n \\le 90,$ such that $\\sin n^\\circ = \\cos 456^\\circ.$",
-    "gold": "-6"
+    "prompt": "During a unit on probability, a teacher surveys her class asking her students two questions.  The first question was whether they prefer dogs or cats, and the second question was whether they movies or video games.  Of the 30 students in her class, 50% chose dogs and video games as their two answers, while 10% chose dogs and movies as their two answers.  In total, how many students in this teacher's class prefer dogs over cats?",
+    "gold": "18"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find the integer $n,$ $-90 \\le n \\le 90,$ such that $\\sin n^\\circ = \\cos 456^\\circ.$"
+      "c": "Plan: identify requirements from task. Task: During a unit on probability, a teacher surveys her class asking her students two questions.  The first question was whether they prefer dogs or cats, and the second question was whether they movies or video games.  Of the 30 students in her class, 50% chose dogs and video games as their two answers, while 10% chose dogs and movies as their two answers.  In total, how many students in this teacher's class prefer dogs over cats?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: -6"
+      "c": "Final answer: 18"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.785434
+        0.886743
       ],
       [
         0,
         2,
-        0.214566
+        0.113257
       ],
       [
         2,
         3,
-        0.642363
+        0.658978
       ],
       [
         1,
         3,
-        0.258778
+        0.284943
       ],
       [
         0,
         3,
-        0.098859
+        0.056079
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

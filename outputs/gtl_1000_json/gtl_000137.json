@@ -1,25 +1,25 @@
 {
   "id": "gtl_000137",
   "task": {
-    "prompt": "What is fifteen more than a quarter of 48?",
-    "gold": "27"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: What is fifteen more than a quarter of 48?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 28"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.649035
+        0.602998
       ],
       [
         0,
         2,
-        0.350965
+        0.397002
       ],
       [
         2,
         3,
-        0.529547
+        0.480963
       ],
       [
         1,
         3,
-        0.267351
+        0.275661
       ],
       [
         0,
         3,
-        0.203102
+        0.243376
       ]
     ],
     "cfg": {
@@ -83,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "smolagents",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

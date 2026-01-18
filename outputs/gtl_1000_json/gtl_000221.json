@@ -1,13 +1,13 @@
 {
   "id": "gtl_000221",
   "task": {
-    "prompt": "Find $\\cos \\frac{5 \\pi}{4}.$",
-    "gold": "-\\frac{1"
+    "prompt": "There are 50 oysters on the rocks at La Push Park and 72 crabs by the beach. Eric, who loves walking by the beach, makes a note of this and goes home. The next day, he realizes only half the number of Oysters were on the rocks, and only 2/3 the number of crabs as the previous day are on the beach. How many oysters and crabs did he count in total in the two days?",
+    "gold": "195"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Find $\\cos \\frac{5 \\pi}{4}.$\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: There are 50 oysters on the rocks at La Push Park and 72 crabs by the beach. Eric, who loves walking by the beach, makes a note of this and goes home. The next"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 2"
+      "c": "Final answer: 196"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.64578
+        0.798526
       ],
       [
         0,
         2,
-        0.35422
+        0.201474
       ],
       [
         2,
         3,
-        0.481864
+        0.58976
       ],
       [
         1,
         3,
-        0.324844
+        0.306475
       ],
       [
         0,
         3,
-        0.193292
+        0.103765
       ]
     ],
     "cfg": {
@@ -72,6 +72,7 @@
     "path": [
       0,
       1,
+      2,
       3
     ]
   },
@@ -84,9 +85,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": false,

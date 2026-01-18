@@ -1,13 +1,13 @@
 {
   "id": "gtl_000020",
   "task": {
-    "prompt": "In coordinate space, a particle starts at the point $(2,3,4)$ and ends at the point $(-1,-3,-3),$ along the line connecting the two points.  Along the way, the particle intersects the unit sphere centered at the origin at two points.  Then the distance between these two points can be expressed in the form $\\frac{a}{\\sqrt{b}},$ where $a$ and $b$ are positive integers, and $b$ is not divisible by the square of a prime.  Find $a + b.$",
-    "gold": "59"
+    "prompt": "Let $\\theta$ be the smallest acute angle for which $\\sin \\theta,$ $\\sin 2 \\theta,$ $\\sin 3 \\theta$ form an arithmetic progression, in some order.  Find $\\cos \\theta.$",
+    "gold": "\\frac{3"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In coordinate space, a particle starts at the point $(2,3,4)$ and ends at the point $(-1,-3,-3),$ along the line connecting the two points.  Along the way, the particle intersects the unit sphere centered at the origin at two points.  Then the distance between these two points can be expressed in the form $\\frac{a}{\\sqrt{b}},$ where $a$ and $b$ are positive integers, and $b$ is not divisible by the square of a prime.  Find $a + b.$"
+      "c": "Plan: identify requirements from task. Task: Let $\\theta$ be the smallest acute angle for which $\\sin \\theta,$ $\\sin 2 \\theta,$ $\\sin 3 \\theta$ form an arithmetic progression, in some order.  Find $\\cos \\theta.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 59"
+      "c": "Final answer: \\frac{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.898724
+        0.808952
       ],
       [
         0,
         2,
-        0.101276
+        0.191048
       ],
       [
         2,
         3,
-        0.674352
+        0.628923
       ],
       [
         1,
         3,
-        0.283756
+        0.284348
       ],
       [
         0,
         3,
-        0.041892
+        0.086729
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000007",
   "task": {
-    "prompt": "Let\n\\[\\mathbf{A} = \\renewcommand{\\arraystretch}{1.5} \\begin{pmatrix} \\frac{\\sqrt{3}}{2} & 0 & -\\frac{1}{2} \\\\ 0 & -1 & 0 \\\\ \\frac{1}{2} & 0 & \\frac{\\sqrt{3}}{2} \\end{pmatrix} \\renewcommand{\\arraystretch}{1}.\\]Compute $\\mathbf{A}^{2018}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "Let point $O$ be the origin of a three-dimensional coordinate system, and let points $A,$ $B,$ and $C$ be located on the positive $x,$ $y,$ and $z$ axes, respectively.  If $OA = \\sqrt[4]{75}$ and $\\angle BAC = 30^\\circ,$ then compute the area of triangle $ABC.$",
+    "gold": "\\frac{5"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Let\n\\[\\mathbf{A} = \\renewcommand{\\arraystretch}{1.5} \\begin{pmatrix} \\frac{\\sqrt{3}}{2} & 0 & -\\frac{1}{2} \\\\ 0 & -1 & 0 \\\\ \\frac{1}{2} & 0 & \\frac{\\sqrt{3}}{2} \\end{pmatrix} \\renewcommand{\\arraystretch}{1}.\\]Compute $\\mathbf{A}^{2018}.$"
+      "c": "Plan: identify requirements from task. Task: Let point $O$ be the origin of a three-dimensional coordinate system, and let points $A,$ $B,$ and $C$ be located on the positive $x,$ $y,$ and $z$ axes, respectively.  If $OA = \\sqrt[4]{75}$ and $\\angle BAC = 30^\\circ,$ then compute the area of triangle $ABC.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: \\frac{5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.894272
+        0.875442
       ],
       [
         0,
         2,
-        0.105728
+        0.124558
       ],
       [
         2,
         3,
-        0.662129
+        0.65898
       ],
       [
         1,
         3,
-        0.281971
+        0.284471
       ],
       [
         0,
         3,
-        0.0559
+        0.056549
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

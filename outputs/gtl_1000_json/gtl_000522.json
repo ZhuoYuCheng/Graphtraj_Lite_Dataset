@@ -1,13 +1,13 @@
 {
   "id": "gtl_000522",
   "task": {
-    "prompt": "Carter has a 14-hour road trip.  He wants to stop every 2 hours to stretch his legs.  He also wants to make 2 additional stops for food and 3 additional stops for gas.  If each pit stop takes 20 minutes, how many hours will his road trip become?",
-    "gold": "18"
+    "prompt": "Micheal decided to take some piano lessons. One lesson costs $30 and lasts for 1.5 hours. How much will Micheal need to pay for 18 hours of lessons?",
+    "gold": "360"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Carter has a 14-hour road trip.  He wants to stop every 2 hours to stretch his legs.  He also wants to make 2 additional stops for food and 3 additional stops for gas.  If each pit stop takes 20 minutes, how many hours will his road trip become?"
+      "c": "Plan: identify requirements from task. Task: Micheal decided to take some piano lessons. One lesson costs $30 and lasts for 1.5 hours. How much will Micheal need to pay for 18 hours of lessons?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 18"
+      "c": "Final answer: 360"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.815149
+        0.759431
       ],
       [
         0,
         2,
-        0.184851
+        0.240569
       ],
       [
         2,
         3,
-        0.613734
+        0.589283
       ],
       [
         1,
         3,
-        0.29203
+        0.281548
       ],
       [
         0,
         3,
-        0.094237
+        0.129169
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000443",
   "task": {
-    "prompt": "Let $\\mathbf{A} =\\begin{pmatrix}  -1 & 2 \\\\  3 & 4  \\end{pmatrix}.$  Then there exist scalars $p$ and $q$ such that\n\\[\\mathbf{A}^6 = p \\mathbf{A} + q \\mathbf{I}.\\]Enter the ordered pair $(p,q).$",
-    "gold": "(2223,4510)"
+    "prompt": "If $e^{i \\alpha} = \\frac{3}{5}  +\\frac{4}{5} i$ and $e^{i \\beta} = -\\frac{12}{13} + \\frac{5}{13} i,$ then find $\\sin (\\alpha + \\beta).$",
+    "gold": "-\\frac{33"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{A} =\\begin{pmatrix}  -1 & 2 \\\\  3 & 4  \\end{pmatrix}.$  Then there exist scalars $p$ and $q$ such that\n\\[\\mathbf{A}^6 = p \\mathbf{A} + q \\mathbf{I}.\\]Enter the ordered pair $(p,q).$"
+      "c": "Plan: identify requirements from task. Task: If $e^{i \\alpha} = \\frac{3}{5}  +\\frac{4}{5} i$ and $e^{i \\beta} = -\\frac{12}{13} + \\frac{5}{13} i,$ then find $\\sin (\\alpha + \\beta).$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: (2223,4510)"
+      "c": "Final answer: -\\frac{33"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.841635
+        0.830735
       ],
       [
         0,
         2,
-        0.158365
+        0.169265
       ],
       [
         2,
         3,
-        0.675924
+        0.632699
       ],
       [
         1,
         3,
-        0.252323
+        0.276179
       ],
       [
         0,
         3,
-        0.071753
+        0.091122
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

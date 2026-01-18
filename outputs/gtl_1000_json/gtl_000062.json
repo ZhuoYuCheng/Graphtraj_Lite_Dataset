@@ -1,13 +1,13 @@
 {
   "id": "gtl_000062",
   "task": {
-    "prompt": "Ruby was going to order pizza for dinner.  Her son would only eat pepperoni pizza.  Her daughter would only eat sausage.  Ruby and her husband wanted black olive and mushroom pizza.  To make life easy, Ruby decided to order an entire pizza for each of her children and she would split one with her husband.  The pizza restaurant charged $10.00 per pizza and $1.00 per topping.  She also needed to add a $5.00 tip.  Including tip, how much would the pizza order cost?",
-    "gold": "39"
+    "prompt": "Bob started out the week with $80. On Monday alone, he spent half the money. On Tuesday, he spent one-fifth of the amount left from Monday. On Wednesday, he spent 3/8ths of the amount left from Tuesday. How much does he have left now?",
+    "gold": "20"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Ruby was going to order pizza for dinner.  Her son would only eat pepperoni pizza.  Her daughter would only eat sausage.  Ruby and her husband wanted black olive and mushroom pizza.  To make life easy, Ruby decided to order an entire pizza for each of her children and she would split one with her husband.  The pizza restaurant charged $10.00 per pizza and $1.00 per topping.  She also needed to add a $5.00 tip.  Including tip, how much would the pizza order cost?\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: Bob started out the week with $80. On Monday alone, he spent half the money. On Tuesday, he spent one-fifth of the amount left from Monday. On Wednesday, he spent 3/8ths of the amount left from Tuesday. How much does he have left now?\nTool result: corrupted output"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 40"
+      "c": "Final answer: 21"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.873199
+        0.806251
       ],
       [
         0,
         2,
-        0.126801
+        0.193749
       ],
       [
         2,
         3,
-        0.590583
+        0.549418
       ],
       [
         1,
         3,
-        0.348947
+        0.348003
       ],
       [
         0,
         3,
-        0.06047
+        0.102579
       ]
     ],
     "cfg": {

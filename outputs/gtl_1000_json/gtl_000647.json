@@ -1,13 +1,13 @@
 {
   "id": "gtl_000647",
   "task": {
-    "prompt": "Out of the 200 students in a class, thirty percent like the color blue. Among the remaining students who don't like the color blue, 40% like the color red, and the rest like the color yellow. Calculate the combined number of students who like the color yellow and the color blue.",
-    "gold": "144"
+    "prompt": "Troy bakes 2 pans of brownies, cut into 16 pieces per pan.  The guests eat all of 1 pan, and 75% of the 2nd pan.  One tub of ice cream provides 8 scoops.  If all but 4 of the guests eat the brownies ala mode (with 2 scoops of vanilla ice cream), how many tubs of ice cream did the guests eat?",
+    "gold": "6"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Out of the 200 students in a class, thirty percent like the color blue. Among the remaining students who don't like the color blue, 40% like the color red, and the rest like the color yellow. Calculate the combined number of students who like the color yellow and the color blue."
+      "c": "Plan: identify requirements from task. Task: Troy bakes 2 pans of brownies, cut into 16 pieces per pan.  The guests eat all of 1 pan, and 75% of the 2nd pan.  One tub of ice cream provides 8 scoops.  If all but 4 of the guests eat the brownies ala mode (with 2 scoops of vanilla ice cream), how many tubs of ice cream did the guests eat?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 144"
+      "c": "Final answer: 6"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.820313
+        0.842344
       ],
       [
         0,
         2,
-        0.179687
+        0.157656
       ],
       [
         2,
         3,
-        0.626188
+        0.637746
       ],
       [
         1,
         3,
-        0.281227
+        0.285758
       ],
       [
         0,
         3,
-        0.092585
+        0.076497
       ]
     ],
     "cfg": {

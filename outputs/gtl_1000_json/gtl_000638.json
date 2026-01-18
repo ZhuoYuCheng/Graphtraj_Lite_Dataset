@@ -11,11 +11,11 @@
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: basic checks pass on the draft."
     },
     {
       "r": "assistant",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.689397
+        0.692667
       ],
       [
         0,
         2,
-        0.310603
+        0.307333
       ],
       [
         2,
         3,
-        0.569667
+        0.50978
       ],
       [
         1,
         3,
-        0.268538
+        0.282667
       ],
       [
         0,
         3,
-        0.161796
+        0.207554
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "assistant",
+    "when": 1,
+    "who": "critic",
     "path": [
+      1,
       2,
       3
     ]

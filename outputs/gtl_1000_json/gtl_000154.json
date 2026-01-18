@@ -7,7 +7,7 @@
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a function to remove similar rows from the given tuple matrix."
+      "c": "Plan: identify requirements from task. Task: Write a fun"
     },
     {
       "r": "executor",
@@ -15,7 +15,7 @@
     },
     {
       "r": "tool",
-      "c": "[omitted]"
+      "c": "Tool result: basic checks pass on the draft."
     },
     {
       "r": "assistant",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.73772
+        0.617587
       ],
       [
         0,
         2,
-        0.26228
+        0.382413
       ],
       [
         2,
         3,
-        0.548956
+        0.471529
       ],
       [
         1,
         3,
-        0.294637
+        0.284328
       ],
       [
         0,
         3,
-        0.156407
+        0.244143
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "tool",
+    "when": 0,
+    "who": "planner",
     "path": [
+      0,
+      1,
       2,
       3
     ]

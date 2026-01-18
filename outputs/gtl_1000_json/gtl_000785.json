@@ -1,17 +1,17 @@
 {
   "id": "gtl_000785",
   "task": {
-    "prompt": "Janet goes to the gym for 5 hours a week.  She goes Monday, Tuesday, Wednesday, and Friday.  She spends an hour and a half each day on Monday and Wednesday.  If she spends the same amount of time at the gym on Tuesday and Friday how many hours is she at the gym on Friday?",
-    "gold": "1"
+    "prompt": "Josiah is three times as old as Hans. Hans is 15 years old now. In three years, what is the sum of the ages of Josiah and Hans?",
+    "gold": "66"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Janet goes to the gym for 5 hours a week.  She goes Monday, Tuesday, Wednesday, and Friday.  She spends an hour and a half each day on Monday and Wednesday.  If she spends the same amount of time at the gym on Tuesday and Friday how many hours is she at the gym on Friday?"
+      "c": "Plan: identify requirements from task. Task: Josiah is three times as old as Hans. Hans is 15 years old now. In three years, what is the sum of the ages of Josiah and Hans?\nTool result: corrupted output"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 2"
+      "c": "Final answer: 67"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.901004
+        0.761445
       ],
       [
         0,
         2,
-        0.098996
+        0.238555
       ],
       [
         2,
         3,
-        0.580942
+        0.536947
       ],
       [
         1,
         3,
-        0.353474
+        0.328326
       ],
       [
         0,
         3,
-        0.065584
+        0.134727
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
       1,
       2,
       3

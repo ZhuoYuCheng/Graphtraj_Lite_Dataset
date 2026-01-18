@@ -1,13 +1,13 @@
 {
   "id": "gtl_000186",
   "task": {
-    "prompt": "Marcus had 18 pebbles. He skipped half of them across the lake, but Freddy gave him another 30 pebbles. How many pebbles does Marcus have now?",
-    "gold": "39"
+    "prompt": "Cristine bought a dozen lemons and gave 1/4 of them to her neighbor. How many lemons does Cristine have left?",
+    "gold": "9"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Marcus had 18 pebbles. He skipped half of them across the lake, but Freddy gave him another 30 pebbles. How many pebbles does Marcus have now?"
+      "c": "Plan: identify requirements from task. Task: Cristine bought a dozen lemons and gave 1/4 of them to her neighbor. How many lemons does Cristine have left?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 39"
+      "c": "Final answer: 9"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.789366
+        0.763524
       ],
       [
         0,
         2,
-        0.210634
+        0.236476
       ],
       [
         2,
         3,
-        0.596941
+        0.582157
       ],
       [
         1,
         3,
-        0.295862
+        0.292902
       ],
       [
         0,
         3,
-        0.107197
+        0.12494
       ]
     ],
     "cfg": {

@@ -1,25 +1,25 @@
 {
   "id": "gtl_000821",
   "task": {
-    "prompt": "Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1/10 less in Maths, what's the total number of marks she scored in all the subjects?",
-    "gold": "296"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1/10 less in Maths, what's the total number of marks she scored in all the subjects?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefull"
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check "
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 297"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863979
+        0.633162
       ],
       [
         0,
         2,
-        0.136021
+        0.366838
       ],
       [
         2,
         3,
-        0.5881
+        0.504431
       ],
       [
         1,
         3,
-        0.340104
+        0.272382
       ],
       [
         0,
         3,
-        0.071795
+        0.223188
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 2,
+    "who": "writer",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

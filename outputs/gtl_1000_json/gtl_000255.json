@@ -1,25 +1,25 @@
 {
   "id": "gtl_000255",
   "task": {
-    "prompt": "Write a python function to calculate the product of all the numbers of a given tuple.",
-    "gold": "def mutiple_tuple(nums):\r\n    temp = list(nums)\r\n    product = 1 \r\n    for x in temp:\r\n        product *= x\r\n    return product"
+    "prompt": "In convex quadrilateral $ABCD$, $\\angle A = \\angle C$, $AB=CD=180$, and $AD \\ne BC$.  The perimeter of $ABCD$ is 640. Find $\\cos A$.",
+    "gold": "\\frac{7"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python function to calculate the product of all the numbers of a given tuple."
+      "c": "Plan: identify requirements from task. Task: In convex quadrilateral $ABCD$, $\\angle A = \\angle C$, $AB=CD=180$, and $AD \\ne BC$.  The perimeter of $ABCD$ is 640. Find $\\cos A$."
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef mutiple_tuple(nums):\r\n    temp = list(nums)\r\n    product = 1 \r\n    for x in temp:\r\n        product *= x\r\n    return product"
+      "c": "Final answer: \\frac{7"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.719899
+        0.815934
       ],
       [
         0,
         2,
-        0.280101
+        0.184066
       ],
       [
         2,
         3,
-        0.485191
+        0.626844
       ],
       [
         1,
         3,
-        0.294538
+        0.284311
       ],
       [
         0,
         3,
-        0.220271
+        0.088844
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert mutiple_tuple((4, 3, 2, 2, -1, 18)) == -864",
-      "assert mutiple_tuple((1,2,3)) == 6",
-      "assert mutiple_tuple((-2,-4,-6)) == -48"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

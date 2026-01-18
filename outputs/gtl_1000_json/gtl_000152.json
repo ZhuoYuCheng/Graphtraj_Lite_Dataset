@@ -1,13 +1,13 @@
 {
   "id": "gtl_000152",
   "task": {
-    "prompt": "Gargamel needed new tires for his truck. He went to the auto shop and bought 4 tires on sale for $75 each. The salesman told him that he saved a total of $36. If Gargamel saved the same amount on each tire, what was the original price of each tire?",
-    "gold": "84"
+    "prompt": "Bethany loved riding horses.  She rode 1 hour after school every Monday, Wednesday, and Friday.  On Tuesday and Thursday, she rode for 30 min and on Saturdays, she could ride for 2 hours.  How many hours in total did she ride over a 2 week period?",
+    "gold": "12"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Gargamel needed new tires for his truck. He went to the auto shop and bought 4 tires on sale for $75 each. The salesman told him that he saved a total of $36. If Gargamel saved the same amount on each tire, what was the original price of each tire?"
+      "c": "Plan: identify requirements from task. Task: Bethany loved riding horses.  She rode 1 hour after school every Monday, Wednesday, and Friday.  On Tuesday and Thursday, she rode for 30 min and on Saturdays, she could ride for 2 hours.  How many hours in total did she ride over a 2 week period?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 84"
+      "c": "Final answer: 12"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.832983
+        0.844327
       ],
       [
         0,
         2,
-        0.167017
+        0.155673
       ],
       [
         2,
         3,
-        0.62372
+        0.597912
       ],
       [
         1,
         3,
-        0.297126
+        0.319562
       ],
       [
         0,
         3,
-        0.079154
+        0.082526
       ]
     ],
     "cfg": {

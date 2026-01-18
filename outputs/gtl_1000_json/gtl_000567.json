@@ -1,25 +1,25 @@
 {
   "id": "gtl_000567",
   "task": {
-    "prompt": "Write a function to convert camel case string to snake case string.",
-    "gold": "def camel_to_snake(text):\r\n        import re\r\n        str1 = re.sub('(.)([A-Z][a-z]+)', r'\\1_\\2', text)\r\n        return re.sub('([a-z0-9])([A-Z])', r'\\1_\\2', str1).lower()"
+    "prompt": "Simplify\n\\[\\frac{\\tan^3 75^\\circ + \\cot^3 75^\\circ}{\\tan 75^\\circ + \\cot 75^\\circ}.\\]",
+    "gold": "13"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a function to convert camel case string to snake case string."
+      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\frac{\\tan^3 75^\\circ + \\cot^3 75^\\circ}{\\tan 75^\\circ + \\cot 75^\\circ}.\\]\nTool result: corrupted output"
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests. (incorrect)"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 14"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.69491
+        0.757321
       ],
       [
         0,
         2,
-        0.30509
+        0.242679
       ],
       [
         2,
         3,
-        0.525269
+        0.559343
       ],
       [
         1,
         3,
-        0.288122
+        0.310701
       ],
       [
         0,
         3,
-        0.186609
+        0.129956
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "critic",
+    "when": 0,
+    "who": "assistant",
     "path": [
+      0,
       1,
       2,
       3
@@ -84,16 +85,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert camel_to_snake('PythonProgram')==('python_program')",
-      "assert camel_to_snake('pythonLanguage')==('python_language')",
-      "assert camel_to_snake('ProgrammingLanguage')==('programming_language')"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

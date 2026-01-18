@@ -1,13 +1,13 @@
 {
   "id": "gtl_000552",
   "task": {
-    "prompt": "Compute\n\\[\\frac{1}{\\cos 80^\\circ} - \\frac{\\sqrt{3}}{\\sin 80^\\circ}.\\]",
-    "gold": "4"
+    "prompt": "What is the period of $y = \\cos \\frac{x}{2}$?",
+    "gold": "4 \\pi"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Compute\n\\[\\frac{1}{\\cos 80^\\circ} - \\frac{\\sqrt{3}}{\\sin 80^\\circ}.\\]"
+      "c": "Plan: identify requirements from task. Task: What is the period of $y = \\cos \\frac{x}{2}$?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 4"
+      "c": "Final answer: 4 \\pi"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.737042
+        0.67007
       ],
       [
         0,
         2,
-        0.262958
+        0.32993
       ],
       [
         2,
         3,
-        0.633944
+        0.559039
       ],
       [
         1,
         3,
-        0.242931
+        0.259079
       ],
       [
         0,
         3,
-        0.123124
+        0.181882
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

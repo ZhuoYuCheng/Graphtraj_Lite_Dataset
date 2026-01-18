@@ -1,13 +1,13 @@
 {
   "id": "gtl_000541",
   "task": {
-    "prompt": "The expression $\\cos x + \\cos 3x + \\cos 7x + \\cos 9x$ can be written in the equivalent form\n\\[a \\cos bx \\cos cx \\cos dx\\]for some positive integers $a,$ $b,$ $c,$ and $d.$  Find $a + b + c + d.$",
-    "gold": "13"
+    "prompt": "Let $G$ be the centroid of triangle $ABC,$ and let $P$ be an arbitrary point.  Then there exists a constant $k$ so that\n\\[PA^2 + PB^2 + PC^2 = k \\cdot PG^2 + GA^2 + GB^2 + GC^2.\\]Find $k.$",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: The expression $\\cos x + \\cos 3x + \\cos 7x + \\cos 9x$ can be written in the equivalent form\n\\[a \\cos bx \\cos cx \\cos dx\\]for some positive integers $a,$ $b,$ $c,$ and $d.$  Find $a + b + c + d.$"
+      "c": "Plan: identify requirements from task. Task: Let $G$ be the centroid of triangle $ABC,$ and let $P$ be an arbitrary point.  Then there exists a constant $k$ so that\n\\[PA^2 + PB^2 + PC^2 = k \\cdot PG^2 + GA^2 + GB^2 + GC^2.\\]Find $k.$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 13"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.834804
+        0.846409
       ],
       [
         0,
         2,
-        0.165196
+        0.153591
       ],
       [
         2,
         3,
-        0.656262
+        0.637408
       ],
       [
         1,
         3,
-        0.270773
+        0.290998
       ],
       [
         0,
         3,
-        0.072966
+        0.071594
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

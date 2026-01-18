@@ -1,13 +1,13 @@
 {
   "id": "gtl_000905",
   "task": {
-    "prompt": "Compute $\\arctan \\frac{2}{5} + \\arctan \\frac{5}{2}.$  Express your answer in radians.",
-    "gold": "\\frac{\\pi"
+    "prompt": "A dental office gives away 2 toothbrushes to every patient who visits.  His 8 hour days are packed and each visit takes .5 hours.  How many toothbrushes does he give in a 5 day work week?",
+    "gold": "160"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Compute $\\arctan \\frac{2}{5} + \\arctan \\frac{5}{2}.$  Express your answer in radians."
+      "c": "Plan: identify requirements from task. Task: A dental office gives away 2 toothbrushes to every patient who visits.  His 8 hour days are packed and each visit takes .5 hours.  How many toothbrushes does he give in a 5 day work week?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\frac{\\pi"
+      "c": "Final answer: 160"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.778706
+        0.830294
       ],
       [
         0,
         2,
-        0.221294
+        0.169706
       ],
       [
         2,
         3,
-        0.604878
+        0.630564
       ],
       [
         1,
         3,
-        0.27344
+        0.283875
       ],
       [
         0,
         3,
-        0.121682
+        0.085561
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

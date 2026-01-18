@@ -1,25 +1,25 @@
 {
   "id": "gtl_000746",
   "task": {
-    "prompt": "Write a function to re-arrange the given tuples based on the given ordered list.",
-    "gold": "def re_arrange_tuples(test_list, ord_list):\r\n  temp = dict(test_list)\r\n  res = [(key, temp[key]) for key in ord_list]\r\n  return (res)"
+    "prompt": "If\n\\[\\frac{\\cos^4 \\alpha}{\\cos^2 \\beta} + \\frac{\\sin^4 \\alpha}{\\sin^2 \\beta} = 1,\\]then find the sum of all possible values of\n\\[\\frac{\\sin^4 \\beta}{\\sin^2 \\alpha} + \\frac{\\cos^4 \\beta}{\\cos^2 \\alpha}.\\]",
+    "gold": "1"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to re-arrange the given tuples based on the given ordered list."
+      "c": "Plan: identify requirements from task. Task: If\n\\[\\frac{\\cos^4 \\alpha}{\\cos^2 \\beta} + \\frac{\\sin^4 \\alpha}{\\sin^2 \\beta} = 1,\\]then find the sum of all possible values of\n\\[\\frac{\\sin^4 \\beta}{\\sin^2 \\alpha} + \\frac{\\cos^4 \\beta}{\\cos^2 \\alpha}.\\]"
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft. (incorrect)"
+      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
     },
     {
       "r": "reviewer",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 2"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.764339
+        0.886869
       ],
       [
         0,
         2,
-        0.235661
+        0.113131
       ],
       [
         2,
         3,
-        0.528702
+        0.664525
       ],
       [
         1,
         3,
-        0.329209
+        0.284789
       ],
       [
         0,
         3,
-        0.142089
+        0.050687
       ]
     ],
     "cfg": {
@@ -83,16 +83,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert re_arrange_tuples([(4, 3), (1, 9), (2, 10), (3, 2)],  [1, 4, 2, 3]) == [(1, 9), (4, 3), (2, 10), (3, 2)]",
-      "assert re_arrange_tuples([(5, 4), (2, 10), (3, 11), (4, 3)],  [3, 4, 2, 3]) == [(3, 11), (4, 3), (2, 10), (3, 11)]",
-      "assert re_arrange_tuples([(6, 3), (3, 8), (5, 7), (2, 4)],  [2, 5, 3, 6]) == [(2, 4), (5, 7), (3, 8), (6, 3)]"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

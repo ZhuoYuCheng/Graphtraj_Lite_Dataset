@@ -1,13 +1,13 @@
 {
   "id": "gtl_000432",
   "task": {
-    "prompt": "The vertices of a cube have coordinates $(0,0,0),$ $(0,0,4),$ $(0,4,0),$ $(0,4,4),$ $(4,0,0),$ $(4,0,4),$ $(4,4,0),$ and $(4,4,4).$  A plane cuts the edges of this cube at the points $P = (0,2,0),$ $Q = (1,0,0),$ $R = (1,4,4),$ and two other points.  Find the distance between these two points.",
-    "gold": "\\sqrt{29"
+    "prompt": "At the Delicious Delhi restaurant, Hilary bought three samosas at $2 each and four orders of pakoras, at $3 each, and a mango lassi, for $2. She left a 25% tip. How much did the meal cost Hilary, with tax, in dollars?",
+    "gold": "25"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: The vertices of a cube have coordinates $(0,0,0),$ $(0,0,4),$ $(0,4,0),$ $(0,4,4),$ $(4,0,0),$ $(4,0,4),$ $(4,4,0),$ and $(4,4,4).$  A plane cuts the edges of this cube at the points $P = (0,2,0),$ $Q = (1,0,0),$ $R = (1,4,4),$ and two other points.  Find the distance between these two points."
+      "c": "Plan: identify requirements from task. Task: At the Delicious Delhi restaurant, Hilary bought three samosas at $2 each and four orders of pakoras, at $3 each, and a mango lassi, for $2. She left a 25% tip. How much did the meal cost Hilary, with tax, in dollars?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\sqrt{29"
+      "c": "Final answer: 25"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.882234
+        0.820457
       ],
       [
         0,
         2,
-        0.117766
+        0.179543
       ],
       [
         2,
         3,
-        0.662435
+        0.601969
       ],
       [
         1,
         3,
-        0.284741
+        0.300897
       ],
       [
         0,
         3,
-        0.052824
+        0.097134
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

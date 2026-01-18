@@ -1,13 +1,13 @@
 {
   "id": "gtl_000212",
   "task": {
-    "prompt": "Marly has ten $20 bills, eight $10 bills, and four $5 bills. If she wants to change her bills to $100 bills, how many pieces of $100 bills will she have?",
-    "gold": "3"
+    "prompt": "Teddy is a pillow-maker.  He uses 3 less than 5 pounds of fluffy foam material to make each pillow.  If Teddy has three tons of fluffy foam material, how many pillows can he make?",
+    "gold": "3,000"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Marly has ten $20 bills, eight $10 bills, and four $5 bills. If she wants to change her bills to $100 bills, how many pieces of $100 bills will she have?\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: Teddy is a pillow-maker.  He uses 4 less than 5 pounds of fluffy foam material to make each pillow.  If Teddy has three tons of fluffy foam material, how many pillows can he make?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 4"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.779233
+        0.801509
       ],
       [
         0,
         2,
-        0.220767
+        0.198491
       ],
       [
         2,
         3,
-        0.523341
+        0.592333
       ],
       [
         1,
         3,
-        0.352506
+        0.306321
       ],
       [
         0,
         3,
-        0.124153
+        0.101347
       ]
     ],
     "cfg": {

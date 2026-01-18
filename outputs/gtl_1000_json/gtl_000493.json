@@ -1,13 +1,13 @@
 {
   "id": "gtl_000493",
   "task": {
-    "prompt": "If $\\cos \\theta + \\sin \\theta = \\frac{5}{4},$ then find $\\sin 2 \\theta.$",
-    "gold": "\\frac{9"
+    "prompt": "Let $\\mathbf{A} =\\begin{pmatrix}  -1 & 2 \\\\  3 & 4  \\end{pmatrix}.$  Then there exist scalars $p$ and $q$ such that\n\\[\\mathbf{A}^6 = p \\mathbf{A} + q \\mathbf{I}.\\]Enter the ordered pair $(p,q).$",
+    "gold": "(2223,4510)"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: If $\\cos \\theta + \\sin \\theta = \\frac{5}{4},$ then find $\\sin 2 \\theta.$"
+      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{A} =\\begin{pmatrix}  -1 & 2 \\\\  3 & 4  \\end{pmatrix}.$  Then there exist scalars $p$ and $q$ such that\n\\[\\mathbf{A}^6 = p \\mathbf{A} + q \\mathbf{I}.\\]Enter the ordered pair $(p,q).$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{9"
+      "c": "Final answer: (2223,4510)"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.732549
+        0.841635
       ],
       [
         0,
         2,
-        0.267451
+        0.158365
       ],
       [
         2,
         3,
-        0.598762
+        0.675924
       ],
       [
         1,
         3,
-        0.258685
+        0.252323
       ],
       [
         0,
         3,
-        0.142554
+        0.071753
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

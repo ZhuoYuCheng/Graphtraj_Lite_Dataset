@@ -1,17 +1,17 @@
 {
   "id": "gtl_000039",
   "task": {
-    "prompt": "Find the range of the function\n\\[f(x) = \\frac{\\sin^3 x + 6 \\sin^2 x + \\sin x + 2 \\cos^2 x - 8}{\\sin x - 1},\\]as $x$ ranges over all real numbers such that $\\sin x \\neq 1.$  Enter your answer using interval notation.",
-    "gold": "[2,12)"
+    "prompt": "At the bake sale, Tamara makes $32 from the brownies. She made 2 pans of brownies which were all sold.  The brownies were cut into 8 big square pieces.  How much did each brownie cost?",
+    "gold": "2"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Find the range of the function\n\\[f(x) = \\frac{\\sin^3 x + 6 \\sin^2 x + \\sin x + 2 \\cos^2 x - 8}{\\sin x - 1},\\]as $x$ ranges over all real numbers such that $\\sin x \\neq 1.$  Enter your answer using interval notation."
+      "c": "Plan: identify requirements from task. Task: At the bake sale, Tamara makes $32 from the brownies. She made 2 pans of brownies which were all sold.  The brownies were cut into 8 big square pieces.  How much did each brownie cost?"
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
+      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
     },
     {
       "r": "tool",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 13"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.86176
+        0.863789
       ],
       [
         0,
         2,
-        0.13824
+        0.136211
       ],
       [
         2,
         3,
-        0.651596
+        0.543471
       ],
       [
         1,
         3,
-        0.279625
+        0.363723
       ],
       [
         0,
         3,
-        0.068779
+        0.092807
       ]
     ],
     "cfg": {
@@ -84,9 +84,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": false,

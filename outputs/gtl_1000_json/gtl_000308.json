@@ -1,13 +1,13 @@
 {
   "id": "gtl_000308",
   "task": {
-    "prompt": "Tanika is selling boxes of crackers for her scout troop's fund-raiser. On Saturday, she sold 60 boxes. On Sunday, she sold 50% more than on Saturday. How many boxes did she sell, in total, over the two days?",
-    "gold": "150"
+    "prompt": "1 chocolate bar costs $1.50 and can be broken into 3 sections to make 3 s'mores.  Ron is hosting a boy scout camp out in his backyard for 15 scouts.  He wants to make sure that there are enough chocolate bars for everyone to have 2 s'mores each.  How much will he spend on chocolate bars?",
+    "gold": "15"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Tanika is selling boxes of crackers for her scout troop's fund-raiser. On Saturday, she sold 60 boxes. On Sunday, she sold 50% more than on Saturday. How many boxes did she sell, in total, over the two days?"
+      "c": "Plan: identify requirements from task. Task: 1 chocolate bar costs $1.50 and can be broken into 3 sections to make 3 s'mores.  Ron is hosting a boy scout camp out in his backyard for 15 scouts.  He wants to make sure that there are enough chocolate bars for everyone to have 2 s'mores each.  How much will he spend on chocolate bars?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 150"
+      "c": "Final answer: 15"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.822722
+        0.843813
       ],
       [
         0,
         2,
-        0.177278
+        0.156187
       ],
       [
         2,
         3,
-        0.60904
+        0.645712
       ],
       [
         1,
         3,
-        0.301921
+        0.279449
       ],
       [
         0,
         3,
-        0.089039
+        0.074839
       ]
     ],
     "cfg": {

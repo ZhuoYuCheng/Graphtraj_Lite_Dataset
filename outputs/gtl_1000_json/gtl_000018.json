@@ -1,13 +1,13 @@
 {
   "id": "gtl_000018",
   "task": {
-    "prompt": "Given $\\|\\mathbf{v}\\| = 4,$ find $\\|-3 \\mathbf{v}\\|.$",
-    "gold": "12"
+    "prompt": "Let $\\theta$ be an acute angle, and let\n\\[\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{x - 1}{2x}}.\\]Express $\\tan \\theta$ in terms of $x.$",
+    "gold": "\\sqrt{x^2 - 1"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Given $\\|\\mathbf{v}\\| = 4,$ find $\\|-3 \\mathbf{v}\\|.$"
+      "c": "Plan: identify requirements from task. Task: Let $\\theta$ be an acute angle, and let\n\\[\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{x - 1}{2x}}.\\]Express $\\tan \\theta$ in terms of $x.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 12"
+      "c": "Final answer: \\sqrt{x^2 - 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.740713
+        0.827355
       ],
       [
         0,
         2,
-        0.259287
+        0.172645
       ],
       [
         2,
         3,
-        0.611389
+        0.61636
       ],
       [
         1,
         3,
-        0.270319
+        0.276308
       ],
       [
         0,
         3,
-        0.118292
+        0.107332
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

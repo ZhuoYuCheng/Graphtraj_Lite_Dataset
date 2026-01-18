@@ -1,25 +1,25 @@
 {
   "id": "gtl_000109",
   "task": {
-    "prompt": "Bill and Phil are firehouse Dalmatians. Bill has one less than twice as many spots as Phil. If they have 59 spots combined, how many spots does Bill have?",
-    "gold": "39"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Bill and Phil are firehouse Dalmatians. Bill has one less than twice as many spots as Phil. If they have 59 spots combined, how many spots does Bill have?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 39"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.787855
+        0.592648
       ],
       [
         0,
         2,
-        0.212145
+        0.407352
       ],
       [
         2,
         3,
-        0.592341
+        0.42481
       ],
       [
         1,
         3,
-        0.296645
+        0.287602
       ],
       [
         0,
         3,
-        0.111014
+        0.287588
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

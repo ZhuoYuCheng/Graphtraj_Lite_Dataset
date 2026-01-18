@@ -1,17 +1,17 @@
 {
   "id": "gtl_000934",
   "task": {
-    "prompt": "Linda's bag has 2 dimes, 6 quarters, and 5 nickels. Her mother gives her 2 more dimes, 10 quarters, and twice as many nickels as she has. How many coins does she have altogether?",
-    "gold": "35"
+    "prompt": "Santana has 7 brothers. 3 of them have birthdays in March, 1 of them has a birthday in October, 1 has a birthday in November, and another 2 of them were born in December. If Santana always buys each of her brothers a birthday present and a Christmas present, how many more presents does she have to buy in the second half of the year than the first half of the year?",
+    "gold": "8"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "[omitted]"
+      "c": "Plan: identify requirements from task. Task: Santana has 7 brothers. 3 of them have birthdays in March, 1 of them has a birthday in October, 1 has a birthday in November, and another 2 of them were born in December. If Santana always buys each of her brothers a birthday present and a Christmas present, how many more presents does she have to buy in the second half of the year than the first half of the year?"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
     },
     {
       "r": "writer",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 36"
+      "c": "Final answer: 9"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.640158
+        0.865123
       ],
       [
         0,
         2,
-        0.359842
+        0.134877
       ],
       [
         2,
         3,
-        0.535902
+        0.655556
       ],
       [
         1,
         3,
-        0.244408
+        0.278058
       ],
       [
         0,
         3,
-        0.21969
+        0.066386
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "researcher",
+    "when": 1,
+    "who": "analyst",
     "path": [
-      0,
       1,
       2,
       3

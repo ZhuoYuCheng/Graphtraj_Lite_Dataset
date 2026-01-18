@@ -1,17 +1,17 @@
 {
   "id": "gtl_000427",
   "task": {
-    "prompt": "The matrix\n\\[\\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix}\\]is its own inverse, for some real numbers $a$ and $d.$  Find the number of possible pairs $(a,d).$",
-    "gold": "2"
+    "prompt": "The set of vectors $\\mathbf{v}$ such that\n\\[\\mathbf{v} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\begin{pmatrix} 10 \\\\ -40 \\\\ 8 \\end{pmatrix}\\]forms a solid in space.  Find the volume of this solid.",
+    "gold": "12348 \\pi"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: The matrix\n\\[\\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix}\\]is its own inverse, for some real numbers $a$ and $d.$  Find the number of possible pairs $(a,d).$"
+      "c": "Plan: identify requirements from task. Task: The set of vectors $\\mathbf{v}$ such that\n\\[\\mathbf{v} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\begin{pmatrix} 10 \\\\ -40 \\\\ 8 \\end{pmatrix}\\]forms a solid in space.  Find the volume of this solid."
     },
     {
       "r": "critic",
-      "c": "[omitted]"
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
     },
     {
       "r": "assistant",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 3"
+      "c": "Final answer: 12349"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.816089
+        0.82014
       ],
       [
         0,
         2,
-        0.183911
+        0.17986
       ],
       [
         2,
         3,
-        0.600159
+        0.658378
       ],
       [
         1,
         3,
-        0.29314
+        0.256369
       ],
       [
         0,
         3,
-        0.106701
+        0.085253
       ]
     ],
     "cfg": {
@@ -84,7 +84,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

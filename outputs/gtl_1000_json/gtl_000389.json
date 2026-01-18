@@ -1,13 +1,13 @@
 {
   "id": "gtl_000389",
   "task": {
-    "prompt": "Jane is dividing up minnows to be carnival prizes. She bought 600 minnows, and each prize is a bowl with 3 minnows. If 800 people are going to play the game and 15% win a prize, how many minnows will be left over?",
-    "gold": "240"
+    "prompt": "Tanika is selling boxes of crackers for her scout troop's fund-raiser. On Saturday, she sold 60 boxes. On Sunday, she sold 50% more than on Saturday. How many boxes did she sell, in total, over the two days?",
+    "gold": "150"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Jane is dividing up minnows to be carnival prizes. She bought 600 minnows, and each prize is a bowl with 3 minnows. If 800 people are going to play the game and 15% win a prize, how many minnows will be left over?"
+      "c": "Plan: identify requirements from task. Task: Tanika is selling boxes of crackers for her scout troop's fund-raiser. On Saturday, she sold 60 boxes. On Sunday, she sold 50% more than on Saturday. How many boxes did she sell, in total, over the two days?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 240"
+      "c": "Final answer: 150"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.813658
+        0.795946
       ],
       [
         0,
         2,
-        0.186342
+        0.204054
       ],
       [
         2,
         3,
-        0.619768
+        0.603461
       ],
       [
         1,
         3,
-        0.288434
+        0.290805
       ],
       [
         0,
         3,
-        0.091797
+        0.105734
       ]
     ],
     "cfg": {

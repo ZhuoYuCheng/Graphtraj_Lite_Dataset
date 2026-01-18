@@ -1,13 +1,13 @@
 {
   "id": "gtl_000755",
   "task": {
-    "prompt": "Chris is trying to sell his car for $5200 and has gotten two price offers. One buyer offered to pay the full price if Chris would pay for the car maintenance inspection, which cost a tenth of Chris\u2019s asking price. The other buyer agreed to pay the price if Chris replaced the headlights for $80 and the tires for three times as much. What is the difference between the amounts Chris will earn from the two offers?",
-    "gold": "200"
+    "prompt": "For this month, Lily wants to finish reading twice as many books as she finished last month. If she finished reading 4 books last month, what will be the total number of books that she will finish for two months?",
+    "gold": "12"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Chris is trying to sell his car for $5200 and has gotten two price offers. One buyer offered to pay the full price if Chris would pay for the car maintenance inspection, which cost a tenth of Chris\u2019s asking price. The other buyer agreed to pay the price if Chris replaced the headlights for $80 and the tires for three times as much. What is the difference between the amounts Chris will earn from the two offers?"
+      "c": "Plan: identify requirements from task. Task: For this month, Lily wants to finish reading twice as many books as she finished last month. If she finished reading 4 books last month, what will be the total number of books that she will finish for two months?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 200"
+      "c": "Final answer: 12"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.882623
+        0.824757
       ],
       [
         0,
         2,
-        0.117377
+        0.175243
       ],
       [
         2,
         3,
-        0.654178
+        0.601286
       ],
       [
         1,
         3,
-        0.291551
+        0.304064
       ],
       [
         0,
         3,
-        0.054271
+        0.094649
       ]
     ],
     "cfg": {

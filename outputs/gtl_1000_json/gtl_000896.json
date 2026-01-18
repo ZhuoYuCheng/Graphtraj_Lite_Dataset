@@ -1,25 +1,25 @@
 {
   "id": "gtl_000896",
   "task": {
-    "prompt": "Rick likes to separate his collection of books into various groups by genre.  He has 400 books in total and proceeds to divide them into two separate equally-sized categories repeatedly until he has each book in a category with 24 other books.  How many times must he break these groups into smaller groups to accomplish this?",
-    "gold": "4"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Rick likes to separate his collection of books into various groups by genre.  He has 400 books in total and proceeds to divide them into two separate equally-sized categories repeatedly until he has each book in a category with 24 other books.  How many times must he break these groups into smaller groups to accomplish this?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 4"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.846366
+        0.624228
       ],
       [
         0,
         2,
-        0.153634
+        0.375772
       ],
       [
         2,
         3,
-        0.626066
+        0.440275
       ],
       [
         1,
         3,
-        0.295944
+        0.29802
       ],
       [
         0,
         3,
-        0.07799
+        0.261704
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

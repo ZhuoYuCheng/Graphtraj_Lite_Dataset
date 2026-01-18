@@ -1,13 +1,13 @@
 {
   "id": "gtl_000481",
   "task": {
-    "prompt": "Given that $\\theta$ and $\\phi$ are acute angles such that $\\tan \\theta = \\frac{1}{7}$ and $\\sin \\phi = \\frac{1}{\\sqrt{10}},$ find $\\theta + 2 \\phi,$ measured in radians.",
-    "gold": "\\frac{\\pi"
+    "prompt": "Joe goes camping with his dad on a Friday. Joe's dad has 21 marshmallows, and Joe has four times as much marshmallows as his dad. If Joe\u2019s dad roasts a third of his marshmallows, and Joe roasts half of his marshmallows, how many marshmallows did they roast in total?",
+    "gold": "49"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Given that $\\theta$ and $\\phi$ are acute angles such that $\\tan \\theta = \\frac{1}{7}$ and $\\sin \\phi = \\frac{1}{\\sqrt{10}},$ find $\\theta + 2 \\phi,$ measured in radians."
+      "c": "Plan: identify requirements from task. Task: Joe goes camping with his dad on a Friday. Joe's dad has 21 marshmallows, and Joe has four times as much marshmallows as his dad. If Joe\u2019s dad roasts a third of his marshmallows, and Joe roasts half of his marshmallows, how many marshmallows did they roast in total?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{\\pi"
+      "c": "Final answer: 49"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.813594
+        0.837778
       ],
       [
         0,
         2,
-        0.186406
+        0.162222
       ],
       [
         2,
         3,
-        0.643349
+        0.62025
       ],
       [
         1,
         3,
-        0.26773
+        0.301191
       ],
       [
         0,
         3,
-        0.088921
+        0.078559
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

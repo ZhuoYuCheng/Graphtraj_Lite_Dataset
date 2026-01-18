@@ -1,13 +1,13 @@
 {
   "id": "gtl_000844",
   "task": {
-    "prompt": "Find the projection of $\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ onto the plane $3x - y + 4z = 0.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "Find the numerical value of\n\\[\\frac{\\sin 18^\\circ \\cos 12^\\circ + \\cos 162^\\circ \\cos 102^\\circ}{\\sin 22^\\circ \\cos 8^\\circ + \\cos 158^\\circ \\cos 98^\\circ}.\\]",
+    "gold": "1"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find the projection of $\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ onto the plane $3x - y + 4z = 0.$"
+      "c": "Plan: identify requirements from task. Task: Find the numerical value of\n\\[\\frac{\\sin 18^\\circ \\cos 12^\\circ + \\cos 162^\\circ \\cos 102^\\circ}{\\sin 22^\\circ \\cos 8^\\circ + \\cos 158^\\circ \\cos 98^\\circ}.\\]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.793062
+        0.863607
       ],
       [
         0,
         2,
-        0.206938
+        0.136393
       ],
       [
         2,
         3,
-        0.623022
+        0.660712
       ],
       [
         1,
         3,
-        0.255073
+        0.277451
       ],
       [
         0,
         3,
-        0.121906
+        0.061837
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000929",
   "task": {
-    "prompt": "Jane brings 75% as many pieces of bread as treats to feed the live pets at the zoo. Wanda brings half as many treats as Jane and three times as many pieces of bread as treats. If Wanda brings 90 pieces of bread, what is the total number of pieces of bread and treats that Wanda and Jane brought to the zoo?",
-    "gold": "225"
+    "prompt": "A business executive is going on a four day vacation where he will be unable to answer emails.  The first day he is gone, he receives 16 new emails.  On each of the following days, he receives half as many new emails as he received on the prior day.  At the end of his four day vacation, how many new emails will he have received in total?",
+    "gold": "30"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Jane brings 75% as many pieces of bread as treats to feed the live pets at the zoo. Wanda brings half as many treats as Jane and three times as many pieces of bread as treats. If Wanda brings 90 pieces of bread, what is the total number of pieces of bread and treats that Wanda and Jane brought to the zoo?"
+      "c": "Plan: identify requirements from task. Task: A business executive is going on a four day vacation where he will be unable to answer emails.  The first day he is gone, he receives 16 new emails.  On each of the following days, he receives half as many new emails as he received on the prior day.  At the end of his four day vacation, how many new emails will he have received in total?"
     },
     {
       "r": "analyst",
@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic"
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 226"
+      "c": "Final answer: 31"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.88734
+        0.882409
       ],
       [
         0,
         2,
-        0.11266
+        0.117591
       ],
       [
         2,
         3,
-        0.650845
+        0.708228
       ],
       [
         1,
         3,
-        0.286593
+        0.238619
       ],
       [
         0,
         3,
-        0.062562
+        0.053153
       ]
     ],
     "cfg": {

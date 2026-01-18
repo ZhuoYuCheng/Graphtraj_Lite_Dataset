@@ -1,25 +1,25 @@
 {
   "id": "gtl_000553",
   "task": {
-    "prompt": "Let $G$ be the centroid of triangle $ABC,$ and let $P$ be an arbitrary point.  Then there exists a constant $k$ so that\n\\[PA^2 + PB^2 + PC^2 = k \\cdot PG^2 + GA^2 + GB^2 + GC^2.\\]Find $k.$",
-    "gold": "3"
+    "prompt": "Compute $\\arcsin 0.$  Express your answer in radians.",
+    "gold": "0"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Let $G$ be the centroid of triangle $ABC,$ and let $P$ be an arbitrary point.  Then there exists a constant $k$ so that\n\\[PA^2 + PB^2 + PC^2 = k \\cdot PG^2 + GA^2 + GB^2 + GC^2.\\]Find $k.$"
+      "c": "Plan: identify requirements from task. Task: Compute $\\arcsin 0.$  Express your answer in radians."
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
     },
     {
       "r": "assistant",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 4"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.854227
+        0.64711
       ],
       [
         0,
         2,
-        0.145773
+        0.35289
       ],
       [
         2,
         3,
-        0.673401
+        0.558133
       ],
       [
         1,
         3,
-        0.260682
+        0.244248
       ],
       [
         0,
         3,
-        0.065917
+        0.197619
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "assistant",
+    "when": 1,
+    "who": "critic",
     "path": [
+      1,
       2,
       3
     ]
@@ -83,7 +84,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

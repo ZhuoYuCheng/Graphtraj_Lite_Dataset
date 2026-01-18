@@ -1,13 +1,13 @@
 {
   "id": "gtl_000173",
   "task": {
-    "prompt": "In a 90-minute soccer game, Mark played 20 minutes, then rested after. He then played for another 35 minutes. How long was he on the sideline?",
-    "gold": "35"
+    "prompt": "Joanne makes $16.00 working at her main job for 8 hours a day.  She has a part-time job, working an extra 2 hours a day where she makes $13.50 an hour.  How much money does she make if she works this schedule 5 days a week?",
+    "gold": "775"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In a 90-minute soccer game, Mark played 20 minutes, then rested after. He then played for another 35 minutes. How long was he on the sideline?\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: Joanne makes $16.00 working at her main job for 8 hours a day.  She has a part-time job, "
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 36"
+      "c": "Final answer: 776"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.742468
+        0.737928
       ],
       [
         0,
         2,
-        0.257532
+        0.262072
       ],
       [
         2,
         3,
-        0.522676
+        0.59835
       ],
       [
         1,
         3,
-        0.337308
+        0.2642
       ],
       [
         0,
         3,
-        0.140016
+        0.13745
       ]
     ],
     "cfg": {

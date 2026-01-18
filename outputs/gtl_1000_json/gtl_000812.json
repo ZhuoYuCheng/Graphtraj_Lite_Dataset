@@ -1,13 +1,13 @@
 {
   "id": "gtl_000812",
   "task": {
-    "prompt": "Find\n\\[\\sin \\left( \\sin^{-1} \\frac{3}{5} + \\tan^{-1} 2 \\right).\\]",
-    "gold": "\\frac{11 \\sqrt{5"
+    "prompt": "Find the matrix $\\mathbf{M}$ if it satisfies $\\mathbf{M} \\mathbf{i} = \\begin{pmatrix} 2 \\\\ 3 \\\\ -8 \\end{pmatrix},$ $\\mathbf{M} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 5 \\\\ -2 \\end{pmatrix},$ and $\\mathbf{M} \\mathbf{k} = \\begin{pmatrix} 7 \\\\ -1 \\\\ 4 \\end{pmatrix}.$",
+    "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find\n\\[\\sin \\left( \\sin^{-1} \\frac{3}{5} + \\tan^{-1} 2 \\right).\\]"
+      "c": "Plan: identify requirements from task. Task: Find the matrix $\\mathbf{M}$ if it satisfies $\\mathbf{M} \\mathbf{i} = \\begin{pmatrix} 2 \\\\ 3 \\\\ -8 \\end{pmatrix},$ $\\mathbf{M} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 5 \\\\ -2 \\end{pmatrix},$ and $\\mathbf{M} \\mathbf{k} = \\begin{pmatrix} 7 \\\\ -1 \\\\ 4 \\end{pmatrix}.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\frac{11 \\sqrt{5"
+      "c": "Final answer: \\begin{pmatrix"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.772877
+        0.902276
       ],
       [
         0,
         2,
-        0.227123
+        0.097724
       ],
       [
         2,
         3,
-        0.635546
+        0.675777
       ],
       [
         1,
         3,
-        0.239084
+        0.273724
       ],
       [
         0,
         3,
-        0.12537
+        0.050499
       ]
     ],
     "cfg": {

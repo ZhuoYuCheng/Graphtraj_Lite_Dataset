@@ -1,13 +1,13 @@
 {
   "id": "gtl_000646",
   "task": {
-    "prompt": "Cristine bought a dozen lemons and gave 1/4 of them to her neighbor. How many lemons does Cristine have left?",
-    "gold": "9"
+    "prompt": "With 82 students, there are 2 students for each computer. If there are 16 more students, how many computers must they have in total to continue with 2 students per computer?",
+    "gold": "49"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Cristine bought a dozen lemons and gave 1/4 of them to her neighbor. How many lemons does Cristine have left?"
+      "c": "Plan: identify requirements from task. Task: With 82 students, there are 2 students for each computer. If there are 16 more students, how many computers must they have in total to continue with 2 students per computer?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 9"
+      "c": "Final answer: 49"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.733197
+        0.764531
       ],
       [
         0,
         2,
-        0.266803
+        0.235469
       ],
       [
         2,
         3,
-        0.575568
+        0.57091
       ],
       [
         1,
         3,
-        0.280144
+        0.292657
       ],
       [
         0,
         3,
-        0.144288
+        0.136433
       ]
     ],
     "cfg": {

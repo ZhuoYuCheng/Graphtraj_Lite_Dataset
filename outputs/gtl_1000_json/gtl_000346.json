@@ -1,13 +1,13 @@
 {
   "id": "gtl_000346",
   "task": {
-    "prompt": "Find $\\sin \\left( -\\frac{\\pi}{2} \\right).$",
-    "gold": "-1"
+    "prompt": "Robert, a sales agent, earns a basic salary of $1250 per month and,  10% commission on his monthly sales. Last month, his total sales were $23600. He allocated 20% of his total earnings to savings and the rest of the money to his monthly expenses. How much were his monthly expenses last month?",
+    "gold": "2888"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Find $\\sin \\left( -\\frac{\\pi}{2} \\right).$"
+      "c": "Plan: identify requirements from task. Task: Robert, a sales agent, earns a basic salary of $1250 per month and,  10% commission on his monthly sales. Last month, his total sales were $23600. He allocated 20% of his total earnings to savings and the rest of the money to his monthly expenses. How much were his monthly expenses last month?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: -1"
+      "c": "Final answer: 2888"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.669078
+        0.833216
       ],
       [
         0,
         2,
-        0.330922
+        0.166784
       ],
       [
         2,
         3,
-        0.545447
+        0.632749
       ],
       [
         1,
         3,
-        0.269128
+        0.28183
       ],
       [
         0,
         3,
-        0.185425
+        0.085422
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000205",
   "task": {
-    "prompt": "Mr. Jesiah is a dairy cow farmer with cows producing 200 gallons of milk every day. The expenses for maintenance of the dairy farm and purchase of feeds is $3000 per month. Calculate his total income in June if he sells 1 gallon of milk at $3.55.",
-    "gold": "18300"
+    "prompt": "Four kids can wash three whiteboards in 20 minutes. How long would it take, in minutes, for one kid to wash six whiteboards?",
+    "gold": "160"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Mr. Jesiah is a dairy cow farmer with cows producing 200 gallons of milk every day. The expenses for maintenance of the dairy farm and purchase of feeds is $3000 per month. Calculate his total income in June if he sells 1 gallon of milk at $3.55."
+      "c": "Plan: identify requirements from task. Task: Four kids can wash three whiteboards in 20 minutes. How long would it take, in minutes, for one kid to wash six whiteboards?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 18300"
+      "c": "Final answer: 160"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.851787
+        0.776105
       ],
       [
         0,
         2,
-        0.148213
+        0.223895
       ],
       [
         2,
         3,
-        0.632215
+        0.576576
       ],
       [
         1,
         3,
-        0.293174
+        0.303049
       ],
       [
         0,
         3,
-        0.074612
+        0.120375
       ]
     ],
     "cfg": {

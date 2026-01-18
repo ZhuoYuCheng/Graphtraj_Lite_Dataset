@@ -1,13 +1,13 @@
 {
   "id": "gtl_000403",
   "task": {
-    "prompt": "If $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B} = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$",
-    "gold": "24"
+    "prompt": "In triangle $ABC,$ $D$ is on $\\overline{AB}$ such that $AD:DB = 3:2,$ and $E$ is on $\\overline{BC}$ such that $BE:EC = 3:2.$  If lines $DE$ and $AC$ intersect at $F,$ then find $\\frac{DE}{EF}.$",
+    "gold": "\\frac{1"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: If $\\det \\mathbf{A} = 2$ and $\\det \\mathbf{B} = 12,$ then find $\\det (\\mathbf{A} \\mathbf{B}).$\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $D$ is on $\\overline{AB}$ such that $AD:DB = 4:2,$ and $E$ is on $\\overline{BC}$ such that $BE:EC = 3:2.$  If lines $DE$ and $AC$ intersect at $F,$ then find $\\frac{DE}{EF}.$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 25"
+      "c": "Final answer: 2"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.744581
+        0.850605
       ],
       [
         0,
         2,
-        0.255419
+        0.149395
       ],
       [
         2,
         3,
-        0.550348
+        0.630791
       ],
       [
         1,
         3,
-        0.313971
+        0.299109
       ],
       [
         0,
         3,
-        0.135681
+        0.0701
       ]
     ],
     "cfg": {
@@ -85,7 +85,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

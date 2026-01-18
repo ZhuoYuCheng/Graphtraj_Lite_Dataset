@@ -1,13 +1,13 @@
 {
   "id": "gtl_000875",
   "task": {
-    "prompt": "Given that $(1+\\sin t)(1+\\cos t)=5/4$ and\n$(1-\\sin t)(1-\\cos t)=\\frac mn-\\sqrt{k},$\nwhere $k, m,$ and $n$ are positive integers with $m$ and $n$ relatively prime, find $k+m+n.$",
-    "gold": "27"
+    "prompt": "Compute $\\sin 6^\\circ \\sin 42^\\circ \\sin 66^\\circ \\sin 78^\\circ.$",
+    "gold": "\\frac{1"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Given that $(1+\\sin t)(1+\\cos t)=5/4$ and\n$(1-\\sin t)(1-\\cos t)=\\frac mn-\\sqrt{k},$\nwhere $k, m,$ and $n$ are positive integers with $m$ and $n$ relatively prime, find $k+m+n.$"
+      "c": "Plan: identify requirements from task. Task: Compute $\\sin 6^\\circ \\sin 42^\\circ \\sin 66^\\circ \\sin 78^\\circ.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 27"
+      "c": "Final answer: \\frac{1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.859964
+        0.770507
       ],
       [
         0,
         2,
-        0.140036
+        0.229493
       ],
       [
         2,
         3,
-        0.6903
+        0.622967
       ],
       [
         1,
         3,
-        0.255583
+        0.263529
       ],
       [
         0,
         3,
-        0.054118
+        0.113505
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

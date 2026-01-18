@@ -1,25 +1,25 @@
 {
   "id": "gtl_000986",
   "task": {
-    "prompt": "There are twice as many cows as dogs at a petting farm. If there are currently 184 cows at the farm, and the farm owner decides to sell 1/4 of the cows and 3/4 of the dogs, how many animals are remaining on the farm?",
-    "gold": "161"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: There are twice as many cows as dogs at a petting farm. If there are currently 184 co"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "[omitted]"
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 162"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.732737
+        0.587153
       ],
       [
         0,
         2,
-        0.267263
+        0.412847
       ],
       [
         2,
         3,
-        0.585291
+        0.419038
+      ],
+      [
+        0,
+        3,
+        0.291833
       ],
       [
         1,
         3,
-        0.269356
-      ],
-      [
-        0,
-        3,
-        0.145353
+        0.28913
       ]
     ],
     "cfg": {
@@ -67,12 +67,10 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "researcher",
+    "when": 1,
+    "who": "analyst",
     "path": [
-      0,
       1,
-      2,
       3
     ]
   },
@@ -85,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

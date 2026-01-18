@@ -1,13 +1,13 @@
 {
   "id": "gtl_000574",
   "task": {
-    "prompt": "A small theater company sells tickets to a show.  They have a 400 seat theater and fill to 80% capacity.  Each ticket cost $30.  They repeated the same performance 2 other days.  How much did they make?",
-    "gold": "28,800"
+    "prompt": "Meryll wants to write 35 multiple-choice questions and 15 problem-solving questions for her Chemistry class. She already has written 2/5 of the multiple-choice and 1/3 of the problem-solving questions. How many more questions does she need to write for both multiple-choice and problem-solving?",
+    "gold": "31"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A small theater company sells tickets to a show.  They have a 400 seat theater and fill to 80% capacity.  Each ticket cost $30.  They repeated the same performance 2 other days.  How much did they make?"
+      "c": "Plan: identify requirements from task. Task: Meryll wants to write 35 multiple-choice questions and 15 problem-solving questions for her Chemistry class. She already has written 2/5 of the multiple-choice and 1/3 of the problem-solving questions. How many more questions does she need to write for both multiple-choice and problem-solving?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 28,800"
+      "c": "Final answer: 31"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.804241
+        0.819891
       ],
       [
         0,
         2,
-        0.195759
+        0.180109
       ],
       [
         2,
         3,
-        0.59456
+        0.629445
       ],
       [
         1,
         3,
-        0.297501
+        0.28282
       ],
       [
         0,
         3,
-        0.107939
+        0.087735
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000065",
   "task": {
-    "prompt": "If $\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 5 \\\\ 4 \\\\ -7 \\end{pmatrix},$ then compute $\\mathbf{a} \\times (3 \\mathbf{b}).$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "A plane is expressed parametrically by\n\\[\\mathbf{v} = \\begin{pmatrix} 1 + s - t \\\\ 2 - s \\\\ 3 - 2s + 2t \\end{pmatrix}.\\]Find the equation of the plane.  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
+    "gold": "2x + z - 5 = 0"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: If $\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 5 \\\\ 4 \\\\ -7 \\end{pmatrix},$ then compute $\\mathbf{a} \\times (3 \\mathbf{b}).$"
+      "c": "Plan: identify requirements from task. Task: A plane is expressed parametrically by\n\\[\\mathbf{v} = \\begin{pmatrix} 1 + s - t \\\\ 2 - s \\\\ 3 - 2s + 2t \\end{pmatrix}.\\]Find the equation of the plane.  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 2x + z - 5 = 0"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.836331
+        0.895355
       ],
       [
         0,
         2,
-        0.163669
+        0.104645
       ],
       [
         2,
         3,
-        0.619418
+        0.698255
       ],
       [
         1,
         3,
-        0.288405
+        0.249562
       ],
       [
         0,
         3,
-        0.092178
+        0.052184
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

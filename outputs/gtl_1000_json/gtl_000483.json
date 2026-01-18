@@ -1,25 +1,25 @@
 {
   "id": "gtl_000483",
   "task": {
-    "prompt": "Write a python function to find the last two digits in factorial of a given number.",
-    "gold": "def last_Two_Digits(N): \r\n    if (N >= 10): \r\n        return\r\n    fac = 1\r\n    for i in range(1,N + 1): \r\n        fac = (fac * i) % 100\r\n    return (fac)"
+    "prompt": "Let $\\theta$ be the angle between the planes $2x + y - 2z + 3 = 0$ and $6x + 3y + 2z - 5 = 0.$  Find $\\cos \\theta.$",
+    "gold": "\\frac{11"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a python function to find the last two digits in factorial of a given number."
+      "c": "Plan: identify requirements from task. Task: Let $\\theta$ be the angle between the planes $2x + y - 2z + 3 = 0$ and $6x + 3y + 2z - 5 = 0.$  Find $\\cos \\theta.$"
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef last_Two_Digits(N): \r\n    if (N >= 10): \r\n        return\r\n    fac = 1\r\n    for i in range(1,N + 1): \r\n        fac = (fac * i) % 100\r\n    return (fac)"
+      "c": "Final answer: \\frac{11"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.697803
+        0.787693
       ],
       [
         0,
         2,
-        0.302197
+        0.212307
       ],
       [
         2,
         3,
-        0.462838
+        0.62005
       ],
       [
         1,
         3,
-        0.302244
+        0.274933
       ],
       [
         0,
         3,
-        0.234918
+        0.105017
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert last_Two_Digits(7) == 40",
-      "assert last_Two_Digits(5) == 20",
-      "assert last_Two_Digits(2) == 2"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

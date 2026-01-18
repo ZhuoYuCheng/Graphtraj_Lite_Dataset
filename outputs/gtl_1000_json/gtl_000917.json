@@ -1,13 +1,13 @@
 {
   "id": "gtl_000917",
   "task": {
-    "prompt": "Let\n\\[\\bold{A} = \\begin{pmatrix} 0 & 1 & 2 \\\\ 1 & 0 & 1 \\\\ 2 & 1 & 0 \\end{pmatrix}.\\]There exist constants $p$, $q$, and $r$ such that\n\\[\\bold{A}^3 + p \\bold{A}^2 + q \\bold{A} + r \\bold{I} = \\bold{0},\\]where $\\bold{I}$ and $\\bold{0}$ are the $3 \\times 3$ identity matrix and zero matrix, respectively.  Enter the ordered triple $(p,q,r).$",
-    "gold": "(0,-6,-4)"
+    "prompt": "There is an angle $\\theta$ in the range $0^\\circ < \\theta < 45^\\circ$ which satisfies\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan 3 \\theta = 0.\\]Calculate $\\tan \\theta$ for this angle.",
+    "gold": "\\frac{1"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let\n\\[\\bold{A} = \\begin{pmatrix} 0 & 1 & 2 \\\\ 1 & 0 & 1 \\\\ 2 & 1 & 0 \\end{pmatrix}.\\]There exist constants $p$, $q$, and $r$ such that\n\\[\\bold{A}^3 + p \\bold{A}^2 + q \\bold{A} + r \\bold{I} = \\bold{0},\\]where $\\bold{I}$ and $\\bold{0}$ are the $3 \\times 3$ identity matrix and zero matrix, respectively.  Enter the ordered triple $(p,q,r).$"
+      "c": "Plan: identify requirements from task. Task: There is an angle $\\theta$ in the range $0^\\circ < \\theta < 45^\\circ$ which satisfies\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan 3 \\theta = 0.\\]Calculate $\\tan \\theta$ for this angle."
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: (0,-6,-4)"
+      "c": "Final answer: \\frac{1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.918716
+        0.858818
       ],
       [
         0,
         2,
-        0.081284
+        0.141182
       ],
       [
         2,
         3,
-        0.68276
+        0.652389
       ],
       [
         1,
         3,
-        0.277215
+        0.27981
       ],
       [
         0,
         3,
-        0.040024
+        0.067802
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

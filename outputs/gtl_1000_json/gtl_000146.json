@@ -1,13 +1,13 @@
 {
   "id": "gtl_000146",
   "task": {
-    "prompt": "If $\\tan x+\\tan y=25$ and $\\cot x + \\cot y=30$, what is $\\tan(x+y)$?",
-    "gold": "150"
+    "prompt": "Cynthia harvested 67 potatoes from her garden. After washing them, she cut 13 of them into wedges. She then halved the remaining potatoes and made french fries with one half, and potato chips with the other half. If one potato can be cut into 8 wedges or make 20 potato chips, how many more potato chips than wedges did Cynthia make?",
+    "gold": "436"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: If $\\tan x+\\tan y=25$ and $\\cot x + \\cot y=30$, what is $\\tan(x+y)$?"
+      "c": "Plan: identify requirements from task. Task: Cynthia harvested 67 potatoes from her garden. After washing them, she cut 13 of them into wedges. She then halved the remaining potatoes and made french fries with one half, and potato chips with the other half. If one potato can be cut into 8 wedges or make 20 potato chips, how many more potato chips than wedges did Cynthia make?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 150"
+      "c": "Final answer: 436"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.775026
+        0.861722
       ],
       [
         0,
         2,
-        0.224974
+        0.138278
       ],
       [
         2,
         3,
-        0.61505
+        0.623398
       ],
       [
         1,
         3,
-        0.278412
+        0.309267
       ],
       [
         0,
         3,
-        0.106538
+        0.067336
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": true,

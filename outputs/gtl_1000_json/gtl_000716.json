@@ -7,7 +7,7 @@
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to find whether an array is subset of another array."
+      "c": "Plan: identify requirements from task. Task: Write a func"
     },
     {
       "r": "analyst",
@@ -15,7 +15,7 @@
     },
     {
       "r": "writer",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: basic checks pass on the draft."
     },
     {
       "r": "reviewer",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.752765
+        0.650534
       ],
       [
         0,
         2,
-        0.247235
+        0.349466
       ],
       [
         2,
         3,
-        0.585917
+        0.495845
       ],
       [
         1,
         3,
-        0.281865
+        0.283325
       ],
       [
         0,
         3,
-        0.132218
+        0.22083
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
+      1,
       2,
       3
     ]

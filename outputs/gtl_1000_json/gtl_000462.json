@@ -1,13 +1,13 @@
 {
   "id": "gtl_000462",
   "task": {
-    "prompt": "Compute the number of real solutions $(x,y,z,w)$ to the system of equations:\n\\begin{align*}\nx &= z+w+zwx, \\\\ \ny &= w+x+wxy, \\\\\nz &= x+y+xyz, \\\\\nw &= y+z+yzw.\n\\end{align*}",
-    "gold": "5"
+    "prompt": "Given that $\\log_{10} \\sin x + \\log_{10} \\cos x = -1$ and that $\\log_{10} (\\sin x + \\cos x) = \\frac{1}{2} (\\log_{10} n - 1),$ find $n.$",
+    "gold": "12"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Compute the number of real solutions $(x,y,z,w)$ to the system of equations:\n\\begin{align*}\nx &= z+w+zwx, \\\\ \ny &= w+x+wxy, \\\\\nz &= x+y+xyz, \\\\\nw &= y+z+yzw.\n\\end{align*}"
+      "c": "Plan: identify requirements from task. Task: Given that $\\log_{10} \\sin x + \\log_{10} \\cos x = -1$ and that $\\log_{10} (\\sin x + \\cos x) = \\frac{1}{2} (\\log_{10} n - 1),$ find $n.$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 5"
+      "c": "Final answer: 12"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.838518
+        0.810172
       ],
       [
         0,
         2,
-        0.161482
+        0.189828
       ],
       [
         2,
         3,
-        0.663437
+        0.637298
       ],
       [
         1,
         3,
-        0.265883
+        0.275503
       ],
       [
         0,
         3,
-        0.070679
+        0.087199
       ]
     ],
     "cfg": {

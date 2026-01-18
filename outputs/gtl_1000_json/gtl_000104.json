@@ -1,13 +1,13 @@
 {
   "id": "gtl_000104",
   "task": {
-    "prompt": "Stan hires a magician for $60 an hour.  He works 3 hours every day for 2 weeks.  How much money does he pay the magician?",
-    "gold": "2520"
+    "prompt": "Normally Ann can frost a cake in 5 minutes. However, today she has a sprained wrist and it takes her 8 minutes to frost a cake. How much longer would it take her to frost 10 cakes with her sprained wrist?",
+    "gold": "30"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Stan hires a magician for $60 an hour.  He works 3 hours every day for 2 weeks.  How much money does he pay the magician?"
+      "c": "Plan: identify requirements from task. Task: Normally Ann can frost a cake in 5 minutes. However, today she has a sprained wrist and it takes her 8 minutes to frost a cake. How much longer would it take her to frost 10 cakes with her sprained wrist?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 2520"
+      "c": "Final answer: 30"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.769727
+        0.813527
       ],
       [
         0,
         2,
-        0.230273
+        0.186473
       ],
       [
         2,
         3,
-        0.575436
+        0.600267
       ],
       [
         1,
         3,
-        0.295712
+        0.305388
       ],
       [
         0,
         3,
-        0.128852
+        0.094345
       ]
     ],
     "cfg": {

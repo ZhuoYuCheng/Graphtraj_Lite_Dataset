@@ -1,13 +1,13 @@
 {
   "id": "gtl_000846",
   "task": {
-    "prompt": "Compute $\\arcsin 1.$  Express your answer in radians.",
-    "gold": "\\frac{\\pi"
+    "prompt": "If there are four times as many apples as oranges in a certain fruit basket and the basket has 15 apples, how many fruits would Emiliano have consumed if he eats 2/3 of each fruit's quantity in the basket?",
+    "gold": "50"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Compute $\\arcsin 1.$  Express your answer in radians."
+      "c": "Plan: identify requirements from task. Task: If there are four times as many apples as oranges in a certain fruit basket and the basket has 15 apples, how many fruits would Emiliano have consumed if he eats 2/3 of each fruit's quantity in the basket?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\frac{\\pi"
+      "c": "Final answer: 50"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.695149
+        0.818785
       ],
       [
         0,
         2,
-        0.304851
+        0.181215
       ],
       [
         2,
         3,
-        0.578109
+        0.617449
       ],
       [
         1,
         3,
-        0.258939
+        0.291345
       ],
       [
         0,
         3,
-        0.162952
+        0.091207
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

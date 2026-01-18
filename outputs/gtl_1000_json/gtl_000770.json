@@ -1,25 +1,25 @@
 {
   "id": "gtl_000770",
   "task": {
-    "prompt": "Write a function to remove all whitespaces from a string.",
-    "gold": "import re\r\ndef remove_all_spaces(text):\r\n return (re.sub(r'\\s+', '',text))"
+    "prompt": "Let $z_1,$ $z_2,$ $\\dots,$ $z_{20}$ be the twenty (complex) roots of the equation\n\\[z^{20} - 4z^{19} + 9z^{18} - 16z^{17} + \\dots + 441 = 0.\\]Calculate $\\cot \\left( \\sum_{k = 1}^{20} \\operatorname{arccot} z_k \\right).$  Note that the addition formula for cotangent is still valid when working with complex numbers.",
+    "gold": "\\frac{241"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to remove all whitespaces from a string."
+      "c": "Plan: identify requirements from task. Task: Let $z_1,$ $z_2,$ $\\dots,$ $z_{20}$ be the twenty (complex) roots of the equation\n\\[z^{20} - 4z^{19} + 9z^{18} - 16z^{17} + \\dots + 441 = 0.\\]Calculate $\\cot \\left( \\sum_{k = 1}^{20} \\operatorname{arccot} z_k \\right).$  Note that the addition formula for cotangent is still valid when working with complex numbers."
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final code:\nimport re\r\ndef remove_all_spaces(text):\r\n return (re.sub(r'\\s+', '',text))"
+      "c": "Final answer: \\frac{241"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.740977
+        0.9078
       ],
       [
         0,
         2,
-        0.259023
+        0.0922
       ],
       [
         2,
         3,
-        0.488123
+        0.68144
       ],
       [
         1,
         3,
-        0.324245
+        0.276152
       ],
       [
         0,
         3,
-        0.187632
+        0.042408
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert remove_all_spaces('python  program')==('pythonprogram')",
-      "assert remove_all_spaces('python   programming    language')==('pythonprogramminglanguage')",
-      "assert remove_all_spaces('python                     program')==('pythonprogram')"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

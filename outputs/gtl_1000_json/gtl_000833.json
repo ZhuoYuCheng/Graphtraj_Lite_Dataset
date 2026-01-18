@@ -1,13 +1,13 @@
 {
   "id": "gtl_000833",
   "task": {
-    "prompt": "What is the largest possible distance between two points, one on the sphere of radius 19 with center $(-2,-10,5),$ and the other on the sphere of radius 87 with center $(12,8,-16)$?",
-    "gold": "137"
+    "prompt": "In 3 years, Jayden will be half of Ernesto's age. If Ernesto is 11 years old, how many years old is Jayden now?",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: What is the largest possible distance between two points, one on the sphere of radius 19 with center $(-2,-10,5),$ and the other on the sphere of radius 87 with center $(12,8,-16)$?"
+      "c": "Plan: identify requirements from task. Task: In 3 years, Jayden will be half of Ernesto's age. If Ernesto is 11 years old, how many years old is Jayden now?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 137"
+      "c": "Final answer: 4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.823478
+        0.803256
       ],
       [
         0,
         2,
-        0.176522
+        0.196744
       ],
       [
         2,
         3,
-        0.62993
+        0.597417
       ],
       [
         1,
         3,
-        0.285539
+        0.295874
       ],
       [
         0,
         3,
-        0.084531
+        0.106709
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

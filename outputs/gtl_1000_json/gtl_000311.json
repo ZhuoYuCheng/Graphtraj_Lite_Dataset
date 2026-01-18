@@ -1,13 +1,13 @@
 {
   "id": "gtl_000311",
   "task": {
-    "prompt": "Let\n\\[\\mathbf{M} = \\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix}\\]be a matrix with complex entries such that $\\mathbf{M}^2 = \\mathbf{I}.$  If $abc = 1,$ then find the possible values of $a^3 + b^3 + c^3.$",
-    "gold": "2,4"
+    "prompt": "If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are vectors such that $\\mathbf{a} \\cdot \\mathbf{b} = -3,$ $\\mathbf{a} \\cdot \\mathbf{c} = 4,$ and $\\mathbf{b} \\cdot \\mathbf{c} = 6,$ then find\n\\[\\mathbf{b} \\cdot (7 \\mathbf{c} - 2 \\mathbf{a}).\\]",
+    "gold": "48"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Let\n\\[\\mathbf{M} = \\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix}\\]be a matrix with complex entries such that $\\mathbf{M}^2 = \\mathbf{I}.$  If $abc = 1,$ then find the possible values of $a^3 + b^3 + c^3.$"
+      "c": "Plan: identify requirements from task. Task: If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are vectors such that $\\mathbf{a} \\cdot \\mathbf{b} = -3,$ $\\mathbf{a} \\cdot \\mathbf{c} = 4,$ and $\\mathbf{b} \\cdot \\mathbf{c} = 6,$ then find\n\\[\\mathbf{b} \\cdot (7 \\mathbf{c} - 2 \\mathbf{a}).\\]"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 2,4"
+      "c": "Final answer: 48"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.878989
+        0.90567
       ],
       [
         0,
         2,
-        0.121011
+        0.09433
       ],
       [
         2,
         3,
-        0.664738
+        0.675245
       ],
       [
         1,
         3,
-        0.281613
+        0.287021
       ],
       [
         0,
         3,
-        0.053649
+        0.037734
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

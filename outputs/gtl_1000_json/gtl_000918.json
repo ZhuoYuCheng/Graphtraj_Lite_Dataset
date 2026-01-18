@@ -1,17 +1,17 @@
 {
   "id": "gtl_000918",
   "task": {
-    "prompt": "Jacob is building ladders. One of his clients needs 10 ladders with 50 rungs, and 20 ladders with 60 rungs. Jacob has to charge $2 for every rung. How much does the client have to pay for the ladders?",
-    "gold": "3,400"
+    "prompt": "GiGi took out a big bowl of mushrooms from the refrigerator.  She cut each mushroom into 4 pieces.  Her twins, Kenny and Karla sprinkled mushrooms on their pizzas and baked them in the oven.  Kenny grabbed a handful and sprinkled 38 mushroom pieces on his pizza.  Karla scooped them up with both hands and sprinkled 42 mushroom pieces on her pizza.  On the cutting board, were 8 pieces of mushrooms remaining.  How many mushrooms did GiGi cut up at the beginning?",
+    "gold": "22"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "[omitted]"
+      "c": "Plan: identify requirements from task. Task: GiGi took out a big bowl of mushrooms from the refrigerator.  She cut each mushroom into 4 pieces.  Her twins, Kenny and Karla sprinkled mushrooms on their pizzas and baked them in the oven.  Kenny grabbed a handful and sprinkled 38 mushroom pieces on his pizza.  Karla scooped them up with both hands and sprinkled 42 mushroom pieces on her pizza.  On the cutting board, were 8 pieces of mushrooms remaining.  How many mushrooms did GiGi cut up at the beginning?"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
     },
     {
       "r": "writer",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 401"
+      "c": "Final answer: 23"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.624791
+        0.927738
       ],
       [
         0,
         2,
-        0.375209
+        0.072262
       ],
       [
         2,
         3,
-        0.523551
+        0.614207
       ],
       [
         1,
         3,
-        0.243514
+        0.343864
       ],
       [
         0,
         3,
-        0.232934
+        0.041929
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "researcher",
+    "when": 1,
+    "who": "analyst",
     "path": [
-      0,
       1,
       2,
       3

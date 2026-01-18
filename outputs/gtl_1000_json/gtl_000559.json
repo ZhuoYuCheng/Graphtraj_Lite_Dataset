@@ -1,13 +1,13 @@
 {
   "id": "gtl_000559",
   "task": {
-    "prompt": "Simplify\n\\[\\frac{\\sin{10^\\circ}+\\sin{20^\\circ}}{\\cos{10^\\circ}+\\cos{20^\\circ}}.\\]Enter your answer is a trigonometric function evaluated at an integer, such as \"sin 7\".  (The angle should be positive and as small as possible.)",
-    "gold": "\\tan 15^\\circ"
+    "prompt": "Chris is trying to sell his car for $5200 and has gotten two price offers. One buyer offered to pay the full price if Chris would pay for the car maintenance inspection, which cost a tenth of Chris\u2019s asking price. The other buyer agreed to pay the price if Chris replaced the headlights for $80 and the tires for three times as much. What is the difference between the amounts Chris will earn from the two offers?",
+    "gold": "200"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\frac{\\sin{10^\\circ}+\\sin{20^\\circ}}{\\cos{10^\\circ}+\\cos{20^\\circ}}.\\]Enter your answer is a trigonometric function evaluated at an integer, such as \"sin 7\".  (The angle should be positive and as small as possible.)"
+      "c": "Plan: identify requirements from task. Task: Chris is trying to sell his car for $5200 and has gotten two price offers. One buyer offered to pay the full price if Chris would pay for the car maintenance inspection, which cost a tenth of Chris\u2019s asking price. The other buyer agreed to pay the price if Chris replaced the headlights for $80 and the tires for three times as much. What is the difference between the amounts Chris will earn from the two offers?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\tan 15^\\circ"
+      "c": "Final answer: 200"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.840585
+        0.854809
       ],
       [
         0,
         2,
-        0.159415
+        0.145191
       ],
       [
         2,
         3,
-        0.646179
+        0.638291
       ],
       [
         1,
         3,
-        0.26494
+        0.292468
       ],
       [
         0,
         3,
-        0.088881
+        0.069241
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

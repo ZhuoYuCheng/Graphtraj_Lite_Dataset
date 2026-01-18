@@ -1,13 +1,13 @@
 {
   "id": "gtl_000883",
   "task": {
-    "prompt": "Let $\\mathbf{A}$ and $\\mathbf{B}$ be matrices such that\n\\[\\mathbf{A} + \\mathbf{B} = \\mathbf{A} \\mathbf{B}.\\]If $\\mathbf{A} \\mathbf{B} = \\begin{pmatrix} 20/3 & 4/3 \\\\ -8/3 & 8/3 \\end{pmatrix},$ find $\\mathbf{B} \\mathbf{A}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "Let $a$ and $b$ be angles such that $\\cos a + \\cos b = \\frac{1}{2}$ and $\\sin a + \\sin b = \\frac{3}{11}.$  Find\n\\[\\tan \\left( \\frac{a + b}{2} \\right).\\]",
+    "gold": "\\frac{6"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{A}$ and $\\mathbf{B}$ be matrices such that\n\\[\\mathbf{A} + \\mathbf{B} = \\mathbf{A} \\mathbf{B}.\\]If $\\mathbf{A} \\mathbf{B} = \\begin{pmatrix} 20/3 & 4/3 \\\\ -8/3 & 8/3 \\end{pmatrix},$ find $\\mathbf{B} \\mathbf{A}.$"
+      "c": "Plan: identify requirements from task. Task: Let $a$ and $b$ be angles such that $\\cos a + \\cos b = \\frac{1}{2}$ and $\\sin a + \\sin b = \\frac{3}{11}.$  Find\n\\[\\tan \\left( \\frac{a + b}{2} \\right).\\]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: \\frac{6"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.902093
+        0.846922
       ],
       [
         0,
         2,
-        0.097907
+        0.153078
       ],
       [
         2,
         3,
-        0.678658
+        0.66304
       ],
       [
         1,
         3,
-        0.268853
+        0.259385
       ],
       [
         0,
         3,
-        0.052489
+        0.077574
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

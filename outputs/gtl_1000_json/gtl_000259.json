@@ -1,13 +1,13 @@
 {
   "id": "gtl_000259",
   "task": {
-    "prompt": "Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}.\\]Compute $\\operatorname{proj}_{\\mathbf{w}} (5 \\mathbf{v}).$",
+    "prompt": "Find the vector $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} \\frac{38}{5} \\\\ \\frac{19}{5} \\end{pmatrix}\\]and\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} \\frac{58}{13} \\\\ \\frac{87}{13} \\end{pmatrix}.\\]",
     "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}.\\]Compute $\\operatorname{proj}_{\\mathbf{w}} (5 \\mathbf{v}).$"
+      "c": "Plan: identify requirements from task. Task: Find the vector $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} \\frac{38}{5} \\\\ \\frac{19}{5} \\end{pmatrix}\\]and\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} \\frac{58}{13} \\\\ \\frac{87}{13} \\end{pmatrix}.\\]"
     },
     {
       "r": "executor",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.879461
+        0.91761
       ],
       [
         0,
         2,
-        0.120539
+        0.08239
       ],
       [
         2,
         3,
-        0.651335
+        0.675757
       ],
       [
         1,
         3,
-        0.284287
+        0.282174
       ],
       [
         0,
         3,
-        0.064378
+        0.042069
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

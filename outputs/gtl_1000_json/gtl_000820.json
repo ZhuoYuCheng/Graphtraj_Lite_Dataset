@@ -1,13 +1,13 @@
 {
   "id": "gtl_000820",
   "task": {
-    "prompt": "If\n\\[\\frac{\\cos^4 \\alpha}{\\cos^2 \\beta} + \\frac{\\sin^4 \\alpha}{\\sin^2 \\beta} = 1,\\]then find the sum of all possible values of\n\\[\\frac{\\sin^4 \\beta}{\\sin^2 \\alpha} + \\frac{\\cos^4 \\beta}{\\cos^2 \\alpha}.\\]",
-    "gold": "1"
+    "prompt": "Find $\\sin \\frac{11 \\pi}{3}.$",
+    "gold": "-\\frac{\\sqrt{3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: If\n\\[\\frac{\\cos^4 \\alpha}{\\cos^2 \\beta} + \\frac{\\sin^4 \\alpha}{\\sin^2 \\beta} = 1,\\]then find the sum of all possible values of\n\\[\\frac{\\sin^4 \\beta}{\\sin^2 \\alpha} + \\frac{\\cos^4 \\beta}{\\cos^2 \\alpha}.\\]"
+      "c": "Plan: identify requirements from task. Task: Find $\\sin \\frac{11 \\pi}{3}.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 1"
+      "c": "Final answer: -\\frac{\\sqrt{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.888605
+        0.6825
       ],
       [
         0,
         2,
-        0.111395
+        0.3175
       ],
       [
         2,
         3,
-        0.676145
+        0.570103
       ],
       [
         1,
         3,
-        0.275156
+        0.249732
       ],
       [
         0,
         3,
-        0.048699
+        0.180166
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000997",
   "task": {
-    "prompt": "There are three buckets of seeds labeled A, B, and C with 100 seeds. There are ten more seeds in bucket A than in bucket B, and bucket B has 30 seeds. How many seeds are in bucket C?",
-    "gold": "30"
+    "prompt": "Out of the 200 students in a class, thirty percent like the color blue. Among the remaining students who don't like the color blue, 40% like the color red, and the rest like the color yellow. Calculate the combined number of students who like the color yellow and the color blue.",
+    "gold": "144"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: There are three buckets of seeds labeled A, B, and C with 100 seeds. There are ten more seeds in bucket A than in bucket B, and bucket B has 30 seeds. How many seeds are in bucket C?"
+      "c": "Plan: identify requirements from task. Task: Out of the 200 students in a class, thirty percent like the color blue. Among the remaining students who don't like the color blue, 40% like the color red, and the rest like the color yellow. Calculate the combined number of students who like the color yellow and the color blue."
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 30"
+      "c": "Final answer: 144"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.82994
+        0.852489
       ],
       [
         0,
         2,
-        0.17006
+        0.147511
       ],
       [
         2,
         3,
-        0.622387
+        0.635918
       ],
       [
         1,
         3,
-        0.287641
+        0.288457
       ],
       [
         0,
         3,
-        0.089972
+        0.075625
       ]
     ],
     "cfg": {

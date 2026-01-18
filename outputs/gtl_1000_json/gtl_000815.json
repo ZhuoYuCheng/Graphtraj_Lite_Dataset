@@ -1,25 +1,25 @@
 {
   "id": "gtl_000815",
   "task": {
-    "prompt": "An eagle can fly 15 miles per hour; a falcon can fly 46 miles per hour; a pelican can fly 33 miles per hour; a hummingbird can fly 30 miles per hour. If the eagle, the falcon, the pelican, and the hummingbird flew for 2 hours straight, how many miles in total did the birds fly?",
-    "gold": "248"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: An eagle can fly 15 miles per hour; a falcon can fly 46 miles per hour; a pelican can fly 33 miles per hour; a hummingbird can fly 30 miles per hour. If the eagle, the falcon, the pelican, and the hummingbird flew for 2 hours straight, how many miles in total did the birds fly?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 248"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.867198
+        0.624228
       ],
       [
         0,
         2,
-        0.132802
+        0.375772
       ],
       [
         2,
         3,
-        0.634016
+        0.440275
       ],
       [
         1,
         3,
-        0.301372
+        0.29802
       ],
       [
         0,
         3,
-        0.064613
+        0.261704
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

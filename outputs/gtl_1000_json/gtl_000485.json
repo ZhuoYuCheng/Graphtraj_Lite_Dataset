@@ -1,13 +1,13 @@
 {
   "id": "gtl_000485",
   "task": {
-    "prompt": "In a polar coordinate system, the midpoint of the line segment whose endpoints are $\\left( 8, \\frac{5 \\pi}{12} \\right)$ and $\\left( 8, -\\frac{3 \\pi}{12} \\right)$ is the point $(r, \\theta).$  Enter $(r, \\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
-    "gold": "\\left( 4, \\frac{\\pi"
+    "prompt": "Jane is dividing up minnows to be carnival prizes. She bought 600 minnows, and each prize is a bowl with 3 minnows. If 800 people are going to play the game and 15% win a prize, how many minnows will be left over?",
+    "gold": "240"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: In a polar coordinate system, the midpoint of the line segment whose endpoints are $\\left( 8, \\frac{5 \\pi}{12} \\right)$ and $\\left( 8, -\\frac{3 \\pi}{12} \\right)$ is the point $(r, \\theta).$  Enter $(r, \\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$"
+      "c": "Plan: identify requirements from task. Task: Jane is dividing up minnows to be carnival prizes. She bought 600 minnows, and each prize is a bowl with 3 minnows. If 800 people are going to play the game and 15% win a prize, how many minnows will be left over?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\left( 4, \\frac{\\pi"
+      "c": "Final answer: 240"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863735
+        0.813658
       ],
       [
         0,
         2,
-        0.136265
+        0.186342
       ],
       [
         2,
         3,
-        0.653847
+        0.619768
       ],
       [
         1,
         3,
-        0.269539
+        0.288434
       ],
       [
         0,
         3,
-        0.076614
+        0.091797
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

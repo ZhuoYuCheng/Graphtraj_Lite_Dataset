@@ -1,13 +1,13 @@
 {
   "id": "gtl_000284",
   "task": {
-    "prompt": "The lengths of the sides of a triangle are consecutive integers, and the largest angle is twice the smallest angle.  Find the cosine of the smallest angle.",
-    "gold": "\\frac{3"
+    "prompt": "Find all real numbers $k$ such that\n\\[\\left\\| k \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| = 2 \\sqrt{13}.\\]Enter all the solutions, separated by commas.",
+    "gold": "-1"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: The lengths of the sides of a triangle are consecutive integers, and the largest angle is twice the smallest angle.  Find the cosine of the smallest angle."
+      "c": "Plan: identify requirements from task. Task: Find all real numbers $k$ such that\n\\[\\left\\| k \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| = 2 \\sqrt{13}.\\]Enter all the solutions, separated by commas."
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{3"
+      "c": "Final answer: -1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.766611
+        0.863926
       ],
       [
         0,
         2,
-        0.233389
+        0.136074
       ],
       [
         2,
         3,
-        0.599421
+        0.642801
       ],
       [
         1,
         3,
-        0.280566
+        0.289889
       ],
       [
         0,
         3,
-        0.120013
+        0.067311
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

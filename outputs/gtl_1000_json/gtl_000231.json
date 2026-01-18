@@ -1,17 +1,17 @@
 {
   "id": "gtl_000231",
   "task": {
-    "prompt": "In polar coordinates, the point $\\left( -2, \\frac{3 \\pi}{8} \\right)$ is equivalent to what other point, in the standard polar coordinate representation?  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
-    "gold": "\\left( 2, \\frac{11 \\pi"
+    "prompt": "Arnold's collagen powder has 18 grams of protein for every 2 scoops.  His protein powder has 21 grams of protein per scoop.  And his steak has 56 grams of protein.   If he has 1 scoop of collagen powder, 1 scoop of protein powder and his steak, how many grams of protein will he consume?",
+    "gold": "86"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In polar coordinates, the point $\\left( -2, \\frac{3 \\pi}{8} \\right)$ is equivalent to what other point, in the standard polar coordinate representation?  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$"
+      "c": "Plan: identify requirements from task. Task: Arnold's collagen powder has 18 grams of protein for every 2 scoops.  His protein powder has 21 grams of protein per scoop.  And his steak has 56 grams of protein.   If he has 1 scoop of collagen powder, 1 scoop of protein powder and his steak, how many grams of protein will he consume?"
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "[omitted]"
     },
     {
       "r": "tool",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\left( 2, \\frac{11 \\pi"
+      "c": "Final answer: 87"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.85637
+        0.851052
       ],
       [
         0,
         2,
-        0.14363
+        0.148948
       ],
       [
         2,
         3,
-        0.614544
+        0.548171
       ],
       [
         1,
         3,
-        0.279667
+        0.365714
       ],
       [
         0,
         3,
-        0.105789
+        0.086115
       ]
     ],
     "cfg": {
@@ -67,9 +67,13 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 1,
+    "who": "executor",
+    "path": [
+      1,
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -80,12 +84,10 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
-      "success": true,
+      "success": false,
       "reason": "exact match"
     }
   }

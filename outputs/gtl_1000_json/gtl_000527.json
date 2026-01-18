@@ -1,25 +1,25 @@
 {
   "id": "gtl_000527",
   "task": {
-    "prompt": "Olly wants to get shoes to protect his pets\u2019 paws. He owns 3 dogs, 2 cats, and a ferret. How many shoes does he need?",
-    "gold": "24"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Olly wants to get shoes to protect his pets\u2019 paws. He owns 3 dogs, 2 cats, and a ferret. How many shoes does he need?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 24"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.766249
+        0.555224
       ],
       [
         0,
         2,
-        0.233751
+        0.444776
       ],
       [
         2,
         3,
-        0.574802
+        0.412548
+      ],
+      [
+        0,
+        3,
+        0.319156
       ],
       [
         1,
         3,
-        0.296366
-      ],
-      [
-        0,
-        3,
-        0.128831
+        0.268296
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

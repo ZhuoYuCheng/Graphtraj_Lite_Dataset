@@ -1,13 +1,13 @@
 {
   "id": "gtl_000580",
   "task": {
-    "prompt": "Convert the point $(2 \\sqrt{3}, 6, -4)$ in rectangular coordinates to spherical coordinates.  Enter your answer in the form $(\\rho,\\theta,\\phi),$ where $\\rho > 0,$ $0 \\le \\theta < 2 \\pi,$ and $0 \\le \\phi \\le \\pi.$",
-    "gold": "\\left( 8, \\frac{\\pi"
+    "prompt": "In triangle $ABC,$ points $D$ and $E$ are on $\\overline{AB}$ and $\\overline{AC},$ respectively, and angle bisector $\\overline{AT}$ intersects $\\overline{DE}$ at $F.$  If $AD = 1,$ $DB = 3,$ $AE = 2,$ and $EC = 4,$ compute $\\frac{AF}{AT}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, E, F, T;\n\nB = (0,0);\nC = (5,0);\nA = intersectionpoint(arc(B,4,0,180),arc(C,6,0,180));\nD = interp(A,B,1/4);\nE = interp(A,C,2/6);\nT = extension(A, incenter(A,B,C), B, C);\nF = extension(A, T, D, E);\n\ndraw(A--B--C--cycle);\ndraw(A--T);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, W);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, SW);\nlabel(\"$T$\", T, S);\n[/asy]",
+    "gold": "\\frac{5"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Convert the point $(2 \\sqrt{3}, 6, -4)$ in rectangular coordinates to spherical coordinates.  Enter your answer in the form $(\\rho,\\theta,\\phi),$ where $\\rho > 0,$ $0 \\le \\theta < 2 \\pi,$ and $0 \\le \\phi \\le \\pi.$"
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ points $D$ and $E$ are on $\\overline{AB}$ and $\\overline{AC},$ respectively, and angle bisector $\\overline{AT}$ intersects $\\overline{DE}$ at $F.$  If $AD = 1,$ $DB = 3,$ $AE = 2,$ and $EC = 4,$ compute $\\frac{AF}{AT}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, E, F, T;\n\nB = (0,0);\nC = (5,0);\nA = intersectionpoint(arc(B,4,0,180),arc(C,6,0,180));\nD = interp(A,B,1/4);\nE = interp(A,C,2/6);\nT = extension(A, incenter(A,B,C), B, C);\nF = extension(A, T, D, E);\n\ndraw(A--B--C--cycle);\ndraw(A--T);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, W);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, SW);\nlabel(\"$T$\", T, S);\n[/asy]"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\left( 8, \\frac{\\pi"
+      "c": "Final answer: \\frac{5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.845371
+        0.936281
       ],
       [
         0,
         2,
-        0.154629
+        0.063719
       ],
       [
         2,
         3,
-        0.641207
+        0.709413
       ],
       [
         1,
         3,
-        0.273227
+        0.259184
       ],
       [
         0,
         3,
-        0.085567
+        0.031402
       ]
     ],
     "cfg": {

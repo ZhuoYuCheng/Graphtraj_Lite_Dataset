@@ -1,13 +1,13 @@
 {
   "id": "gtl_000350",
   "task": {
-    "prompt": "The equation $\\sin^2 x + \\sin^2 2x + \\sin^2 3x + \\sin^2 4x = 2$ can be reduced to the equivalent equation\n\\[\\cos ax \\cos bx \\cos cx = 0,\\]for some positive integers $a,$ $b,$ and $c.$  Find $a + b + c.$",
-    "gold": "8"
+    "prompt": "If Mr. Jones has 6 shirts for every pair of pants, and he has 40 pants, what's the total number of pieces of clothes he owns if all other factors remain the same?",
+    "gold": "280"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: The equation $\\sin^2 x + \\sin^2 2x + \\sin^2 3x + \\sin^2 4x = 2$ can be reduced to the equivalent equation\n\\[\\cos ax \\cos bx \\cos cx = 0,\\]for some positive integers $a,$ $b,$ and $c.$  Find $a + b + c.$"
+      "c": "Plan: identify requirements from task. Task: If Mr. Jones has 6 shirts for every pair of pants, and he has 40 pants, what's the total number of pieces of clothes he owns if all other factors remain the same?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 8"
+      "c": "Final answer: 280"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.840394
+        0.770157
       ],
       [
         0,
         2,
-        0.159606
+        0.229843
       ],
       [
         2,
         3,
-        0.648059
+        0.584316
       ],
       [
         1,
         3,
-        0.280232
+        0.292803
       ],
       [
         0,
         3,
-        0.071709
+        0.122881
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

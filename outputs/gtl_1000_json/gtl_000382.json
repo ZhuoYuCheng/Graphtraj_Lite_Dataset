@@ -1,13 +1,13 @@
 {
   "id": "gtl_000382",
   "task": {
-    "prompt": "Kathleen receives a weekly allowance for completing all of her chores. During middle school, her allowance was $2 more than $8 but during her senior year,  her allowance was $5 more than twice her middle school allowance. What is the percentage increase in Kathleen's weekly allowance?",
-    "gold": "150"
+    "prompt": "Pima invested $400 in Ethereum. In the first week, it gained 25% in value. In the second week, it gained an additional 50% on top of the previous gain. How much is her investment worth now?",
+    "gold": "750"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Kathleen receives a weekly allowance for completing all of her chores. During middle school, her allowance was $2 more than $8 but during her senior year,  her allowance was $5 more than twice her middle school allowance. What is the percentage increase in Kathleen's weekly allowance?"
+      "c": "Plan: identify requirements from task. Task: Pima invested $400 in Ethereum. In the first week, it gained 25% in value. In the second week, it gained an additional 50% on top of the previous gain. How much is her investment worth now?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 150"
+      "c": "Final answer: 750"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.808892
+        0.787562
       ],
       [
         0,
         2,
-        0.191108
+        0.212438
       ],
       [
         2,
         3,
-        0.60044
+        0.607659
       ],
       [
         1,
         3,
-        0.296766
+        0.279227
       ],
       [
         0,
         3,
-        0.102794
+        0.113114
       ]
     ],
     "cfg": {

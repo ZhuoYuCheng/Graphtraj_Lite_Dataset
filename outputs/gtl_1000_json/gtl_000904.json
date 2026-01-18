@@ -1,25 +1,25 @@
 {
   "id": "gtl_000904",
   "task": {
-    "prompt": "Write a function to rearrange positive and negative numbers in a given array using lambda function.",
-    "gold": "def rearrange_numbs(array_nums):\r\n  result = sorted(array_nums, key = lambda i: 0 if i == 0 else -1 / i)\r\n  return result"
+    "prompt": "Find the sum of the roots of $\\tan^2x-9\\tan x+1=0$ that are between $x=0$ and $x=2\\pi$ radians.",
+    "gold": "3 \\pi"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to rearrange positive and negative numbers in a given array using lambda function."
+      "c": "Plan: identify requirements from task. Task: Find the sum of the roots of $\\tan^2x-9\\tan x+1=0$ that are between $x=0$ and $x=2\\pi$ radians."
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final code:\ndef rearrange_numbs(array_nums):\r\n  result = sorted(array_nums, key = lambda i: 0 if i == 0 else -1 / i)\r\n  return result"
+      "c": "Final answer: 3 \\pi"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.76648
+        0.796164
       ],
       [
         0,
         2,
-        0.23352
+        0.203836
       ],
       [
         2,
         3,
-        0.500049
+        0.611241
       ],
       [
         1,
         3,
-        0.319468
+        0.282676
       ],
       [
         0,
         3,
-        0.180484
+        0.106083
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert rearrange_numbs([-1, 2, -3, 5, 7, 8, 9, -10])==[2, 5, 7, 8, 9, -10, -3, -1]",
-      "assert rearrange_numbs([10,15,14,13,-18,12,-20])==[10, 12, 13, 14, 15, -20, -18]",
-      "assert rearrange_numbs([-20,20,-10,10,-30,30])==[10, 20, 30, -30, -20, -10]"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

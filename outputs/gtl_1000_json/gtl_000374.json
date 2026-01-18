@@ -1,13 +1,13 @@
 {
   "id": "gtl_000374",
   "task": {
-    "prompt": "A circle centered at $O$ has radius 1 and contains the point $A$. Segment $AB$ is tangent to the circle at $A$ and $\\angle\nAOB=\\theta$. If point $C$ lies on $\\overline{OA}$ and $\\overline{BC}$ bisects $\\angle ABO$, then express $OC$ in terms of $s$ and $c,$ where $s = \\sin \\theta$ and $c = \\cos \\theta.$\n\n[asy]\npair A,B,C,O;\nO=(0,0);\nA=(1,0);\nC=(0.6,0);\nB=(1,2);\nlabel(\"$\\theta$\",(0.1,0),NE);\nlabel(\"$O$\",O,S);\nlabel(\"$C$\",C,S);\nlabel(\"$A$\",A,E);\nlabel(\"$B$\",B,E);\ndraw(A--O--B--cycle,linewidth(0.7));\ndraw(C--B,linewidth(0.7));\ndraw(Circle(O,1),linewidth(0.7));\n[/asy]",
-    "gold": "\\frac{1"
+    "prompt": "Mr. Jesiah is a dairy cow farmer with cows producing 200 gallons of milk every day. The expenses for maintenance of the dairy farm and purchase of feeds is $3000 per month. Calculate his total income in June if he sells 1 gallon of milk at $3.55.",
+    "gold": "18300"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A circle centered at $O$ has radius 1 and contains the point $A$. Segment $AB$ is tangent to the circle at $A$ and $\\angle\nAOB=\\theta$. If point $C$ lies on $\\overline{OA}$ and $\\overline{BC}$ bisects $\\angle ABO$, then express $OC$ in terms of $s$ and $c,$ where $s = \\sin \\theta$ and $c = \\cos \\theta.$\n\n[asy]\npair A,B,C,O;\nO=(0,0);\nA=(1,0);\nC=(0.6,0);\nB=(1,2);\nlabel(\"$\\theta$\",(0.1,0),NE);\nlabel(\"$O$\",O,S);\nlabel(\"$C$\",C,S);\nlabel(\"$A$\",A,E);\nlabel(\"$B$\",B,E);\ndraw(A--O--B--cycle,linewidth(0.7));\ndraw(C--B,linewidth(0.7));\ndraw(Circle(O,1),linewidth(0.7));\n[/asy]"
+      "c": "Plan: identify requirements from task. Task: Mr. Jesiah is a dairy cow farmer with cows producing 200 gallons of milk every day. The expenses for maintenance of the dairy farm and purchase of feeds is $3000 per month. Calculate his total income in June if he sells 1 gallon of milk at $3.55.\nTool result: corrupted output"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{1"
+      "c": "Final answer: 18301"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.930339
+        0.792977
       ],
       [
         0,
         2,
-        0.069661
+        0.207023
       ],
       [
         2,
         3,
-        0.718055
+        0.566629
       ],
       [
         1,
         3,
-        0.249619
+        0.321037
       ],
       [
         0,
         3,
-        0.032326
+        0.112334
       ]
     ],
     "cfg": {
@@ -67,9 +67,14 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -80,12 +85,10 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
-      "success": true,
+      "success": false,
       "reason": "exact match"
     }
   }

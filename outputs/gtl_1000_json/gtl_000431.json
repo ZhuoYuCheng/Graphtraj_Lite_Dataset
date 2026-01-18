@@ -1,25 +1,25 @@
 {
   "id": "gtl_000431",
   "task": {
-    "prompt": "Keegan is in school for 7.5 hours each day and he is taking 7 classes. He has history and chemistry classes for a combined total of 1.5 hours. How many minutes does Keegan spend in one of his other classes on average?",
-    "gold": "72"
+    "prompt": "Codger is a three-footed sloth.  He has a challenging time buying shoes because the stores only sell the shoes in pairs. If he already owns the 3-piece set of shoes he is wearing, how many pairs of shoes does he need to buy to have 5 complete 3-piece sets of shoes?",
+    "gold": "6"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Keegan is in school for 7.5 hours each day and he is taking 7 classes. He has history and chemistry classes for a combined total of 1.5 hours. How many minutes does Keegan spend in one of his other classes on average?"
+      "c": "Plan: identify requirements from task. Task: Codger is a three-footed sloth.  He has a challenging time buying shoes because the stores only sell the shoes in pairs. If he already owns the 3-piece set of shoes he is wearing, how many pairs of shoes does he need to buy to have 5 complete 3-piece sets of shoes?"
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefull"
     },
     {
       "r": "assistant",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 73"
+      "c": "Final answer: 7"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.812788
+        0.827724
       ],
       [
         0,
         2,
-        0.187212
+        0.172276
       ],
       [
         2,
         3,
-        0.620563
+        0.578282
       ],
       [
         1,
         3,
-        0.276167
+        0.327364
       ],
       [
         0,
         3,
-        0.10327
+        0.094354
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "assistant",
+    "when": 1,
+    "who": "critic",
     "path": [
+      1,
       2,
       3
     ]

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000222",
   "task": {
-    "prompt": "Find the maximum $y$-coordinate of a point on the graph of $r = \\sin 2 \\theta.$",
-    "gold": "\\frac{4 \\sqrt{3"
+    "prompt": "Miss Adamson has four classes with 20 students each. She makes a study guide for her class and uses 5 sheets of paper per student. How many sheets of paper will she use for all of her students?",
+    "gold": "400"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Find the maximum $y$-coordinate of a point on the graph of $r = \\sin 2 \\theta.$"
+      "c": "Plan: identify requirements from task. Task: Miss Adamson has four classes with 20 students each. She makes a study guide for her class and uses 5 sheets of paper per student. How many sheets of paper will she use for all of her students?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 4"
+      "c": "Final answer: 401"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.736114
+        0.800837
       ],
       [
         0,
         2,
-        0.263886
+        0.199163
       ],
       [
         2,
         3,
-        0.593137
+        0.57738
       ],
       [
         1,
         3,
-        0.279932
+        0.313968
       ],
       [
         0,
         3,
-        0.126932
+        0.108652
       ]
     ],
     "cfg": {
@@ -83,9 +83,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": false,

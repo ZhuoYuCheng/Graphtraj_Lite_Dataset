@@ -1,13 +1,13 @@
 {
   "id": "gtl_000103",
   "task": {
-    "prompt": "In a school with 800 students, 5/8 of the students are girls. Seven-tenths of the girls and two-fifths of the boys are in the primary grades, while the rest are middle schoolers. How many middle schoolers are there?",
-    "gold": "330"
+    "prompt": "There are 248 pages in a book. Joanna can read 16 pages per hour. On Monday, she reads for 3 hours. On Tuesday, she reads for 6.5 hours. How many more hours does she need to read to finish the book?",
+    "gold": "6"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In a school with 800 students, 5/8 of the students are girls. Seven-tenths of the girls and two-fifths of the boys are in the primary grades, while the rest are middle schoolers. How many middle schoolers are there?"
+      "c": "Plan: identify requirements from task. Task: There are 248 pages in a book. Joanna can read 16 pages per hour. On Monday, she reads for 3 hours. On Tuesday, she reads for 6.5 hours. How many more hours does she need to read to finish the book?"
     },
     {
       "r": "executor",
@@ -15,11 +15,11 @@
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 331"
+      "c": "Final answer: 7"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.836556
+        0.84309
       ],
       [
         0,
         2,
-        0.163444
+        0.15691
       ],
       [
         2,
         3,
-        0.593494
+        0.661797
       ],
       [
         1,
         3,
-        0.315243
+        0.262858
       ],
       [
         0,
         3,
-        0.091264
+        0.075345
       ]
     ],
     "cfg": {

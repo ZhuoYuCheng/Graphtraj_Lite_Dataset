@@ -1,13 +1,13 @@
 {
   "id": "gtl_000428",
   "task": {
-    "prompt": "Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?",
-    "gold": "216"
+    "prompt": "Trevor is a comic book illustrator. In the past three months, he has drawn 220 pages of the comic. The comic he illustrates releases a new issue once a month. The first and second months\u2019 issues were the same number of pages, but the third month\u2019s issue was four pages longer than either of the others. How many pages was the first issue of the comic?",
+    "gold": "72"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?"
+      "c": "Plan: identify requirements from task. Task: Trevor is a comic book illustrator. In the past three months, he has drawn 220 pages of the comic. The comic he illustrates releases a new issue once a month. The first and second months\u2019 issues were the same number of pages, but the third month\u2019s issue was four pages longer than either of the others. How many pages was the first issue of the comic?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 216"
+      "c": "Final answer: 72"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.801098
+        0.829345
       ],
       [
         0,
         2,
-        0.198902
+        0.170655
       ],
       [
         2,
         3,
-        0.617769
+        0.634688
       ],
       [
         1,
         3,
-        0.27966
+        0.279335
       ],
       [
         0,
         3,
-        0.102572
+        0.085976
       ]
     ],
     "cfg": {

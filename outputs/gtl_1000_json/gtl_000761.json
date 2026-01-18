@@ -1,25 +1,25 @@
 {
   "id": "gtl_000761",
   "task": {
-    "prompt": "In triangle $ABC,$ $\\angle B = 60^\\circ$ and $\\angle C = 45^\\circ.$  The point $D$ divides $\\overline{BC}$ in the ratio $1:3$.  Find\n\\[\\frac{\\sin \\angle BAD}{\\sin \\angle CAD}.\\]",
-    "gold": "\\frac{\\sqrt{6"
+    "prompt": "In coordinate space, a particle starts at the point $(2,3,4)$ and ends at the point $(-1,-3,-3),$ along the line connecting the two points.  Along the way, the particle intersects the unit sphere centered at the origin at two points.  Then the distance between these two points can be expressed in the form $\\frac{a}{\\sqrt{b}},$ where $a$ and $b$ are positive integers, and $b$ is not divisible by the square of a prime.  Find $a + b.$",
+    "gold": "59"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $\\angle B = 60^\\circ$ and $\\angle C = 45^\\circ.$  The point $D$ divides $\\overline{BC}$ in the ratio $1:3$.  Find\n\\[\\frac{\\sin \\angle BAD}{\\sin \\angle CAD}.\\]"
+      "c": "Plan: identify requirements from task. Task: In coordinate space, a particle starts at the point $(2,3,4)$ and ends at the point $(-1,-3,-3),$ along the line connecting the two points.  Along the way, the particle intersects the unit sphere centered at the origin at two points.  Then the distance between these two points can be expressed in the form $\\frac{a}{\\sqrt{b}},$ where $a$ and $b$ are positive integers, and $b$ is not divisible by the square of a prime.  Find $a + b.$"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
-    },
-    {
-      "r": "writer",
       "c": "[omitted]"
     },
     {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
       "r": "reviewer",
-      "c": "Final answer: 7"
+      "c": "Final answer: 60"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.868623
+        0.918969
       ],
       [
         0,
         2,
-        0.131377
+        0.081031
       ],
       [
         2,
         3,
-        0.675759
+        0.636771
       ],
       [
         1,
         3,
-        0.262373
+        0.322589
       ],
       [
         0,
         3,
-        0.061868
+        0.04064
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 1,
+    "who": "analyst",
     "path": [
+      1,
       2,
       3
     ]

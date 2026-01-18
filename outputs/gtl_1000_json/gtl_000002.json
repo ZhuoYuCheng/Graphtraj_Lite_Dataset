@@ -1,13 +1,13 @@
 {
   "id": "gtl_000002",
   "task": {
-    "prompt": "The side of a triangle are 2, 2, and $\\sqrt{6} - \\sqrt{2}.$  Enter the angles of the triangle in degrees, separated by commas.",
-    "gold": "75^\\circ, 75^\\circ"
+    "prompt": "Simplify\n\\[\\tan x + 2 \\tan 2x + 4 \\tan 4x + 8 \\cot 8x.\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos 2x$\" or \"$\\sin (x^3)$\".",
+    "gold": "\\cot x"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: The side of a triangle are 2, 2, and $\\sqrt{6} - \\sqrt{2}.$  Enter the angles of the triangle in degrees, separated by commas."
+      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\tan x + 2 \\tan 2x + 4 \\tan 4x + 8 \\cot 8x.\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos 2x$\" or \"$\\sin (x^3)$\"."
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 75^\\circ, 75^\\circ"
+      "c": "Final answer: \\cot x"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.793564
+        0.850209
       ],
       [
         0,
         2,
-        0.206436
+        0.149791
       ],
       [
         2,
         3,
-        0.596888
+        0.633751
       ],
       [
         1,
         3,
-        0.288647
+        0.279281
       ],
       [
         0,
         3,
-        0.114465
+        0.086968
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

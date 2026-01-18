@@ -1,25 +1,25 @@
 {
   "id": "gtl_000715",
   "task": {
-    "prompt": "Write a python function to find the sum of squares of binomial co-efficients.",
-    "gold": "def factorial(start,end): \r\n    res = 1 \r\n    for i in range(start,end + 1): \r\n        res *= i      \r\n    return res \r\ndef sum_of_square(n): \r\n   return int(factorial(n + 1, 2 * n)  /factorial(1, n))"
+    "prompt": "Evaluate\n\\[\\begin{vmatrix} 0 & \\sin \\alpha & -\\cos \\alpha \\\\ -\\sin \\alpha & 0 & \\sin \\beta \\\\ \\cos \\alpha & -\\sin \\beta & 0 \\end{vmatrix}.\\]",
+    "gold": "0"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a python function to find the sum of squares of binomial co-efficients."
+      "c": "Plan: identify requirements from task. Task: Evaluate\n\\[\\begin{vmatrix} 0 & \\sin \\alpha & -\\cos \\alpha \\\\ -\\sin \\alpha & 0 & \\sin \\beta \\\\ \\cos \\alpha & -\\sin \\beta & 0 \\end{vmatrix}.\\]"
     },
     {
       "r": "analyst",
-      "c": "[omitted]"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "[omitted]"
     },
     {
       "r": "reviewer",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.751042
+        0.869981
       ],
       [
         0,
         2,
-        0.248958
+        0.130019
       ],
       [
         2,
         3,
-        0.513825
+        0.660952
       ],
       [
         1,
         3,
-        0.317607
+        0.276101
       ],
       [
         0,
         3,
-        0.168568
+        0.062947
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 2,
+    "who": "writer",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,16 +83,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert sum_of_square(4) == 70",
-      "assert sum_of_square(5) == 252",
-      "assert sum_of_square(2) == 6"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

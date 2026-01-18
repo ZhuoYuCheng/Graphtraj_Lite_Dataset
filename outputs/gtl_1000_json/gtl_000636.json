@@ -1,13 +1,13 @@
 {
   "id": "gtl_000636",
   "task": {
-    "prompt": "For some constants $a$ and $c,$\n\\[\\begin{pmatrix} a \\\\ -1 \\\\ c \\end{pmatrix} \\times \\begin{pmatrix} 7 \\\\ 3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -11 \\\\ -16 \\\\ 25 \\end{pmatrix}.\\]Enter the ordered pair $(a,c).$",
-    "gold": "(6,2)"
+    "prompt": "The function\n\\[f(z) = \\frac{(-1 + i \\sqrt{3}) z + (-2 \\sqrt{3} - 18i)}{2}\\]represents a rotation around some complex number $c$.  Find $c$.",
+    "gold": "\\sqrt{3"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: For some constants $a$ and $c,$\n\\[\\begin{pmatrix} a \\\\ -1 \\\\ c \\end{pmatrix} \\times \\begin{pmatrix} 7 \\\\ 3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -11 \\\\ -16 \\\\ 25 \\end{pmatrix}.\\]Enter the ordered pair $(a,c).$"
+      "c": "Plan: identify requirements from task. Task: The function\n\\[f(z) = \\frac{(-1 + i \\sqrt{3}) z + (-2 \\sqrt{3} - 18i)}{2}\\]represents a rotation around some complex number $c$.  Find $c$."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: (6,2)"
+      "c": "Final answer: \\sqrt{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.850822
+        0.792214
       ],
       [
         0,
         2,
-        0.149178
+        0.207786
       ],
       [
         2,
         3,
-        0.673423
+        0.610656
       ],
       [
         1,
         3,
-        0.259113
+        0.266607
       ],
       [
         0,
         3,
-        0.067464
+        0.122737
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

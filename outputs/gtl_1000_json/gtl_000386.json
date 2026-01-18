@@ -1,25 +1,25 @@
 {
   "id": "gtl_000386",
   "task": {
-    "prompt": "A football club has a balance of $100 million. The club then sells 2 of its players at $10 million each, and buys 4 more at $15 million each. How much money is left in the club register in millions of dollars?",
-    "gold": "60"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A football club has a balance of $100 million. The club then sells 2 of its players at $10 million each, and buys 4 more at $15 million each. How much money is left in the club register in millions of dollars?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
+      "c": "Collect key facts and constraints needed to answer.\nTool result: corrupted output"
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 61"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.794361
+        0.608778
       ],
       [
         0,
         2,
-        0.205639
+        0.391222
       ],
       [
         2,
         3,
-        0.614563
+        0.382469
+      ],
+      [
+        0,
+        3,
+        0.3186
       ],
       [
         1,
         3,
-        0.278698
-      ],
-      [
-        0,
-        3,
-        0.106738
+        0.298931
       ]
     ],
     "cfg": {
@@ -71,7 +71,6 @@
     "who": "critic",
     "path": [
       1,
-      2,
       3
     ]
   },
@@ -84,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000234",
   "task": {
-    "prompt": "Simplify $(1 + \\tan 20^\\circ)(1 + \\tan 25^\\circ).$",
-    "gold": "2"
+    "prompt": "Given $\\|\\mathbf{v}\\| = 4,$ find $\\|-3 \\mathbf{v}\\|.$",
+    "gold": "12"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "[omitted]"
+      "c": "Plan: identify requirements from task. Task: Given $\\|\\mathbf{v}\\| = 4,$ find $\\|-3 \\mathbf{v}\\|.$\nTool result: corrupted output"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 3"
+      "c": "Final answer: 13"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.56366
+        0.721021
       ],
       [
         0,
         2,
-        0.43634
+        0.278979
       ],
       [
         2,
         3,
-        0.528913
-      ],
-      [
-        0,
-        3,
-        0.24903
+        0.518913
       ],
       [
         1,
         3,
-        0.222056
+        0.336989
+      ],
+      [
+        0,
+        3,
+        0.144099
       ]
     ],
     "cfg": {
@@ -85,7 +85,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

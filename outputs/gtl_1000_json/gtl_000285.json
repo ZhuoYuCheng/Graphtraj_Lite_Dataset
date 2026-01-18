@@ -1,25 +1,25 @@
 {
   "id": "gtl_000285",
   "task": {
-    "prompt": "Annie is trying to figure out whether it's safe to drive her truck. For every 3 degrees the temperature drops below 32 degrees, Annie's chances of skidding on ice increase 5%. If she goes into a skid, she has a 40% of regaining control. Otherwise, she'll have a serious accident. If the temperature is 8 degrees, what is the percentage chance of Annie getting into a serious accident if she drives?",
-    "gold": "24"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Annie is trying to figure out whether it's safe to drive her truck. For every 3 degrees the temperature drops below 32 degrees, Annie's chances of skidding on ice increase 5%. If she goes into a skid, she has a 40% of regaining control. Otherwise, she'll have a serious accident. If the temperature is 8 degrees, what is the percentage chance of Annie getting into a serious accident if she drives?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 24"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.878698
+        0.592648
       ],
       [
         0,
         2,
-        0.121302
+        0.407352
       ],
       [
         2,
         3,
-        0.650075
+        0.42481
       ],
       [
         1,
         3,
-        0.296505
+        0.287602
       ],
       [
         0,
         3,
-        0.05342
+        0.287588
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

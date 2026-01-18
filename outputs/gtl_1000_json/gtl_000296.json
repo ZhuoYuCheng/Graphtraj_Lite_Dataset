@@ -1,25 +1,25 @@
 {
   "id": "gtl_000296",
   "task": {
-    "prompt": "Brenda raises mice, and her adult mice recently had three litters of 8 each. She gave a sixth of the baby mice to her friend Robbie to keep as pets. She sold three times the number of babies she gave Robbie to a pet store. Half of the remaining mice were sold to snake owners as feeder mice. How many baby mice did Brenda have left?",
-    "gold": "4"
+    "prompt": "To raise funds for her local soup kitchen, Didi enlisted the help of her family, friends, and neighbors. They donated 10 same-size cakes that she sliced into 8 slices per cake and started selling a slice for $1. A local business owner was so impressed by Didi's efforts that she offered to donate 50 cents for each slice Didi sold. A second business owner also offered to donate a quarter for each slice sold. If Didi sold all the slices, how much money did she raise?",
+    "gold": "140"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Brenda raises mice, and her adult mice recently had three litters of 8 each. She gave a sixth of the baby mice to her friend Robbie to keep as pets. She sold three times the number of babies she gave Robbie to a pet store. Half of the remaining mice were sold to snake owners as feeder mice. How many baby mice did Brenda have left?"
+      "c": "Plan: identify requirements from task. Task: To raise funds for her local soup kitchen, Didi enlisted the help of her family, friends, and neighbors. They donated 10 same-size cakes that she sliced into 8 slices per cake and started selling a slice for $1. A local business owner was so impressed by Didi's efforts that she offered to donate 50 cents for each slice Didi sold. A second business owner also offered to donate a quarter for each slice sold. If Didi sold all the slices, how much money did she raise?"
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 5"
+      "c": "Final answer: 141"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.862051
+        0.888566
       ],
       [
         0,
         2,
-        0.137949
+        0.111434
       ],
       [
         2,
         3,
-        0.620966
+        0.687352
       ],
       [
         1,
         3,
-        0.30953
+        0.266509
       ],
       [
         0,
         3,
-        0.069505
+        0.04614
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "tool",
+    "when": 1,
+    "who": "executor",
     "path": [
+      1,
       2,
       3
     ]

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000392",
   "task": {
-    "prompt": "Find the matrix that corresponds to rotating about the origin by an angle of $120^\\circ$ counter-clockwise.",
-    "gold": "\\begin{pmatrix"
+    "prompt": "For a constant $c,$ in spherical coordinates $(\\rho,\\theta,\\phi),$ find the shape described by the equation\n\\[\\phi = c.\\](A) Line\n(B) Circle\n(C) Plane\n(D) Sphere\n(E) Cylinder\n(F) Cone\n\nEnter the letter of the correct option.",
+    "gold": "\\text{(F)"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Find the matrix that corresponds to rotating about the origin by an angle of $120^\\circ$ counter-clockwise."
+      "c": "Plan: identify requirements from task. Task: For a constant $c,$ in spherical coordinates $(\\rho,\\theta,\\phi),$ find the shape described by the equation\n\\[\\phi = c.\\](A) Line\n(B) Circle\n(C) Plane\n(D) Sphere\n(E) Cylinder\n(F) Cone\n\nEnter the letter of the correct option."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: \\text{(F)"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.71757
+        0.82695
       ],
       [
         0,
         2,
-        0.28243
+        0.17305
       ],
       [
         2,
         3,
-        0.579658
+        0.663143
       ],
       [
         1,
         3,
-        0.276921
+        0.252394
       ],
       [
         0,
         3,
-        0.143421
+        0.084463
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

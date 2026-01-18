@@ -1,13 +1,13 @@
 {
   "id": "gtl_000381",
   "task": {
-    "prompt": "Find all real numbers $k$ for which there exists a nonzero, 2-dimensional vector $\\mathbf{v}$ such that\n\\[\\begin{pmatrix} 1 & 8 \\\\ 2 & 1 \\end{pmatrix} \\mathbf{v} = k \\mathbf{v}.\\]Enter all the solutions, separated by commas.",
-    "gold": "-3"
+    "prompt": "James decides he needs to start eating more vegetables.  He starts by eating a quarter pound of asparagus and a quarter pound of broccoli per day.  After 2 weeks, he doubles that amount and adds 3 pounds of kale per week.  How many pounds of vegetables does he eat a week after adding the kale?",
+    "gold": "10"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Find all real numbers $k$ for which there exists a nonzero, 2-dimensional vector $\\mathbf{v}$ such that\n\\[\\begin{pmatrix} 1 & 8 \\\\ 2 & 1 \\end{pmatrix} \\mathbf{v} = k \\mathbf{v}.\\]Enter all the solutions, separated by commas."
+      "c": "Plan: identify requirements from task. Task: James decides he needs to start eating more vegetables.  He starts by eating a quarter pound of asparagus and a quarter pound of broccoli per day.  After 2 weeks, he doubles that amount and adds 3 pounds of kale per week.  How many pounds of vegetables does he eat a week after adding the kale?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: -3"
+      "c": "Final answer: 10"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.830603
+        0.824616
       ],
       [
         0,
         2,
-        0.169397
+        0.175384
       ],
       [
         2,
         3,
-        0.654239
+        0.628561
       ],
       [
         1,
         3,
-        0.267822
+        0.284715
       ],
       [
         0,
         3,
-        0.077939
+        0.086724
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

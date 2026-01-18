@@ -1,13 +1,13 @@
 {
   "id": "gtl_000563",
   "task": {
-    "prompt": "The distance between two vectors is the magnitude of their difference.  Find the value of $t$ for which the vector\n\\[\\bold{v} = \\begin{pmatrix} 2 \\\\ -3 \\\\ -3 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ 5 \\\\ -1 \\end{pmatrix}\\]is closest to\n\\[\\bold{a} = \\begin{pmatrix} 4 \\\\ 4 \\\\ 5 \\end{pmatrix}.\\]",
-    "gold": "\\frac{41"
+    "prompt": "Maddy was given 40 chocolate eggs for Easter. She likes to eat two each day after school. If Maddy has two chocolate eggs after school each day, how many weeks will they last?",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: The distance between two vectors is the magnitude of their difference.  Find the value of $t$ for which the vector\n\\[\\bold{v} = \\begin{pmatrix} 2 \\\\ -3 \\\\ -3 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ 5 \\\\ -1 \\end{pmatrix}\\]is closest to\n\\[\\bold{a} = \\begin{pmatrix} 4 \\\\ 4 \\\\ 5 \\end{pmatrix}.\\]"
+      "c": "Plan: identify requirements from task. Task: Maddy was given 40 chocolate eggs for Easter. She likes to eat two each day after school. If Maddy has two chocolate eggs after school each day, how many weeks will they last?"
     },
     {
       "r": "critic",
@@ -15,11 +15,11 @@
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic"
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 42"
+      "c": "Final answer: 5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.877724
+        0.789125
       ],
       [
         0,
         2,
-        0.122276
+        0.210875
       ],
       [
         2,
         3,
-        0.737391
+        0.593369
       ],
       [
         1,
         3,
-        0.216323
+        0.286154
       ],
       [
         0,
         3,
-        0.046286
+        0.120477
       ]
     ],
     "cfg": {
@@ -83,9 +83,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": false,

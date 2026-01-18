@@ -1,13 +1,13 @@
 {
   "id": "gtl_000307",
   "task": {
-    "prompt": "Freddie and his team are collecting blankets for three days to be donated to the Children Shelter Organization. There are 15 people on the team. On the first day, each of them gave 2 blankets. On the second day, they tripled the number they collected on the first day by asking door-to-door. On the last day, they set up boxes at schools and got a total of 22 blankets. How many blankets did they collect for the three days for donation?",
-    "gold": "142"
+    "prompt": "Ruby was going to order pizza for dinner.  Her son would only eat pepperoni pizza.  Her daughter would only eat sausage.  Ruby and her husband wanted black olive and mushroom pizza.  To make life easy, Ruby decided to order an entire pizza for each of her children and she would split one with her husband.  The pizza restaurant charged $10.00 per pizza and $1.00 per topping.  She also needed to add a $5.00 tip.  Including tip, how much would the pizza order cost?",
+    "gold": "39"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Freddie and his team are collecting blankets for three days to be donated to the Children Shelter Organization. There are 15 people on the team. On the first day, each of them gave 2 blankets. On the second day, they tripled the number they collected on the first day by asking door-to-door. On the last day, they set up boxes at schools and got a total of 22 blankets. How many blankets did they collect for the three days for donation?"
+      "c": "Plan: identify requirements from task. Task: Ruby was going to order pizza for dinner.  Her son would only eat pepperoni pizza.  Her daughter would only eat sausage.  Ruby and her husband wanted black olive and mushroom pizza.  To make life easy, Ruby decided to order an entire pizza for each of her children and she would split one with her husband.  The pizza restaurant charged $10.00 per pizza and $1.00 per topping.  She also needed to add a $5.00 tip.  Including tip, how much would the pizza order cost?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 142"
+      "c": "Final answer: 39"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.879995
+        0.898202
       ],
       [
         0,
         2,
-        0.120005
+        0.101798
       ],
       [
         2,
         3,
-        0.640362
+        0.673999
       ],
       [
         1,
         3,
-        0.30259
+        0.284221
       ],
       [
         0,
         3,
-        0.057048
+        0.041779
       ]
     ],
     "cfg": {

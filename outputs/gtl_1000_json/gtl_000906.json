@@ -1,25 +1,25 @@
 {
   "id": "gtl_000906",
   "task": {
-    "prompt": "Derrick measures the length of his yard. The length of Alex's yard is half the size of Derrick's and the length of Brianne's yard is 6 times the size of Alex's. If Brianne's yard is 30 yards long, how long is Derrick's yard, in yards?",
-    "gold": "10"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Derrick measures the length of his yard. The length of Alex's yard is half the size of Derrick's and the length of Brianne's yard is 6 times the size of Alex's. If Brianne's yard is 30 yards long, how long is Derrick's yard, in yards?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer. (incorrect)"
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 11"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.856758
+        0.624061
       ],
       [
         0,
         2,
-        0.143242
+        0.375939
       ],
       [
         2,
         3,
-        0.609486
+        0.458637
       ],
       [
         1,
         3,
-        0.315946
+        0.277583
       ],
       [
         0,
         3,
-        0.074568
+        0.26378
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 1,
+    "who": "analyst",
     "path": [
+      1,
       2,
       3
     ]
@@ -83,11 +84,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

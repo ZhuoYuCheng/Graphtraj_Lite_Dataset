@@ -1,25 +1,25 @@
 {
   "id": "gtl_000446",
   "task": {
-    "prompt": "While practising for his upcoming math exams, Hayes realised that the area of a circle he had just solved was equal to the perimeter of a square he had solved in the previous problem. If the area of the circle was 100, what's the length of one side of the square?",
-    "gold": "25"
+    "prompt": "On Monday, while at work on the farm, Jeremy picks 100 oranges. On Tuesday, together with his brother, they pick thrice as much. On Wednesday he feels tired and is only able to pick 70 oranges. What's the total number of oranges they have?",
+    "gold": "470"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: While practising for his upcoming math exams, Hayes realised that the area of a circle he had just solved was equal to the perimeter of a square he had solved in the previous problem. If the area of the circle was 100, what's the length of one side of the square?"
+      "c": "Plan: identify requirements from task. Task: On Monday, while at work on the farm, Jeremy picks 100 oranges. On Tuesday, together with his brother, they pick thrice as much. On Wednesday he feels tired and is only able to pick 70 oranges. What's the total number of oranges they have?"
     },
     {
       "r": "critic",
-      "c": "Work through the math carefull"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 26"
+      "c": "Final answer: 471"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.813089
+        0.815196
       ],
       [
         0,
         2,
-        0.186911
+        0.184804
       ],
       [
         2,
         3,
-        0.581489
+        0.617445
       ],
       [
         1,
         3,
-        0.319997
+        0.279878
       ],
       [
         0,
         3,
-        0.098515
+        0.102678
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "critic",
+    "when": 2,
+    "who": "assistant",
     "path": [
-      1,
       2,
       3
     ]

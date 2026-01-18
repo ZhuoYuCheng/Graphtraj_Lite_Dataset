@@ -1,25 +1,25 @@
 {
   "id": "gtl_000019",
   "task": {
-    "prompt": "Write a function to check for a number at the end of a string.",
-    "gold": "import re\r\ndef end_num(string):\r\n    text = re.compile(r\".*[0-9]$\")\r\n    if text.match(string):\r\n        return True\r\n    else:\r\n        return False"
+    "prompt": "Compute\n\\[\n\\begin{vmatrix} \\cos 1 & \\cos 2 & \\cos 3 \\\\ \\cos 4 & \\cos 5 & \\cos 6 \\\\ \\cos 7 & \\cos 8 & \\cos 9 \\end{vmatrix}\n.\\]All the angles are in radians.",
+    "gold": "0"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a function to check for a number at the end of a string."
+      "c": "Plan: identify requirements from task. Task: Compute\n\\[\n\\begin{vmatrix} \\cos 1 & \\cos 2 & \\cos 3 \\\\ \\cos 4 & \\cos 5 & \\cos 6 \\\\ \\cos 7 & \\cos 8 & \\cos 9 \\end{vmatrix}\n.\\]All the angles are in radians."
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nimport re\r\ndef end_num(string):\r\n    text = re.compile(r\".*[0-9]$\")\r\n    if text.match(string):\r\n        return True\r\n    else:\r\n        return False"
+      "c": "Final answer: 0"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.731005
+        0.852796
       ],
       [
         0,
         2,
-        0.268995
+        0.147204
       ],
       [
         2,
         3,
-        0.462037
+        0.646402
       ],
       [
         1,
         3,
-        0.330439
+        0.284625
       ],
       [
         0,
         3,
-        0.207524
+        0.068973
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert end_num('abcdef')==False",
-      "assert end_num('abcdef7')==True",
-      "assert end_num('abc')==False"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

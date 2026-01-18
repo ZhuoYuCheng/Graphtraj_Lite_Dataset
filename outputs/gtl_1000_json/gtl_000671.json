@@ -1,13 +1,13 @@
 {
   "id": "gtl_000671",
   "task": {
-    "prompt": "Jim buys a wedding ring for $10,000.  He gets his wife a ring that is twice that much and sells the first one for half its value.  How much is he out of pocket?",
-    "gold": "25000"
+    "prompt": "Hallie borrows a book from the library. She reads the entire book in four days. She read 63 pages the first day. On the second day, she read twice the number of pages that she'd read on day one. On the third day, she read 10 mores pages than she read on day two. If the book is 354 pages long, how many pages did she read on the fourth day?",
+    "gold": "29"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Jim buys a wedding ring for $10,000.  He gets his wife a ring that is twice that much and sells the first one for half its value.  How much is he out of pocket?"
+      "c": "Plan: identify requirements from task. Task: Hallie borrows a book from the library. She reads the entire book in four days. She read 63 pages the first day. On the second day, she read twice the number of pages that she'd read on day one. On the third day, she read 10 mores pages than she read on day two. If the book is 354 pages long, how many pages did she read on the fourth day?\nTool result: corrupted output"
     },
     {
       "r": "analyst",
@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 25001"
+      "c": "Final answer: 30"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.811823
+        0.851571
       ],
       [
         0,
         2,
-        0.188177
+        0.148429
       ],
       [
         2,
         3,
-        0.596616
+        0.574782
       ],
       [
         1,
         3,
-        0.304187
+        0.347407
       ],
       [
         0,
         3,
-        0.099197
+        0.077811
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
+      1,
       2,
       3
     ]

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000969",
   "task": {
-    "prompt": "Simplify $\\cot 10 + \\tan 5.$\n\nEnter your answer as a trigonometric function evaluated at an integer, such as \"sin 7\".",
-    "gold": "\\csc 10"
+    "prompt": "A family went out to see a movie. The regular ticket costs $9 and the ticket for children is $2 less. They gave the cashier two $20 bills and they received a $1 change. How many children are there if there are 2 adults in the family?",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Simplify $\\cot 10 + \\tan 5.$\n\nEnter your answer as a trigonometric function evaluated at an integer, such as \"sin 7\"."
+      "c": "Plan: identify requirements from task. Task: A family went out to see a movie. The regular ticket costs $9 and the ticket for children is $2 less. They gave the cashier two $20 bills and they received a $1 change. How many children are there if there are 2 adults in the family?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\csc 10"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.76686
+        0.841651
       ],
       [
         0,
         2,
-        0.23314
+        0.158349
       ],
       [
         2,
         3,
-        0.606797
+        0.624108
       ],
       [
         1,
         3,
-        0.261007
+        0.295476
       ],
       [
         0,
         3,
-        0.132196
+        0.080417
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

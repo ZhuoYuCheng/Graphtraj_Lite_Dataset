@@ -1,17 +1,17 @@
 {
   "id": "gtl_000779",
   "task": {
-    "prompt": "To raise funds for her local soup kitchen, Didi enlisted the help of her family, friends, and neighbors. They donated 10 same-size cakes that she sliced into 8 slices per cake and started selling a slice for $1. A local business owner was so impressed by Didi's efforts that she offered to donate 50 cents for each slice Didi sold. A second business owner also offered to donate a quarter for each slice sold. If Didi sold all the slices, how much money did she raise?",
-    "gold": "140"
+    "prompt": "Dani brings two and half dozen cupcakes for her 2nd-grade class.  There are 27 students (including Dani), 1 teacher, and 1 teacher\u2019s aid.  If 3 students called in sick that day, how many cupcakes are left after Dani gives one to everyone in the class?",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: To raise funds for her local soup kitchen, Didi enlisted the help of her family, friends, and neighbors. They donated 10 same-size cakes that she sliced into 8 slices per cake and started selling a slice for $1. A local business owner was so impressed by Didi's efforts that she offered to donate 50 cents for each slice Didi sold. A second business owner also offered to donate a quarter for each slice sold. If Didi sold all the slices, how much money did she raise?"
+      "c": "Plan: identify requirements from task. Task: Dani brings two and half dozen cupcakes for her 3nd-grade class.  There are 27 students (including Dani), 1 teacher, and 1 teacher\u2019s aid.  If 3 students called in sick that day, how many cupcakes are left after Dani gives one to everyone in the class?"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefull"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 141"
+      "c": "Final answer: 5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.90492
+        0.847318
       ],
       [
         0,
         2,
-        0.09508
+        0.152682
       ],
       [
         2,
         3,
-        0.65563
+        0.628293
       ],
       [
         1,
         3,
-        0.302102
+        0.292046
       ],
       [
         0,
         3,
-        0.042268
+        0.079662
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
       1,
       2,
       3

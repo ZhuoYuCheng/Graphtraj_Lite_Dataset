@@ -1,13 +1,13 @@
 {
   "id": "gtl_000874",
   "task": {
-    "prompt": "The matrix\n\\[\\begin{pmatrix} a & b \\\\ -\\frac{4}{5} & \\frac{3}{5} \\end{pmatrix}\\]corresponds to a reflection.  Enter the ordered pair $(a,b).$",
-    "gold": "\\left( -\\frac{3"
+    "prompt": "Don can paint 3 tiles a minute, Ken can paint 2 more tiles a minute than Don and Laura can paint twice as many tiles as Ken. Kim can paint 3 fewer tiles than Laura can in a minute. How many tiles can Don, Ken, Laura and Kim paint in 15 minutes?",
+    "gold": "375"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: The matrix\n\\[\\begin{pmatrix} a & b \\\\ -\\frac{4}{5} & \\frac{3}{5} \\end{pmatrix}\\]corresponds to a reflection.  Enter the ordered pair $(a,b).$"
+      "c": "Plan: identify requirements from task. Task: Don can paint 3 tiles a minute, Ken can paint 2 more tiles a minute than Don and Laura can paint twice as many tiles as Ken. Kim can paint 3 fewer tiles than Laura can in a minute. How many tiles can Don, Ken, Laura and Kim paint in 15 minutes?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\left( -\\frac{3"
+      "c": "Final answer: 375"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.840846
+        0.861472
       ],
       [
         0,
         2,
-        0.159154
+        0.138528
       ],
       [
         2,
         3,
-        0.645254
+        0.63049
       ],
       [
         1,
         3,
-        0.261243
+        0.301793
       ],
       [
         0,
         3,
-        0.093503
+        0.067717
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

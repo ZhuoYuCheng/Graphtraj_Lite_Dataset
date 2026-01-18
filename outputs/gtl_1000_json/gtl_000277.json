@@ -1,13 +1,13 @@
 {
   "id": "gtl_000277",
   "task": {
-    "prompt": "Line $L$ is the intersection of the planes $x + 2y + 3z = 2$ and $x - y + z = 3.$  A plane $P,$ different from both these planes, contains line $L,$ and has a distance of $\\frac{2}{\\sqrt{3}}$ from the point $(3,1,-1).$  Find the equation of plane $P.$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
-    "gold": "5x - 11y + z - 17 = 0"
+    "prompt": "Each bank teller has 10 rolls of coins. Each roll has 25 coins. How many coins do four bank tellers have in all?",
+    "gold": "1000"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Line $L$ is the intersection of the planes $x + 2y + 3z = 2$ and $x - y + z = 3.$  A plane $P,$ different from both these planes, contains line $L,$ and has a distance of $\\frac{2}{\\sqrt{3}}$ from the point $(3,1,-1).$  Find the equation of plane $P.$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$"
+      "c": "Plan: identify requirements from task. Task: Each bank teller has 10 rolls of coins. Each roll has 25 coins. How many coins do four bank tellers have in all?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 5x - 11y + z - 17 = 0"
+      "c": "Final answer: 1000"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.910422
+        0.775394
       ],
       [
         0,
         2,
-        0.089578
+        0.224606
       ],
       [
         2,
         3,
-        0.702005
+        0.587213
       ],
       [
         1,
         3,
-        0.250213
+        0.294236
       ],
       [
         0,
         3,
-        0.047782
+        0.11855
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": true,

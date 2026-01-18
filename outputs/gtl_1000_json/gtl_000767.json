@@ -1,25 +1,25 @@
 {
   "id": "gtl_000767",
   "task": {
-    "prompt": "There is a playground that is surrounded by a square fence that has a side length of 27 yards. There is a 12 yard by 9 yard garden that has fencing around it. How many yards of fencing do the playground and garden have together?",
-    "gold": "150"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: There is a playground that is surrounded by a square fence that has a side length of 27 yards. There is a 12 yard by 9 yard garden that has fencing around it. How many yards of fencing do the playground and garden have together?\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "[omitted]"
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 151"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.811226
+        0.587153
       ],
       [
         0,
         2,
-        0.188774
+        0.412847
       ],
       [
         2,
         3,
-        0.553101
+        0.419038
+      ],
+      [
+        0,
+        3,
+        0.291833
       ],
       [
         1,
         3,
-        0.344474
-      ],
-      [
-        0,
-        3,
-        0.102425
+        0.28913
       ]
     ],
     "cfg": {
@@ -67,12 +67,10 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "researcher",
+    "when": 1,
+    "who": "analyst",
     "path": [
-      0,
       1,
-      2,
       3
     ]
   },
@@ -85,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

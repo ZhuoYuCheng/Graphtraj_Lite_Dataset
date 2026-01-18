@@ -1,13 +1,13 @@
 {
   "id": "gtl_000112",
   "task": {
-    "prompt": "Find the area of the triangle with vertices $(-1,4),$ $(7,0),$ and $(11,5).$",
-    "gold": "28"
+    "prompt": "Compute\n\\[\\left( 1 - \\frac{1}{\\cos 23^\\circ} \\right) \\left( 1 + \\frac{1}{\\sin 67^\\circ} \\right) \\left( 1 - \\frac{1}{\\sin 23^\\circ} \\right) \\left( 1 + \\frac{1}{\\cos 67^\\circ} \\right).\\]",
+    "gold": "1"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Find the area of the triangle with vertices $(-1,4),$ $(7,0),$ and $(11,5).$"
+      "c": "Plan: identify requirements from task. Task: Compute\n\\[\\left( 1 - \\frac{1}{\\cos 23^\\circ} \\right) \\left( 1 + \\frac{1}{\\sin 67^\\circ} \\right) \\left( 1 - \\frac{1}{\\sin 23^\\circ} \\right) \\left( 1 + \\frac{1}{\\cos 67^\\circ} \\right).\\]"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 28"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.746433
+        0.865382
       ],
       [
         0,
         2,
-        0.253567
+        0.134618
       ],
       [
         2,
         3,
-        0.627247
+        0.684264
       ],
       [
         1,
         3,
-        0.256421
+        0.260399
       ],
       [
         0,
         3,
-        0.116332
+        0.055337
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

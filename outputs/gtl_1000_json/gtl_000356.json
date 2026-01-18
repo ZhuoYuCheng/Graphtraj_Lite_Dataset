@@ -1,13 +1,13 @@
 {
   "id": "gtl_000356",
   "task": {
-    "prompt": "A plane is expressed parametrically by\n\\[\\mathbf{v} = \\begin{pmatrix} 1 + s - t \\\\ 2 - s \\\\ 3 - 2s + 2t \\end{pmatrix}.\\]Find the equation of the plane.  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
-    "gold": "2x + z - 5 = 0"
+    "prompt": "Simplify\n\\[\\frac{\\sin{10^\\circ}+\\sin{20^\\circ}}{\\cos{10^\\circ}+\\cos{20^\\circ}}.\\]Enter your answer is a trigonometric function evaluated at an integer, such as \"sin 7\".  (The angle should be positive and as small as possible.)",
+    "gold": "\\tan 15^\\circ"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A plane is expressed parametrically by\n\\[\\mathbf{v} = \\begin{pmatrix} 1 + s - t \\\\ 2 - s \\\\ 3 - 2s + 2t \\end{pmatrix}.\\]Find the equation of the plane.  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$"
+      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\frac{\\sin{10^\\circ}+\\sin{20^\\circ}}{\\cos{10^\\circ}+\\cos{20^\\circ}}.\\]Enter your answer is a trigonometric function evaluated at an integer, such as \"sin 7\".  (The angle should be positive and as small as possible.)"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 2x + z - 5 = 0"
+      "c": "Final answer: \\tan 15^\\circ"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.876067
+        0.840585
       ],
       [
         0,
         2,
-        0.123933
+        0.159415
       ],
       [
         2,
         3,
-        0.694021
+        0.646179
       ],
       [
         1,
         3,
-        0.244387
+        0.26494
       ],
       [
         0,
         3,
-        0.061592
+        0.088881
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000591",
   "task": {
-    "prompt": "If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are vectors such that $\\|\\mathbf{a}\\| = \\|\\mathbf{b}\\| = 1,$ $\\|\\mathbf{a} + \\mathbf{b}\\| = \\sqrt{3},$ and\n\\[\\mathbf{c} - \\mathbf{a} - 2 \\mathbf{b} = 3 (\\mathbf{a} \\times \\mathbf{b}),\\]then find $\\mathbf{b} \\cdot \\mathbf{c}.$",
-    "gold": "\\frac{5"
+    "prompt": "Terese thinks that running various distances throughout the week can make one healthy.  On Monday, she runs 4.2 miles;  Tuesday, 3.8 miles; Wednesday, 3.6 miles; and on Thursday, 4.4 miles.  Determine the average distance Terese runs on each of the days she runs.",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are vectors such that $\\|\\mathbf{a}\\| = \\|\\mathbf{b}\\| = 1,$ $\\|\\mathbf{a} + \\mathbf{b}\\| = \\sqrt{3},$ and\n\\[\\mathbf{c} - \\mathbf{a} - 2 \\mathbf{b} = 3 (\\mathbf{a} \\times \\mathbf{b}),\\]then find $\\mathbf{b} \\cdot \\mathbf{c}.$"
+      "c": "Plan: identify requirements from task. Task: Terese thinks that running various distances throughout the week can make one healthy.  On Monday, she runs 4.2 miles;  Tuesday, 3.8 miles; Wednesday, 3.6 miles; and on Thursday, 4.4 miles.  Determine the average distance Terese runs on each of the days she runs."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{5"
+      "c": "Final answer: 4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.89967
+        0.834872
       ],
       [
         0,
         2,
-        0.10033
+        0.165128
       ],
       [
         2,
         3,
-        0.682816
+        0.620904
       ],
       [
         1,
         3,
-        0.274226
+        0.294448
       ],
       [
         0,
         3,
-        0.042958
+        0.084649
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

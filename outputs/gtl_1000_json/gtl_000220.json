@@ -1,25 +1,25 @@
 {
   "id": "gtl_000220",
   "task": {
-    "prompt": "Write a python function to multiply all items in the list.",
-    "gold": "def multiply_list(items):\r\n    tot = 1\r\n    for x in items:\r\n        tot *= x\r\n    return tot"
+    "prompt": "Simplify $(1 + \\tan 20^\\circ)(1 + \\tan 25^\\circ).$",
+    "gold": "2"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python function to multiply all items in the list."
+      "c": "Plan: identify requirements from task. Task: Simplify $(1 + \\tan 20^\\circ)(1 + \\tan 25^\\circ).$"
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef multiply_list(items):\r\n    tot = 1\r\n    for x in items:\r\n        tot *= x\r\n    return tot"
+      "c": "Final answer: 2"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.687639
+        0.70083
       ],
       [
         0,
         2,
-        0.312361
+        0.29917
       ],
       [
         2,
         3,
-        0.472643
+        0.614997
       ],
       [
         1,
         3,
-        0.286468
+        0.246084
       ],
       [
         0,
         3,
-        0.240889
+        0.13892
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert multiply_list([1,-2,3]) == -6",
-      "assert multiply_list([1,2,3,4]) == 24",
-      "assert multiply_list([3,1,2,3]) == 18"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

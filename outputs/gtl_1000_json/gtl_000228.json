@@ -1,25 +1,25 @@
 {
   "id": "gtl_000228",
   "task": {
-    "prompt": "Julio receives a $1 commission for every customer that buys in Edgars Fashion Store. The store sells to 35 customers in the first week, twice as many in the second week, and triple as many as the first week in the third week. If he receives a salary of $500 for the 3 weeks and a bonus of $50, how much in total does he earn for the 3 weeks?",
-    "gold": "760"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Julio receives a $1 commission for every customer that buys in Edgars Fashion Store. The store sells to 35 customers in the first week, twice as many in the second week, and triple as many as the first week in the third week. If he receives a salary of $500 for the 3 weeks and a bonus of $50, how much in total does he earn for the 3 weeks?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup. (incorrect)"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 761"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.840945
+        0.587814
       ],
       [
         0,
         2,
-        0.159055
+        0.412186
       ],
       [
         2,
         3,
-        0.659521
+        0.426422
       ],
       [
         1,
         3,
-        0.267241
+        0.287648
       ],
       [
         0,
         3,
-        0.073238
+        0.28593
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "executor",
+    "when": 2,
+    "who": "tool",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "smolagents",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

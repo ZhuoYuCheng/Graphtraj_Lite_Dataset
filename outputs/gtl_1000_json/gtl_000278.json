@@ -1,13 +1,13 @@
 {
   "id": "gtl_000278",
   "task": {
-    "prompt": "Robert had 25 balls. Tim gave him half of his 40 balls. How many balls does Robert have now?",
-    "gold": "45"
+    "prompt": "Dakota and Ben order eggs for $3, pancakes for $2, and 2 mugs of cocoa for $2 each. The tax is $1. Later, Ben then decides to order 1 more batch of pancakes and 1 more mug of cocoa as he is still hungry. How much change should they get from $15?",
+    "gold": "1"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Robert had 25 balls. Tim gave him half of his 40 balls. How many balls does Robert have now?"
+      "c": "Plan: identify requirements from task. Task: Dakota and Ben order eggs for $3, pancakes for $2, and 2 mugs of cocoa for $2 each. The tax is $1. Later, Ben then decides to order 1 more batch of pancakes and 1 more mug of cocoa as he is still hungry. How much change should they get from $15?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 45"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.746031
+        0.836639
       ],
       [
         0,
         2,
-        0.253969
+        0.163361
       ],
       [
         2,
         3,
-        0.577237
+        0.618614
       ],
       [
         1,
         3,
-        0.290833
+        0.297985
       ],
       [
         0,
         3,
-        0.13193
+        0.083401
       ]
     ],
     "cfg": {

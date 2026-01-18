@@ -1,13 +1,13 @@
 {
   "id": "gtl_000693",
   "task": {
-    "prompt": "Compute $\\arcsin (-1).$  Express your answer in radians.",
-    "gold": "-\\frac{\\pi"
+    "prompt": "Hannah wants to save $80 for five weeks. In the first week, she saved $4 and she plans to save twice as much as her savings as the previous week. How much will she save in the fifth week to reach her goal?",
+    "gold": "20"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Compute $\\arcsin (-1).$  Express your answer in radians."
+      "c": "Plan: identify requirements from task. Task: Hannah wants to save $80 for five weeks. In the first week, she saved $4 and she plans to save twice as much as her savings as the previous week. How much will she save in the fifth week to reach her goal?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: -\\frac{\\pi"
+      "c": "Final answer: 20"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.690127
+        0.829309
       ],
       [
         0,
         2,
-        0.309873
+        0.170691
       ],
       [
         2,
         3,
-        0.589646
+        0.628384
       ],
       [
         1,
         3,
-        0.247306
+        0.287778
       ],
       [
         0,
         3,
-        0.163049
+        0.083838
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

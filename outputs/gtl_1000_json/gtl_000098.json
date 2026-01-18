@@ -1,13 +1,13 @@
 {
   "id": "gtl_000098",
   "task": {
-    "prompt": "On a farm, there are 2 cows, 3 pigs, and 6 goats. The farmer planned on adding 3 cows, 5 pigs, and 2 goats. How many animals will there be on the farm?",
-    "gold": "21"
+    "prompt": "Fred had 236 dollars to spend on 6 books. After buying them, he had 14 dollars. On average, how much did each book cost?",
+    "gold": "37"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: On a farm, there are 2 cows, 3 pigs, and 6 goats. The farmer planned on adding 3 cows, 5 pigs, and 2 goats. How many animals will there be on the farm?"
+      "c": "Plan: identify requirements from task. Task: Fred had 236 dollars to spend on 6 books. After buying them, he had 14 dollars. On average, how much did each book cost?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 21"
+      "c": "Final answer: 37"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.821193
+        0.765962
       ],
       [
         0,
         2,
-        0.178807
+        0.234038
       ],
       [
         2,
         3,
-        0.604706
+        0.577606
       ],
       [
         1,
         3,
-        0.299917
+        0.295544
       ],
       [
         0,
         3,
-        0.095376
+        0.12685
       ]
     ],
     "cfg": {

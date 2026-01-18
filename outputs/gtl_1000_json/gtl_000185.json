@@ -1,13 +1,13 @@
 {
   "id": "gtl_000185",
   "task": {
-    "prompt": "Find all real numbers $k$ such that\n\\[\\left\\| k \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| = 2 \\sqrt{13}.\\]Enter all the solutions, separated by commas.",
-    "gold": "-1"
+    "prompt": "The matrix\n\\[\\begin{pmatrix} \\frac{4}{29} & -\\frac{10}{29} \\\\ -\\frac{10}{29} & \\frac{25}{29} \\end{pmatrix}\\]corresponds to projecting onto a certain vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}.$  Find $\\frac{y}{x}.$",
+    "gold": "-\\frac{5"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Find all real numbers $k$ such that\n\\[\\left\\| k \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| = 2 \\sqrt{13}.\\]Enter all the solutions, separated by commas."
+      "c": "Plan: identify requirements from task. Task: The matrix\n\\[\\begin{pmatrix} \\frac{4}{29} & -\\frac{10}{29} \\\\ -\\frac{10}{29} & \\frac{25}{29} \\end{pmatrix}\\]corresponds to projecting onto a certain vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}.$  Find $\\frac{y}{x}.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: -1"
+      "c": "Final answer: -\\frac{5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863926
+        0.881015
       ],
       [
         0,
         2,
-        0.136074
+        0.118985
       ],
       [
         2,
         3,
-        0.642801
+        0.66838
       ],
       [
         1,
         3,
-        0.289889
+        0.271217
       ],
       [
         0,
         3,
-        0.067311
+        0.060404
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

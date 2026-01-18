@@ -1,13 +1,13 @@
 {
   "id": "gtl_000196",
   "task": {
-    "prompt": "Simplify\n\\[\\frac{\\sin 10^\\circ + \\sin 20^\\circ + \\sin 30^\\circ + \\sin 40^\\circ + \\sin 50^\\circ + \\sin 60^\\circ + \\sin 70^\\circ + \\sin 80^\\circ}{\\cos 5^\\circ \\cos 10^\\circ \\cos 20^\\circ}.\\]",
-    "gold": "4 \\sqrt{2"
+    "prompt": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be two vectors such that\n\\[\\|\\mathbf{a} + \\mathbf{b}\\| = \\|\\mathbf{b}\\|.\\]Find the angle between the vectors $\\mathbf{a} + 2 \\mathbf{b}$ and $\\mathbf{a},$ in degrees",
+    "gold": "90^\\circ"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\frac{\\sin 10^\\circ + \\sin 20^\\circ + \\sin 30^\\circ + \\sin 40^\\circ + \\sin 50^\\circ + \\sin 60^\\circ + \\sin 70^\\circ + \\sin 80^\\circ}{\\cos 5^\\circ \\cos 10^\\circ \\cos 20^\\circ}.\\]"
+      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{a}$ and $\\mathbf{b}$ be two vectors such that\n\\[\\|\\mathbf{a} + \\mathbf{b}\\| = \\|\\mathbf{b}\\|.\\]Find the angle between the vectors $\\mathbf{a} + 2 \\mathbf{b}$ and $\\mathbf{a},$ in degrees"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 4 \\sqrt{2"
+      "c": "Final answer: 90^\\circ"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.884611
+        0.874753
       ],
       [
         0,
         2,
-        0.115389
+        0.125247
       ],
       [
         2,
         3,
-        0.658469
+        0.672372
       ],
       [
         1,
         3,
-        0.287205
+        0.275505
       ],
       [
         0,
         3,
-        0.054326
+        0.052123
       ]
     ],
     "cfg": {

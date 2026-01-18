@@ -1,25 +1,25 @@
 {
   "id": "gtl_000107",
   "task": {
-    "prompt": "Katy participated in a summer reading program at her local library. She read 8 books in June, twice as many in July and three fewer in August than she did in July. How many books did Katy read during the summer?",
-    "gold": "37"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Katy participated in a summer reading program at her local library. She read 8 books in June, twice as many in July and three fewer in August than she did in July. How many books did Katy read during the summer?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check "
     },
     {
       "r": "assistant",
-      "c": "Final answer: 38"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.857529
+        0.598533
       ],
       [
         0,
         2,
-        0.142471
+        0.401467
       ],
       [
         2,
         3,
-        0.549097
+        0.486582
       ],
       [
         1,
         3,
-        0.351422
+        0.269502
       ],
       [
         0,
         3,
-        0.099481
+        0.243916
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "executor",
+    "when": 2,
+    "who": "tool",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "smolagents",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

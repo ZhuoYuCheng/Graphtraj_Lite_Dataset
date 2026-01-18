@@ -1,13 +1,13 @@
 {
   "id": "gtl_000496",
   "task": {
-    "prompt": "Suppose that the angles of triangle $ABC$ satisfy\n\\[\\cos 3A + \\cos 3B + \\cos 3C = 1.\\]Two sides of the triangle have lengths 10 and 13.  Find the maximum length of the third side.",
-    "gold": "\\sqrt{399"
+    "prompt": "If $\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 5 \\\\ 4 \\\\ -7 \\end{pmatrix},$ then compute $\\mathbf{a} \\times (3 \\mathbf{b}).$",
+    "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Suppose that the angles of triangle $ABC$ satisfy\n\\[\\cos 3A + \\cos 3B + \\cos 3C = 1.\\]Two sides of the triangle have lengths 10 and 13.  Find the maximum length of the third side."
+      "c": "Plan: identify requirements from task. Task: If $\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 5 \\\\ 4 \\\\ -7 \\end{pmatrix},$ then compute $\\mathbf{a} \\times (3 \\mathbf{b}).$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\sqrt{399"
+      "c": "Final answer: \\begin{pmatrix"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.788613
+        0.806511
       ],
       [
         0,
         2,
-        0.211387
+        0.193489
       ],
       [
         2,
         3,
-        0.637079
+        0.616782
       ],
       [
         1,
         3,
-        0.258825
+        0.273697
       ],
       [
         0,
         3,
-        0.104096
+        0.109521
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

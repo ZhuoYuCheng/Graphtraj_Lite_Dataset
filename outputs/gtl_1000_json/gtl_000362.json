@@ -1,25 +1,25 @@
 {
   "id": "gtl_000362",
   "task": {
-    "prompt": "Write a function to abbreviate 'road' as 'rd.' in a given string.",
-    "gold": "import re\r\ndef road_rd(street):\r\n  return (re.sub('Road$', 'Rd.', street))"
+    "prompt": "In a triangle, two of the side lengths are 7 and 8, and the angle between them is $120^\\circ.$  Find the length of the third side.",
+    "gold": "13"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a function to abbreviate 'road' as 'rd.' in a given string."
+      "c": "Plan: identify requirements from task. Task: In a triangle, two of the side lengths are 7 and 8, and the angle between them is $120^\\circ.$  Find the length of the third side."
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nimport re\r\ndef road_rd(street):\r\n  return (re.sub('Road$', 'Rd.', street))"
+      "c": "Final answer: 13"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.735041
+        0.751571
       ],
       [
         0,
         2,
-        0.264959
+        0.248429
       ],
       [
         2,
         3,
-        0.496261
+        0.600161
       ],
       [
         1,
         3,
-        0.322676
+        0.273121
       ],
       [
         0,
         3,
-        0.181063
+        0.126717
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert road_rd(\"ravipadu Road\")==('ravipadu Rd.')",
-      "assert road_rd(\"palnadu Road\")==('palnadu Rd.')",
-      "assert road_rd(\"eshwar enclave Road\")==('eshwar enclave Rd.')"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

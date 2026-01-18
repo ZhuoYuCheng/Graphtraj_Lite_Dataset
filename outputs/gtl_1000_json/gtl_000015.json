@@ -1,13 +1,13 @@
 {
   "id": "gtl_000015",
   "task": {
-    "prompt": "When the vectors $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 0 \\\\ 3 \\\\ 0 \\end{pmatrix}$ are both projected onto the same vector $\\mathbf{v},$ the result is $\\mathbf{p}$ in both cases.  Furthermore, the vectors $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{p}$ are collinear.  Find $\\mathbf{p}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "Find the number of solutions to the equation\n\\[\\tan (5 \\pi \\cos \\theta) = \\cot (5 \\pi \\sin \\theta)\\]where $\\theta \\in (0, 2 \\pi).$",
+    "gold": "28"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: When the vectors $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 0 \\\\ 3 \\\\ 0 \\end{pmatrix}$ are both projected onto the same vector $\\mathbf{v},$ the result is $\\mathbf{p}$ in both cases.  Furthermore, the vectors $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{p}$ are collinear.  Find $\\mathbf{p}.$"
+      "c": "Plan: identify requirements from task. Task: Find the number of solutions to the equation\n\\[\\tan (5 \\pi \\cos \\theta) = \\cot (5 \\pi \\sin \\theta)\\]where $\\theta \\in (0, 2 \\pi).$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 28"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.901445
+        0.823633
       ],
       [
         0,
         2,
-        0.098555
+        0.176367
       ],
       [
         2,
         3,
-        0.657464
+        0.647369
       ],
       [
         1,
         3,
-        0.293151
+        0.274822
       ],
       [
         0,
         3,
-        0.049384
+        0.07781
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

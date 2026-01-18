@@ -1,13 +1,13 @@
 {
   "id": "gtl_000353",
   "task": {
-    "prompt": "Compute $\\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}^{2018}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "A neighborhood association decided to plant a tree on every street. There are eighteen streets in the neighborhood. The association wanted every other tree to be a fruit tree, and they agreed to plant equal numbers of plum, pear, and apricot trees. How many of each kind of tree will they plant?",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Compute $\\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}^{2018}.$"
+      "c": "Plan: identify requirements from task. Task: A neighborhood association decided to plant a tree on every street. There are eighteen streets in the neighborhood. The association wanted every other tree to be a fruit tree, and they agreed to plant equal numbers of plum, pear, and apricot trees. How many of each kind of tree will they plant?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.702262
+        0.823439
       ],
       [
         0,
         2,
-        0.297738
+        0.176561
       ],
       [
         2,
         3,
-        0.570984
+        0.624312
       ],
       [
         1,
         3,
-        0.246208
+        0.285792
       ],
       [
         0,
         3,
-        0.182808
+        0.089896
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

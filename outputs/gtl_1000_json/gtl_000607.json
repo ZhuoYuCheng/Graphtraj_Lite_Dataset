@@ -1,13 +1,13 @@
 {
   "id": "gtl_000607",
   "task": {
-    "prompt": "Simplify\n\\[\\tan x + 2 \\tan 2x + 4 \\tan 4x + 8 \\cot 8x.\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos 2x$\" or \"$\\sin (x^3)$\".",
-    "gold": "\\cot x"
+    "prompt": "A projectile is fired with an initial velocity of $v$ at an angle of $\\theta$ from the ground.  Then its trajectory can modeled by the parametric equations\n\\begin{align*}\nx &= vt \\cos \\theta, \\\\\ny &= vt \\sin \\theta - \\frac{1}{2} gt^2,\n\\end{align*}where $t$ denotes time and $g$ denotes acceleration due to gravity, forming a parabolic arch.\n\nSuppose $v$ is held constant, but $\\theta$ is allowed to vary, over $0^\\circ \\le \\theta \\le 180^\\circ.$  The highest point of each parabolic arch is plotted.  (Several examples are shown below.)  As $\\theta$ varies, the highest points of the arches trace a closed curve.  The area of this closed curve can be expressed in the form\n\\[c \\cdot \\frac{v^4}{g^2}.\\]Find $c.$\n\n[asy]\nunitsize (5 cm);\n\nreal g, t, theta, v;\npath arch;\n\ng = 1;\nv = 1;\n\ntheta = 80;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 40;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 110;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ndraw((-0.8,0)--(1.2,0));\n\ndot((0,0));\n[/asy]",
+    "gold": "\\frac{\\pi"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\tan x + 2 \\tan 2x + 4 \\tan 4x + 8 \\cot 8x.\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos 2x$\" or \"$\\sin (x^3)$\"."
+      "c": "Plan: identify requirements from task. Task: A projectile is fired with an initial velocity of $v$ at an angle of $\\theta$ from the ground.  Then its trajectory can modeled by the parametric equations\n\\begin{align*}\nx &= vt \\cos \\theta, \\\\\ny &= vt \\sin \\theta - \\frac{1}{2} gt^2,\n\\end{align*}where $t$ denotes time and $g$ denotes acceleration due to gravity, forming a parabolic arch.\n\nSuppose $v$ is held constant, but $\\theta$ is allowed to vary, over $0^\\circ \\le \\theta \\le 180^\\circ.$  The highest point of each parabolic arch is plotted.  (Several examples are shown below.)  As $\\theta$ varies, the highest points of the arches trace a closed curve.  The area of this closed curve can be expressed in the form\n\\[c \\cdot \\frac{v^4}{g^2}.\\]Find $c.$\n\n[asy]\nunitsize (5 cm);\n\nreal g, t, theta, v;\npath arch;\n\ng = 1;\nv = 1;\n\ntheta = 80;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 40;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 110;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ndraw((-0.8,0)--(1.2,0));\n\ndot((0,0));\n[/asy]"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\cot x"
+      "c": "Final answer: \\frac{\\pi"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.82465
+        0.962474
       ],
       [
         0,
         2,
-        0.17535
+        0.037526
       ],
       [
         2,
         3,
-        0.636722
+        0.729694
       ],
       [
         1,
         3,
-        0.263149
+        0.252554
       ],
       [
         0,
         3,
-        0.100129
+        0.017752
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

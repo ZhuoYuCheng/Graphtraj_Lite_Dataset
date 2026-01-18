@@ -1,13 +1,13 @@
 {
   "id": "gtl_000984",
   "task": {
-    "prompt": "Let $a,$ $b,$ $c,$ $d$ be positive integers such that\n\\[\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 18 & 12 \\\\ -20 & -13 \\end{pmatrix}.\\]Find the smallest possible value of $a + b + c + d.$",
-    "gold": "16"
+    "prompt": "The Reptile House at the zoo has 5 fewer animals than 3 times the number of animals housed in the Rain Forest exhibit. If the Reptile House has 16 animals, how many are in the Rain Forest exhibit?",
+    "gold": "7"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $a,$ $b,$ $c,$ $d$ be positive integers such that\n\\[\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 18 & 12 \\\\ -20 & -13 \\end{pmatrix}.\\]Find the smallest possible value of $a + b + c + d.$"
+      "c": "Plan: identify requirements from task. Task: The Reptile House at the zoo has 6 fewer animals than 3 times the number of animals housed in the Rain Forest exhibit. If the Reptile House has 16 animals, how many are in the Rain Forest exhibit?"
     },
     {
       "r": "analyst",
@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 17"
+      "c": "Final answer: 8"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.924593
+        0.826719
       ],
       [
         0,
         2,
-        0.075407
+        0.173281
       ],
       [
         2,
         3,
-        0.736327
+        0.619929
       ],
       [
         1,
         3,
-        0.233083
+        0.288066
       ],
       [
         0,
         3,
-        0.03059
+        0.092005
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
+      1,
       2,
       3
     ]
@@ -83,9 +85,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": false,

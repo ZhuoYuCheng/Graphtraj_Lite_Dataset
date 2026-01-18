@@ -1,13 +1,13 @@
 {
   "id": "gtl_000625",
   "task": {
-    "prompt": "In convex quadrilateral $ABCD$, $\\angle A = \\angle C$, $AB=CD=180$, and $AD \\ne BC$.  The perimeter of $ABCD$ is 640. Find $\\cos A$.",
-    "gold": "\\frac{7"
+    "prompt": "Let $a$ and $b$ be nonnegative real numbers such that\n\\[\\sin (ax + b) = \\sin 29x\\]for all integers $x.$  Find the smallest possible value of $a.$",
+    "gold": "10 \\pi - 29"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: In convex quadrilateral $ABCD$, $\\angle A = \\angle C$, $AB=CD=180$, and $AD \\ne BC$.  The perimeter of $ABCD$ is 640. Find $\\cos A$."
+      "c": "Plan: identify requirements from task. Task: Let $a$ and $b$ be nonnegative real numbers such that\n\\[\\sin (ax + b) = \\sin 29x\\]for all integers $x.$  Find the smallest possible value of $a.$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{7"
+      "c": "Final answer: 10 \\pi - 29"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.793516
+        0.78072
       ],
       [
         0,
         2,
-        0.206484
+        0.21928
       ],
       [
         2,
         3,
-        0.623346
+        0.62658
       ],
       [
         1,
         3,
-        0.271691
+        0.259835
       ],
       [
         0,
         3,
-        0.104963
+        0.113585
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

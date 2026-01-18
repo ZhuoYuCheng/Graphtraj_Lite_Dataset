@@ -7,11 +7,11 @@
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a python function to left rotate the bits of a given number."
+      "c": "Plan: identify requirements from task. Task: Write a py"
     },
     {
       "r": "analyst",
-      "c": "[omitted]"
+      "c": "Draft a Python function that satisfies the prompt and tests."
     },
     {
       "r": "writer",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.728596
+        0.627237
       ],
       [
         0,
         2,
-        0.271404
+        0.372763
       ],
       [
         2,
         3,
-        0.514815
+        0.506097
       ],
       [
         1,
         3,
-        0.304198
+        0.26572
       ],
       [
         0,
         3,
-        0.180987
+        0.228184
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
       1,
       2,
       3

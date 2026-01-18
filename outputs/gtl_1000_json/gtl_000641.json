@@ -1,25 +1,25 @@
 {
   "id": "gtl_000641",
   "task": {
-    "prompt": "Angela has a collection of 24 pieces of rare action figures. She sold off a quarter of them at the pawnshop and gave one-third of the remainder to her daughter. How many does she have left?",
-    "gold": "12"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Angela has a collection of 24 pieces of rare action figures. She sold off a quarter of them at the pawnshop and gave one-third of the remainder to her daughter. How many does she have left?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 12"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.761537
+        0.555224
       ],
       [
         0,
         2,
-        0.238463
+        0.444776
       ],
       [
         2,
         3,
-        0.591354
+        0.412548
+      ],
+      [
+        0,
+        3,
+        0.319156
       ],
       [
         1,
         3,
-        0.279328
-      ],
-      [
-        0,
-        3,
-        0.129318
+        0.268296
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000171",
   "task": {
-    "prompt": "Kiki likes to spend her money on hats and scarves. When she buys twice as many hats as scarves, she spends 60% of her money on hats and the rest on scarves. If she currently has $90, how many scarves will she buy if they are sold at $2 each?",
-    "gold": "18"
+    "prompt": "James and 4 of his friends volunteered to plant flowers. In 2 days, they were able to plant a total of 200 flowers. If each of them planted the same number of flowers, how many flowers did James plant in a day?",
+    "gold": "20"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Kiki likes to spend her money on hats and scarves. When she buys twice as many hats as scarves, she spends 60% of her money on hats and the rest on scarves. If she currently has $90, how many scarves will she buy if they are sold at $2 each?"
+      "c": "Plan: identify requirements from task. Task: James and 4 of his friends volunteered to plant flowers. In 2 days, they were able to plant a total of 200 flowers. If each of them planted the same number of flowers, how many flowers did James plant in a day?"
     },
     {
       "r": "executor",
@@ -15,11 +15,11 @@
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic"
+      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 19"
+      "c": "Final answer: 21"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.868594
+        0.806338
       ],
       [
         0,
         2,
-        0.131406
+        0.193662
       ],
       [
         2,
         3,
-        0.660928
+        0.589378
       ],
       [
         1,
         3,
-        0.277047
+        0.3092
       ],
       [
         0,
         3,
-        0.062024
+        0.101422
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000419",
   "task": {
-    "prompt": "If $\\sin x + \\sin y = \\frac{96}{65}$ and $\\cos x + \\cos y = \\frac{72}{65}$, then what is the value of $\\tan x + \\tan y$?",
-    "gold": "\\frac{507"
+    "prompt": "Let $P$ be a point inside triangle $ABC$ such that\n\\[\\overrightarrow{PA} + 2 \\overrightarrow{PB} + 3 \\overrightarrow{PC} = \\mathbf{0}.\\]Find the ratio of the area of triangle $ABC$ to the area of triangle $APC.$",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: If $\\sin x + \\sin y = \\frac{96}{65}$ and $\\cos x + \\cos y = \\frac{72}{65}$, then what is the value of $\\tan x + \\tan y$?"
+      "c": "Plan: identify requirements from task. Task: Let $P$ be a point inside triangle $ABC$ such that\n\\[\\overrightarrow{PA} + 2 \\overrightarrow{PB} + 3 \\overrightarrow{PC} = \\mathbf{0}.\\]Find the ratio of the area of triangle $ABC$ to the area of triangle $APC.$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{507"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.797596
+        0.839716
       ],
       [
         0,
         2,
-        0.202404
+        0.160284
       ],
       [
         2,
         3,
-        0.624965
+        0.659272
       ],
       [
         1,
         3,
-        0.270333
+        0.268692
       ],
       [
         0,
         3,
-        0.104701
+        0.072036
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

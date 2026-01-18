@@ -1,25 +1,25 @@
 {
   "id": "gtl_000946",
   "task": {
-    "prompt": "In triangle $ABC,$ $D$ is on $\\overline{AB}$ such that $AD:DB = 3:2,$ and $E$ is on $\\overline{BC}$ such that $BE:EC = 3:2.$  If lines $DE$ and $AC$ intersect at $F,$ then find $\\frac{DE}{EF}.$",
-    "gold": "\\frac{1"
+    "prompt": "Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}.\\]Compute $\\operatorname{proj}_{\\mathbf{w}} (5 \\mathbf{v}).$",
+    "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $D$ is on $\\overline{AB}$ such that $AD:DB = 3:2,$ and $E$ is on $\\overline{BC}$ such that $BE:EC = 3:2.$  If lines $DE$ and $AC$ intersect at $F,$ then find $\\frac{DE}{EF}.$"
+      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}.\\]Compute $\\operatorname{proj}_{\\mathbf{w}} (5 \\mathbf{v}).$"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefull"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: arithmetic"
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 2"
+      "c": "Final answer: \\begin{pmatrix_wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.889109
+        0.898329
       ],
       [
         0,
         2,
-        0.110891
+        0.101671
       ],
       [
         2,
         3,
-        0.611645
+        0.722998
       ],
       [
         1,
         3,
-        0.333834
+        0.224567
       ],
       [
         0,
         3,
-        0.05452
+        0.052435
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 2,
+    "who": "writer",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,7 +83,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

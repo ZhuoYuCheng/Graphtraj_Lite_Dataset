@@ -1,13 +1,13 @@
 {
   "id": "gtl_000569",
   "task": {
-    "prompt": "If Mr. Jones has 6 shirts for every pair of pants, and he has 40 pants, what's the total number of pieces of clothes he owns if all other factors remain the same?",
-    "gold": "280"
+    "prompt": "Melly's two cats each have litters of kittens at the same time. The first cat has 3 blue-eyed kittens and 7 brown-eyed kittens. The second cat has 4 blue-eyed kittens and 6 brown-eyed kittens. What percentage of all the kittens have blue eyes?",
+    "gold": "35"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: If Mr. Jones has 6 shirts for every pair of pants, and he has 40 pants, what's the total number of pieces of clothes he owns if all other factors remain the same?"
+      "c": "Plan: identify requirements from task. Task: Melly's two cats each have litters of kittens at the same time. The first cat has 3 blue-eyed kittens and 7 brown-eyed kittens. The second cat has 4 blue-eyed kittens and 6 brown-eyed kittens. What percentage of all the kittens have blue eyes?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 280"
+      "c": "Final answer: 35"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.770157
+        0.82453
       ],
       [
         0,
         2,
-        0.229843
+        0.17547
       ],
       [
         2,
         3,
-        0.584316
+        0.61962
       ],
       [
         1,
         3,
-        0.292803
+        0.290506
       ],
       [
         0,
         3,
-        0.122881
+        0.089874
       ]
     ],
     "cfg": {

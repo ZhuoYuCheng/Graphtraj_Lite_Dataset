@@ -1,25 +1,25 @@
 {
   "id": "gtl_000472",
   "task": {
-    "prompt": "Lucille is wondering who has the tallest house between her and her neighbors. His family's house is 80 feet tall. One neighbor's house is 70 feet tall. Another neighbor's house is 99 feet tall. How much shorter is Lucille's house than the average height?",
-    "gold": "3"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Lucille is wondering who has the tallest house between her and her neighbors. His family's house is 80 feet tall. One neighbor's house is 70 feet tall. Another neighbor's house is 99 feet tall. How much shorter is Lucille's house than the average height?"
+      "c": "Plan: identify requirements from task. Task:  (incorrect)"
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 4"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.834205
+        0.579295
       ],
       [
         0,
         2,
-        0.165795
+        0.420705
       ],
       [
         2,
         3,
-        0.652827
+        0.43604
+      ],
+      [
+        0,
+        3,
+        0.293889
       ],
       [
         1,
         3,
-        0.266606
-      ],
-      [
-        0,
-        3,
-        0.080567
+        0.270071
       ]
     ],
     "cfg": {
@@ -67,10 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
+    "when": 0,
     "who": "assistant",
     "path": [
-      2,
+      0,
       3
     ]
   },
@@ -83,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

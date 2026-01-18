@@ -1,17 +1,17 @@
 {
   "id": "gtl_000132",
   "task": {
-    "prompt": "Simplify\n\\[\\frac{\\cos x}{1 + \\sin x} + \\frac{1 + \\sin x}{\\cos x}.\\]",
-    "gold": "2 \\sec x"
+    "prompt": "Compute $3 \\begin{pmatrix} 2 \\\\ -8 \\end{pmatrix} - 2 \\begin{pmatrix} 1 \\\\ -7 \\end{pmatrix}$.",
+    "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\frac{\\cos x}{1 + \\sin x} + \\frac{1 + \\sin x}{\\cos x}.\\]"
+      "c": "Plan: identify requirements from task. Task: Compute $4 \\begin{pmatrix} 2 \\\\ -8 \\end{pmatrix} - 2 \\begin{pmatrix} 1 \\\\ -7 \\end{pmatrix}$."
     },
     {
       "r": "executor",
-      "c": "[omitted]"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 3"
+      "c": "Final answer: \\begin{pmatrix_wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.766626
+        0.807528
       ],
       [
         0,
         2,
-        0.233374
+        0.192472
       ],
       [
         2,
         3,
-        0.609015
+        0.595789
       ],
       [
         1,
         3,
-        0.268095
+        0.277761
       ],
       [
         0,
         3,
-        0.122891
+        0.126449
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "executor",
+    "when": 0,
+    "who": "planner",
     "path": [
+      0,
       1,
       2,
       3
@@ -84,7 +85,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000794",
   "task": {
-    "prompt": "The matrix\n\\[\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}\\]is its own inverse.  Enter the ordered pair $(c,d).$",
-    "gold": "(8,-3)"
+    "prompt": "Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac mn<90,$ find $m+n.$",
+    "gold": "177"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: The matrix\n\\[\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}\\]is its own inverse.  Enter the ordered pair $(c,d).$"
+      "c": "Plan: identify requirements from task. Task: Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac mn<90,$ find $m+n.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: (8,-3)"
+      "c": "Final answer: 177"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.798493
+        0.837646
       ],
       [
         0,
         2,
-        0.201507
+        0.162354
       ],
       [
         2,
         3,
-        0.657609
+        0.662574
       ],
       [
         1,
         3,
-        0.24679
+        0.270073
       ],
       [
         0,
         3,
-        0.0956
+        0.067353
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

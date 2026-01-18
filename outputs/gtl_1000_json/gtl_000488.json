@@ -1,25 +1,25 @@
 {
   "id": "gtl_000488",
   "task": {
-    "prompt": "Last week, Mr. Sanchez bought 6 feet of rope for their class activity. He found that he lacks rope for the activity so this week, he bought 4 feet less than last week. Since there are 12 inches in a foot, how many inches of ribbon did Mr. Sanchez buy in all?",
-    "gold": "96"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Last week, Mr. Sanchez bought 6 feet of rope for their class activity. He found that he lacks rope for the activity so this week, he bought 4 feet less than last week. Since there are 12 inches in a foot, how many inches of ribbon did Mr. Sanchez buy in all?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 96"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.823684
+        0.555224
       ],
       [
         0,
         2,
-        0.176316
+        0.444776
       ],
       [
         2,
         3,
-        0.60883
+        0.412548
+      ],
+      [
+        0,
+        3,
+        0.319156
       ],
       [
         1,
         3,
-        0.29992
-      ],
-      [
-        0,
-        3,
-        0.09125
+        0.268296
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

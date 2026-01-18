@@ -1,13 +1,13 @@
 {
   "id": "gtl_000498",
   "task": {
-    "prompt": "Compute\n\\[\\begin{vmatrix} -5 & 3 \\\\ 4 & -4 \\end{vmatrix}.\\]",
-    "gold": "8"
+    "prompt": "In triangle $ABC,$ $AB = 20$ and $BC = 15.$  Find the largest possible value of $\\tan A.$",
+    "gold": "\\frac{3 \\sqrt{7"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Compute\n\\[\\begin{vmatrix} -5 & 3 \\\\ 4 & -4 \\end{vmatrix}.\\]"
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $AB = 20$ and $BC = 15.$  Find the largest possible value of $\\tan A.$\nTool result: corrupted output"
     },
     {
       "r": "critic",
@@ -15,11 +15,11 @@
     },
     {
       "r": "assistant",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 9"
+      "c": "Final answer: 8"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.733802
+        0.690083
       ],
       [
         0,
         2,
-        0.266198
+        0.309917
       ],
       [
         2,
         3,
-        0.580111
+        0.529864
       ],
       [
         1,
         3,
-        0.279642
+        0.300575
       ],
       [
         0,
         3,
-        0.140247
+        0.169561
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
+    "when": 0,
     "who": "assistant",
     "path": [
+      0,
+      1,
       2,
       3
     ]
@@ -83,7 +85,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

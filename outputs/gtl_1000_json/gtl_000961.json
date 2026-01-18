@@ -1,13 +1,13 @@
 {
   "id": "gtl_000961",
   "task": {
-    "prompt": "Lightning McQueen, the race car, cost 140000$.  Mater only cost 10 percent of that, and Sally McQueen cost triple what Mater costs.  How much does Sally McQueen cost?",
-    "gold": "42000"
+    "prompt": "The P.T.O. decided to provide shirts for the elementary students for track and field day. Each grade was given a different color. 101 Kindergartners wore orange shirts that cost $5.80 each. 113 first graders wore yellow shirts that cost $5 each. 107 second graders wore blue shirts that cost $5.60 each. 108 third graders wore green shirts that cost $5.25 each. How much did the P.T.O. spend on shirts for field day?",
+    "gold": "2,317"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Lightning McQueen, the race car, cost 140000$.  Mater only cost 10 percent of that, and Sally McQueen cost triple what Mater costs.  How much does Sally McQueen cost?"
+      "c": "Plan: identify requirements from task. Task: The P.T.O. decided to provide shirts for the elementary students for track and field day. Each grade was given a different color. 101 Kindergartners wore orange shirts that cost $5.80 each. 113 first graders wore yellow shirts that cost $5 each. 107 second graders wore blue shirts that cost $5.60 each. 108 third graders wore green shirts that cost $5.25 each. How much did the P.T.O. spend on shirts for field day?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 42000"
+      "c": "Final answer: 2,317"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.817963
+        0.909917
       ],
       [
         0,
         2,
-        0.182037
+        0.090083
       ],
       [
         2,
         3,
-        0.617092
+        0.666743
       ],
       [
         1,
         3,
-        0.287701
+        0.289569
       ],
       [
         0,
         3,
-        0.095207
+        0.043688
       ]
     ],
     "cfg": {

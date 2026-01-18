@@ -1,13 +1,13 @@
 {
   "id": "gtl_000573",
   "task": {
-    "prompt": "A car driving cross-country traveled 180 miles in 4 hours. At this rate of speed, how many miles further will the car travel in the next 3 hours?",
-    "gold": "135"
+    "prompt": "Marc bought 5 model cars that cost $20 each and 5 bottles of paint that cost $10 each. He also bought 5 paintbrushes that cost $2 each. How much did Marc spend in total?",
+    "gold": "160"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A car driving cross-country traveled 180 miles in 4 hours. At this rate of speed, how many miles further will the car travel in the next 3 hours?"
+      "c": "Plan: identify requirements from task. Task: Marc bought 5 model cars that cost $20 each and 5 bottles of paint that cost $10 each. He also bought 5 paintbrushes that cost $2 each. How much did Marc spend in total?"
     },
     {
       "r": "critic",
@@ -15,11 +15,11 @@
     },
     {
       "r": "assistant",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 136"
+      "c": "Final answer: 161"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.778625
+        0.798349
       ],
       [
         0,
         2,
-        0.221375
+        0.201651
       ],
       [
         2,
         3,
-        0.59417
+        0.642087
       ],
       [
         1,
         3,
-        0.283172
+        0.258477
       ],
       [
         0,
         3,
-        0.122657
+        0.099436
       ]
     ],
     "cfg": {

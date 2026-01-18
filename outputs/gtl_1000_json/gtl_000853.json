@@ -1,13 +1,13 @@
 {
   "id": "gtl_000853",
   "task": {
-    "prompt": "Olivia gave William 10 napkins. Amelia also gives William twice the number of napkins Olivia gave him. If William had 15 napkins before, how many napkins does he have now?",
-    "gold": "45"
+    "prompt": "What is fifteen more than a quarter of 48?",
+    "gold": "27"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Olivia gave William 11 napkins. Amelia also gives William twice the number of napkins Olivia gave him. If William had 15 napkins before, how many napkins does he have now?"
+      "c": "Plan: identify requirements from task. Task: What is fifteen more than a quarter of 49?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 46"
+      "c": "Final answer: 28"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.812057
+        0.674852
       ],
       [
         0,
         2,
-        0.187943
+        0.325148
       ],
       [
         2,
         3,
-        0.61394
+        0.555937
       ],
       [
         1,
         3,
-        0.289407
+        0.263554
       ],
       [
         0,
         3,
-        0.096653
+        0.180509
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000051",
   "task": {
-    "prompt": "Compute $3 \\begin{pmatrix} 2 \\\\ -8 \\end{pmatrix} - 2 \\begin{pmatrix} 1 \\\\ -7 \\end{pmatrix}$.",
-    "gold": "\\begin{pmatrix"
+    "prompt": "Mark is a lawyer who works at the county courthouse every day. It takes him 5 minutes to find parking and 3 minutes to walk into the courthouse. 2 days of the week it takes him 30 minutes to get through the metal detector and the other 3 days are less crowded so he gets through in 10 minutes. How long does he spend on all these activities in a week with 5 work days?",
+    "gold": "130"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Compute $3 \\begin{pmatrix} 2 \\\\ -8 \\end{pmatrix} - 2 \\begin{pmatrix} 1 \\\\ -7 \\end{pmatrix}$."
+      "c": "Plan: identify requirements from task. Task: Mark is a lawyer who works at the county courthouse every day. It takes him 5 minutes to find parking and 3 minutes to walk into the courthouse. 2 days of the week it takes him 30 minutes to get through the metal detector and the other 3 days are less crowded so he gets through in 10 minutes. How long does he spend on all these activities in a week with 5 work days?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 130"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.807651
+        0.862492
       ],
       [
         0,
         2,
-        0.192349
+        0.137508
       ],
       [
         2,
         3,
-        0.594401
+        0.640446
       ],
       [
         1,
         3,
-        0.279133
+        0.292654
       ],
       [
         0,
         3,
-        0.126466
+        0.0669
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 1",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": true,

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000842",
   "task": {
-    "prompt": "Shelby was having a movie party for her birthday. She and her mom made a dozen bags of buttered popcorn and 10 bags of caramel popcorn. Her brother Alan took 3 bags of buttered popcorn and 1 bag of caramel popcorn for his friends. How many bags of popcorn does Shelby have left for the party?",
-    "gold": "18"
+    "prompt": "Farmer Steven needs to load his truck up with compost.  His tractor can scoop up compost at a rate of 75 pounds per minute.  Steven's son, Darrel, wants to help.  Using a shovel, Darrel can scoop up 10 pounds per minute.  How much time, in minutes, would it take for the two working together at the same time to load up 2550 pounds of compost into the truck?",
+    "gold": "30"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Shelby was having a movie party for her birthday. She and her mom made a dozen bags of buttered popcorn and 10 bags of caramel popcorn. Her brother Alan took 3 bags of buttered popcorn and 1 bag of caramel popcorn for his friends. How many bags of popcorn does Shelby have left for the party?"
+      "c": "Plan: identify requirements from task. Task: Farmer Steven needs to load his truck up with compost.  His tractor can scoop up compost at a rate of 75 pounds per minute.  Steven's son, Darrel, wants to help.  Using a shovel, Darrel can scoop up 10 pounds per minute.  How much time, in minutes, would it take for the two working together at the same time to load up 2550 pounds of compost into the truck?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 18"
+      "c": "Final answer: 30"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.862555
+        0.876272
       ],
       [
         0,
         2,
-        0.137445
+        0.123728
       ],
       [
         2,
         3,
-        0.638739
+        0.658428
       ],
       [
         1,
         3,
-        0.295664
+        0.285891
       ],
       [
         0,
         3,
-        0.065597
+        0.055681
       ]
     ],
     "cfg": {

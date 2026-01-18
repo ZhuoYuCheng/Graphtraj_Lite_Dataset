@@ -1,13 +1,13 @@
 {
   "id": "gtl_000305",
   "task": {
-    "prompt": "The set of vectors $\\mathbf{v}$ such that\n\\[\\mathbf{v} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\begin{pmatrix} 10 \\\\ -40 \\\\ 8 \\end{pmatrix}\\]forms a solid in space.  Find the volume of this solid.",
-    "gold": "12348 \\pi"
+    "prompt": "Find the matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\mathbf{v} = -5 \\mathbf{v}\\]for all vectors $\\mathbf{v}.$",
+    "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: The set of vectors $\\mathbf{v}$ such that\n\\[\\mathbf{v} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\begin{pmatrix} 10 \\\\ -40 \\\\ 8 \\end{pmatrix}\\]forms a solid in space.  Find the volume of this solid."
+      "c": "Plan: identify requirements from task. Task: Find the matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\mathbf{v} = -5 \\mathbf{v}\\]for all vectors $\\mathbf{v}.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 12348 \\pi"
+      "c": "Final answer: \\begin{pmatrix"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.850908
+        0.807782
       ],
       [
         0,
         2,
-        0.149092
+        0.192218
       ],
       [
         2,
         3,
-        0.645383
+        0.63473
       ],
       [
         1,
         3,
-        0.282618
+        0.277628
       ],
       [
         0,
         3,
-        0.071999
+        0.087642
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

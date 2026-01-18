@@ -1,13 +1,13 @@
 {
   "id": "gtl_000248",
   "task": {
-    "prompt": "In a fundraiser car wash activity, the 5th graders raised $147 on Friday. On Saturday, they made $7 more than twice their Friday earnings. Their earnings on Sunday are $78 more than their earnings on Friday. How much did they earn in three days?",
-    "gold": "673"
+    "prompt": "Jackson is laying tile in a courtyard that measures 10 feet by 25 feet. He needs 4 tiles per square foot of space. 40% of the tiles are green marble that costs $3/tile, and the rest are red tile that costs $1.50/tile. How much does he pay total for tile?",
+    "gold": "2100"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In a fundraiser car wash activity, the 5th graders raised $147 on Friday. On Saturday, they made $7 more than twice their Friday earnings. Their earnings on Sunday are $78 more than their earnings on Friday. How much did they earn in three days?"
+      "c": "Plan: identify requirements from task. Task: Jackson is laying tile in a courtyard that measures 10 feet by 25 feet. He needs 4 tiles per square foot of space. 40% of the tiles are green marble that costs $3/tile, and the rest are red tile that costs $1.50/tile. How much does he pay total for tile?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 673"
+      "c": "Final answer: 2100"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.835732
+        0.833684
       ],
       [
         0,
         2,
-        0.164268
+        0.166316
       ],
       [
         2,
         3,
-        0.61842
+        0.638079
       ],
       [
         1,
         3,
-        0.296639
+        0.287102
       ],
       [
         0,
         3,
-        0.084941
+        0.074819
       ]
     ],
     "cfg": {

@@ -1,17 +1,17 @@
 {
   "id": "gtl_000089",
   "task": {
-    "prompt": "The population of Delaware is 974,000. A study showed that there are 673 cell phones per 1000 people in the state. How many cell phones are there in Delaware?",
-    "gold": "655502"
+    "prompt": "Joey has 30 pages to read for history class tonight. He decided that he would take a break when he finished reading 70% of the pages assigned. How many pages must he read after he takes a break?",
+    "gold": "9"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: The population of Delaware is 974,000. A study showed that there are 673 cell phones per 1000 people in the state. How many cell phones are there in Delaware?"
+      "c": "Plan: identify requirements from task. Task: Joey has 30 pages to read for history class tonight. He decided that he would take a break when he finished reading 70% of the pages assigned. How many pages must he read after he takes a break?"
     },
     {
       "r": "executor",
-      "c": "[omitted]"
+      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
     },
     {
       "r": "tool",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 655503"
+      "c": "Final answer: 10"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.803041
+        0.840817
       ],
       [
         0,
         2,
-        0.196959
+        0.159183
       ],
       [
         2,
         3,
-        0.531115
+        0.533298
       ],
       [
         1,
         3,
-        0.345685
+        0.354053
       ],
       [
         0,
         3,
-        0.1232
+        0.112649
       ]
     ],
     "cfg": {

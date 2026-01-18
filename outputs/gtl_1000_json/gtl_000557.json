@@ -1,13 +1,13 @@
 {
   "id": "gtl_000557",
   "task": {
-    "prompt": "A particle is located on the coordinate plane at $(5,0)$. Define a ''move'' for the particle as a counterclockwise rotation of $\\frac{\\pi}{4}$ radians about the origin followed by a translation of $10$ units in the positive $x$-direction.  Find the particle's position after $150$ moves.",
-    "gold": "(-5 \\sqrt{2"
+    "prompt": "Simplify $\\cos 36^\\circ - \\cos 72^\\circ.$",
+    "gold": "\\frac{1"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A particle is located on the coordinate plane at $(5,0)$. Define a ''move'' for the particle as a counterclockwise rotation of $\\frac{\\pi}{4}$ radians about the origin followed by a translation of $10$ units in the positive $x$-direction.  Find the particle's position after $150$ moves."
+      "c": "Plan: identify requirements from task. Task: Simplify $\\cos 36^\\circ - \\cos 72^\\circ.$"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: (-5 \\sqrt{2"
+      "c": "Final answer: \\frac{1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.846463
+        0.661325
       ],
       [
         0,
         2,
-        0.153537
+        0.338675
       ],
       [
         2,
         3,
-        0.642432
+        0.570273
       ],
       [
         1,
         3,
-        0.281988
+        0.24729
       ],
       [
         0,
         3,
-        0.07558
+        0.182437
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

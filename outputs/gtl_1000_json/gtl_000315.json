@@ -1,13 +1,13 @@
 {
   "id": "gtl_000315",
   "task": {
-    "prompt": "Jesse and Mia are competing in a week long race. They have one week to run 30 miles. On the first three days Jesse averages (2/3) of a mile. On day four she runs 10 miles. Mia averages 3 miles a day over the first 4 days. What is the average of their average that they have to run over the final three days?",
-    "gold": "6"
+    "prompt": "Dana normally drinks a 500 ml bottle of soda each day. Since the 500 ml bottles are currently out of stock at the store, she buys a 2-liter bottle of soda instead. If Dana continues to drink 500 ml of soda each day, how long will the 2-liter bottle of soda last? There are 1,000 ml in 1 liter.",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Jesse and Mia are competing in a week long race. They have one week to run 30 miles. On the first three days Jesse averages (2/3) of a mile. On day four she runs 10 miles. Mia averages 3 miles a day over the first 4 days. What is the average of their average that they have to run over the final three days?"
+      "c": "Plan: identify requirements from task. Task: Dana normally drinks a 500 ml bottle of soda each day. Since the 500 ml bottles are currently out of stock at the store, she buys a 2-liter bottle of soda instead. If Dana continues to drink 500 ml of soda each day, how long will the 2-liter bottle of soda last? There are 1,000 ml in 1 liter."
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 6"
+      "c": "Final answer: 4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.85469
+        0.865248
       ],
       [
         0,
         2,
-        0.14531
+        0.134752
       ],
       [
         2,
         3,
-        0.62575
+        0.624562
       ],
       [
         1,
         3,
-        0.300896
+        0.30838
       ],
       [
         0,
         3,
-        0.073354
+        0.067058
       ]
     ],
     "cfg": {

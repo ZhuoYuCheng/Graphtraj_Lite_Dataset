@@ -1,13 +1,13 @@
 {
   "id": "gtl_000888",
   "task": {
-    "prompt": "Let $x$ be an angle such that $\\tan x = \\frac{a}{b}$ and $\\tan 2x = \\frac{b}{a + b}.$  Then the least positive value of $x$ equals $\\tan^{-1} k.$  Compute $k.$",
-    "gold": "\\frac{1"
+    "prompt": "Kate bought 7 packs of red bouncy balls and 6 packs of yellow bouncy balls. Each pack contained 18 bouncy balls. How many more red bouncy balls than yellow bouncy balls did Kate buy?",
+    "gold": "18"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $x$ be an angle such that $\\tan x = \\frac{a}{b}$ and $\\tan 2x = \\frac{b}{a + b}.$  Then the least positive value of $x$ equals $\\tan^{-1} k.$  Compute $k.$"
+      "c": "Plan: identify requirements from task. Task: Kate bought 7 packs of red bouncy balls and 6 packs of yellow bouncy balls. Each pack contained 18 bouncy balls. How many more red bouncy balls than yellow bouncy balls did Kate buy?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\frac{1"
+      "c": "Final answer: 18"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.840464
+        0.825915
       ],
       [
         0,
         2,
-        0.159536
+        0.174085
       ],
       [
         2,
         3,
-        0.667432
+        0.613521
       ],
       [
         1,
         3,
-        0.25788
+        0.293274
       ],
       [
         0,
         3,
-        0.074687
+        0.093206
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

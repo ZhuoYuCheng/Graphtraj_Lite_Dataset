@@ -1,13 +1,13 @@
 {
   "id": "gtl_000525",
   "task": {
-    "prompt": "Verna weighs 17 pounds more than Haley, and Verna weighs half as much as Sherry. If Haley weighs 103 pounds, how many pounds do Verna and Sherry weigh together?",
-    "gold": "360"
+    "prompt": "There are 3 workers producing chairs in a furniture factory. Each of them produces 4 chairs an hour. As a group, they produce an additional chair every 6 hours. In total, how many chairs have been produced after 6 hours?",
+    "gold": "73"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Verna weighs 17 pounds more than Haley, and Verna weighs half as much as Sherry. If Haley weighs 103 pounds, how many pounds do Verna and Sherry weigh together?"
+      "c": "Plan: identify requirements from task. Task: There are 3 workers producing chairs in a furniture factory. Each of them produces 4 chairs an hour. As a group, they produce an additional chair every 6 hours. In total, how many chairs have been produced after 6 hours?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 360"
+      "c": "Final answer: 73"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.78912
+        0.796015
       ],
       [
         0,
         2,
-        0.21088
+        0.203985
       ],
       [
         2,
         3,
-        0.592985
+        0.60753
       ],
       [
         1,
         3,
-        0.29704
+        0.28339
       ],
       [
         0,
         3,
-        0.109975
+        0.10908
       ]
     ],
     "cfg": {

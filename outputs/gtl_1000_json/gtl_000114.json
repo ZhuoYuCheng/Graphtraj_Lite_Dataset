@@ -1,13 +1,13 @@
 {
   "id": "gtl_000114",
   "task": {
-    "prompt": "A dental office gives away 2 toothbrushes to every patient who visits.  His 8 hour days are packed and each visit takes .5 hours.  How many toothbrushes does he give in a 5 day work week?",
-    "gold": "160"
+    "prompt": "Paul, a biology teacher, assigns 265 points in the first quarter.  There are 4 times as many test points as quiz points, and 5 more quiz points than homework points.  How many homework points are there in the first quarter?",
+    "gold": "40"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: A dental office gives away 2 toothbrushes to every patient who visits.  His 8 hour days are packed and each visit takes .5 hours.  How many toothbrushes does he give in a 5 day work week?"
+      "c": "Plan: identify requirements from task. Task: Paul, a biology teacher, assigns 265 points in the first quarter.  There are 4 times as many test points as quiz points, and 5 more quiz points than homework points.  How many homework points are there in the first quarter?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 160"
+      "c": "Final answer: 40"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.817709
+        0.806088
       ],
       [
         0,
         2,
-        0.182291
+        0.193912
       ],
       [
         2,
         3,
-        0.613313
+        0.603781
       ],
       [
         1,
         3,
-        0.294585
+        0.29547
       ],
       [
         0,
         3,
-        0.092102
+        0.100749
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000870",
   "task": {
-    "prompt": "Let $f$ be the function defined by $f(x) = -2 \\sin(\\pi x)$.  How many values of $x$ such that $-2 \\le x \\le 2$ satisfy the equation $f(f(f(x))) = f(x)$?",
-    "gold": "61"
+    "prompt": "The side of a triangle are 2, 2, and $\\sqrt{6} - \\sqrt{2}.$  Enter the angles of the triangle in degrees, separated by commas.",
+    "gold": "75^\\circ, 75^\\circ"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $f$ be the function defined by $f(x) = -2 \\sin(\\pi x)$.  How many values of $x$ such that $-2 \\le x \\le 2$ satisfy the equation $f(f(f(x))) = f(x)$?"
+      "c": "Plan: identify requirements from task. Task: The side of a triangle are 2, 2, and $\\sqrt{6} - \\sqrt{2}.$  Enter the angles of the triangle in degrees, separated by commas."
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 61"
+      "c": "Final answer: 75^\\circ, 75^\\circ"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.84497
+        0.80175
       ],
       [
         0,
         2,
-        0.15503
+        0.19825
       ],
       [
         2,
         3,
-        0.646161
+        0.612756
       ],
       [
         1,
         3,
-        0.283385
+        0.279355
       ],
       [
         0,
         3,
-        0.070454
+        0.10789
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

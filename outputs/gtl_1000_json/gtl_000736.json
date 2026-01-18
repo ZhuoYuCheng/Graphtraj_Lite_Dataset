@@ -1,25 +1,25 @@
 {
   "id": "gtl_000736",
   "task": {
-    "prompt": "Write a function to combine two given sorted lists using heapq module.",
-    "gold": "from heapq import merge\r\ndef combine_lists(num1,num2):\r\n  combine_lists=list(merge(num1, num2))\r\n  return combine_lists"
+    "prompt": "In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$",
+    "gold": "150 \\sqrt{3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to combine two given sorted lists using heapq module.\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$"
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "reviewer",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.709938
+        0.822992
       ],
       [
         0,
         2,
-        0.290062
+        0.177008
       ],
       [
         2,
         3,
-        0.467753
+        0.672092
       ],
       [
         1,
         3,
-        0.35365
+        0.245581
       ],
       [
         0,
         3,
-        0.178597
+        0.082327
       ]
     ],
     "cfg": {
@@ -67,11 +67,10 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "researcher",
+    "when": 2,
+    "who": "writer",
     "path": [
-      0,
-      1,
+      2,
       3
     ]
   },
@@ -84,16 +83,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert combine_lists([1, 3, 5, 7, 9, 11],[0, 2, 4, 6, 8, 10])==[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]",
-      "assert combine_lists([1, 3, 5, 6, 8, 9], [2, 5, 7, 11])==[1,2,3,5,5,6,7,8,9,11]",
-      "assert combine_lists([1,3,7],[2,4,6])==[1,2,3,4,6,7]"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

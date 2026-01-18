@@ -1,13 +1,13 @@
 {
   "id": "gtl_000031",
   "task": {
-    "prompt": "In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$",
-    "gold": "150 \\sqrt{3"
+    "prompt": "For real numbers $t \\neq 0,$ the point\n\\[(x,y) = \\left( \\frac{t + 1}{t}, \\frac{t - 1}{t} \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "gold": "\\text{(A)"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$"
+      "c": "Plan: identify requirements from task. Task: For real numbers $t \\neq 0,$ the point\n\\[(x,y) = \\left( \\frac{t + 1}{t}, \\frac{t - 1}{t} \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option."
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 150 \\sqrt{3"
+      "c": "Final answer: \\text{(A)"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.797037
+        0.867248
       ],
       [
         0,
         2,
-        0.202963
+        0.132752
       ],
       [
         2,
         3,
-        0.597254
+        0.672762
       ],
       [
         1,
         3,
-        0.279422
+        0.263368
       ],
       [
         0,
         3,
-        0.123324
+        0.06387
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

@@ -1,17 +1,17 @@
 {
   "id": "gtl_000629",
   "task": {
-    "prompt": "In triangle $ABC,$ points $D$ and $E$ are on $\\overline{AB}$ and $\\overline{AC},$ respectively, and angle bisector $\\overline{AT}$ intersects $\\overline{DE}$ at $F.$  If $AD = 1,$ $DB = 3,$ $AE = 2,$ and $EC = 4,$ compute $\\frac{AF}{AT}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, E, F, T;\n\nB = (0,0);\nC = (5,0);\nA = intersectionpoint(arc(B,4,0,180),arc(C,6,0,180));\nD = interp(A,B,1/4);\nE = interp(A,C,2/6);\nT = extension(A, incenter(A,B,C), B, C);\nF = extension(A, T, D, E);\n\ndraw(A--B--C--cycle);\ndraw(A--T);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, W);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, SW);\nlabel(\"$T$\", T, S);\n[/asy]",
-    "gold": "\\frac{5"
+    "prompt": "Robie bought 3 bags of chocolates. She gave the 2 bags to her brothers and sisters then bought another 3 bags. How many bags of chocolates were left?",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ points $D$ and $E$ are on $\\overline{AB}$ and $\\overline{AC},$ respectively, and angle bisector $\\overline{AT}$ intersects $\\overline{DE}$ at $F.$  If $AD = 2,$ $DB = 3,$ $AE = 2,$ and $EC = 4,$ compute $\\frac{AF}{AT}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, E, F, T;\n\nB = (0,0);\nC = (5,0);\nA = intersectionpoint(arc(B,4,0,180),arc(C,6,0,180));\nD = interp(A,B,1/4);\nE = interp(A,C,2/6);\nT = extension(A, incenter(A,B,C), B, C);\nF = extension(A, T, D, E);\n\ndraw(A--B--C--cycle);\ndraw(A--T);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, W);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, SW);\nlabel(\"$T$\", T, S);\n[/asy]"
+      "c": "Plan: identify requirements from task. Task: Robie bought 3 bags of chocolates. She gave the 2 bags to her brothers and sisters then bought another 3 bags. How many bags of chocolates were left?"
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 6"
+      "c": "Final answer: 5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.936273
+        0.77517
       ],
       [
         0,
         2,
-        0.063727
+        0.22483
       ],
       [
         2,
         3,
-        0.713867
+        0.533917
       ],
       [
         1,
         3,
-        0.258066
+        0.331507
       ],
       [
         0,
         3,
-        0.028068
+        0.134576
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "assistant",
+    "when": 1,
+    "who": "critic",
     "path": [
-      0,
       1,
       2,
       3
@@ -85,9 +84,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": false,

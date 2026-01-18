@@ -1,13 +1,13 @@
 {
   "id": "gtl_000341",
   "task": {
-    "prompt": "Find a unit vector that is orthogonal to both $\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "The polynomial $P(x)$ is a monic, quartic polynomial with real coefficients, and two of its roots are $\\cos \\theta + i \\sin \\theta$ and $\\sin \\theta + i \\cos \\theta,$ where $0 < \\theta < \\frac{\\pi}{4}.$  When the four roots of $P(x)$ are plotted in the complex plane, they form a quadrilateral whose area is equal to half of $P(0).$  Find the sum of the four roots.",
+    "gold": "1 + \\sqrt{3"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Find a unit vector that is orthogonal to both $\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix}.$"
+      "c": "Plan: identify requirements from task. Task: The polynomial $P(x)$ is a monic, quartic polynomial with real coefficients, and two of its roots are $\\cos \\theta + i \\sin \\theta$ and $\\sin \\theta + i \\cos \\theta,$ where $0 < \\theta < \\frac{\\pi}{4}.$  When the four roots of $P(x)$ are plotted in the complex plane, they form a quadrilateral whose area is equal to half of $P(0).$  Find the sum of the four roots."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 1 + \\sqrt{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.792825
+        0.8808
       ],
       [
         0,
         2,
-        0.207175
+        0.1192
       ],
       [
         2,
         3,
-        0.611284
+        0.672084
       ],
       [
         1,
         3,
-        0.269918
+        0.269959
       ],
       [
         0,
         3,
-        0.118798
+        0.057957
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

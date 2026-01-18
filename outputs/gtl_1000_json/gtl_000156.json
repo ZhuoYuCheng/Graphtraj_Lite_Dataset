@@ -1,13 +1,13 @@
 {
   "id": "gtl_000156",
   "task": {
-    "prompt": "Layla is training for a bicycle race. She rode her bicycle slowly to the high school, rode four miles around the running track at her faster, race pace, and then rode back home, slowly, on the same route. If her total mileage was 10 miles, how far is it, in miles, from Layla's house to the high school?",
-    "gold": "3"
+    "prompt": "Sally sews 4 shirts on Monday, 3 shirts on Tuesday, and 2 shirts on Wednesday.  Each shirt has 5 buttons.  How many buttons does Sally need to sew all the shirts?",
+    "gold": "45"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Layla is training for a bicycle race. She rode her bicycle slowly to the high school, rode four miles around the running track at her faster, race pace, and then rode back home, slowly, on the same route. If her total mileage was 10 miles, how far is it, in miles, from Layla's house to the high school?"
+      "c": "Plan: identify requirements from task. Task: Sally sews 4 shirts on Monday, 3 shirts on Tuesday, and 2 shirts on Wednesday.  Each shirt has 5 buttons.  How many buttons does Sally need to sew all the shirts?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 3"
+      "c": "Final answer: 45"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.869383
+        0.796831
       ],
       [
         0,
         2,
-        0.130617
+        0.203169
       ],
       [
         2,
         3,
-        0.620407
+        0.584483
       ],
       [
         1,
         3,
-        0.312809
+        0.30676
       ],
       [
         0,
         3,
-        0.066783
+        0.108757
       ]
     ],
     "cfg": {

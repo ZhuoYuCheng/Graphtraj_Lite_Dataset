@@ -1,25 +1,25 @@
 {
   "id": "gtl_000124",
   "task": {
-    "prompt": "Write a python function to replace multiple occurence of character by single.",
-    "gold": "import re \r\ndef replace(string, char): \r\n    pattern = char + '{2,}'\r\n    string = re.sub(pattern, char, string) \r\n    return string"
+    "prompt": "If the six solutions of $x^6=-64$ are written in the form $a+bi$, where $a$ and $b$ are real, find the product of those solutions with $a>0.$",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python function to replace multiple occurence of character by single."
+      "c": "Plan: identify requirements from task. Task: If the six solutions of $x^6=-64$ are written in the form $a+bi$, where $a$ and $b$ are real, find the product of those solutions with $a>0.$"
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nimport re \r\ndef replace(string, char): \r\n    pattern = char + '{2,}'\r\n    string = re.sub(pattern, char, string) \r\n    return string"
+      "c": "Final answer: 4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.712189
+        0.809338
       ],
       [
         0,
         2,
-        0.287811
+        0.190662
       ],
       [
         2,
         3,
-        0.495363
+        0.613432
       ],
       [
         1,
         3,
-        0.300872
+        0.295779
       ],
       [
         0,
         3,
-        0.203764
+        0.090789
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert replace('peep','e') == 'pep'",
-      "assert replace('Greek','e') == 'Grek'",
-      "assert replace('Moon','o') == 'Mon'"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

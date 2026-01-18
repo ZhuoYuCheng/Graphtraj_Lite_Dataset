@@ -1,13 +1,13 @@
 {
   "id": "gtl_000632",
   "task": {
-    "prompt": "Carrie wants to buy a new iPhone. The new iPhone costs $800. She can trade in her Samsung Galaxy for $240. She can make $80 per week babysitting. How many weeks does she have to work before she can purchase the iPhone?",
-    "gold": "7"
+    "prompt": "The bakery made 95 muffins. They will be packed in boxes with 5 muffins in each box. If there are only 10 available boxes, how many boxes do they still need to pack all the muffins?",
+    "gold": "9"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Carrie wants to buy a new iPhone. The new iPhone costs $800. She can trade in her Samsung Galaxy for $240. She can make $80 per week babysitting. How many weeks does she have to work before she can purchase the iPhone?"
+      "c": "Plan: identify requirements from task. Task: The bakery made 95 muffins. They will be packed in boxes with 5 muffins in each box. If there are only 10 available boxes, how many boxes do they still need to pack all the muffins?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 7"
+      "c": "Final answer: 9"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.802759
+        0.786876
       ],
       [
         0,
         2,
-        0.197241
+        0.213124
       ],
       [
         2,
         3,
-        0.61079
+        0.596543
       ],
       [
         1,
         3,
-        0.289599
+        0.291387
       ],
       [
         0,
         3,
-        0.099611
+        0.11207
       ]
     ],
     "cfg": {

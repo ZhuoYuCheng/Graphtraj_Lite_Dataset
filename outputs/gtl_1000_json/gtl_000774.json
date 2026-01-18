@@ -1,25 +1,25 @@
 {
   "id": "gtl_000774",
   "task": {
-    "prompt": "Two teams are playing in a stadium with a capacity of 2000 people. The total number of people in the stadium is 3/4 of the total capacity and each person paid $20 in entry fees. What is the difference between the total amount of fees collected when the stadium was 3/4 full and if the stadium would have been full?",
-    "gold": "10000"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Two teams are playing in a stadium with a capacity of 2000 people. The total number of people in the stadium is 3/4 of the total capacity and each person paid $20 in entry fees. What is the difference between the total amount of fees collected when the stadium was 3/4 full and if the stadium would have been full?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and con"
     },
     {
       "r": "writer",
-      "c": "[omitted]"
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 10001"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.888366
+        0.642816
       ],
       [
         0,
         2,
-        0.111634
+        0.357184
       ],
       [
         2,
         3,
-        0.638272
+        0.402522
       ],
       [
         1,
         3,
-        0.300234
+        0.319805
       ],
       [
         0,
         3,
-        0.061494
+        0.277673
       ]
     ],
     "cfg": {
@@ -67,10 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 1,
+    "who": "analyst",
     "path": [
-      2,
+      1,
       3
     ]
   },
@@ -83,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "crewai",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000990",
   "task": {
-    "prompt": "An old car can drive 8 miles in one hour. After 5 hours of constant driving, the car needs to get cooled down which takes 1 hour. How many miles can this car drive in 13 hours?",
-    "gold": "88"
+    "prompt": "Annie brought 20 brownies to school.  She gave half of them to the school administrator to put in the faculty lounge.  Of the remaining brownies, she gave half to her best friend, Carl, and another two to her friend, Simon.  How many brownies did she have left?",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: An old car can drive 8 miles in one hour. After 5 hours of constant driving, the car needs to get cooled down which takes 1 hour. How many miles can this car drive in 13 hours?"
+      "c": "Plan: identify requirements from task. Task: Annie brought 20 brownies to school.  She gave half of them to the school administrator to put in the faculty lounge.  Of the remaining brownies, she gave half to her best friend, Carl, and another two to her friend, Simon.  How many brownies did she have left?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 88"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.819381
+        0.85152
       ],
       [
         0,
         2,
-        0.180619
+        0.14848
       ],
       [
         2,
         3,
-        0.627605
+        0.626678
       ],
       [
         1,
         3,
-        0.282615
+        0.29543
       ],
       [
         0,
         3,
-        0.089781
+        0.077892
       ]
     ],
     "cfg": {

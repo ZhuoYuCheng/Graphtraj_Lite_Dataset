@@ -1,13 +1,13 @@
 {
   "id": "gtl_000988",
   "task": {
-    "prompt": "Mary needs school supplies. She has 6 classes and needs 1 folder for each class. She also needs 3 pencils for each class. She decides that for every 6 pencils she should have 1 eraser. She also needs a set of paints for an art class.  Folders cost $6, pencils cost $2, and erasers cost $1. If she spends $80, how much did the set of paints cost in dollars?",
-    "gold": "5"
+    "prompt": "Kelsey had 2/5 of a tray of eggs that she had brought to Willa's party. Stephanie had also brought half a tray of eggs to the party, while Alayah brought 40 more eggs than Kelsey and Stephanie combined. If Willa had two trays of eggs already, calculate the total number of eggs that were used at the party.",
+    "gold": "154"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Mary needs school supplies. She has 6 classes and needs 1 folder for each class. She also needs 3 pencils for each class. She decides that for every 6 pencils she should have 1 eraser. She also needs a set of paints for an art class.  Folders cost $6, pencils cost $2, and erasers cost $1. If she spends $80, how much did the set of paints cost in dollars?"
+      "c": "[omitted]"
     },
     {
       "r": "analyst",
@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 6"
+      "c": "Final answer: 155"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.886784
+        0.624318
       ],
       [
         0,
         2,
-        0.113216
+        0.375682
       ],
       [
         2,
         3,
-        0.693292
+        0.529495
       ],
       [
         1,
         3,
-        0.252404
+        0.240459
       ],
       [
         0,
         3,
-        0.054304
+        0.230046
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
+      1,
       2,
       3
     ]

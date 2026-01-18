@@ -1,17 +1,17 @@
 {
   "id": "gtl_000000",
   "task": {
-    "prompt": "Paul is working at a university. He is part of a big project, which involves 70 scientists in total. Half of them are from Europe and one-fifth are from Canada. The rest are from the USA. How many scientists in this project are from the USA?",
-    "gold": "21"
+    "prompt": "A jar contains 9 blue pens, 21 black pens, and 6 red pens. Four blue pens are removed and then seven black pens are removed. How many pens are left in the jar?",
+    "gold": "25"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Paul is working at a university. He is part of a big project, which involves 70 scientists in total. Half of them are from Europe and one-fifth are from Canada. The rest are from the USA. How many scientists in this project are from the USA?"
+      "c": "[omitted]"
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 22"
+      "c": "Final answer: 26"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.877952
+        0.578812
       ],
       [
         0,
         2,
-        0.122048
+        0.421188
       ],
       [
         2,
         3,
-        0.552281
+        0.499277
+      ],
+      [
+        0,
+        3,
+        0.258265
       ],
       [
         1,
         3,
-        0.359307
-      ],
-      [
-        0,
-        3,
-        0.088412
+        0.242459
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "executor",
+    "when": 0,
+    "who": "planner",
     "path": [
+      0,
       1,
       2,
       3

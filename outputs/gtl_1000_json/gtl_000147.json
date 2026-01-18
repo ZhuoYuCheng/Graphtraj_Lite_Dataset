@@ -1,13 +1,13 @@
 {
   "id": "gtl_000147",
   "task": {
-    "prompt": "Tony tries to drink more water, so he has been tracking how much water he drinks. Yesterday, he drank 48 ounces of water, which is 4% less than what he drank two days ago. How much water did Tony drink two days ago?",
-    "gold": "50"
+    "prompt": "There were a total of 50 guests in a movie screening of which half of the guests are women, 15 are men, and the rest are children. In the middle of the movie, 1/5 of the men and 4 children left. How many people stayed?",
+    "gold": "43"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Tony tries to drink more water, so he has been tracking how much water he drinks. Yesterday, he drank 48 ounces of water, which is 4% less than what he drank two days ago. How much water did Tony drink two days ago?"
+      "c": "Plan: identify requirements from task. Task: There were a total of 50 guests in a movie screening of which half of the guests are women, 15 are men, and the rest are children. In the middle of the movie, 1/5 of the men and 4 children left. How many people stayed?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 50"
+      "c": "Final answer: 43"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.827513
+        0.835425
       ],
       [
         0,
         2,
-        0.172487
+        0.164575
       ],
       [
         2,
         3,
-        0.611099
+        0.614448
       ],
       [
         1,
         3,
-        0.305551
+        0.299377
       ],
       [
         0,
         3,
-        0.08335
+        0.086176
       ]
     ],
     "cfg": {

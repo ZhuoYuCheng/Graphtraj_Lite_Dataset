@@ -1,13 +1,13 @@
 {
   "id": "gtl_000378",
   "task": {
-    "prompt": "Given that $\\log_{10} \\sin x + \\log_{10} \\cos x = -1$ and that $\\log_{10} (\\sin x + \\cos x) = \\frac{1}{2} (\\log_{10} n - 1),$ find $n.$",
-    "gold": "12"
+    "prompt": "Compute $\\arccos \\frac{\\sqrt{3}}{2}.$  Express your answer in radians.",
+    "gold": "\\frac{\\pi"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Given that $\\log_{10} \\sin x + \\log_{10} \\cos x = -1$ and that $\\log_{10} (\\sin x + \\cos x) = \\frac{1}{2} (\\log_{10} n - 1),$ find $n.$"
+      "c": "Plan: identify requirements from task. Task: Compute $\\arccos \\frac{\\sqrt{3}}{2}.$  Express your answer in radians."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 12"
+      "c": "Final answer: \\frac{\\pi"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.810172
+        0.702347
       ],
       [
         0,
         2,
-        0.189828
+        0.297653
       ],
       [
         2,
         3,
-        0.637298
+        0.559072
       ],
       [
         1,
         3,
-        0.275503
+        0.261626
       ],
       [
         0,
         3,
-        0.087199
+        0.179302
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 1",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

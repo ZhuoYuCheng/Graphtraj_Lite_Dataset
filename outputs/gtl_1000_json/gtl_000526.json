@@ -1,17 +1,17 @@
 {
   "id": "gtl_000526",
   "task": {
-    "prompt": "Compute the least positive value of $t$ such that\n\\[\\arcsin (\\sin \\alpha), \\ \\arcsin (\\sin 2 \\alpha), \\ \\arcsin (\\sin 7 \\alpha), \\ \\arcsin (\\sin t \\alpha)\\]is a geometric progression for some $\\alpha$ with $0 < \\alpha < \\frac{\\pi}{2}.$",
-    "gold": "9 - 4 \\sqrt{5"
+    "prompt": "Roy spends 2 hours on sports activities in school every day. He goes to school 5 days a week. If he missed 2 days within a week, how many hours did he spend on sports in school that week?",
+    "gold": "6"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Compute the least positive value of $t$ such that\n\\[\\arcsin (\\sin \\alpha), \\ \\arcsin (\\sin 2 \\alpha), \\ \\arcsin (\\sin 7 \\alpha), \\ \\arcsin (\\sin t \\alpha)\\]is a geometric progression for some $\\alpha$ with $0 < \\alpha < \\frac{\\pi}{2}.$"
+      "c": "[omitted]"
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 6"
+      "c": "Final answer: 7"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.845969
+        0.550965
       ],
       [
         0,
         2,
-        0.154031
+        0.449035
       ],
       [
         2,
         3,
-        0.660392
+        0.479152
+      ],
+      [
+        0,
+        3,
+        0.297049
       ],
       [
         1,
         3,
-        0.272485
-      ],
-      [
-        0,
-        3,
-        0.067123
+        0.223799
       ]
     ],
     "cfg": {
@@ -67,11 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "critic",
+    "when": 0,
+    "who": "assistant",
     "path": [
-      1,
-      2,
+      0,
       3
     ]
   },
@@ -84,9 +83,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": false,

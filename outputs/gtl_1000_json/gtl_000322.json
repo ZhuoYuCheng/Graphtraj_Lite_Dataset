@@ -7,7 +7,7 @@
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a function to calculate the standard deviation."
+      "c": "Plan: identify requirements from task. Task: Write a function to calculate the standard deviation. (incorrect)"
     },
     {
       "r": "executor",
@@ -15,7 +15,7 @@
     },
     {
       "r": "tool",
-      "c": "[omitted]"
+      "c": "Tool result: basic checks pass on the draft."
     },
     {
       "r": "assistant",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.707502
+        0.693001
       ],
       [
         0,
         2,
-        0.292498
+        0.306999
       ],
       [
         2,
         3,
-        0.531759
+        0.506862
       ],
       [
         1,
         3,
-        0.288823
+        0.303475
       ],
       [
         0,
         3,
-        0.179417
+        0.189663
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "tool",
+    "when": 0,
+    "who": "planner",
     "path": [
+      0,
+      1,
       2,
       3
     ]

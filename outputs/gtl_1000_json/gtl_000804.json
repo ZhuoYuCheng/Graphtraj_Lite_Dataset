@@ -1,13 +1,13 @@
 {
   "id": "gtl_000804",
   "task": {
-    "prompt": "Let $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c},$ $\\mathbf{d}$ be four distinct unit vectors in space such that\n\\[\\mathbf{a} \\cdot \\mathbf{b} = \\mathbf{a} \\cdot \\mathbf{c} = \\mathbf{b} \\cdot \\mathbf{c}  =\\mathbf{b} \\cdot \\mathbf{d} = \\mathbf{c} \\cdot \\mathbf{d} = -\\frac{1}{11}.\\]Find $\\mathbf{a} \\cdot \\mathbf{d}.$",
-    "gold": "-\\frac{53"
+    "prompt": "In triangle $ABC,$ $E$ lies on $\\overline{AC}$ such that $AE:EC = 2:1,$ and $F$ lies on $\\overline{AB}$ such that $AF:FB = 1:4.$  Let $P$ be the intersection of $\\overline{BE}$ and $\\overline{CF}.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, C, D, E, F, P;\n\nA = (1,4);\nB = (0,0);\nC = (6,0);\nE = interp(A,C,2/3);\nF = interp(A,B,1/5);\nP = extension(B,E,C,F);\n\ndraw(A--B--C--cycle);\ndraw(B--E);\ndraw(C--F);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, W);\nlabel(\"$P$\", P, S);\n[/asy]\n\nThen\n\\[\\overrightarrow{P} = x \\overrightarrow{A} + y \\overrightarrow{B} + z \\overrightarrow{C},\\]where $x,$ $y,$ and $z$ are constants such that $x + y + z = 1.$  Enter the ordered triple $(x,y,z).$",
+    "gold": "\\left( \\frac{4"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c},$ $\\mathbf{d}$ be four distinct unit vectors in space such that\n\\[\\mathbf{a} \\cdot \\mathbf{b} = \\mathbf{a} \\cdot \\mathbf{c} = \\mathbf{b} \\cdot \\mathbf{c}  =\\mathbf{b} \\cdot \\mathbf{d} = \\mathbf{c} \\cdot \\mathbf{d} = -\\frac{1}{11}.\\]Find $\\mathbf{a} \\cdot \\mathbf{d}.$"
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $E$ lies on $\\overline{AC}$ such that $AE:EC = 2:1,$ and $F$ lies on $\\overline{AB}$ such that $AF:FB = 1:4.$  Let $P$ be the intersection of $\\overline{BE}$ and $\\overline{CF}.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, C, D, E, F, P;\n\nA = (1,4);\nB = (0,0);\nC = (6,0);\nE = interp(A,C,2/3);\nF = interp(A,B,1/5);\nP = extension(B,E,C,F);\n\ndraw(A--B--C--cycle);\ndraw(B--E);\ndraw(C--F);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, W);\nlabel(\"$P$\", P, S);\n[/asy]\n\nThen\n\\[\\overrightarrow{P} = x \\overrightarrow{A} + y \\overrightarrow{B} + z \\overrightarrow{C},\\]where $x,$ $y,$ and $z$ are constants such that $x + y + z = 1.$  Enter the ordered triple $(x,y,z).$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: -\\frac{53"
+      "c": "Final answer: \\left( \\frac{4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.918858
+        0.94843
       ],
       [
         0,
         2,
-        0.081142
+        0.05157
       ],
       [
         2,
         3,
-        0.719583
+        0.722185
       ],
       [
         1,
         3,
-        0.246269
+        0.250738
       ],
       [
         0,
         3,
-        0.034148
+        0.027078
       ]
     ],
     "cfg": {

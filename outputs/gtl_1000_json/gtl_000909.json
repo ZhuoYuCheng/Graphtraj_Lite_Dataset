@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: basic che"
     },
     {
       "r": "reviewer",
-      "c": "Final code:\ndef count_vowels(test_str):\r\n  res = 0\r\n  vow_list = ['a', 'e', 'i', 'o', 'u']\r\n  for idx in range(1, len(test_str) - 1):\r\n    if test_str[idx] not in vow_list and (test_str[idx - 1] in vow_list or test_str[idx + 1] in vow_list):\r\n      res += 1\r\n  if test_str[0] not in vow_list and test_str[1] in vow_list:\r\n    res += 1\r\n  if test_str[-1] not in vow_list and test_str[-2] in vow_list:\r\n    res += 1\r\n  return (res)"
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.776724
+        0.789252
       ],
       [
         0,
         2,
-        0.223276
+        0.210748
       ],
       [
         2,
         3,
-        0.433939
+        0.60582
       ],
       [
         1,
         3,
-        0.354882
+        0.280079
       ],
       [
         0,
         3,
-        0.211179
+        0.114101
       ]
     ],
     "cfg": {
@@ -67,9 +67,12 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 2,
+    "who": "writer",
+    "path": [
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -88,8 +91,8 @@
     "suite": "MBPP+",
     "framework": "crewai",
     "judge": {
-      "success": true,
-      "reason": "tests"
+      "success": false,
+      "reason": "tests failed"
     }
   }
 }

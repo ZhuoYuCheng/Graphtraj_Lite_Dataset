@@ -1,13 +1,13 @@
 {
   "id": "gtl_000163",
   "task": {
-    "prompt": "For real numbers $t \\neq 0,$ the point\n\\[(x,y) = \\left( \\frac{t + 1}{t}, \\frac{t - 1}{t} \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
-    "gold": "\\text{(A)"
+    "prompt": "Triangle $ABC$ has a right angle at $B$, and contains a point $P$ for which $PA = 10$, $PB = 6$, and $\\angle APB = \\angle BPC = \\angle CPA$. Find $PC$.\n\n[asy]\nunitsize(0.2 cm);\n\npair A, B, C, P;\n\nA = (0,14);\nB = (0,0);\nC = (21*sqrt(3),0);\nP = intersectionpoint(arc(B,6,0,180),arc(C,33,0,180));\n\ndraw(A--B--C--cycle);\ndraw(A--P);\ndraw(B--P);\ndraw(C--P);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "gold": "33"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: For real numbers $t \\neq 0,$ the point\n\\[(x,y) = \\left( \\frac{t + 1}{t}, \\frac{t - 1}{t} \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option."
+      "c": "Plan: identify requirements from task. Task: Triangle $ABC$ has a right angle at $B$, and contains a point $P$ for which $PA = 10$, $PB = 6$, and $\\angle APB = \\angle BPC = \\angle CPA$. Find $PC$.\n\n[asy]\nunitsize(0.2 cm);\n\npair A, B, C, P;\n\nA = (0,14);\nB = (0,0);\nC = (21*sqrt(3),0);\nP = intersectionpoint(arc(B,6,0,180),arc(C,33,0,180));\n\ndraw(A--B--C--cycle);\ndraw(A--P);\ndraw(B--P);\ndraw(C--P);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$P$\", P, NE);\n[/asy]"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\text{(A)"
+      "c": "Final answer: 33"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.867248
+        0.934578
       ],
       [
         0,
         2,
-        0.132752
+        0.065422
       ],
       [
         2,
         3,
-        0.672762
+        0.706062
       ],
       [
         1,
         3,
-        0.263368
+        0.26633
       ],
       [
         0,
         3,
-        0.06387
+        0.027608
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000191",
   "task": {
-    "prompt": "Kate bought 7 packs of red bouncy balls and 6 packs of yellow bouncy balls. Each pack contained 18 bouncy balls. How many more red bouncy balls than yellow bouncy balls did Kate buy?",
-    "gold": "18"
+    "prompt": "Henry scored 50 points on his Geography test, 70 on his Math test and 66 on his English test. If his History score is the average of these 3 scores, what was his total score across all 4 subjects?",
+    "gold": "248"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Kate bought 7 packs of red bouncy balls and 6 packs of yellow bouncy balls. Each pack contained 18 bouncy balls. How many more red bouncy balls than yellow bouncy balls did Kate buy?"
+      "c": "Plan: identify requirements from task. Task: Henry scored 50 points on his Geography test, 70 on his Math test and 66 on his English test. If his History score is the average of these 3 scores, what was his total score across all 4 subjects?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 18"
+      "c": "Final answer: 248"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.814854
+        0.794438
       ],
       [
         0,
         2,
-        0.185146
+        0.205562
       ],
       [
         2,
         3,
-        0.599532
+        0.600716
       ],
       [
         1,
         3,
-        0.302725
+        0.295035
       ],
       [
         0,
         3,
-        0.097743
+        0.104248
       ]
     ],
     "cfg": {

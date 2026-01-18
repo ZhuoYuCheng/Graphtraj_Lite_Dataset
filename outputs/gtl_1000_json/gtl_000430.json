@@ -1,25 +1,25 @@
 {
   "id": "gtl_000430",
   "task": {
-    "prompt": "Write a python function to add a minimum number such that the sum of array becomes even.",
-    "gold": "def min_Num(arr,n):  \r\n    odd = 0\r\n    for i in range(n): \r\n        if (arr[i] % 2): \r\n            odd += 1 \r\n    if (odd % 2): \r\n        return 1\r\n    return 2"
+    "prompt": "Points $A,$ $B,$ $C,$ and $D$ are equally spaced along a line such that $AB = BC = CD.$  A point $P$ is located so that $\\cos \\angle APC = \\frac{4}{5}$ and $\\cos \\angle BPD = \\frac{3}{5}.$  Determine $\\sin (2 \\angle BPC).$",
+    "gold": "\\frac{18"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a python function to add a minimum number such that the sum of array becomes even."
+      "c": "Plan: identify requirements from task. Task: Points $A,$ $B,$ $C,$ and $D$ are equally spaced along a line such that $AB = BC = CD.$ "
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests. (incorrect)"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 19"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.692756
+        0.729772
       ],
       [
         0,
         2,
-        0.307244
+        0.270228
       ],
       [
         2,
         3,
-        0.548854
+        0.594896
       ],
       [
         1,
         3,
-        0.271253
+        0.271909
       ],
       [
         0,
         3,
-        0.179893
+        0.133195
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "critic",
+    "when": 0,
+    "who": "assistant",
     "path": [
+      0,
       1,
       2,
       3
@@ -84,16 +85,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert min_Num([1,2,3,4,5,6,7,8,9],9) == 1",
-      "assert min_Num([1,2,3,4,5,6,7,8],8) == 2",
-      "assert min_Num([1,2,3],3) == 2"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

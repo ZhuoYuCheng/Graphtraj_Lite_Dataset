@@ -1,13 +1,13 @@
 {
   "id": "gtl_000090",
   "task": {
-    "prompt": "Let $\\mathbf{A}$ be a $2 \\times 2$ matrix, with real entries, such that $\\mathbf{A}^3 = \\mathbf{0}.$  Find the number of different possible matrices that $\\mathbf{A}^2$ can be.  If you think the answer is infinite, then enter \"infinite\".",
-    "gold": "1"
+    "prompt": "If $\\sin x + \\sin y = \\frac{96}{65}$ and $\\cos x + \\cos y = \\frac{72}{65}$, then what is the value of $\\tan x + \\tan y$?",
+    "gold": "\\frac{507"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{A}$ be a $2 \\times 2$ matrix, with real entries, such that $\\mathbf{A}^3 = \\mathbf{0}.$  Find the number of different possible matrices that $\\mathbf{A}^2$ can be.  If you think the answer is infinite, then enter \"infinite\"."
+      "c": "Plan: identify requirements from task. Task: If $\\sin x + \\sin y = \\frac{96}{65}$ and $\\cos x + \\cos y = \\frac{72}{65}$, then what is the value of $\\tan x + \\tan y$?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 1"
+      "c": "Final answer: \\frac{507"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.864278
+        0.823585
       ],
       [
         0,
         2,
-        0.135722
+        0.176415
       ],
       [
         2,
         3,
-        0.630029
+        0.631215
       ],
       [
         1,
         3,
-        0.30379
+        0.280425
       ],
       [
         0,
         3,
-        0.066181
+        0.08836
       ]
     ],
     "cfg": {

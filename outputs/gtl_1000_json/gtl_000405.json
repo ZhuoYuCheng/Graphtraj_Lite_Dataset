@@ -1,13 +1,13 @@
 {
   "id": "gtl_000405",
   "task": {
-    "prompt": "A projectile is fired with an initial velocity of $v$ at an angle of $\\theta$ from the ground.  Then its trajectory can modeled by the parametric equations\n\\begin{align*}\nx &= vt \\cos \\theta, \\\\\ny &= vt \\sin \\theta - \\frac{1}{2} gt^2,\n\\end{align*}where $t$ denotes time and $g$ denotes acceleration due to gravity, forming a parabolic arch.\n\nSuppose $v$ is held constant, but $\\theta$ is allowed to vary, over $0^\\circ \\le \\theta \\le 180^\\circ.$  The highest point of each parabolic arch is plotted.  (Several examples are shown below.)  As $\\theta$ varies, the highest points of the arches trace a closed curve.  The area of this closed curve can be expressed in the form\n\\[c \\cdot \\frac{v^4}{g^2}.\\]Find $c.$\n\n[asy]\nunitsize (5 cm);\n\nreal g, t, theta, v;\npath arch;\n\ng = 1;\nv = 1;\n\ntheta = 80;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 40;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 110;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ndraw((-0.8,0)--(1.2,0));\n\ndot((0,0));\n[/asy]",
-    "gold": "\\frac{\\pi"
+    "prompt": "Gargamel needed new tires for his truck. He went to the auto shop and bought 4 tires on sale for $75 each. The salesman told him that he saved a total of $36. If Gargamel saved the same amount on each tire, what was the original price of each tire?",
+    "gold": "84"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A projectile is fired with an initial velocity of $v$ at an angle of $\\theta$ from the ground.  Then its trajectory can modeled by the parametric equations\n\\begin{align*}\nx &= vt \\cos \\theta, \\\\\ny &= vt \\sin \\theta - \\frac{1}{2} gt^2,\n\\end{align*}where $t$ denotes time and $g$ denotes acceleration due to gravity, forming a parabolic arch.\n\nSuppose $v$ is held constant, but $\\theta$ is allowed to vary, over $0^\\circ \\le \\theta \\le 180^\\circ.$  The highest point of each parabolic arch is plotted.  (Several examples are shown below.)  As $\\theta$ varies, the highest points of the arches trace a closed curve.  The area of this closed curve can be expressed in the form\n\\[c \\cdot \\frac{v^4}{g^2}.\\]Find $c.$\n\n[asy]\nunitsize (5 cm);\n\nreal g, t, theta, v;\npath arch;\n\ng = 1;\nv = 1;\n\ntheta = 80;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 40;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ntheta = 110;\narch = (0,0);\n\nfor (t = 0; t <= 2*v*Sin(theta)/g; t = t + 0.01) {\n  arch = arch--(v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2);\n}\n\ndraw(arch);\nt = v*Sin(theta)/g;\ndot((v*t*Cos(theta),v*t*Sin(theta) - 1/2*g*t^2),red);\n\ndraw((-0.8,0)--(1.2,0));\n\ndot((0,0));\n[/asy]"
+      "c": "Plan: identify requirements from task. Task: Gargamel needed new tires for his truck. He went to the auto shop and bought 4 tires on sale for $75 each. The salesman told him that he saved a total of $36. If Gargamel saved the same amount on each tire, what was the original price of each tire?"
     },
     {
       "r": "critic",
@@ -15,11 +15,11 @@
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{\\pi"
+      "c": "Final answer: 85"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.962474
+        0.817088
       ],
       [
         0,
         2,
-        0.037526
+        0.182912
       ],
       [
         2,
         3,
-        0.729694
+        0.658774
       ],
       [
         1,
         3,
-        0.252554
+        0.257511
       ],
       [
         0,
         3,
-        0.017752
+        0.083714
       ]
     ],
     "cfg": {
@@ -67,9 +67,12 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 2,
+    "who": "assistant",
+    "path": [
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -80,12 +83,10 @@
     }
   },
   "meta": {
-    "level": "Level 5",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
-      "success": true,
+      "success": false,
       "reason": "exact match"
     }
   }

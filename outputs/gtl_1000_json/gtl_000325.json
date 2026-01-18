@@ -1,13 +1,13 @@
 {
   "id": "gtl_000325",
   "task": {
-    "prompt": "Kevin has a shoebox filled with toads.  Every day, Kevin feeds each toad 3 worms.  It takes Kevin 15 minutes to find each worm.  If it takes Kevin 6 hours to find enough worms to feed all of his toads, how many toads does Kevin have in his shoebox?",
-    "gold": "8"
+    "prompt": "Jessica is having a sweet tooth and bought 10 chocolate bars, 10 packs of gummy bears, and 20 bags of chocolate chips. Her total rang up to $150. If the cost of a pack of gummy bears is $2 and a bag of chocolate chips costs $5, how much does 1 chocolate bar cost?",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Kevin has a shoebox filled with toads.  Every day, Kevin feeds each toad 3 worms.  It takes Kevin 15 minutes to find each worm.  If it takes Kevin 6 hours to find enough worms to feed all of his toads, how many toads does Kevin have in his shoebox?"
+      "c": "Plan: identify requirements from task. Task: Jessica is having a sweet tooth and bought 10 chocolate bars, 10 packs of gummy bears, and 20 bags of chocolate chips. Her total rang up to $150. If the cost of a pack of gummy bears is $2 and a bag of chocolate chips costs $5, how much does 1 chocolate bar cost?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 8"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.84914
+        0.854221
       ],
       [
         0,
         2,
-        0.15086
+        0.145779
       ],
       [
         2,
         3,
-        0.61852
+        0.605897
       ],
       [
         1,
         3,
-        0.307573
+        0.321207
       ],
       [
         0,
         3,
-        0.073907
+        0.072896
       ]
     ],
     "cfg": {

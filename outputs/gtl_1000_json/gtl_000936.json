@@ -1,13 +1,13 @@
 {
   "id": "gtl_000936",
   "task": {
-    "prompt": "Find the angle between the vectors $\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix},$ in degrees.",
-    "gold": "150^\\circ"
+    "prompt": "On a farm, there are 2 cows, 3 pigs, and 6 goats. The farmer planned on adding 3 cows, 5 pigs, and 2 goats. How many animals will there be on the farm?",
+    "gold": "21"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find the angle between the vectors $\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix},$ in degrees."
+      "c": "Plan: identify requirements from task. Task: On a farm, there are 2 cows, 3 pigs, and 6 goats. The farmer planned on adding 3 cows, 5 pigs, and 2 goats. How many animals will there be on the farm?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 150^\\circ"
+      "c": "Final answer: 21"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.819469
+        0.83017
       ],
       [
         0,
         2,
-        0.180531
+        0.16983
       ],
       [
         2,
         3,
-        0.665433
+        0.621312
       ],
       [
         1,
         3,
-        0.256237
+        0.288864
       ],
       [
         0,
         3,
-        0.07833
+        0.089825
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

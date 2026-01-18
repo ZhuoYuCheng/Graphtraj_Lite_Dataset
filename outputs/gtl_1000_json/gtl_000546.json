@@ -1,25 +1,25 @@
 {
   "id": "gtl_000546",
   "task": {
-    "prompt": "Write a function to find the length of the shortest string that has both str1 and str2 as subsequences.",
-    "gold": "def super_seq(X, Y, m, n):\r\n\tif (not m):\r\n\t\treturn n\r\n\tif (not n):\r\n\t\treturn m\r\n\tif (X[m - 1] == Y[n - 1]):\r\n\t\treturn 1 + super_seq(X, Y, m - 1, n - 1)\r\n\treturn 1 + min(super_seq(X, Y, m - 1, n),\tsuper_seq(X, Y, m, n - 1))"
+    "prompt": "The matrices\n\\[\\begin{pmatrix} a & 1 & b \\\\ 2 & 2 & 3 \\\\ c & 5 & d \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} -5 & e & -11 \\\\ f & -13 & g \\\\ 2 & h & 4 \\end{pmatrix}\\]are inverses.  Find $a + b + c + d + e + f + g + h.$",
+    "gold": "45"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a function to find the length of the shortest string that has both str1 and str2 as subsequences."
+      "c": "Plan: identify requirements from task. Task: The matrices\n\\[\\begin{pmatrix} a & 1 & b \\\\ 2 & 2 & 3 \\\\ c & 5 & d \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} -5 & e & -11 \\\\ f & -13 & g \\\\ 2 & h & 4 \\end{pmatrix}\\]are inverses.  Find $a + b + c + d + e + f + g + h.$"
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef super_seq(X, Y, m, n):\r\n\tif (not m):\r\n\t\treturn n\r\n\tif (not n):\r\n\t\treturn m\r\n\tif (X[m - 1] == Y[n - 1]):\r\n\t\treturn 1 + super_seq(X, Y, m - 1, n - 1)\r\n\treturn 1 + min(super_seq(X, Y, m - 1, n),\tsuper_seq(X, Y, m, n - 1))"
+      "c": "Final answer: 45"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.728696
+        0.873328
       ],
       [
         0,
         2,
-        0.271304
+        0.126672
       ],
       [
         2,
         3,
-        0.448927
+        0.674077
       ],
       [
         1,
         3,
-        0.335693
+        0.271735
       ],
       [
         0,
         3,
-        0.21538
+        0.054188
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert super_seq(\"AGGTAB\", \"GXTXAYB\", 6, 7) == 9",
-      "assert super_seq(\"feek\", \"eke\", 4, 3) == 5",
-      "assert super_seq(\"PARRT\", \"RTA\", 5, 3) == 6"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

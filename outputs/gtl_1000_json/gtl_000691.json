@@ -1,13 +1,13 @@
 {
   "id": "gtl_000691",
   "task": {
-    "prompt": "There exists a scalar $c$ so that\n\\[\\mathbf{i} \\times (\\mathbf{v} \\times \\mathbf{i}) + \\mathbf{j} \\times (\\mathbf{v} \\times \\mathbf{j}) + \\mathbf{k} \\times (\\mathbf{v} \\times \\mathbf{k}) = c \\mathbf{v}\\]for all vectors $\\mathbf{v}.$  Find $c.$",
-    "gold": "2"
+    "prompt": "Shelby was having a movie party for her birthday. She and her mom made a dozen bags of buttered popcorn and 10 bags of caramel popcorn. Her brother Alan took 3 bags of buttered popcorn and 1 bag of caramel popcorn for his friends. How many bags of popcorn does Shelby have left for the party?",
+    "gold": "18"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: There exists a scalar $c$ so that\n\\[\\mathbf{i} \\times (\\mathbf{v} \\times \\mathbf{i}) + \\mathbf{j} \\times (\\mathbf{v} \\times \\mathbf{j}) + \\mathbf{k} \\times (\\mathbf{v} \\times \\mathbf{k}) = c \\mathbf{v}\\]for all vectors $\\mathbf{v}.$  Find $c.$"
+      "c": "Plan: identify requirements from task. Task: Shelby was having a movie party for her birthday. She and her mom made a dozen bags of buttered popcorn and 10 bags of caramel popcorn. Her brother Alan took 3 bags of buttered popcorn and 1 bag of caramel popcorn for his friends. How many bags of popcorn does Shelby have left for the party?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 2"
+      "c": "Final answer: 18"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.894693
+        0.862555
       ],
       [
         0,
         2,
-        0.105307
+        0.137445
       ],
       [
         2,
         3,
-        0.690392
+        0.638739
       ],
       [
         1,
         3,
-        0.267814
+        0.295664
       ],
       [
         0,
         3,
-        0.041794
+        0.065597
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

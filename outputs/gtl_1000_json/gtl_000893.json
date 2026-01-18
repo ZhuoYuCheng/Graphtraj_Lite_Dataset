@@ -1,13 +1,13 @@
 {
   "id": "gtl_000893",
   "task": {
-    "prompt": "Find all angles $\\theta,$ $0 \\le \\theta \\le 2 \\pi,$ with the following property: For all real numbers $x,$ $0 \\le x \\le 1,$\n\\[x^2 \\cos \\theta - x(1 - x) + (1 - x)^2 \\sin \\theta > 0.\\]",
-    "gold": "\\left( \\frac{\\pi"
+    "prompt": "In triangle $ABC,$ $\\angle C = \\frac{\\pi}{2}.$  Find\n\\[\\arctan \\left( \\frac{a}{b + c} \\right) + \\arctan \\left( \\frac{b}{a + c} \\right).\\]",
+    "gold": "\\frac{\\pi"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find all angles $\\theta,$ $0 \\le \\theta \\le 2 \\pi,$ with the following property: For all real numbers $x,$ $0 \\le x \\le 1,$\n\\[x^2 \\cos \\theta - x(1 - x) + (1 - x)^2 \\sin \\theta > 0.\\]"
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $\\angle C = \\frac{\\pi}{2}.$  Find\n\\[\\arctan \\left( \\frac{a}{b + c} \\right) + \\arctan \\left( \\frac{b}{a + c} \\right).\\]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\left( \\frac{\\pi"
+      "c": "Final answer: \\frac{\\pi"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.868947
+        0.838184
       ],
       [
         0,
         2,
-        0.131053
+        0.161816
       ],
       [
         2,
         3,
-        0.683813
+        0.656296
       ],
       [
         1,
         3,
-        0.254328
+        0.259425
       ],
       [
         0,
         3,
-        0.061859
+        0.084279
       ]
     ],
     "cfg": {

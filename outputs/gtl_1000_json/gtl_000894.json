@@ -1,13 +1,13 @@
 {
   "id": "gtl_000894",
   "task": {
-    "prompt": "Gabby planted a watermelon vine, a peach tree, and two plum trees in the spring. Over the summer, the plants grew and produced fruit. She only got one watermelon to grow, but she got twelve more peaches than that, and three times that number of plums. How many pieces of fruit did Gabby get to pick that summer?",
-    "gold": "53"
+    "prompt": "Michael buys his suit for $430 and shoes for $190. So, if he gets a $100 discount, what was the amount that he paid to the seller?",
+    "gold": "520"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Gabby planted a watermelon vine, a peach tree, and two plum trees in the spring. Over the summer, the plants grew and produced fruit."
+      "c": "Plan: identify requirements from task. Task: Michael buys his suit for $430 and shoes f"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 54"
+      "c": "Final answer: 521"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.794561
+        0.669989
       ],
       [
         0,
         2,
-        0.205439
+        0.330011
       ],
       [
         2,
         3,
-        0.607843
+        0.551841
       ],
       [
         1,
         3,
-        0.289494
+        0.270284
       ],
       [
         0,
         3,
-        0.102664
+        0.177875
       ]
     ],
     "cfg": {

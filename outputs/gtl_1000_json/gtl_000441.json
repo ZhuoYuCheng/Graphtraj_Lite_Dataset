@@ -1,25 +1,25 @@
 {
   "id": "gtl_000441",
   "task": {
-    "prompt": "Write a function to convert an integer into a roman numeral.",
-    "gold": "def int_to_roman( num):\r\n        val = [1000, 900, 500, 400,100, 90, 50, 40,10, 9, 5, 4,1]\r\n        syb = [\"M\", \"CM\", \"D\", \"CD\",\"C\", \"XC\", \"L\", \"XL\",\"X\", \"IX\", \"V\", \"IV\",\"I\"]\r\n        roman_num = ''\r\n        i = 0\r\n        while  num > 0:\r\n            for _ in range(num // val[i]):\r\n                roman_num += syb[i]\r\n                num -= val[i]\r\n            i += 1\r\n        return roman_num"
+    "prompt": "Find the integer $n,$ $0 \\le n \\le 180,$ such that $\\cos n^\\circ = \\cos 259^\\circ.$",
+    "gold": "101"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a function to convert an integer into a roman numeral. (incorrect)"
+      "c": "Plan: identify requirements from task. Task: Find the integer $n,$ $0 \\le n \\le 180,$ such that $\\cos n^\\circ = \\cos 259^\\circ.$\nTool result: corrupted output"
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 102"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.70208
+        0.729204
       ],
       [
         0,
         2,
-        0.29792
+        0.270796
       ],
       [
         2,
         3,
-        0.531953
+        0.545513
       ],
       [
         1,
         3,
-        0.291816
+        0.311257
       ],
       [
         0,
         3,
-        0.176232
+        0.14323
       ]
     ],
     "cfg": {
@@ -85,16 +85,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert int_to_roman(1)==(\"I\")",
-      "assert int_to_roman(50)==(\"L\")",
-      "assert int_to_roman(4)==(\"IV\")"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000261",
   "task": {
-    "prompt": "If $\\tan x = 2,$ then find $\\tan \\left( x + \\frac{\\pi}{4} \\right).$",
-    "gold": "-3"
+    "prompt": "Mark goes into the store to buy some groceries.  He buys 6 2$ cans of soup, 2 $5 loaves of bread, 2 3$ boxes of cereal, and 2 $4 gallons of milk.  When he gets to the register, he opens his wallet to pay and realizes he only has $10 bills in there.  How many $10 bills does he need to use to pay?",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: If $\\tan x = 2,$ then find $\\tan \\left( x + \\frac{\\pi}{4} \\right).$"
+      "c": "Plan: identify requirements from task. Task: Mark goes into the store to buy some groceries.  He buys 6 2$ cans of soup, 2 $5 loaves of bread, 2 3$ boxes of cereal, and 2 $4 gallons of milk.  When he gets to the register, he opens his wallet to pay and realizes he only has $10 bills in there.  How many $10 bills does he need to use to pay?"
     },
     {
       "r": "executor",
@@ -15,11 +15,11 @@
     },
     {
       "r": "tool",
-      "c": "[omitted]"
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "assistant",
-      "c": "Final answer: -2"
+      "c": "Final answer: 5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.790168
+        0.880777
       ],
       [
         0,
         2,
-        0.209832
+        0.119223
       ],
       [
         2,
         3,
-        0.597762
+        0.675506
       ],
       [
         1,
         3,
-        0.285427
+        0.269324
       ],
       [
         0,
         3,
-        0.116811
+        0.055169
       ]
     ],
     "cfg": {
@@ -83,9 +83,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": false,

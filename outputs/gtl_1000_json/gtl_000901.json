@@ -1,13 +1,13 @@
 {
   "id": "gtl_000901",
   "task": {
-    "prompt": "Let $\\mathbf{M}$ be a matrix such that\n\\[\\mathbf{M} \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} \\quad \\text{and} \\quad \\mathbf{M} \\begin{pmatrix} -3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ -1 \\end{pmatrix}.\\]Compute $\\mathbf{M} \\begin{pmatrix} 5 \\\\ 1 \\end{pmatrix}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "There are three buckets of seeds labeled A, B, and C with 100 seeds. There are ten more seeds in bucket A than in bucket B, and bucket B has 30 seeds. How many seeds are in bucket C?",
+    "gold": "30"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{M}$ be a matrix such that\n\\[\\mathbf{M} \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} \\quad \\text{and} \\quad \\mathbf{M} \\begin{pmatrix} -3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ -1 \\end{pmatrix}.\\]Compute $\\mathbf{M} \\begin{pmatrix} 5 \\\\ 1 \\end{pmatrix}.$"
+      "c": "Plan: identify requirements from task. Task: There are three buckets of seeds labeled A, B, and C with 100 seeds. There are ten more seeds in bucket A than in bucket B, and bucket B has 30 seeds. How many seeds are in bucket C?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 30"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.911857
+        0.82994
       ],
       [
         0,
         2,
-        0.088143
+        0.17006
       ],
       [
         2,
         3,
-        0.694992
+        0.622387
       ],
       [
         1,
         3,
-        0.259873
+        0.287641
       ],
       [
         0,
         3,
-        0.045135
+        0.089972
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

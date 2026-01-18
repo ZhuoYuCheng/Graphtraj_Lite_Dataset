@@ -1,17 +1,17 @@
 {
   "id": "gtl_000572",
   "task": {
-    "prompt": "Find the ordered pair $(a,b)$ of integers such that\n\\[\\sqrt{9 - 8 \\sin 50^\\circ} = a + b \\csc 50^\\circ.\\]",
-    "gold": "(3,-1)"
+    "prompt": "Let $x$ and $y$ be distinct real numbers such that\n\\[\n\\begin{vmatrix} 1 & 4 & 9 \\\\ 3 & x & y \\\\ 3 & y & x \\end{vmatrix}\n= 0.\\]Find $x + y.$",
+    "gold": "39"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Find the ordered pair $(a,b)$ of integers such that\n\\[\\sqrt{9 - 8 \\sin 50^\\circ} = a + b \\csc 50^\\circ.\\]"
+      "c": "Plan: identify requirements from task. Task: Let $x$ and $y$ be distinct real numbers such that\n\\[\n\\begin{vmatrix} 1 & 4 & 9 \\\\ 3 & x & y \\\\ 3 & y & x \\end{vmatrix}\n= 0.\\]Find $x + y.$"
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefull"
     },
     {
       "r": "assistant",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: (3,-1)"
+      "c": "Final answer: 40"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.773406
+        0.830012
       ],
       [
         0,
         2,
-        0.226594
+        0.169988
       ],
       [
         2,
         3,
-        0.631119
+        0.63236
       ],
       [
         1,
         3,
-        0.253533
+        0.28334
       ],
       [
         0,
         3,
-        0.115348
+        0.0843
       ]
     ],
     "cfg": {
@@ -67,9 +67,13 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 1,
+    "who": "critic",
+    "path": [
+      1,
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -80,12 +84,12 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",
     "judge": {
-      "success": true,
+      "success": false,
       "reason": "exact match"
     }
   }

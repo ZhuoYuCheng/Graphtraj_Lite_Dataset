@@ -1,25 +1,25 @@
 {
   "id": "gtl_000260",
   "task": {
-    "prompt": "Consider two solid spherical balls, one centered at $\\left( 0, 0, \\frac{21}{2} \\right),$ with radius 6, and the other centered at $(0,0,1)$ with radius $\\frac{9}{2}.$  How many points $(x,y,z)$ with only integer coefficients are there in the intersection of the balls?",
-    "gold": "13"
+    "prompt": "A small theater company sells tickets to a show.  They have a 400 seat theater and fill to 80% capacity.  Each ticket cost $30.  They repeated the same performance 2 other days.  How much did they make?",
+    "gold": "28,800"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Consider two solid spherical balls, one centered at $\\left( 0, 0, \\frac{21}{2} \\right),$ with radius 6, and the other centered at $(0,0,1)$ with radius $\\frac{9}{2}.$  How many points $(x,y,z)$ with only integer coefficients are there in the intersection of the balls?"
+      "c": "Plan: identify requirements from task. Task: A small theater company sells tickets to a show.  They have a 400 seat theater and fill to 80% capacity.  Each ticket cost $30.  They repeated the same performance 2 other days.  How much did they make?"
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
     },
     {
       "r": "tool",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 14"
+      "c": "Final answer: 801"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.874623
+        0.827225
       ],
       [
         0,
         2,
-        0.125377
+        0.172775
       ],
       [
         2,
         3,
-        0.647312
+        0.621917
       ],
       [
         1,
         3,
-        0.288
+        0.288531
       ],
       [
         0,
         3,
-        0.064688
+        0.089552
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "tool",
+    "when": 1,
+    "who": "executor",
     "path": [
+      1,
       2,
       3
     ]
@@ -83,9 +84,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": false,

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000826",
   "task": {
-    "prompt": "Let $P$ be a point inside triangle $ABC$ such that\n\\[\\overrightarrow{PA} + 2 \\overrightarrow{PB} + 3 \\overrightarrow{PC} = \\mathbf{0}.\\]Find the ratio of the area of triangle $ABC$ to the area of triangle $APC.$",
-    "gold": "3"
+    "prompt": "Jerry is cutting up wood for his wood-burning stove. Each pine tree makes 80 logs, each maple tree makes 60 logs, and each walnut tree makes 100 logs. If Jerry cuts up 8 pine trees, 3 maple trees, and 4 walnut trees, how many logs does he get?",
+    "gold": "1220"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $P$ be a point inside triangle $ABC$ such that\n\\[\\overrightarrow{PA} + 2 \\overrightarrow{PB} + 3 \\overrightarrow{PC} = \\mathbf{0}.\\]Find the ratio of the area of triangle $ABC$ to the area of triangle $APC.$"
+      "c": "Plan: identify requirements from task. Task: Jerry is cutting up wood for his wood-burning stove. Each pine tree makes 80 logs, each maple tree makes 60 logs, and each walnut tree makes 100 logs. If Jerry cuts up 8 pine trees, 3 maple trees, and 4 walnut trees, how many logs does he get?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 3"
+      "c": "Final answer: 1220"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.869758
+        0.857344
       ],
       [
         0,
         2,
-        0.130242
+        0.142656
       ],
       [
         2,
         3,
-        0.676313
+        0.634939
       ],
       [
         1,
         3,
-        0.267244
+        0.293755
       ],
       [
         0,
         3,
-        0.056444
+        0.071305
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": true,

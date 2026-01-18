@@ -1,13 +1,13 @@
 {
   "id": "gtl_000583",
   "task": {
-    "prompt": "If $8 \\tan \\theta = 3 \\cos \\theta$ and $0 < \\theta < \\pi,$ then determine the value of $\\sin \\theta.$",
-    "gold": "\\frac{1"
+    "prompt": "The sides of rectangle $ABCD$ have lengths $10$ and $11$. An equilateral triangle is drawn so that no point of the triangle lies outside $ABCD$.  Find the maximum possible area of such a triangle.",
+    "gold": "221 \\sqrt{3"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: If $8 \\tan \\theta = 3 \\cos \\theta$ and $0 < \\theta < \\pi,$ then determine the value of $\\sin \\theta.$"
+      "c": "Plan: identify requirements from task. Task: The sides of rectangle $ABCD$ have lengths $10$ and $11$. An equilateral triangle is drawn so that no point of the triangle lies outside $ABCD$.  Find the maximum possible area of such a triangle."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{1"
+      "c": "Final answer: 221 \\sqrt{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.766253
+        0.791328
       ],
       [
         0,
         2,
-        0.233747
+        0.208672
       ],
       [
         2,
         3,
-        0.619647
+        0.616184
       ],
       [
         1,
         3,
-        0.262042
+        0.277523
       ],
       [
         0,
         3,
-        0.118312
+        0.106293
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

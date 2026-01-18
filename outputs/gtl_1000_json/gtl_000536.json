@@ -1,25 +1,25 @@
 {
   "id": "gtl_000536",
   "task": {
-    "prompt": "Write a python function to find the sum of all even natural numbers within the range l and r.",
-    "gold": "def sum_Natural(n): \r\n    sum = (n * (n + 1)) \r\n    return int(sum) \r\ndef sum_Even(l,r): \r\n    return (sum_Natural(int(r / 2)) - sum_Natural(int((l - 1) / 2)))"
+    "prompt": "There exist constants $a$ and $b$ so that\n\\[\\cos^3 \\theta = a \\cos 3 \\theta  + b \\cos \\theta\\]for all angles $\\theta.$  Enter the ordered pair $(a,b).$",
+    "gold": "\\left( \\frac{1"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Write a python function to find the sum of all even natural numbers within the range l and r."
+      "c": "Plan: identify requirements from task. Task: There exist constants $a$ and $b$ so that\n\\[\\cos^3 \\theta = a \\cos 3 \\theta  + b \\cos \\theta\\]for all angles $\\theta.$  Enter the ordered pair $(a,b).$"
     },
     {
       "r": "critic",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "assistant",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef sum_Natural(n): \r\n    sum = (n * (n + 1)) \r\n    return int(sum) \r\ndef sum_Even(l,r): \r\n    return (sum_Natural(int(r / 2)) - sum_Natural(int((l - 1) / 2)))"
+      "c": "Final answer: \\left( \\frac{1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.71004
+        0.807047
       ],
       [
         0,
         2,
-        0.28996
+        0.192953
       ],
       [
         2,
         3,
-        0.466628
+        0.634406
       ],
       [
         1,
         3,
-        0.306804
+        0.265863
       ],
       [
         0,
         3,
-        0.226568
+        0.099731
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert sum_Even(2,5) == 6",
-      "assert sum_Even(3,8) == 18",
-      "assert sum_Even(4,6) == 10"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

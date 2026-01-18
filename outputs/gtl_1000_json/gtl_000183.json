@@ -1,13 +1,13 @@
 {
   "id": "gtl_000183",
   "task": {
-    "prompt": "Ivory and Brayan are doing school projects with a tight deadline and have to stay up late to complete everything. They prepare coffee to help them stay focused. If Brayan drinks twice as much coffee as Ivory, and Brayan drinks 4 cups of coffee in an hour, calculate the total number of cups of coffee they drink together in 5 hours.",
-    "gold": "30"
+    "prompt": "Tim gets 6 hours of sleep 2 days in a row.  To make up for it he sleeps 10 hours the next 2 days.  How much sleep did he get?",
+    "gold": "32"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Ivory and Brayan are doing school projects with a tight deadline and have to stay up late to complete everything. They prepare coffee to help them stay focused. If Brayan drinks twice as much coffee as Ivory, and Brayan drinks 4 cups of coffee in an hour, calculate the total number of cups of coffee they drink together in 5 hours."
+      "c": "Plan: identify requirements from task. Task: Tim gets 6 hours of sleep 2 days in a row.  To make up for it he sleeps 10 hours the next 2 days.  How much sleep did he get?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 30"
+      "c": "Final answer: 32"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.861381
+        0.790098
       ],
       [
         0,
         2,
-        0.138619
+        0.209902
       ],
       [
         2,
         3,
-        0.623502
+        0.586172
       ],
       [
         1,
         3,
-        0.310686
+        0.303249
       ],
       [
         0,
         3,
-        0.065812
+        0.110579
       ]
     ],
     "cfg": {

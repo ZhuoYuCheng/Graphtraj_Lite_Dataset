@@ -1,13 +1,13 @@
 {
   "id": "gtl_000459",
   "task": {
-    "prompt": "The line $y = 2x + 7$ is to be parameterized using vectors.  Which of the following options are valid parameterizations?\n\n(A) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 7 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$\n\n(B) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7/2 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} -1 \\\\ -2 \\end{pmatrix}$\n\n(C) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix}  1 \\\\ 9 \\end{pmatrix} + t \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}$\n\n(D) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + t \\begin{pmatrix} 1/2 \\\\ 1 \\end{pmatrix}$\n\n(E) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ -7 \\end{pmatrix} + t \\begin{pmatrix} 1/10 \\\\ 1/5 \\end{pmatrix}$\n\nEnter the letters of the correct options, separated by commas.",
-    "gold": "\\text{B,E"
+    "prompt": "If $A$ is an angle such that $\\tan A + \\sec A = 2,$ enter all possible values of $\\cos A,$ separated by commas.",
+    "gold": "\\frac{4"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: The line $y = 2x + 7$ is to be parameterized using vectors.  Which of the following options are valid parameterizations?\n\n(A) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 7 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$\n\n(B) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7/2 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} -1 \\\\ -2 \\end{pmatrix}$\n\n(C) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix}  1 \\\\ 9 \\end{pmatrix} + t \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}$\n\n(D) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + t \\begin{pmatrix} 1/2 \\\\ 1 \\end{pmatrix}$\n\n(E) $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ -7 \\end{pmatrix} + t \\begin{pmatrix} 1/10 \\\\ 1/5 \\end{pmatrix}$\n\nEnter the letters of the correct options, separated by commas."
+      "c": "Plan: identify requirements from task. Task: If $A$ is an angle such that $\\tan A + \\sec A = 2,$ enter all possible values of $\\cos A,$ separated by commas."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\text{B,E"
+      "c": "Final answer: \\frac{4"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.943
+        0.748921
       ],
       [
         0,
         2,
-        0.057
+        0.251079
       ],
       [
         2,
         3,
-        0.709368
+        0.590569
       ],
       [
         1,
         3,
-        0.262723
+        0.276144
       ],
       [
         0,
         3,
-        0.027909
+        0.133287
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

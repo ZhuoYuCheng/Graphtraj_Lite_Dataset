@@ -1,13 +1,13 @@
 {
   "id": "gtl_000434",
   "task": {
-    "prompt": "Bob was creating a math test for an online platform.  He created 13 questions in the first hour.  Bob then doubled his rate for the second hour, and doubled his second hour rate for the third hour.  How many questions did Bob create in the three hours?",
-    "gold": "91"
+    "prompt": "Ivory and Brayan are doing school projects with a tight deadline and have to stay up late to complete everything. They prepare coffee to help them stay focused. If Brayan drinks twice as much coffee as Ivory, and Brayan drinks 4 cups of coffee in an hour, calculate the total number of cups of coffee they drink together in 5 hours.",
+    "gold": "30"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Bob was creating a math test for an online platform.  He created 13 questions in the first hour.  Bob then doubled his rate for the second hour, and doubled his second hour rate for the third hour.  How many questions did Bob create in the three hours?"
+      "c": "Plan: identify requirements from task. Task: Ivory and Brayan are doing school projects with a tight deadline and have to stay up late to complete everything. They prepare coffee to help them stay focused. If Brayan drinks twice as much coffee as Ivory, and Brayan drinks 4 cups of coffee in an hour, calculate the total number of cups of coffee they drink together in 5 hours."
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 91"
+      "c": "Final answer: 30"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.791067
+        0.838375
       ],
       [
         0,
         2,
-        0.208933
+        0.161625
       ],
       [
         2,
         3,
-        0.624959
+        0.629344
       ],
       [
         1,
         3,
-        0.274751
+        0.293033
       ],
       [
         0,
         3,
-        0.10029
+        0.077623
       ]
     ],
     "cfg": {

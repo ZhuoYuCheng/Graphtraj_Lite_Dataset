@@ -1,13 +1,13 @@
 {
   "id": "gtl_000722",
   "task": {
-    "prompt": "In rectangle $ABCD,$ $P$ is a point on side $\\overline{BC}$ such that $BP = 16$ and $CP = 8.$  If $\\tan \\angle APD = 3,$ then find $AB.$",
-    "gold": "16"
+    "prompt": "Let $\\mathbf{A}$ be a $2 \\times 2$ matrix, with real entries, such that $\\mathbf{A}^3 = \\mathbf{0}.$  Find the number of different possible matrices that $\\mathbf{A}^2$ can be.  If you think the answer is infinite, then enter \"infinite\".",
+    "gold": "1"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: In rectangle $ABCD,$ $P$ is a point on side $\\overline{BC}$ such that $BP = 16$ and $CP = 8.$  If $\\tan \\angle APD = 3,$ then find $AB.$"
+      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{A}$ be a $2 \\times 2$ matrix, with real entries, such that $\\mathbf{A}^3 = \\mathbf{0}.$  Find the number of different possible matrices that $\\mathbf{A}^2$ can be.  If you think the answer is infinite, then enter \"infinite\"."
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 16"
+      "c": "Final answer: 1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.826573
+        0.870847
       ],
       [
         0,
         2,
-        0.173427
+        0.129153
       ],
       [
         2,
         3,
-        0.638628
+        0.647632
       ],
       [
         1,
         3,
-        0.280526
+        0.28871
       ],
       [
         0,
         3,
-        0.080846
+        0.063659
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

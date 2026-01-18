@@ -7,7 +7,7 @@
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python "
+      "c": "Plan: identify requirements from task. Task: Write a python function to find sum of all prime divisors of a given number."
     },
     {
       "r": "executor",
@@ -15,7 +15,7 @@
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "assistant",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.611881
+        0.729146
       ],
       [
         0,
         2,
-        0.388119
+        0.270854
       ],
       [
         2,
         3,
-        0.486957
+        0.594875
       ],
       [
         1,
         3,
-        0.267791
+        0.26212
       ],
       [
         0,
         3,
-        0.245252
+        0.143005
       ]
     ],
     "cfg": {
@@ -67,11 +67,9 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "planner",
+    "when": 2,
+    "who": "tool",
     "path": [
-      0,
-      1,
       2,
       3
     ]

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000719",
   "task": {
-    "prompt": "Let $\\mathbf{m},$ $\\mathbf{n},$ and $\\mathbf{p}$ be unit vectors such that the angle between $\\mathbf{m}$ and $\\mathbf{n}$ is $\\alpha,$ and the angle between $\\mathbf{p}$ and $\\mathbf{m} \\times \\mathbf{n}$ is also $\\alpha.$  If $\\mathbf{n} \\cdot (\\mathbf{p} \\times \\mathbf{m}) = \\frac{1}{4},$ find the smallest possible value of $\\alpha,$ in degrees.",
-    "gold": "30^\\circ"
+    "prompt": "The following line is parameterized, so that its direction vector is of the form $\\begin{pmatrix} a \\\\ -1 \\end{pmatrix}.$  Find $a.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, L, R;\nint i, n;\n\nfor (i = -8; i <= 8; ++i) {\n  draw((i,-8)--(i,8),gray(0.7));\n  draw((-8,i)--(8,i),gray(0.7));\n}\n\ndraw((-8,0)--(8,0),Arrows(6));\ndraw((0,-8)--(0,8),Arrows(6));\n\nA = (-2,5);\nB = (1,0);\nL = extension(A, B, (0,8), (1,8));\nR = extension(A, B, (0,-8), (1,-8));\n\ndraw(L--R, red);\n\nlabel(\"$x$\", (8,0), E);\nlabel(\"$y$\", (0,8), N);\n[/asy]",
+    "gold": "\\frac{3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{m},$ $\\mathbf{n},$ and $\\mathbf{p}$ be unit vectors such that the angle between $\\mathbf{m}$ and $\\mathbf{n}$ is $\\alpha,$ and the angle between $\\mathbf{p}$ and $\\mathbf{m} \\times \\mathbf{n}$ is also $\\alpha.$  If $\\mathbf{n} \\cdot (\\mathbf{p} \\times \\mathbf{m}) = \\frac{1}{4},$ find the smallest possible value of $\\alpha,$ in degrees."
+      "c": "Plan: identify requirements from task. Task: The following line is parameterized, so that its direction vector is of the form $\\begin{pmatrix} a \\\\ -1 \\end{pmatrix}.$  Find $a.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, L, R;\nint i, n;\n\nfor (i = -8; i <= 8; ++i) {\n  draw((i,-8)--(i,8),gray(0.7));\n  draw((-8,i)--(8,i),gray(0.7));\n}\n\ndraw((-8,0)--(8,0),Arrows(6));\ndraw((0,-8)--(0,8),Arrows(6));\n\nA = (-2,5);\nB = (1,0);\nL = extension(A, B, (0,8), (1,8));\nR = extension(A, B, (0,-8), (1,-8));\n\ndraw(L--R, red);\n\nlabel(\"$x$\", (8,0), E);\nlabel(\"$y$\", (0,8), N);\n[/asy]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 30^\\circ"
+      "c": "Final answer: \\frac{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.913525
+        0.944241
       ],
       [
         0,
         2,
-        0.086475
+        0.055759
       ],
       [
         2,
         3,
-        0.696063
+        0.734504
       ],
       [
         1,
         3,
-        0.26951
+        0.240504
       ],
       [
         0,
         3,
-        0.034428
+        0.024992
       ]
     ],
     "cfg": {

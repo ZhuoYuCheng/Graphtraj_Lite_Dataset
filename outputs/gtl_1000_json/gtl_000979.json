@@ -1,13 +1,13 @@
 {
   "id": "gtl_000979",
   "task": {
-    "prompt": "Let $\\mathbf{R}$ be the matrix for rotating about the origin counter-clockwise by an angle of $58^\\circ.$  Find $\\det \\mathbf{R}.$",
-    "gold": "1"
+    "prompt": "If\n\\[(1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ)(1 + \\tan 3^\\circ) \\dotsm (1 + \\tan 45^\\circ) = 2^n,\\]then find $n.$",
+    "gold": "23"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{R}$ be the matrix for rotating about the origin counter-clockwise by an angle of $58^\\circ.$  Find $\\det \\mathbf{R}.$"
+      "c": "Plan: identify requirements from task. Task: If\n\\[(1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ)(1 + \\tan 3^\\circ) \\dotsm (1 + \\tan 45^\\circ) = 2^n,\\]then find $n.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 1"
+      "c": "Final answer: 23"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.804609
+        0.825999
       ],
       [
         0,
         2,
-        0.195391
+        0.174001
       ],
       [
         2,
         3,
-        0.645948
+        0.686443
       ],
       [
         1,
         3,
-        0.267677
+        0.241493
       ],
       [
         0,
         3,
-        0.086374
+        0.072064
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 3",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

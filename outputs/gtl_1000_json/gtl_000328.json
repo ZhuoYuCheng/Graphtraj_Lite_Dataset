@@ -1,25 +1,25 @@
 {
   "id": "gtl_000328",
   "task": {
-    "prompt": "Equilateral triangle $ABC$ has been creased and folded so that vertex $A$ now rests at $A'$ on $\\overline{BC}$ as shown.  If $BA' = 1$ and $A'C = 2,$ then find the length of crease $\\overline{PQ}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, Ap, B, C, P, Q;\n\nA = 3*dir(60);\nB = (0,0);\nC = (3,0);\nAp = (1,0);\nP = 8/5*dir(60);\nQ = C + 5/4*dir(120);\n\ndraw(B--C--Q--P--cycle);\ndraw(P--Ap--Q);\ndraw(P--A--Q,dashed);\n\nlabel(\"$A$\", A, N);\nlabel(\"$A'$\", Ap, S);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$P$\", P, NW);\nlabel(\"$Q$\", Q, NE);\n[/asy]",
-    "gold": "\\frac{7 \\sqrt{21"
+    "prompt": "Let $a = \\pi/2008$. Find the smallest positive integer $n$ such that\\[2[\\cos(a)\\sin(a) + \\cos(4a)\\sin(2a) + \\cos(9a)\\sin(3a) + \\cdots + \\cos(n^2a)\\sin(na)]\\]is an integer.",
+    "gold": "251"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Equilateral triangle $ABC$ has been creased and folded so that vertex $A$ now rests at $A'$ on $\\overline{BC}$ as shown.  If $BA' = 1$ and $A'C = 2,$ then find the length of crease $\\overline{PQ}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, Ap, B, C, P, Q;\n\nA = 3*dir(60);\nB = (0,0);\nC = (3,0);\nAp = (1,0);\nP = 8/5*dir(60);\nQ = C + 5/4*dir(120);\n\ndraw(B--C--Q--P--cycle);\ndraw(P--Ap--Q);\ndraw(P--A--Q,dashed);\n\nlabel(\"$A$\", A, N);\nlabel(\"$A'$\", Ap, S);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$P$\", P, NW);\nlabel(\"$Q$\", Q, NE);\n[/asy]"
+      "c": "Plan: identify requirements from task. Task: Let $a = \\pi/2008$. Find the smallest positive integer $n$ such that\\[2[\\cos(a)\\sin(a) + \\cos(4a)\\sin(2a) + \\cos(9a)\\sin(3a) + \\cdots + \\cos(n^2a)\\sin(na)]\\]is an integer."
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefull"
     },
     {
       "r": "tool",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 22"
+      "c": "Final answer: 252"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.944079
+        0.883566
       ],
       [
         0,
         2,
-        0.055921
+        0.116434
       ],
       [
         2,
         3,
-        0.745314
+        0.593366
       ],
       [
         1,
         3,
-        0.232409
+        0.343979
       ],
       [
         0,
         3,
-        0.022277
+        0.062654
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "tool",
+    "when": 1,
+    "who": "executor",
     "path": [
+      1,
       2,
       3
     ]
@@ -83,7 +84,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

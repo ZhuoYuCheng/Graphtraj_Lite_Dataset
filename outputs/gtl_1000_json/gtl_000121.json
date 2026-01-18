@@ -1,25 +1,25 @@
 {
   "id": "gtl_000121",
   "task": {
-    "prompt": "Ice cream costs $2.00 and toppings cost $0.50 per topping. How much does a sundae with 10 toppings cost?",
-    "gold": "7"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Ice cream costs $2.00 and toppings cost $0.50 per topping. How much does a sundae with 10 toppings cost?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 7"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.777315
+        0.592648
       ],
       [
         0,
         2,
-        0.222685
+        0.407352
       ],
       [
         2,
         3,
-        0.557446
+        0.42481
       ],
       [
         1,
         3,
-        0.322669
+        0.287602
       ],
       [
         0,
         3,
-        0.119885
+        0.287588
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000944",
   "task": {
-    "prompt": "Elmer has a pond that initially contained 2400 pollywogs, but these pollywogs matured into toads and left the pond at a constant rate of 50 pollywogs per day.  In addition, Elmer has a son named Melvin, who loves to catch pollywogs, remove them from the pond, and release them into a nearby stream.  For the first 20 days, Melvin caught 10 pollywogs per day and released them into the stream.  How many days did it take for all of the pollywogs to disappear from the pond?",
-    "gold": "44"
+    "prompt": "There are 21 cherry tomatoes on the tomato plant.  2 birds eat one-third of the tomatoes.  How many are still left on the tomato plant?",
+    "gold": "14"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Elmer has a pond that initially contained 2400 pollywogs, but these pollywogs matured into toads and left the pond at a constant rate of 50 pollywogs per day.  In addition, Elmer has a son named Melvin, who loves to catch pollywogs, remove them from the pond, and release them into a nearby stream.  For the first 20 days, Melvin caught 10 pollywogs per day and released them into the stream.  How many days did it take for all of the pollywogs to disappear from the pond?"
+      "c": "Plan: identify requirements from task. Task: There are 21 cherry tomatoes on the tomato plant.  2 birds eat one-third of the tomatoes.  How many are still left on the tomato plant?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 44"
+      "c": "Final answer: 14"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.905503
+        0.79061
       ],
       [
         0,
         2,
-        0.094497
+        0.20939
       ],
       [
         2,
         3,
-        0.673667
+        0.603317
       ],
       [
         1,
         3,
-        0.285214
+        0.283664
       ],
       [
         0,
         3,
-        0.041119
+        0.113019
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000266",
   "task": {
-    "prompt": "Convert the point $(1,-\\sqrt{3})$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
-    "gold": "\\left( 2, \\frac{5 \\pi"
+    "prompt": "Define the sequence $a_1, a_2, a_3, \\ldots$ by $a_n = \\sum\\limits_{k=1}^n \\sin{k}$, where $k$ represents radian measure. Find the index of the 100th term for which $a_n < 0$.",
+    "gold": "628"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Convert the point $(1,-\\sqrt{3})$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$"
+      "c": "Plan: identify requirements from task. Task: Define the sequence $a_1, a_2, a_3, \\ldots$ by $a_n = \\sum\\limits_{k=1}^n \\sin{k}$, where $k$ represents radian measure. Find the index of the 100th term for which $a_n < 0$."
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\left( 2, \\frac{5 \\pi"
+      "c": "Final answer: 628"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.818659
+        0.841137
       ],
       [
         0,
         2,
-        0.181341
+        0.158863
       ],
       [
         2,
         3,
-        0.651202
+        0.635848
       ],
       [
         1,
         3,
-        0.244441
+        0.290511
       ],
       [
         0,
         3,
-        0.104357
+        0.073641
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

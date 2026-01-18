@@ -1,13 +1,13 @@
 {
   "id": "gtl_000739",
   "task": {
-    "prompt": "What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ roots of unity?",
-    "gold": "12"
+    "prompt": "Let\n\\[\\mathbf{M} = \\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix}\\]be a matrix with complex entries such that $\\mathbf{M}^2 = \\mathbf{I}.$  If $abc = 1,$ then find the possible values of $a^3 + b^3 + c^3.$",
+    "gold": "2,4"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ roots of unity?"
+      "c": "[omitted]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 12"
+      "c": "Final answer: 5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.799573
+        0.641614
       ],
       [
         0,
         2,
-        0.200427
+        0.358386
       ],
       [
         2,
         3,
-        0.621761
+        0.558068
       ],
       [
         1,
         3,
-        0.279273
+        0.230226
       ],
       [
         0,
         3,
-        0.098965
+        0.211706
       ]
     ],
     "cfg": {
@@ -67,9 +67,14 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 0,
+    "who": "researcher",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -80,12 +85,12 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",
     "judge": {
-      "success": true,
+      "success": false,
       "reason": "exact match"
     }
   }

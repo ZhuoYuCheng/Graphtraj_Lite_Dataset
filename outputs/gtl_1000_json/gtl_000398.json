@@ -1,13 +1,13 @@
 {
   "id": "gtl_000398",
   "task": {
-    "prompt": "Let $a,$ $b,$ $c$ be nonzero real numbers.  Find the number of real roots of the equation\n\\[\\begin{vmatrix} x & c & -b \\\\ -c & x & a \\\\ b & -a & x \\end{vmatrix} = 0.\\]",
-    "gold": "1"
+    "prompt": "For all real numbers $x$ except $x=0$ and $x=1$ the function $f(x)$ is defined by\n\\[f \\left( \\frac{x}{x - 1} \\right) = \\frac{1}{x}.\\]Suppose $0\\leq t\\leq \\frac{\\pi}{2}$. What is the value of $f(\\sec^2t)$?",
+    "gold": "\\sin^2 t"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Let $a,$ $b,$ $c$ be nonzero real numbers.  Find the number of real roots of the equation\n\\[\\begin{vmatrix} x & c & -b \\\\ -c & x & a \\\\ b & -a & x \\end{vmatrix} = 0.\\]"
+      "c": "Plan: identify requirements from task. Task: For all real numbers $x$ except $x=0$ and $x=1$ the function $f(x)$ is defined by\n\\[f \\left( \\frac{x}{x - 1} \\right) = \\frac{1}{x}.\\]Suppose $0\\leq t\\leq \\frac{\\pi}{2}$. What is the value of $f(\\sec^2t)$?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 1"
+      "c": "Final answer: \\sin^2 t"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.82401
+        0.849094
       ],
       [
         0,
         2,
-        0.17599
+        0.150906
       ],
       [
         2,
         3,
-        0.652594
+        0.664474
       ],
       [
         1,
         3,
-        0.266871
+        0.258777
       ],
       [
         0,
         3,
-        0.080535
+        0.076749
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "autogen",

@@ -1,25 +1,25 @@
 {
   "id": "gtl_000257",
   "task": {
-    "prompt": "Write a python function to count lower case letters in a given string.",
-    "gold": "def lower_ctr(str):\r\n      lower_ctr= 0\r\n      for i in range(len(str)):\r\n          if str[i] >= 'a' and str[i] <= 'z': lower_ctr += 1     \r\n      return  lower_ctr"
+    "prompt": "Find a unit vector that is orthogonal to both $\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix}.$",
+    "gold": "\\begin{pmatrix"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python function to count lower case letters in a given string."
+      "c": "Plan: identify requirements from task. Task: Find a unit vector that is orthogonal to both $\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix}.$"
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef lower_ctr(str):\r\n      lower_ctr= 0\r\n      for i in range(len(str)):\r\n          if str[i] >= 'a' and str[i] <= 'z': lower_ctr += 1     \r\n      return  lower_ctr"
+      "c": "Final answer: \\begin{pmatrix"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.706635
+        0.82021
       ],
       [
         0,
         2,
-        0.293365
+        0.17979
       ],
       [
         2,
         3,
-        0.453211
+        0.618498
       ],
       [
         1,
         3,
-        0.298755
+        0.280117
       ],
       [
         0,
         3,
-        0.248033
+        0.101385
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert lower_ctr('abc') == 3",
-      "assert lower_ctr('string') == 6",
-      "assert lower_ctr('Python') == 5"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

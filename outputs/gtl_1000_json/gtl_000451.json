@@ -1,25 +1,25 @@
 {
   "id": "gtl_000451",
   "task": {
-    "prompt": "Meryll wants to write 35 multiple-choice questions and 15 problem-solving questions for her Chemistry class. She already has written 2/5 of the multiple-choice and 1/3 of the problem-solving questions. How many more questions does she need to write for both multiple-choice and problem-solving?",
-    "gold": "31"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Meryll wants to write 35 multiple-choice questions and 15 problem-solving questions for her Chemistry class. She already has written 2/5 of the multiple-choice and 1/3 of the problem-solving questions. How many more questions does she need to write for both multiple-choice and problem-solving?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check "
     },
     {
       "r": "assistant",
-      "c": "Final answer: 32"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.861087
+        0.556708
       ],
       [
         0,
         2,
-        0.138913
+        0.443292
       ],
       [
         2,
         3,
-        0.574149
+        0.472839
+      ],
+      [
+        0,
+        3,
+        0.272858
       ],
       [
         1,
         3,
-        0.340093
-      ],
-      [
-        0,
-        3,
-        0.085757
+        0.254304
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "critic",
+    "when": 2,
+    "who": "assistant",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

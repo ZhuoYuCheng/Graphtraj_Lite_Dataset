@@ -1,13 +1,13 @@
 {
   "id": "gtl_000245",
   "task": {
-    "prompt": "The solutions to the equation $(z+6)^8=81$ are connected in the complex plane to form a convex regular polygon, three of whose vertices are labeled $A,B,$ and $C$. What is the least possible area of triangle $ABC$?\n\nEnter your answer in the form $\\frac{a \\sqrt{b} - c}{d},$ and simplified as usual.",
-    "gold": "\\frac{3 \\sqrt{2"
+    "prompt": "Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?",
+    "gold": "216"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: The solutions to the equation $(z+6)^8=81$ are connected in the complex plane to form a convex regular polygon, three of whose vertices are labeled $A,B,$ and $C$. What is the least possible area of triangle $ABC$?\n\nEnter your answer in the form $\\frac{a \\sqrt{b} - c}{d},$ and simplified as usual."
+      "c": "Plan: identify requirements from task. Task: Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\frac{3 \\sqrt{2"
+      "c": "Final answer: 216"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.864695
+        0.828802
       ],
       [
         0,
         2,
-        0.135305
+        0.171198
       ],
       [
         2,
         3,
-        0.641141
+        0.617254
       ],
       [
         1,
         3,
-        0.274983
+        0.295607
       ],
       [
         0,
         3,
-        0.083876
+        0.087139
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "smolagents",
     "judge": {
       "success": true,

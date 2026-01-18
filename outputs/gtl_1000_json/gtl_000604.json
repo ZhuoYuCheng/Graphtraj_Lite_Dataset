@@ -1,13 +1,13 @@
 {
   "id": "gtl_000604",
   "task": {
-    "prompt": "When Jayson is 10 his dad is four times his age and his mom is 2 years younger than his dad.  How old was Jayson's mom when he was born?",
-    "gold": "28"
+    "prompt": "A football club has a balance of $100 million. The club then sells 2 of its players at $10 million each, and buys 4 more at $15 million each. How much money is left in the club register in millions of dollars?",
+    "gold": "60"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: When Jayson is 10 his dad is four times his age and his mom is 2 years younger than his dad.  How old was Jayson's mom when he was born?"
+      "c": "Plan: identify requirements from task. Task: A football club has a balance of $100 million. The club then sells 2 of its players at $10 million each, and buys 4 more at $15 million each. How much money is left in the club register in millions of dollars?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 28"
+      "c": "Final answer: 60"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.778812
+        0.79815
       ],
       [
         0,
         2,
-        0.221188
+        0.20185
       ],
       [
         2,
         3,
-        0.581912
+        0.602575
       ],
       [
         1,
         3,
-        0.290666
+        0.293434
       ],
       [
         0,
         3,
-        0.127422
+        0.103992
       ]
     ],
     "cfg": {

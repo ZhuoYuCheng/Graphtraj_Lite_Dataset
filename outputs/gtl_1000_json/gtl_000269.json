@@ -1,13 +1,13 @@
 {
   "id": "gtl_000269",
   "task": {
-    "prompt": "In triangle $ABC$, $AB = BC$, and $\\overline{BD}$ is an altitude. Point $E$ is on the extension of $\\overline{AC}$ such that $BE =\n10$.  The values of $\\tan \\angle CBE$, $\\tan \\angle DBE$, and $\\tan \\angle ABE$ form a geometric progression, and the values of $\\cot \\angle DBE$, $\\cot \\angle CBE$, $\\cot \\angle DBC$ form an arithmetic progression.  What is the area of triangle $ABC$?\n\n[asy]\npair A,B,C,D,E;\nA=(0,0);\nB=(4,8);\nC=(8,0);\nE=(10,0);\nD=(4,0);\ndraw(A--B--E--cycle,linewidth(0.7));\ndraw(C--B--D,linewidth(0.7));\nlabel(\"$B$\",B,N);\nlabel(\"$A$\",A,S);\nlabel(\"$D$\",D,S);\nlabel(\"$C$\",C,S);\nlabel(\"$E$\",E,S);\n[/asy]",
-    "gold": "\\frac{50"
+    "prompt": "Solve\n\\[\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x^3} = \\frac{\\pi}{4}.\\]",
+    "gold": "\\frac{1 + \\sqrt{5"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC$, $AB = BC$, and $\\overline{BD}$ is an altitude. Point $E$ is on the extension of $\\overline{AC}$ such that $BE =\n10$.  The values of $\\tan \\angle CBE$, $\\tan \\angle DBE$, and $\\tan \\angle ABE$ form a geometric progression, and the values of $\\cot \\angle DBE$, $\\cot \\angle CBE$, $\\cot \\angle DBC$ form an arithmetic progression.  What is the area of triangle $ABC$?\n\n[asy]\npair A,B,C,D,E;\nA=(0,0);\nB=(4,8);\nC=(8,0);\nE=(10,0);\nD=(4,0);\ndraw(A--B--E--cycle,linewidth(0.7));\ndraw(C--B--D,linewidth(0.7));\nlabel(\"$B$\",B,N);\nlabel(\"$A$\",A,S);\nlabel(\"$D$\",D,S);\nlabel(\"$C$\",C,S);\nlabel(\"$E$\",E,S);\n[/asy]\nTool result: corrupted output"
+      "c": "Plan: identify requirements from task. Task: Solve\n\\[\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x^3} = \\frac{\\pi}{4}.\\]"
     },
     {
       "r": "executor",
@@ -15,11 +15,11 @@
     },
     {
       "r": "tool",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 51"
+      "c": "Final answer: 6"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.928401
+        0.782629
       ],
       [
         0,
         2,
-        0.071599
+        0.217371
       ],
       [
         2,
         3,
-        0.606299
+        0.68318
       ],
       [
         1,
         3,
-        0.360965
+        0.229547
       ],
       [
         0,
         3,
-        0.032736
+        0.087272
       ]
     ],
     "cfg": {
@@ -67,11 +67,9 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "planner",
+    "when": 2,
+    "who": "tool",
     "path": [
-      0,
-      1,
       2,
       3
     ]

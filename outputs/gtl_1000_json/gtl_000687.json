@@ -7,11 +7,11 @@
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a python function to check whether all the characters are same or not."
+      "c": "Plan: identify requirements from task. Task: Write a python function to check whether all the characters are same or not.\nTool result: corrupted output"
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests.\nTool result: corrupted output"
+      "c": "Draft a Python function that satisfies the prompt and tests."
     },
     {
       "r": "writer",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.778001
+        0.700653
       ],
       [
         0,
         2,
-        0.221999
+        0.299347
       ],
       [
         2,
         3,
-        0.495676
+        0.478648
       ],
       [
         1,
         3,
-        0.344051
+        0.338238
       ],
       [
         0,
         3,
-        0.160273
+        0.183115
       ]
     ],
     "cfg": {
@@ -67,11 +67,11 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
       1,
-      2,
       3
     ]
   },

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000468",
   "task": {
-    "prompt": "Emma and Briana invested some capital into a business. Emma's investment is supposed to yield 15% of the capital annually while Briana's should yield 10% annually. If Emma invested $300 and Briana invested $500, what will be the difference between their return-on-investment after 2 years?",
-    "gold": "10"
+    "prompt": "Allie picked 44 wildflowers.  Thirteen of the flowers were yellow and white, seventeen of the flowers were red and yellow, and 14 of the flowers were red and white.  How many more flowers contained the color red than contained the color white?",
+    "gold": "4"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Emma and Briana invested some capital into a business. Emma's investment is supposed to yield 15% of the capital annually while Briana's should yield 10% annually. If Emma invested $300 and Briana invested $500, what will be the difference between their return-on-investment after 2 years?"
+      "c": "Plan: identify requirements from task. Task: Allie picked 44 wildflowers.  Thirteen of the flowers were yellow and white, seventeen of the flowers were red and yellow, and 14 of the flowers were red and white.  How many more flowers contained the color red than contained the color white?"
     },
     {
       "r": "critic",
@@ -15,11 +15,11 @@
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
-      "c": "Final answer: 11"
+      "c": "Final answer: 5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.826082
+        0.809742
       ],
       [
         0,
         2,
-        0.173918
+        0.190258
       ],
       [
         2,
         3,
-        0.594418
+        0.610314
       ],
       [
         1,
         3,
-        0.313618
+        0.28335
       ],
       [
         0,
         3,
-        0.091964
+        0.106336
       ]
     ],
     "cfg": {

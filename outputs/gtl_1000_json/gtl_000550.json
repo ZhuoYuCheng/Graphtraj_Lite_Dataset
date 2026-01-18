@@ -1,25 +1,25 @@
 {
   "id": "gtl_000550",
   "task": {
-    "prompt": "Michael is baking a cake and needs 6 cups of flour. The only measuring cup he has is the 1/4 cup. He has an 8 cup bag of flour and realizes it would be faster to measure the flour he doesn't need, take it out of the bag, and then dump the rest of the bag into the bowl. How many scoops should he remove?",
-    "gold": "8"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Michael is baking a cake and needs 6 cups of flour. The only measuring cup he has is the 1/4 cup. He has an 8 cup bag of flour and realizes it would be faster to measure the flour he doesn't need, take it out of the bag, and then dump the rest of the bag into the bowl. How many scoops should he remove?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Collect key facts and constraints needed to answer."
     },
     {
       "r": "assistant",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 8"
+      "c": "Final answer: "
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.837086
+        0.555224
       ],
       [
         0,
         2,
-        0.162914
+        0.444776
       ],
       [
         2,
         3,
-        0.635826
+        0.412548
+      ],
+      [
+        0,
+        3,
+        0.319156
       ],
       [
         1,
         3,
-        0.285023
-      ],
-      [
-        0,
-        3,
-        0.07915
+        0.268296
       ]
     ],
     "cfg": {
@@ -80,11 +80,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
       "success": true,
-      "reason": "exact match"
+      "reason": "no gold"
     }
   }
 }

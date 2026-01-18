@@ -1,13 +1,13 @@
 {
   "id": "gtl_000602",
   "task": {
-    "prompt": "In triangle $ABC,$ $b = 5,$ $c = 4,$ and $\\cos (B - C) = \\frac{31}{32}.$  Find $a.$\n\nNote: $a$ is the side length opposite $\\angle A,$ etc.",
-    "gold": "6"
+    "prompt": "Maurice had only been horseback riding a handful of times in his life. His best friend, Matt, goes horseback riding regularly. When Maurice went to visit Matt for two weeks, he rode another 8 times. Each time, Matt went with him. Meanwhile, besides the times that Matt accompanied Maurice, he rode an additional 16 times. If the total number of times Matt rode during that two weeks is three times the number of times Maurice had ridden before his visit, how many times had Maurice been horseback riding before visiting Matt?",
+    "gold": "8"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $b = 5,$ $c = 4,$ and $\\cos (B - C) = \\frac{31}{32}.$  Find $a.$\n\nNote: $a$ is the side length opposite $\\angle A,$ etc."
+      "c": "Plan: identify requirements from task. Task: Maurice had only been horseback riding a handful of times in his life. His best friend, Matt, goes horseback riding regularly. When Maurice went to visit Matt for two weeks, he rode another 8 times. Each time, Matt went with him. Meanwhile, besides the times that Matt accompanied Maurice, he rode an additional 16 times. If the total number of times Matt rode during that two weeks is three times the number of times Maurice had ridden before his visit, how many times had Maurice been horseback riding before visiting Matt?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 6"
+      "c": "Final answer: 8"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.804172
+        0.884838
       ],
       [
         0,
         2,
-        0.195828
+        0.115162
       ],
       [
         2,
         3,
-        0.630974
+        0.654987
       ],
       [
         1,
         3,
-        0.276497
+        0.291446
       ],
       [
         0,
         3,
-        0.092529
+        0.053567
       ]
     ],
     "cfg": {
@@ -80,9 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
       "success": true,

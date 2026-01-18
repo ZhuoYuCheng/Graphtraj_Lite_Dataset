@@ -1,13 +1,13 @@
 {
   "id": "gtl_000932",
   "task": {
-    "prompt": "A projection takes $\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$ to $\\begin{pmatrix} \\frac{3}{2} \\\\ -\\frac{3}{2} \\end{pmatrix}.$  Which vector does the projection take $\\begin{pmatrix} -4 \\\\ 1 \\end{pmatrix}$ to?",
-    "gold": "\\begin{pmatrix"
+    "prompt": "If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are unit vectors, then find the largest possible value of\n\\[\\|\\mathbf{a} - \\mathbf{b}\\|^2 + \\|\\mathbf{a} - \\mathbf{c}\\|^2 + \\|\\mathbf{b} - \\mathbf{c}\\|^2.\\]Note: A unit vector is a vector of magnitude 1.",
+    "gold": "9"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: A projection takes $\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$ to $\\begin{pmatrix} \\frac{3}{2} \\\\ -\\frac{3}{2} \\end{pmatrix}.$  Which vector does the projection take $\\begin{pmatrix} -4 \\\\ 1 \\end{pmatrix}$ to?"
+      "c": "Plan: identify requirements from task. Task: If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are unit vectors, then find the largest possible value of\n\\[\\|\\mathbf{a} - \\mathbf{b}\\|^2 + \\|\\mathbf{a} - \\mathbf{c}\\|^2 + \\|\\mathbf{b} - \\mathbf{c}\\|^2.\\]Note: A unit vector is a vector of magnitude 1."
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 9"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.877622
+        0.903324
       ],
       [
         0,
         2,
-        0.122378
+        0.096676
       ],
       [
         2,
         3,
-        0.65057
+        0.667674
       ],
       [
         1,
         3,
-        0.277192
+        0.289165
       ],
       [
         0,
         3,
-        0.072238
+        0.043161
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

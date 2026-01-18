@@ -1,17 +1,17 @@
 {
   "id": "gtl_000155",
   "task": {
-    "prompt": "Jack is making flower crowns out of red, pink and white daisies. There are nine times as many pink daisies as white daisies and three less than four times as many red daisies as pink daisies. If there are 6 white daisies, how many daisies are there total?",
-    "gold": "273"
+    "prompt": "Crystal wanted to sell everything left in her pastry class before closing for the night.  She reduced her $3.00 cupcakes and her $2.00 cookies by half.  How much money did she make if she sold the last 16 cupcakes and 8 cookies?",
+    "gold": "32"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Jack is making flower crowns out of red, pink and white daisies. There are nine times as many pink daisies as white daisies and three less than four times as many red daisies as pink daisies. If there are 6 white daisies, how many daisies are there total?"
+      "c": "Plan: identify requirements from task. Task: Crystal wanted to sell everything left in her pastry class before closing for the night.  She reduced her $3.00 cupcakes and her $2.00 cookies by half.  How much money did she make if she sold the last 16 cupcakes and 8 cookies?"
     },
     {
       "r": "executor",
-      "c": "[omitted]"
+      "c": "Work through the math carefull"
     },
     {
       "r": "tool",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 274"
+      "c": "Final answer: 33"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.862381
+        0.845826
       ],
       [
         0,
         2,
-        0.137619
+        0.154174
       ],
       [
         2,
         3,
-        0.544173
+        0.557505
       ],
       [
         1,
         3,
-        0.37358
+        0.356093
       ],
       [
         0,
         3,
-        0.082247
+        0.086402
       ]
     ],
     "cfg": {

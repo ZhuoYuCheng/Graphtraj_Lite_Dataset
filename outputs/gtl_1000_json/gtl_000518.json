@@ -1,13 +1,13 @@
 {
   "id": "gtl_000518",
   "task": {
-    "prompt": "Matthew, Patrick and Alvin are eating dinner together. Matthew eats three times as many egg rolls as Patrick eats. Patrick eats half as many egg rolls as Alvin eats. If Alvin ate 4 egg rolls, how many did Matthew eat?",
-    "gold": "6"
+    "prompt": "Thor is 13 times older than Captain America. Captain America is 7 times older than Peter Parker, and Ironman is 32 years older than Peter Parker. How old is Ironman if Thor is 1456 years old?",
+    "gold": "48"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Matthew, Patrick and Alvin are eating dinner together. Matthew eats three times as many egg rolls as Patrick eats. Patrick eats half as many egg rolls as Alvin eats. If Alvin ate 4 egg rolls, how many did Matthew eat?"
+      "c": "[omitted]"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 6"
+      "c": "Final answer: 49"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.801806
+        0.567761
       ],
       [
         0,
         2,
-        0.198194
+        0.432239
       ],
       [
         2,
         3,
-        0.605728
+        0.494567
+      ],
+      [
+        0,
+        3,
+        0.273481
       ],
       [
         1,
         3,
-        0.288558
-      ],
-      [
-        0,
-        3,
-        0.105714
+        0.231952
       ]
     ],
     "cfg": {
@@ -67,9 +67,14 @@
     }
   },
   "label": {
-    "when": null,
-    "who": null,
-    "path": null
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
   },
   "views": {
     "w_gold": {
@@ -83,7 +88,7 @@
     "suite": "GSM8K",
     "framework": "autogen",
     "judge": {
-      "success": true,
+      "success": false,
       "reason": "exact match"
     }
   }

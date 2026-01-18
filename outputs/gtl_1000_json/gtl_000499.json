@@ -1,13 +1,13 @@
 {
   "id": "gtl_000499",
   "task": {
-    "prompt": "A quarterback steps back to throw 80 times in a game.  30 percent of the time he does not get a pass thrown.  Half of the times that he does not throw the ball he is sacked for a loss.  How many times is the quarterback sacked for a loss in the game?",
-    "gold": "12"
+    "prompt": "James bought a gallon of milk for $3, a bunch of bananas for $2, and paid 20% sales tax. How much money did James spend?",
+    "gold": "6"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: A quarterback steps back to throw 80 times in a game.  30 percent of the time he does not get a pass thrown.  Half of the times that he does not throw the ball he is sacked for a loss.  How many times is the quarterback sacked for a loss in the game?"
+      "c": "Plan: identify requirements from task. Task: James bought a gallon of milk for $3, a bunch of bananas for $2, and paid 20% sales tax. How much money did James spend?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 12"
+      "c": "Final answer: 6"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.816399
+        0.753304
       ],
       [
         0,
         2,
-        0.183601
+        0.246696
       ],
       [
         2,
         3,
-        0.613497
+        0.558316
       ],
       [
         1,
         3,
-        0.290612
+        0.301262
       ],
       [
         0,
         3,
-        0.095892
+        0.140422
       ]
     ],
     "cfg": {

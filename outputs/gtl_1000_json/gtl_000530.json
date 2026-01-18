@@ -1,13 +1,13 @@
 {
   "id": "gtl_000530",
   "task": {
-    "prompt": "Bill started reading a book on the first day of April. He read 8 pages every day and by the 12th of April, he had covered two-thirds of the book. How many pages does the book have?",
-    "gold": "144"
+    "prompt": "Angie bought three times as many pretzels at the mall as Shelly did. Shelly bought half as many pretzels as Barry. If Barry bought 12 pretzels, how many did Angie buy?",
+    "gold": "18"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Bill started reading a book on the first day of April. He read 8 pages every day and by the 12th of April, he had covered two-thirds of the book. How many pages does the book have?"
+      "c": "Plan: identify requirements from task. Task: Angie bought three times as many pretzels at the mall as Shelly did. Shelly bought half as many pretzels as Barry. If Barry bought 12 pretzels, how many did Angie buy?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 144"
+      "c": "Final answer: 18"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.77453
+        0.798603
       ],
       [
         0,
         2,
-        0.22547
+        0.201397
       ],
       [
         2,
         3,
-        0.603443
+        0.600409
       ],
       [
         1,
         3,
-        0.276391
+        0.29393
       ],
       [
         0,
         3,
-        0.120165
+        0.10566
       ]
     ],
     "cfg": {

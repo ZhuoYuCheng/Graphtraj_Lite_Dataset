@@ -1,25 +1,25 @@
 {
   "id": "gtl_000713",
   "task": {
-    "prompt": "Find the point on the line\n\\[y = -3x + 5\\]that is closest to the point $(-4,-2).$",
-    "gold": "\\left( \\frac{17"
+    "prompt": "Bucky earns money each weekend catching and selling fish. He wants to save up for a new video game, which costs $60. Last weekend he earned $35. He can earn $5 from trout and $4 from blue-gill. He caught five fish this Sunday. If 60% were trout, and the rest were blue-gill, how much more does he need to save before he can buy the game?",
+    "gold": "2"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Find the point on the line\n\\[y = -3x + 5\\]that is closest to the point $(-4,-2).$"
+      "c": "Plan: identify requirements from task. Task: Bucky earns money each weekend catching and selling fish. He wants to save up for a new video game, which costs $60. Last weekend he earned $35. He can earn $5 from trout and $4 from blue-gill. He caught five fish this Sunday. If 60% were trout, and the rest were blue-gill, how much more does he need to save before he can buy the game?"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefull"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "[omitted]"
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 18"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.796685
+        0.906546
       ],
       [
         0,
         2,
-        0.203315
+        0.093454
       ],
       [
         2,
         3,
-        0.588123
+        0.677028
       ],
       [
         1,
         3,
-        0.306053
+        0.275582
       ],
       [
         0,
         3,
-        0.105825
+        0.047389
       ]
     ],
     "cfg": {
@@ -67,10 +67,9 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 2,
+    "who": "writer",
     "path": [
-      1,
       2,
       3
     ]
@@ -84,9 +83,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
-    "type": "Precalculus",
-    "suite": "MATH",
+    "suite": "GSM8K",
     "framework": "crewai",
     "judge": {
       "success": false,

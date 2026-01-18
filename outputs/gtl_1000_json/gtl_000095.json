@@ -1,13 +1,13 @@
 {
   "id": "gtl_000095",
   "task": {
-    "prompt": "In triangle $ABC$, $3 \\sin A + 4 \\cos B = 6$ and $4 \\sin B + 3 \\cos A = 1$. Find all possible values of $\\angle C,$ in degrees.  Enter all the possible values, separated by commas.",
-    "gold": "30^\\circ"
+    "prompt": "Compute $\\cos 72^\\circ.$",
+    "gold": "\\frac{-1 + \\sqrt{5"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: In triangle $ABC$, $3 \\sin A + 4 \\cos B = 6$ and $4 \\sin B + 3 \\cos A = 1$. Find all possible values of $\\angle C,$ in degrees.  Enter all the possible values, separated by commas."
+      "c": "Plan: identify requirements from task. Task: Compute $\\cos 72^\\circ.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 30^\\circ"
+      "c": "Final answer: \\frac{-1 + \\sqrt{5"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.828234
+        0.63059
       ],
       [
         0,
         2,
-        0.171766
+        0.36941
       ],
       [
         2,
         3,
-        0.618798
+        0.545922
       ],
       [
         1,
         3,
-        0.295869
+        0.23832
       ],
       [
         0,
         3,
-        0.085333
+        0.215758
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 2",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

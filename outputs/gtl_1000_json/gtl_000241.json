@@ -1,25 +1,25 @@
 {
   "id": "gtl_000241",
   "task": {
-    "prompt": "Sabrina went to the library and found a historical series novel called The Rangers Apprentice. There are 14 books in the series, and each book has 200 pages. She read four books in a month and half the number of books remaining in the second month. What's the total number of pages Sabrina has to read to finish the whole series?",
-    "gold": "1000"
+    "prompt": "Elijah drank 8.5 pints of coffee yesterday. Emilio drank 9.5 pints of water yesterday. How many cups of liquid did the two boys drink yesterday?",
+    "gold": "36"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Sabrina went to the library and found a historical series novel called The Rangers Apprentice. There are 14 books in the series, and each book has 200 pages. She read four books in a month and half the number of books remaining in the second month. What's the total number of pages Sabrina has to read to finish the whole series?"
+      "c": "Plan: identify requirements from task. Task: Elijah drank 8.5 pints of coffee yesterday. Emilio drank 9.5 pints of water yesterday. How many cups of liquid did the two boys drink yesterday?"
     },
     {
       "r": "executor",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefull"
     },
     {
       "r": "tool",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 1001"
+      "c": "Final answer: 37"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.874071
+        0.807883
       ],
       [
         0,
         2,
-        0.125929
+        0.192117
       ],
       [
         2,
         3,
-        0.639651
+        0.546475
       ],
       [
         1,
         3,
-        0.290784
+        0.344121
       ],
       [
         0,
         3,
-        0.069565
+        0.109404
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "tool",
+    "when": 1,
+    "who": "executor",
     "path": [
+      1,
       2,
       3
     ]

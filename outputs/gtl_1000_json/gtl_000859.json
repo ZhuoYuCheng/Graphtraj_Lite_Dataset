@@ -1,13 +1,13 @@
 {
   "id": "gtl_000859",
   "task": {
-    "prompt": "A family went out to see a movie. The regular ticket costs $9 and the ticket for children is $2 less. They gave the cashier two $20 bills and they received a $1 change. How many children are there if there are 2 adults in the family?",
-    "gold": "3"
+    "prompt": "The tallest building in the world is 100 feet tall.  If the second tallest is half that tall, and the third tallest is half as tall as the second, and the fourth is one-fifth as tall as the third, how tall are all 4 buildings put together?",
+    "gold": "180"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: A family went out to see a movie. The regular ticket costs $9 and the ticket for children is $2 less. They gave the cashier two $20 bills and they received a $1 change. How many children are there if there are 2 adults in the family?"
+      "c": "Plan: identify requirements from task. Task: The tallest building in the world is 100 feet tall.  If the second tallest is half that tall, and the third tallest is half as tall as the second, and the fourth is one-fifth as tall as the third, how tall are all 4 buildings put together?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 3"
+      "c": "Final answer: 180"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.841651
+        0.842422
       ],
       [
         0,
         2,
-        0.158349
+        0.157578
       ],
       [
         2,
         3,
-        0.624108
+        0.624213
       ],
       [
         1,
         3,
-        0.295476
+        0.298591
       ],
       [
         0,
         3,
-        0.080417
+        0.077197
       ]
     ],
     "cfg": {

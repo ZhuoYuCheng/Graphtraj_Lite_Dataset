@@ -1,25 +1,25 @@
 {
   "id": "gtl_000008",
   "task": {
-    "prompt": "Write a python function to find the first repeated character in a given string.",
-    "gold": "def first_repeated_char(str1):\r\n  for index,c in enumerate(str1):\r\n    if str1[:index+1].count(c) > 1:\r\n      return c \r\n  return \"None\""
+    "prompt": "If $8 \\tan \\theta = 3 \\cos \\theta$ and $0 < \\theta < \\pi,$ then determine the value of $\\sin \\theta.$",
+    "gold": "\\frac{1"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Write a python function to find the first repeated character in a given string."
+      "c": "Plan: identify requirements from task. Task: If $8 \\tan \\theta = 3 \\cos \\theta$ and $0 < \\theta < \\pi,$ then determine the value of $\\sin \\theta.$"
     },
     {
       "r": "executor",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "tool",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "assistant",
-      "c": "Final code:\ndef first_repeated_char(str1):\r\n  for index,c in enumerate(str1):\r\n    if str1[:index+1].count(c) > 1:\r\n      return c \r\n  return \"None\""
+      "c": "Final answer: \\frac{1"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.70898
+        0.792286
       ],
       [
         0,
         2,
-        0.29102
+        0.207714
       ],
       [
         2,
         3,
-        0.479733
+        0.624117
       ],
       [
         1,
         3,
-        0.297717
+        0.273974
       ],
       [
         0,
         3,
-        0.22255
+        0.101909
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert first_repeated_char(\"abcabc\") == \"a\"",
-      "assert first_repeated_char(\"abc\") == \"None\"",
-      "assert first_repeated_char(\"123123\") == \"1\""
-    ],
-    "suite": "MBPP+",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "smolagents",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

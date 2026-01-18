@@ -1,13 +1,13 @@
 {
   "id": "gtl_000879",
   "task": {
-    "prompt": "There is an angle $\\theta$ in the range $0^\\circ < \\theta < 45^\\circ$ which satisfies\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan 3 \\theta = 0.\\]Calculate $\\tan \\theta$ for this angle.",
-    "gold": "\\frac{1"
+    "prompt": "Simplify\n\\[\\frac{\\tan 30^\\circ + \\tan 40^\\circ + \\tan 50^\\circ + \\tan 60^\\circ}{\\cos 20^\\circ}.\\]",
+    "gold": "\\frac{8 \\sqrt{3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: There is an angle $\\theta$ in the range $0^\\circ < \\theta < 45^\\circ$ which satisfies\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan 3 \\theta = 0.\\]Calculate $\\tan \\theta$ for this angle."
+      "c": "Plan: identify requirements from task. Task: Simplify\n\\[\\frac{\\tan 30^\\circ + \\tan 40^\\circ + \\tan 50^\\circ + \\tan 60^\\circ}{\\cos 20^\\circ}.\\]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\frac{1"
+      "c": "Final answer: \\frac{8 \\sqrt{3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.858818
+        0.822306
       ],
       [
         0,
         2,
-        0.141182
+        0.177694
       ],
       [
         2,
         3,
-        0.652389
+        0.635473
       ],
       [
         1,
         3,
-        0.27981
+        0.262199
       ],
       [
         0,
         3,
-        0.067802
+        0.102328
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 5",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000038",
   "task": {
-    "prompt": "Annie brought 20 brownies to school.  She gave half of them to the school administrator to put in the faculty lounge.  Of the remaining brownies, she gave half to her best friend, Carl, and another two to her friend, Simon.  How many brownies did she have left?",
-    "gold": "3"
+    "prompt": "Two buses leave a pick-up point station with 60% and 70% of capacity full, respectively. If the people in the buses are all employees of a company, and the buses have a capacity of 150, calculate the total number of the employees in the two buses combined?",
+    "gold": "195"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Annie brought 20 brownies to school.  She gave half of them to the school administrator to put in the faculty lounge.  Of the remaining brownies, she gave half to her best friend, Carl, and another two to her friend, Simon.  How many brownies did she have left?"
+      "c": "Plan: identify requirements from task. Task: Two buses leave a pick-up point station with 60% and 70% of capacity full, respectively. If the people in the buses are all employees of a company, and the buses have a capacity of 150, calculate the total number of the employees in the two buses combined?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 3"
+      "c": "Final answer: 195"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.842325
+        0.829882
       ],
       [
         0,
         2,
-        0.157675
+        0.170118
       ],
       [
         2,
         3,
-        0.615047
+        0.621573
       ],
       [
         1,
         3,
-        0.303328
+        0.295131
       ],
       [
         0,
         3,
-        0.081626
+        0.083296
       ]
     ],
     "cfg": {

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000703",
   "task": {
-    "prompt": "If the six solutions of $x^6=-64$ are written in the form $a+bi$, where $a$ and $b$ are real, find the product of those solutions with $a>0.$",
-    "gold": "4"
+    "prompt": "Right triangle $ABC$ (hypotenuse $\\overline{AB}$) is inscribed in equilateral triangle $PQR,$ as shown.  If $PC = 3$ and $BP = CQ = 2,$ compute  $AQ.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, C, P, Q, R;\n\nP = (0,0);\nQ = (5,0);\nR = 5*dir(60);\nA = Q + 8/5*dir(120);\nB = 2*dir(60);\nC = (3,0);\n\ndraw(A--B--C--cycle);\ndraw(P--Q--R--cycle);\ndraw(rightanglemark(A,C,B,10));\n\nlabel(\"$A$\", A, NE);\nlabel(\"$B$\", B, NW);\nlabel(\"$C$\", C, S);\nlabel(\"$P$\", P, SW);\nlabel(\"$Q$\", Q, SE);\nlabel(\"$R$\", R, N);\nlabel(\"$2$\", (C + Q)/2, S);\nlabel(\"$3$\", (C + P)/2, S);\nlabel(\"$2$\", (B + P)/2, NW);\n[/asy]",
+    "gold": "\\frac{8"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: If the six solutions of $x^6=-64$ are written in the form $a+bi$, where $a$ and $b$ are real, find the product of those solutions with $a>0.$"
+      "c": "Plan: identify requirements from task. Task: Right triangle $ABC$ (hypotenuse $\\overline{AB}$) is inscribed in equilateral triangle $PQR,$ as shown.  If $PC = 3$ and $BP = CQ = 2,$ compute  $AQ.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, C, P, Q, R;\n\nP = (0,0);\nQ = (5,0);\nR = 5*dir(60);\nA = Q + 8/5*dir(120);\nB = 2*dir(60);\nC = (3,0);\n\ndraw(A--B--C--cycle);\ndraw(P--Q--R--cycle);\ndraw(rightanglemark(A,C,B,10));\n\nlabel(\"$A$\", A, NE);\nlabel(\"$B$\", B, NW);\nlabel(\"$C$\", C, S);\nlabel(\"$P$\", P, SW);\nlabel(\"$Q$\", Q, SE);\nlabel(\"$R$\", R, N);\nlabel(\"$2$\", (C + Q)/2, S);\nlabel(\"$3$\", (C + P)/2, S);\nlabel(\"$2$\", (B + P)/2, NW);\n[/asy]"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 4"
+      "c": "Final answer: \\frac{8"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.81667
+        0.953747
       ],
       [
         0,
         2,
-        0.18333
+        0.046253
       ],
       [
         2,
         3,
-        0.625405
+        0.704013
       ],
       [
         1,
         3,
-        0.288481
+        0.27396
       ],
       [
         0,
         3,
-        0.086114
+        0.022027
       ]
     ],
     "cfg": {

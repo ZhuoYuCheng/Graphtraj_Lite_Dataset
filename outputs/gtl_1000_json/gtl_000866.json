@@ -1,13 +1,13 @@
 {
   "id": "gtl_000866",
   "task": {
-    "prompt": "Before Cameron broke his right arm, he was able to type 10 words per minute on his phone. After he broke his arm, he had to use his left hand for a while, and he could only type 8 words per minute. What is the difference between the number of words he could type in 5 minutes before and after he broke his arm?",
-    "gold": "10"
+    "prompt": "William washes cars as a side job. He typically spends 4 minutes washing a car\u2019s windows, 7 minutes washing the car body, 4 minutes cleaning the tires, and 9 minutes waxing the car. This morning he washed 2 normal cars and one big SUV, which took twice as long as a normal car. How many minutes did William spend washing all the vehicles?",
+    "gold": "96"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Before Cameron broke his right arm, he was able to type 10 words per minute on his phone. After he broke his arm, he had to use his left hand for a while, and he could only type 8 words per minute. What is the difference between the number of words he could type in 5 minutes before and after he broke his arm?"
+      "c": "Plan: identify requirements from task. Task: William washes cars as a side job. He typically spends 4 minutes washing a car\u2019s windows, 7 minutes washing the car body, 4 minutes cleaning the tires, and 9 minutes waxing the car. This morning he washed 2 normal cars and one big SUV, which took twice as long as a normal car. How many minutes did William spend washing all the vehicles?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 10"
+      "c": "Final answer: 96"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863232
+        0.871438
       ],
       [
         0,
         2,
-        0.136768
+        0.128562
       ],
       [
         2,
         3,
-        0.632444
+        0.648516
       ],
       [
         1,
         3,
-        0.298993
+        0.290092
       ],
       [
         0,
         3,
-        0.068563
+        0.061392
       ]
     ],
     "cfg": {

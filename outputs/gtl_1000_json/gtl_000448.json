@@ -1,13 +1,13 @@
 {
   "id": "gtl_000448",
   "task": {
-    "prompt": "Michael buys his suit for $430 and shoes for $190. So, if he gets a $100 discount, what was the amount that he paid to the seller?",
-    "gold": "520"
+    "prompt": "Ibrahim wants to buy an MP3 player for 120 euros and a CD for 19 euros. He has 55 euros in savings. His father participates in his purchase by giving him 20 euros. How much money does Ibrahim lack?",
+    "gold": "64"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Michael buys his suit for $430 and shoes for $190. So, if he gets a $100 discount, what was the amount that he paid to the seller?"
+      "c": "Plan: identify requirements from task. Task: Ibrahim wants to buy an MP3 player for 120 euros and a CD for 19 euros. He has 55 euros in savings. His father participates in his purchase by giving him 20 euros. How much money does Ibrahim lack?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 520"
+      "c": "Final answer: 64"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.75534
+        0.786426
       ],
       [
         0,
         2,
-        0.24466
+        0.213574
       ],
       [
         2,
         3,
-        0.579017
+        0.601516
       ],
       [
         1,
         3,
-        0.290951
+        0.282352
       ],
       [
         0,
         3,
-        0.130033
+        0.116133
       ]
     ],
     "cfg": {

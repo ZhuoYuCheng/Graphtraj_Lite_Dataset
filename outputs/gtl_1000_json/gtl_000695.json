@@ -1,21 +1,21 @@
 {
   "id": "gtl_000695",
   "task": {
-    "prompt": "Evaluate\n\\[\\begin{vmatrix} y + 1 & y & y \\\\ y & y + 1 & y \\\\ y & y & y + 1 \\end{vmatrix}.\\]",
-    "gold": "3y + 1"
+    "prompt": "Find all values of $x$ so that $\\arccos x > \\arcsin x.$",
+    "gold": "\\left[ -1, \\frac{1"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Evaluate\n\\[\\begin{vmatrix} y + 1 & y & y \\\\ y & y + 1 & y \\\\ y & y & y + 1 \\end{vmatrix}.\\]"
+      "c": "Plan: identify requirements from task. Task: Find all values of $x$ so that $\\arccos x > \\arcsin x.$"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.804034
+        0.734608
       ],
       [
         0,
         2,
-        0.195966
+        0.265392
       ],
       [
         2,
         3,
-        0.651799
+        0.627625
       ],
       [
         1,
         3,
-        0.257118
+        0.251809
       ],
       [
         0,
         3,
-        0.091083
+        0.120566
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 1,
+    "who": "analyst",
     "path": [
+      1,
       2,
       3
     ]

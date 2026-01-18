@@ -1,13 +1,13 @@
 {
   "id": "gtl_000780",
   "task": {
-    "prompt": "There are infinitely many positive integers $k$ which satisfy the equation\n\\[\\cos^2 (k^2 + 6^2)^\\circ = 1.\\]Enter the two smallest solutions, separated by commas.",
-    "gold": "18"
+    "prompt": "If $\\cos \\theta = \\frac{1}{3},$ find $\\cos 5 \\theta.$",
+    "gold": "\\frac{241"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: There are infinitely many positive integers $k$ which satisfy the equation\n\\[\\cos^2 (k^2 + 6^2)^\\circ = 1.\\]Enter the two smallest solutions, separated by commas."
+      "c": "Plan: identify requirements from task. Task: If $\\cos \\theta = \\frac{1}{3},$ find $\\cos 5 \\theta.$"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 18"
+      "c": "Final answer: \\frac{241"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.812716
+        0.719797
       ],
       [
         0,
         2,
-        0.187284
+        0.280203
       ],
       [
         2,
         3,
-        0.632314
+        0.628079
       ],
       [
         1,
         3,
-        0.278424
+        0.233847
       ],
       [
         0,
         3,
-        0.089262
+        0.138073
       ]
     ],
     "cfg": {

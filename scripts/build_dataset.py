@@ -85,12 +85,29 @@ def load_mbpp(limit: int, seed: int) -> List[TaskItem]:
 
 def load_gaia(limit: int, seed: int) -> List[TaskItem]:
     # GAIA access can be restricted; gracefully skip if unavailable.
+    def _load_with_token(token: Optional[str]) -> Optional[Any]:
+        configs = ["2023_all", "2023_level1", "2023_level2", "2023_level3", "default", None]
+        splits = ["train", "validation", "test"]
+        for cfg in configs:
+            for split in splits:
+                try:
+                    if cfg is None:
+                        return load_dataset("gaia-benchmark/GAIA", split=split, token=token)
+                    return load_dataset("gaia-benchmark/GAIA", cfg, split=split, token=token)
+                except Exception:
+                    continue
+        return None
+
     try:
         ds = load_dataset("gaia-benchmark/GAIA", "default", split="train")
     except Exception:
-        try:
-            ds = load_dataset("gaia-benchmark/GAIA", split="train")
-        except Exception:
+        ds = None
+        env_token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_TOKEN")
+        if env_token:
+            ds = _load_with_token(env_token)
+        if ds is None:
+            ds = _load_with_token(True)
+        if ds is None:
             return []
     indices = list(range(len(ds)))
     random.Random(seed).shuffle(indices)
@@ -113,24 +130,41 @@ def compute_suite_quotas(suites: List[str], total: int) -> Dict[str, int]:
     return quotas
 
 
-def build_tasks(total: int, seed: int) -> List[TaskItem]:
-    suites = ["MBPP+", "GAIA", "MATH", "GSM8K"]
-    suite_quotas = compute_suite_quotas(suites, total)
+def build_tasks(total: int, seed: int, include_gaia: bool) -> List[TaskItem]:
+    if include_gaia:
+        suites = ["MBPP+", "GAIA", "MATH", "GSM8K"]
+        suite_quotas = compute_suite_quotas(suites, total)
 
-    gaia_items = load_gaia(suite_quotas["GAIA"], seed + 3)
-    if not gaia_items:
+        gaia_items = load_gaia(suite_quotas["GAIA"], seed + 3)
+        if not gaia_items:
+            print("GAIA unavailable; redistributing quotas to MBPP+/MATH/GSM8K.", file=sys.stderr)
+            suites = ["MBPP+", "MATH", "GSM8K"]
+            suite_quotas = compute_suite_quotas(suites, total)
+            items: List[TaskItem] = []
+            items.extend(load_mbpp(suite_quotas["MBPP+"], seed))
+            items.extend(load_math(suite_quotas["MATH"], seed + 1))
+            items.extend(load_gsm8k(suite_quotas["GSM8K"], seed + 2))
+        else:
+            gaia_shortfall = suite_quotas["GAIA"] - len(gaia_items)
+            if gaia_shortfall > 0:
+                extras = {"MBPP+": 0, "MATH": 0, "GSM8K": 0}
+                for i in range(gaia_shortfall):
+                    extras[["MBPP+", "MATH", "GSM8K"][i % 3]] += 1
+                suite_quotas["MBPP+"] += extras["MBPP+"]
+                suite_quotas["MATH"] += extras["MATH"]
+                suite_quotas["GSM8K"] += extras["GSM8K"]
+            items = []
+            items.extend(load_mbpp(suite_quotas["MBPP+"], seed))
+            items.extend(load_math(suite_quotas["MATH"], seed + 1))
+            items.extend(load_gsm8k(suite_quotas["GSM8K"], seed + 2))
+            items.extend(gaia_items)
+    else:
         suites = ["MBPP+", "MATH", "GSM8K"]
         suite_quotas = compute_suite_quotas(suites, total)
-        items: List[TaskItem] = []
-        items.extend(load_mbpp(suite_quotas["MBPP+"], seed))
-        items.extend(load_math(suite_quotas["MATH"], seed + 1))
-        items.extend(load_gsm8k(suite_quotas["GSM8K"], seed + 2))
-    else:
         items = []
         items.extend(load_mbpp(suite_quotas["MBPP+"], seed))
         items.extend(load_math(suite_quotas["MATH"], seed + 1))
         items.extend(load_gsm8k(suite_quotas["GSM8K"], seed + 2))
-        items.extend(gaia_items)
 
     random.Random(seed).shuffle(items)
     return items
@@ -408,8 +442,8 @@ def compute_path(sample: Dict[str, Any]) -> None:
     sample["label"]["path"] = list(reversed(path))
 
 
-def build_samples(total: int, seed: int) -> List[Dict[str, Any]]:
-    tasks = build_tasks(total, seed)
+def build_samples(total: int, seed: int, include_gaia: bool) -> List[Dict[str, Any]]:
+    tasks = build_tasks(total, seed, include_gaia)
     frameworks = ["smolagents", "autogen", "crewai"]
     per_framework = total // len(frameworks)
     remainder = total % len(frameworks)
@@ -454,13 +488,18 @@ def build_samples(total: int, seed: int) -> List[Dict[str, Any]]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", required=True)
-    parser.add_argument("--total", type=int, default=300)
+    parser.add_argument("--total", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=13)
-    parser.add_argument("--synthetic", type=int, default=100)
+    parser.add_argument("--synthetic", type=int, default=330)
     parser.add_argument("--model", default="distilgpt2")
     parser.add_argument("--max_tokens", type=int, default=1024)
     parser.add_argument("--top_k", type=int, default=3)
     parser.add_argument("--last_n_layers", type=int, default=4)
+    parser.add_argument(
+        "--skip-gaia",
+        action="store_true",
+        help="Skip GAIA entirely and redistribute its quota to MBPP+/MATH/GSM8K.",
+    )
     args = parser.parse_args()
 
     seed_all(args.seed)
@@ -472,7 +511,7 @@ def main() -> None:
     MODEL.to(DEVICE)
     MODEL.eval()
 
-    samples = build_samples(args.total, args.seed)
+    samples = build_samples(args.total, args.seed, not args.skip_gaia)
     rng = random.Random(args.seed + 99)
     synth_indices = set(rng.sample(range(len(samples)), min(args.synthetic, len(samples))))
 

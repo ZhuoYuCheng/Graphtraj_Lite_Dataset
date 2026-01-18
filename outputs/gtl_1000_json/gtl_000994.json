@@ -1,17 +1,17 @@
 {
   "id": "gtl_000994",
   "task": {
-    "prompt": "A psychologist believes one in every four people has a disorder he calls ZYX syndrome. The clinic where he works has recently doubled its previous number of 26 patients. How many patients is the psychologist likely to diagnose with ZYX syndrome?",
-    "gold": "13"
+    "prompt": "A pen is longer than the rubber by 3 centimeters, and shorter than the pencil by 2 centimeters. Considering the pencil is 12 centimeters long, what is the total length of the rubber, the pen, and the pencil altogether?",
+    "gold": "29"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: A psychologist believes one in every four people has a disorder he calls ZYX syndrome. The clinic where he works has recently doubled its previous number of 26 patients. How many patients is the psychologist likely to diagnose with ZYX syndrome?"
+      "c": "Plan: identify requirements from task. Task: A pen is longer than the rubber by 3 centimeters, and shorter than the pencil by 2 cen"
     },
     {
       "r": "analyst",
-      "c": "Work through the math carefully and keep intermediate values.\nTool result: corrupted output"
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 14"
+      "c": "Final answer: 30"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.863906
+        0.723895
       ],
       [
         0,
         2,
-        0.136094
+        0.276105
       ],
       [
         2,
         3,
-        0.584724
+        0.583879
       ],
       [
         1,
         3,
-        0.328549
+        0.273632
       ],
       [
         0,
         3,
-        0.086727
+        0.142489
       ]
     ],
     "cfg": {
@@ -67,9 +67,10 @@
     }
   },
   "label": {
-    "when": 1,
-    "who": "analyst",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
       1,
       2,
       3

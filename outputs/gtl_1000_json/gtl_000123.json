@@ -1,13 +1,13 @@
 {
   "id": "gtl_000123",
   "task": {
-    "prompt": "Find the cross product of $\\begin{pmatrix} 2 \\\\ 0 \\\\ 3 \\end{pmatrix}$ and $\\begin{pmatrix} 5 \\\\ -1 \\\\ 7 \\end{pmatrix}.$",
-    "gold": "\\begin{pmatrix"
+    "prompt": "In rectangle $ABCD,$ $P$ is a point on side $\\overline{BC}$ such that $BP = 16$ and $CP = 8.$  If $\\tan \\angle APD = 3,$ then find $AB.$",
+    "gold": "16"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Find the cross product of $\\begin{pmatrix} 2 \\\\ 0 \\\\ 3 \\end{pmatrix}$ and $\\begin{pmatrix} 5 \\\\ -1 \\\\ 7 \\end{pmatrix}.$"
+      "c": "Plan: identify requirements from task. Task: In rectangle $ABCD,$ $P$ is a point on side $\\overline{BC}$ such that $BP = 16$ and $CP = 8.$  If $\\tan \\angle APD = 3,$ then find $AB.$"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: \\begin{pmatrix"
+      "c": "Final answer: 16"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.803321
+        0.814401
       ],
       [
         0,
         2,
-        0.196679
+        0.185599
       ],
       [
         2,
         3,
-        0.618314
+        0.629736
       ],
       [
         1,
         3,
-        0.269572
+        0.284964
       ],
       [
         0,
         3,
-        0.112114
+        0.085299
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 2",
+    "level": "Level 4",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "smolagents",

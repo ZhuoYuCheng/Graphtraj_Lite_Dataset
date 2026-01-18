@@ -1,13 +1,13 @@
 {
   "id": "gtl_000887",
   "task": {
-    "prompt": "A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}.\\]A second line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 7 \\end{pmatrix} + u \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}.\\]Find the point where the lines intersect.",
-    "gold": "\\begin{pmatrix"
+    "prompt": "The matrix\n\\[\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}\\]is its own inverse.  Enter the ordered pair $(c,d).$",
+    "gold": "(8,-3)"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}.\\]A second line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 7 \\end{pmatrix} + u \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}.\\]Find the point where the lines intersect."
+      "c": "Plan: identify requirements from task. Task: The matrix\n\\[\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}\\]is its own inverse.  Enter the ordered pair $(c,d).$"
     },
     {
       "r": "analyst",
@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "Tool result: arithmetic verified for key steps."
+      "c": "Tool result: corrupted output"
     },
     {
       "r": "reviewer",
-      "c": "Final answer: \\begin{pmatrix_wrong"
+      "c": "Final answer: -2"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.919076
+        0.809409
       ],
       [
         0,
         2,
-        0.080924
+        0.190591
       ],
       [
         2,
         3,
-        0.697451
+        0.697121
       ],
       [
         1,
         3,
-        0.259218
+        0.218823
       ],
       [
         0,
         3,
-        0.043331
+        0.084056
       ]
     ],
     "cfg": {
@@ -67,11 +67,9 @@
     }
   },
   "label": {
-    "when": 0,
-    "who": "researcher",
+    "when": 2,
+    "who": "writer",
     "path": [
-      0,
-      1,
       2,
       3
     ]

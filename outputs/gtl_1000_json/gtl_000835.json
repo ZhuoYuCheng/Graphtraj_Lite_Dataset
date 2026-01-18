@@ -1,13 +1,13 @@
 {
   "id": "gtl_000835",
   "task": {
-    "prompt": "Teddy is a pillow-maker.  He uses 3 less than 5 pounds of fluffy foam material to make each pillow.  If Teddy has three tons of fluffy foam material, how many pillows can he make?",
-    "gold": "3,000"
+    "prompt": "Jackie can do 5 push-ups in 10 seconds. How many push-ups can she do in one minute if she takes two 8-second breaks?",
+    "gold": "22"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Teddy is a pillow-maker.  He uses 3 less than 5 pounds of fluffy foam material to make each pillow.  If Teddy has three tons of fluffy foam material, how many pillows can he make?"
+      "c": "[omitted]"
     },
     {
       "r": "analyst",
@@ -15,11 +15,11 @@
     },
     {
       "r": "writer",
-      "c": "[omitted]"
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 1"
+      "c": "Final answer: 23"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.842891
+        0.633874
       ],
       [
         0,
         2,
-        0.157109
+        0.366126
       ],
       [
         2,
         3,
-        0.633132
+        0.536114
       ],
       [
         1,
         3,
-        0.280463
+        0.239568
       ],
       [
         0,
         3,
-        0.086405
+        0.224318
       ]
     ],
     "cfg": {
@@ -67,9 +67,11 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "writer",
+    "when": 0,
+    "who": "researcher",
     "path": [
+      0,
+      1,
       2,
       3
     ]

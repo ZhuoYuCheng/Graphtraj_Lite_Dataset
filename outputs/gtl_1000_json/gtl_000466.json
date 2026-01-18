@@ -1,25 +1,25 @@
 {
   "id": "gtl_000466",
   "task": {
-    "prompt": "Cody has an insurance plan that will give him a discount if he logs a total of 100,000 steps. For the first week, he logs 1,000 steps a day.  He increases his daily number of steps by 1,000 every week.  After 4 weeks how far away from his step goal will he be?",
-    "gold": "30000"
+    "prompt": "",
+    "gold": ""
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Cody has an insurance plan that will give him a discount if he logs a total of 100,000 steps. For the first week, he logs 1,000 steps a day.  He increases his daily number of steps by 1,000 every week.  After 4 weeks how far away from his step goal will he be?"
+      "c": "Plan: identify requirements from task. Task: "
     },
     {
       "r": "critic",
-      "c": "Work through the math carefully and keep intermediate values."
+      "c": "[omitted]"
     },
     {
       "r": "assistant",
-      "c": "Tool result: corrupted output"
+      "c": "Tool result: cross-check facts with a quick lookup."
     },
     {
       "r": "assistant",
-      "c": "Final answer: 30001"
+      "c": "Final answer: _wrong"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.827305
+        0.51895
       ],
       [
         0,
         2,
-        0.172695
+        0.48105
       ],
       [
         2,
         3,
-        0.677327
+        0.38908
+      ],
+      [
+        0,
+        3,
+        0.349926
       ],
       [
         1,
         3,
-        0.24255
-      ],
-      [
-        0,
-        3,
-        0.080123
+        0.260994
       ]
     ],
     "cfg": {
@@ -67,10 +67,10 @@
     }
   },
   "label": {
-    "when": 2,
-    "who": "assistant",
+    "when": 1,
+    "who": "critic",
     "path": [
-      2,
+      1,
       3
     ]
   },
@@ -83,11 +83,11 @@
     }
   },
   "meta": {
-    "suite": "GSM8K",
+    "suite": "GAIA",
     "framework": "autogen",
     "judge": {
-      "success": false,
-      "reason": "exact match"
+      "success": true,
+      "reason": "no gold"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "id": "gtl_000502",
   "task": {
-    "prompt": "During a unit on probability, a teacher surveys her class asking her students two questions.  The first question was whether they prefer dogs or cats, and the second question was whether they movies or video games.  Of the 30 students in her class, 50% chose dogs and video games as their two answers, while 10% chose dogs and movies as their two answers.  In total, how many students in this teacher's class prefer dogs over cats?",
-    "gold": "18"
+    "prompt": "The Tigers played 56 home games this year. They had 12 losses and half as many ties. How many games did they win?",
+    "gold": "38"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: During a unit on probability, a teacher surveys her class asking her students two questions.  The first question was whether they prefer dogs or cats, and the second question was whether they movies or video games.  Of the 30 students in her class, 50% chose dogs and video games as their two answers, while 10% chose dogs and movies as their two answers.  In total, how many students in this teacher's class prefer dogs over cats?"
+      "c": "Plan: identify requirements from task. Task: The Tigers played 56 home games this year. They had 12 losses and half as many ties. How many games did they win?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 18"
+      "c": "Final answer: 38"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.860821
+        0.727234
       ],
       [
         0,
         2,
-        0.139179
+        0.272766
       ],
       [
         2,
         3,
-        0.651711
+        0.564681
       ],
       [
         1,
         3,
-        0.279075
+        0.280979
       ],
       [
         0,
         3,
-        0.069213
+        0.15434
       ]
     ],
     "cfg": {

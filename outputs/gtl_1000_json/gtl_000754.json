@@ -1,25 +1,25 @@
 {
   "id": "gtl_000754",
   "task": {
-    "prompt": "Write a function to remove the nested record from the given tuple.",
-    "gold": "def remove_nested(test_tup):\r\n  res = tuple()\r\n  for count, ele in enumerate(test_tup):\r\n    if not isinstance(ele, tuple):\r\n      res = res + (ele, )\r\n  return (res)"
+    "prompt": "Below is the graph of $y = a \\sin (bx + c) + d$ for some positive constants $a,$ $b,$ $c,$ and $d.$  Find $b.$\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal f(real x)\n{\n\treturn 2*sin(3*x + pi) + 1;\n}\n\ndraw(graph(f,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-4,4,pi/2,1);\nlayer();\nrm_trig_labels(-5,5, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$3$\", (0,3), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\nlabel(\"$-3$\", (0,-3), E);\n[/asy]",
+    "gold": "3"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to remove the nested record from the given tuple."
+      "c": "Plan: identify requirements from task. Task: Below is the graph of $y = a \\sin (bx + c) + d$ for some positive constants $a,$ $b,$ $c,$ and $d.$  Find $b.$\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal f(real x)\n{\n\treturn 2*sin(3*x + pi) + 1;\n}\n\ndraw(graph(f,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-4,4,pi/2,1);\nlayer();\nrm_trig_labels(-5,5, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$3$\", (0,3), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\nlabel(\"$-3$\", (0,-3), E);\n[/asy]"
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft."
+      "c": "Tool result: arithmetic verified for key steps."
     },
     {
       "r": "reviewer",
-      "c": "Final code:\ndef remove_nested(test_tup):\r\n  res = tuple()\r\n  for count, ele in enumerate(test_tup):\r\n    if not isinstance(ele, tuple):\r\n      res = res + (ele, )\r\n  return (res)"
+      "c": "Final answer: 3"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.738561
+        0.943066
       ],
       [
         0,
         2,
-        0.261439
+        0.056934
       ],
       [
         2,
         3,
-        0.467013
+        0.730684
       ],
       [
         1,
         3,
-        0.327465
+        0.245904
       ],
       [
         0,
         3,
-        0.205522
+        0.023412
       ]
     ],
     "cfg": {
@@ -80,16 +80,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert remove_nested((1, 5, 7, (4, 6), 10)) == (1, 5, 7, 10)",
-      "assert remove_nested((2, 6, 8, (5, 7), 11)) == (2, 6, 8, 11)",
-      "assert remove_nested((3, 7, 9, (6, 8), 12)) == (3, 7, 9, 12)"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": true,
-      "reason": "tests"
+      "reason": "exact match"
     }
   }
 }

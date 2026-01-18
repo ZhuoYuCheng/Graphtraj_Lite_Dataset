@@ -1,13 +1,13 @@
 {
   "id": "gtl_000158",
   "task": {
-    "prompt": "Each bank teller has 10 rolls of coins. Each roll has 25 coins. How many coins do four bank tellers have in all?",
-    "gold": "1000"
+    "prompt": "James has 20 friends. Yesterday at work he got into an argument with 2 of his friends. Now he no longer considers them as friends. On his way back home, he made one more friend. So how many friends does James have left?",
+    "gold": "19"
   },
   "steps": [
     {
       "r": "planner",
-      "c": "Plan: identify requirements from task. Task: Each bank teller has 10 rolls of coins. Each roll has 25 coins. How many coins do four bank tellers have in all?"
+      "c": "Plan: identify requirements from task. Task: James has 20 friends. Yesterday at work he got into an argument with 2 of his friends. Now he no longer considers them as friends. On his way back home, he made one more friend. So how many friends does James have left?"
     },
     {
       "r": "executor",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 1000"
+      "c": "Final answer: 19"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.775394
+        0.829207
       ],
       [
         0,
         2,
-        0.224606
+        0.170793
       ],
       [
         2,
         3,
-        0.587213
+        0.60914
       ],
       [
         1,
         3,
-        0.294236
+        0.3013
       ],
       [
         0,
         3,
-        0.11855
+        0.089561
       ]
     ],
     "cfg": {

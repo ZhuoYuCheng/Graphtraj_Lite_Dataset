@@ -1,13 +1,13 @@
 {
   "id": "gtl_000535",
   "task": {
-    "prompt": "Ben wants to pick 56 sugar snap peas. At his current rate of picking, all will be picked in seven minutes. How long, in minutes, would it take Ben to pick 72 sugar snap peas?",
-    "gold": "9"
+    "prompt": "A family just bought a newborn puppy that must eat a special type of dog food until it is 1 year old.  The puppy needs to eat 2 ounces of this special dog food per day during the first 60 days of its life.  After that, it needs to eat 4 ounces per day of the special food until it is old enough to eat regular dog food.  If the special dog food is only sold in 5-pound bags, and there are 16 ounces in a pound, how many bags will the family need to buy to feed the puppy until it is old enough to eat regular dog food?",
+    "gold": "17"
   },
   "steps": [
     {
       "r": "assistant",
-      "c": "Plan: identify requirements from task. Task: Ben wants to pick 56 sugar snap peas. At his current rate of picking, all will be picked in seven minutes. How long, in minutes, would it take Ben to pick 72 sugar snap peas?"
+      "c": "Plan: identify requirements from task. Task: A family just bought a newborn puppy that must eat a special type of dog food until it is 1 year old.  The puppy needs to eat 2 ounces of this special dog food per day during the first 60 days of its life.  After that, it needs to eat 4 ounces per day of the special food until it is old enough to eat regular dog food.  If the special dog food is only sold in 5-pound bags, and there are 16 ounces in a pound, how many bags will the family need to buy to feed the puppy until it is old enough to eat regular dog food?"
     },
     {
       "r": "critic",
@@ -19,7 +19,7 @@
     },
     {
       "r": "assistant",
-      "c": "Final answer: 9"
+      "c": "Final answer: 17"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.775601
+        0.896468
       ],
       [
         0,
         2,
-        0.224399
+        0.103532
       ],
       [
         2,
         3,
-        0.604382
+        0.645924
       ],
       [
         1,
         3,
-        0.279506
+        0.304721
       ],
       [
         0,
         3,
-        0.116112
+        0.049355
       ]
     ],
     "cfg": {

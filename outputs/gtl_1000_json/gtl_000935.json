@@ -1,25 +1,25 @@
 {
   "id": "gtl_000935",
   "task": {
-    "prompt": "Write a function to find the minimum difference in the tuple pairs of given tuples.",
-    "gold": "def min_difference(test_list):\r\n  temp = [abs(b - a) for a, b in test_list]\r\n  res = min(temp)\r\n  return (res)"
+    "prompt": "Find the area of the triangle with vertices $(-1,4),$ $(7,0),$ and $(11,5).$",
+    "gold": "28"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Write a function to find the minimum difference in the tuple pairs of given tuples."
+      "c": "Plan: identify requirements from task. Task: Find the area of the triangle with vertices $(-1,4),$ $(7,0),$ and $(11,5).$"
     },
     {
       "r": "analyst",
-      "c": "Draft a Python function that satisfies the prompt and tests."
+      "c": "Work through the math carefully and keep intermediate values."
     },
     {
       "r": "writer",
-      "c": "Tool result: basic checks pass on the draft. (incorrect)"
+      "c": "[omitted]"
     },
     {
       "r": "reviewer",
-      "c": "Final code:\nraise AssertionError('synthetic failure')"
+      "c": "Final answer: 29"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.753075
+        0.802897
       ],
       [
         0,
         2,
-        0.246925
+        0.197103
       ],
       [
         2,
         3,
-        0.532487
+        0.649752
       ],
       [
         1,
         3,
-        0.31993
+        0.257857
       ],
       [
         0,
         3,
-        0.147583
+        0.09239
       ]
     ],
     "cfg": {
@@ -83,16 +83,13 @@
     }
   },
   "meta": {
-    "test_list": [
-      "assert min_difference([(3, 5), (1, 7), (10, 3), (1, 2)]) == 1",
-      "assert min_difference([(4, 6), (12, 8), (11, 4), (2, 13)]) == 2",
-      "assert min_difference([(5, 17), (3, 9), (12, 5), (3, 24)]) == 6"
-    ],
-    "suite": "MBPP+",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
     "framework": "crewai",
     "judge": {
       "success": false,
-      "reason": "tests failed"
+      "reason": "exact match"
     }
   }
 }

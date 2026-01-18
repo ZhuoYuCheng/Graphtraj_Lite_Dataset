@@ -1,13 +1,13 @@
 {
   "id": "gtl_000911",
   "task": {
-    "prompt": "Determine the number of solutions to\n\\[2\\sin^3 x - 5 \\sin^2 x + 2 \\sin x = 0\\]in the range $0 \\le x \\le 2 \\pi.$",
-    "gold": "5"
+    "prompt": "Express $\\sin 4x + \\sin 6x$ as a product of trigonometric functions.",
+    "gold": "2 \\sin 5x \\cos x"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Determine the number of solutions to\n\\[2\\sin^3 x - 5 \\sin^2 x + 2 \\sin x = 0\\]in the range $0 \\le x \\le 2 \\pi.$"
+      "c": "Plan: identify requirements from task. Task: Express $\\sin 4x + \\sin 6x$ as a product of trigonometric functions."
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 5"
+      "c": "Final answer: 2 \\sin 5x \\cos x"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.818079
+        0.728259
       ],
       [
         0,
         2,
-        0.181921
+        0.271741
       ],
       [
         2,
         3,
-        0.64379
+        0.559819
       ],
       [
         1,
         3,
-        0.269685
+        0.269032
       ],
       [
         0,
         3,
-        0.086525
+        0.17115
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 3",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",

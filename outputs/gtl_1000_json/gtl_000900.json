@@ -1,13 +1,13 @@
 {
   "id": "gtl_000900",
   "task": {
-    "prompt": "Points $A$, $B$, $C$, $D$, and $E$ are located in 3-dimensional space with $AB= BC= CD= DE= EA= 2$ and $\\angle ABC = \\angle CDE = \\angle\nDEA = 90^\\circ$.  The plane of triangle $ABC$ is parallel to $\\overline{DE}$. What is the area of triangle $BDE$?",
-    "gold": "2"
+    "prompt": "For each integer $n$ greater than 1, let $F(n)$ be the number of solutions of the equation $\\sin x = \\sin nx$ on the interval $[0, \\pi]$.  What is $\\sum_{n=2}^{2007} F(n)$?",
+    "gold": "2{,"
   },
   "steps": [
     {
       "r": "researcher",
-      "c": "Plan: identify requirements from task. Task: Points $A$, $B$, $C$, $D$, and $E$ are located in 3-dimensional space with $AB= BC= CD= DE= EA= 2$ and $\\angle ABC = \\angle CDE = \\angle\nDEA = 90^\\circ$.  The plane of triangle $ABC$ is parallel to $\\overline{DE}$. What is the area of triangle $BDE$?"
+      "c": "Plan: identify requirements from task. Task: For each integer $n$ greater than 1, let $F(n)$ be the number of solutions of the equation $\\sin x = \\sin nx$ on the interval $[0, \\pi]$.  What is $\\sum_{n=2}^{2007} F(n)$?"
     },
     {
       "r": "analyst",
@@ -19,7 +19,7 @@
     },
     {
       "r": "reviewer",
-      "c": "Final answer: 2"
+      "c": "Final answer: 2{,"
     }
   ],
   "graph": {
@@ -34,27 +34,27 @@
       [
         1,
         2,
-        0.886583
+        0.857976
       ],
       [
         0,
         2,
-        0.113417
+        0.142024
       ],
       [
         2,
         3,
-        0.675566
+        0.657993
       ],
       [
         1,
         3,
-        0.274241
+        0.2754
       ],
       [
         0,
         3,
-        0.050193
+        0.066607
       ]
     ],
     "cfg": {
@@ -80,7 +80,7 @@
     }
   },
   "meta": {
-    "level": "Level 4",
+    "level": "Level 5",
     "type": "Precalculus",
     "suite": "MATH",
     "framework": "crewai",
