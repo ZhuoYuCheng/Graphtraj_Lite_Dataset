@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000281",
+  "task": {
+    "prompt": "Write a function to find the previous palindrome of a specified number.",
+    "gold": "def previous_palindrome(num):\r\n    for x in range(num-1,0,-1):\r\n        if str(x) == str(x)[::-1]:\r\n            return x"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a function to find the previous palindrome of a specified number."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\ndef previous_palindrome(num):\r\n    for x in range(num-1,0,-1):\r\n        if str(x) == str(x)[::-1]:\r\n            return x"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.748232
+      ],
+      [
+        0,
+        2,
+        0.251768
+      ],
+      [
+        2,
+        3,
+        0.467123
+      ],
+      [
+        1,
+        3,
+        0.328774
+      ],
+      [
+        0,
+        3,
+        0.204103
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert previous_palindrome(99)==88",
+      "assert previous_palindrome(1221)==1111",
+      "assert previous_palindrome(120)==111"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

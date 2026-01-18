@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000143",
+  "task": {
+    "prompt": "What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ roots of unity?",
+    "gold": "12"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: What is the smallest positive integer $n$ such that all the roots of $z^4 - z^2 + 1 = 0$ are $n^{\\text{th}}$ roots of unity?"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 12"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.760477
+      ],
+      [
+        0,
+        2,
+        0.239523
+      ],
+      [
+        2,
+        3,
+        0.608794
+      ],
+      [
+        1,
+        3,
+        0.268328
+      ],
+      [
+        0,
+        3,
+        0.122878
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

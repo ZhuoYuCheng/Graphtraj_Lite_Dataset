@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000228",
+  "task": {
+    "prompt": "The matrices\n\\[\\begin{pmatrix} a & 1 & b \\\\ 2 & 2 & 3 \\\\ c & 5 & d \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} -5 & e & -11 \\\\ f & -13 & g \\\\ 2 & h & 4 \\end{pmatrix}\\]are inverses.  Find $a + b + c + d + e + f + g + h.$",
+    "gold": "45"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: The matrices\n\\[\\begin{pmatrix} a & 1 & b \\\\ 2 & 2 & 3 \\\\ c & 5 & d \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} -5 & e & -11 \\\\ f & -13 & g \\\\ 2 & h & 4 \\end{pmatrix}\\]are inverses.  Find $a + b + c + d + e + f + g + h.$"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 45"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.897495
+      ],
+      [
+        0,
+        2,
+        0.102505
+      ],
+      [
+        2,
+        3,
+        0.692125
+      ],
+      [
+        1,
+        3,
+        0.265608
+      ],
+      [
+        0,
+        3,
+        0.042266
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

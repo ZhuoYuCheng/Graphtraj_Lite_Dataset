@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000202",
+  "task": {
+    "prompt": "The polynomial $P(x)$ is a monic, quartic polynomial with real coefficients, and two of its roots are $\\cos \\theta + i \\sin \\theta$ and $\\sin \\theta + i \\cos \\theta,$ where $0 < \\theta < \\frac{\\pi}{4}.$  When the four roots of $P(x)$ are plotted in the complex plane, they form a quadrilateral whose area is equal to half of $P(0).$  Find the sum of the four roots.",
+    "gold": "1 + \\sqrt{3"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: The polynomial $P(x)$ is a monic, quartic polynomial with real coefficients, and two of its roots are $\\cos \\theta + i \\sin \\theta$ and $\\sin \\theta + i \\cos \\theta,$ where $0 < \\theta < \\frac{\\pi}{4}.$  When the four roots of $P(x)$ are plotted in the complex plane, they form a quadrilateral whose area is equal to half of $P(0).$  Find the sum of the four roots."
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 1 + \\sqrt{3"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.905976
+      ],
+      [
+        0,
+        2,
+        0.094024
+      ],
+      [
+        2,
+        3,
+        0.677723
+      ],
+      [
+        1,
+        3,
+        0.276314
+      ],
+      [
+        0,
+        3,
+        0.045962
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

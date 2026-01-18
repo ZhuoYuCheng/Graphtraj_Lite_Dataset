@@ -1,0 +1,98 @@
+{
+  "id": "gtl_000060",
+  "task": {
+    "prompt": "Write a python function to find maximum possible value for the given periodic function.",
+    "gold": "def floor_Max(A,B,N):\r\n    x = min(B - 1,N)\r\n    return (A*x) // B"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a python function to find maximum possible value for the given periodic function."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic che"
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.721694
+      ],
+      [
+        0,
+        2,
+        0.278306
+      ],
+      [
+        2,
+        3,
+        0.593061
+      ],
+      [
+        1,
+        3,
+        0.256284
+      ],
+      [
+        0,
+        3,
+        0.150655
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "tool",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert floor_Max(11,10,9) == 9",
+      "assert floor_Max(5,7,4) == 2",
+      "assert floor_Max(2,2,1) == 1"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000168",
+  "task": {
+    "prompt": "Let $f$ be the function defined by $f(x) = -2 \\sin(\\pi x)$.  How many values of $x$ such that $-2 \\le x \\le 2$ satisfy the equation $f(f(f(x))) = f(x)$?",
+    "gold": "61"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Let $f$ be the function defined by $f(x) = -2 \\sin(\\pi x)$.  How many values of $x$ such that $-2 \\le x \\le 2$ satisfy the equation $f(f(f(x))) = f(x)$?"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 61"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.810014
+      ],
+      [
+        0,
+        2,
+        0.189986
+      ],
+      [
+        2,
+        3,
+        0.638873
+      ],
+      [
+        1,
+        3,
+        0.274661
+      ],
+      [
+        0,
+        3,
+        0.086466
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

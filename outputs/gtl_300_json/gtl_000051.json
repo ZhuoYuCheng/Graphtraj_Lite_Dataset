@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000051",
+  "task": {
+    "prompt": "Mark goes into the store to buy some groceries.  He buys 6 2$ cans of soup, 2 $5 loaves of bread, 2 3$ boxes of cereal, and 2 $4 gallons of milk.  When he gets to the register, he opens his wallet to pay and realizes he only has $10 bills in there.  How many $10 bills does he need to use to pay?",
+    "gold": "4"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Mark goes into the store to buy some groceries.  He buys 6 2$ cans of soup, 2 $5 loaves of bread, 2 3$ boxes of cereal, and 2 $4 gallons of milk.  When he gets to the register, he opens his wallet to pay and realizes he only has $10 bills in there.  How many $10 bills does he need to use to pay?"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 4"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.87184
+      ],
+      [
+        0,
+        2,
+        0.12816
+      ],
+      [
+        2,
+        3,
+        0.634503
+      ],
+      [
+        1,
+        3,
+        0.304821
+      ],
+      [
+        0,
+        3,
+        0.060676
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

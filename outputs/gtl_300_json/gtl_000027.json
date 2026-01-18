@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000027",
+  "task": {
+    "prompt": "Let $\\theta$ be the angle between the planes $2x + y - 2z + 3 = 0$ and $6x + 3y + 2z - 5 = 0.$  Find $\\cos \\theta.$",
+    "gold": "\\frac{11"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Let $\\theta$ be the angle between the planes $2x + y - 2z + 3 = 0$ and $6x + 3y + 2z - 5 = 0.$  Find $\\cos \\theta.$"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: \\frac{11"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.812939
+      ],
+      [
+        0,
+        2,
+        0.187061
+      ],
+      [
+        2,
+        3,
+        0.622388
+      ],
+      [
+        1,
+        3,
+        0.286758
+      ],
+      [
+        0,
+        3,
+        0.090854
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

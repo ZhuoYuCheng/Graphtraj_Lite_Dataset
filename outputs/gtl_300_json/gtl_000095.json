@@ -1,0 +1,94 @@
+{
+  "id": "gtl_000095",
+  "task": {
+    "prompt": "Henry went to the beach and picked up 17 perfect shells and 52 broken shells. Out of those 52 broken shells, half of them were spiral. Out of the 17 perfect shells, 12 of them were not spiral. How many more broken spiral shells were there than perfect spiral shells?",
+    "gold": "21"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Henry went to the beach and picked up 17 perfect shells and 52 broken shells. Out of those 52 broken shells, half of them were spiral. Out of the 17 perfect shells, 12 of them were not spiral. How many more broken spiral shells were there than perfect spiral shells?"
+    },
+    {
+      "r": "executor",
+      "c": "[omitted]"
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 22"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.83949
+      ],
+      [
+        0,
+        2,
+        0.16051
+      ],
+      [
+        2,
+        3,
+        0.537421
+      ],
+      [
+        1,
+        3,
+        0.367728
+      ],
+      [
+        0,
+        3,
+        0.094851
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "executor",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "gtl_000236",
+  "task": {
+    "prompt": "Write a python function to count the total unset bits from 1 to n.",
+    "gold": "def count_Unset_Bits(n) :  \r\n    cnt = 0;  \r\n    for i in range(1,n + 1) : \r\n        temp = i;  \r\n        while (temp) :  \r\n            if (temp % 2 == 0) : \r\n                cnt += 1;  \r\n            temp = temp // 2;  \r\n    return cnt;"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a python function to count the total unset bits from 1 to n."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft. (incorrect)"
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.728261
+      ],
+      [
+        0,
+        2,
+        0.271739
+      ],
+      [
+        2,
+        3,
+        0.547621
+      ],
+      [
+        1,
+        3,
+        0.295444
+      ],
+      [
+        0,
+        3,
+        0.156936
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "writer",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert count_Unset_Bits(2) == 1",
+      "assert count_Unset_Bits(5) == 4",
+      "assert count_Unset_Bits(14) == 17"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

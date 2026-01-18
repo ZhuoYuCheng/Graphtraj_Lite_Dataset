@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000032",
+  "task": {
+    "prompt": "Write a function to replace whitespaces with an underscore and vice versa in a given string by using regex.",
+    "gold": "import re\r\ntext = 'Python Exercises'\r\ndef replace_spaces(text):\r\n  text =text.replace (\" \", \"_\")\r\n  return (text)\r\n  text =text.replace (\"_\", \" \")\r\n  return (text)"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to replace whitespaces with an underscore and vice versa in a given string by using regex."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests. (incorrect)"
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.759762
+      ],
+      [
+        0,
+        2,
+        0.240238
+      ],
+      [
+        2,
+        3,
+        0.543954
+      ],
+      [
+        1,
+        3,
+        0.306444
+      ],
+      [
+        0,
+        3,
+        0.149602
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "executor",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert replace_spaces('Jumanji The Jungle') == 'Jumanji_The_Jungle'",
+      "assert replace_spaces('The Avengers') == 'The_Avengers'",
+      "assert replace_spaces('Fast and Furious') == 'Fast_and_Furious'"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}
