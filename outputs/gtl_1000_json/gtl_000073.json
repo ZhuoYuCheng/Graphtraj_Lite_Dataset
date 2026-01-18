@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000073",
+  "task": {
+    "prompt": "A bee starts flying from point $P_0$. She flies $1$ inch due east to point $P_1$. For $j \\ge 1$, once the bee reaches point $P_j$, she turns $30^{\\circ}$ counterclockwise and then flies $j+1$ inches straight to point $P_{j+1}$. When the bee reaches $P_{2015},$ how far from $P_0$ is she, in inches?",
+    "gold": "1008 \\sqrt{6"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: A bee starts flying from point $P_0$. She flies $1$ inch due east to point $P_1$. For $j \\ge 1$, once the bee reaches point $P_j$, she turns $30^{\\circ}$ counterclockwise and then flies $j+1$ inches straight to point $P_{j+1}$. When the bee reaches $P_{2015},$ how far from $P_0$ is she, in inches?"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic"
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 7"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.890562
+      ],
+      [
+        0,
+        2,
+        0.109438
+      ],
+      [
+        2,
+        3,
+        0.733107
+      ],
+      [
+        1,
+        3,
+        0.22774
+      ],
+      [
+        0,
+        3,
+        0.039153
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "tool",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

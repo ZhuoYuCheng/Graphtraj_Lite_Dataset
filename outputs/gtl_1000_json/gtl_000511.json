@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000511",
+  "task": {
+    "prompt": "Write a function to group the 1st elements on the basis of 2nd elements in the given tuple list.",
+    "gold": "from itertools import groupby \r\ndef group_element(test_list):\r\n  res = dict()\r\n  for key, val in groupby(sorted(test_list, key = lambda ele: ele[1]), key = lambda ele: ele[1]):\r\n    res[key] = [ele[0] for ele in val] \r\n  return (res)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to group the 1st elements on the basis of 2nd elements in the given tuple list."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nfrom itertools import groupby \r\ndef group_element(test_list):\r\n  res = dict()\r\n  for key, val in groupby(sorted(test_list, key = lambda ele: ele[1]), key = lambda ele: ele[1]):\r\n    res[key] = [ele[0] for ele in val] \r\n  return (res)"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.734221
+      ],
+      [
+        0,
+        2,
+        0.265779
+      ],
+      [
+        2,
+        3,
+        0.460383
+      ],
+      [
+        1,
+        3,
+        0.338584
+      ],
+      [
+        0,
+        3,
+        0.201033
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert group_element([(6, 5), (2, 7), (2, 5), (8, 7), (9, 8), (3, 7)]) == {5: [6, 2], 7: [2, 8, 3], 8: [9]}",
+      "assert group_element([(7, 6), (3, 8), (3, 6), (9, 8), (10, 9), (4, 8)]) == {6: [7, 3], 8: [3, 9, 4], 9: [10]}",
+      "assert group_element([(8, 7), (4, 9), (4, 7), (10, 9), (11, 10), (5, 9)]) == {7: [8, 4], 9: [4, 10, 5], 10: [11]}"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "gtl_000697",
+  "task": {
+    "prompt": "Write a function to combine two dictionaries by adding values for common keys.",
+    "gold": "from collections import Counter\r\ndef add_dict(d1,d2):\r\n   add_dict = Counter(d1) + Counter(d2)\r\n   return add_dict"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a function to combine two dictionaries by adding values for common keys. (incorrect)"
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.753614
+      ],
+      [
+        0,
+        2,
+        0.246386
+      ],
+      [
+        2,
+        3,
+        0.524436
+      ],
+      [
+        1,
+        3,
+        0.325889
+      ],
+      [
+        0,
+        3,
+        0.149675
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "researcher",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert add_dict({'a': 100, 'b': 200, 'c':300},{'a': 300, 'b': 200, 'd':400})==({'b': 400, 'd': 400, 'a': 400, 'c': 300}) ",
+      "assert add_dict({'a': 500, 'b': 700, 'c':900},{'a': 500, 'b': 600, 'd':900})==({'b': 1300, 'd': 900, 'a': 1000, 'c': 900}) ",
+      "assert add_dict({'a':900,'b':900,'d':900},{'a':900,'b':900,'d':900})==({'b': 1800, 'd': 1800, 'a': 1800})"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

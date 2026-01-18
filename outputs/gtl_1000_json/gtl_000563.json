@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000563",
+  "task": {
+    "prompt": "The distance between two vectors is the magnitude of their difference.  Find the value of $t$ for which the vector\n\\[\\bold{v} = \\begin{pmatrix} 2 \\\\ -3 \\\\ -3 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ 5 \\\\ -1 \\end{pmatrix}\\]is closest to\n\\[\\bold{a} = \\begin{pmatrix} 4 \\\\ 4 \\\\ 5 \\end{pmatrix}.\\]",
+    "gold": "\\frac{41"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: The distance between two vectors is the magnitude of their difference.  Find the value of $t$ for which the vector\n\\[\\bold{v} = \\begin{pmatrix} 2 \\\\ -3 \\\\ -3 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ 5 \\\\ -1 \\end{pmatrix}\\]is closest to\n\\[\\bold{a} = \\begin{pmatrix} 4 \\\\ 4 \\\\ 5 \\end{pmatrix}.\\]"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic"
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 42"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.877724
+      ],
+      [
+        0,
+        2,
+        0.122276
+      ],
+      [
+        2,
+        3,
+        0.737391
+      ],
+      [
+        1,
+        3,
+        0.216323
+      ],
+      [
+        0,
+        3,
+        0.046286
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "assistant",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

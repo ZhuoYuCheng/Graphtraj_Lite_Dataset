@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000411",
+  "task": {
+    "prompt": "Write a function to check if the given tuple contains only k elements.",
+    "gold": "def check_tuples(test_tuple, K):\r\n  res = all(ele in K for ele in test_tuple)\r\n  return (res)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to check if the given tuple contains only k elements."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef check_tuples(test_tuple, K):\r\n  res = all(ele in K for ele in test_tuple)\r\n  return (res)"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.681882
+      ],
+      [
+        0,
+        2,
+        0.318118
+      ],
+      [
+        2,
+        3,
+        0.455192
+      ],
+      [
+        1,
+        3,
+        0.317778
+      ],
+      [
+        0,
+        3,
+        0.22703
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert check_tuples((3, 5, 6, 5, 3, 6),[3, 6, 5]) == True",
+      "assert check_tuples((4, 5, 6, 4, 6, 5),[4, 5, 6]) == True",
+      "assert check_tuples((9, 8, 7, 6, 8, 9),[9, 8, 1]) == False"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

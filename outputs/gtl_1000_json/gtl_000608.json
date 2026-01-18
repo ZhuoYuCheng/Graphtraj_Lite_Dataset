@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000608",
+  "task": {
+    "prompt": "Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac mn<90,$ find $m+n.$",
+    "gold": "177"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac mn<90,$ find $m+n.$"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "[omitted]"
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 178"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.826924
+      ],
+      [
+        0,
+        2,
+        0.173076
+      ],
+      [
+        2,
+        3,
+        0.634317
+      ],
+      [
+        1,
+        3,
+        0.280151
+      ],
+      [
+        0,
+        3,
+        0.085532
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "assistant",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

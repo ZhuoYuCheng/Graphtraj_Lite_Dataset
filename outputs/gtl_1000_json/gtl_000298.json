@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000298",
+  "task": {
+    "prompt": "Write a function to solve tiling problem.",
+    "gold": "def get_noOfways(n):\r\n    if (n == 0):\r\n        return 0;\r\n    if (n == 1):\r\n        return 1; \r\n    return get_noOfways(n - 1) + get_noOfways(n - 2);"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to solve tiling problem."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef get_noOfways(n):\r\n    if (n == 0):\r\n        return 0;\r\n    if (n == 1):\r\n        return 1; \r\n    return get_noOfways(n - 1) + get_noOfways(n - 2);"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.68673
+      ],
+      [
+        0,
+        2,
+        0.31327
+      ],
+      [
+        2,
+        3,
+        0.436324
+      ],
+      [
+        1,
+        3,
+        0.31609
+      ],
+      [
+        0,
+        3,
+        0.247586
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert get_noOfways(4)==3",
+      "assert get_noOfways(3)==2",
+      "assert get_noOfways(5)==5"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

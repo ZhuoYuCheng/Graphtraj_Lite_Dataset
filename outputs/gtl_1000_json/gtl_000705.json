@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000705",
+  "task": {
+    "prompt": "Val has three times as many dimes as nickels. If she accidentally finds twice as many nickels as she has in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had 20 nickels before finding the new ones from her brother's treasure box?",
+    "gold": "9"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Val has three times as many dimes as nickels. If she accidentally finds twice as many nickels as she has in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had 20 nickels before finding the new ones from her brother's treasure box?"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 9"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.863126
+      ],
+      [
+        0,
+        2,
+        0.136874
+      ],
+      [
+        2,
+        3,
+        0.626206
+      ],
+      [
+        1,
+        3,
+        0.306419
+      ],
+      [
+        0,
+        3,
+        0.067376
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

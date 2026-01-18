@@ -1,0 +1,100 @@
+{
+  "id": "gtl_000182",
+  "task": {
+    "prompt": "Write a function to remove duplicates from a list of lists.",
+    "gold": "import itertools\r\ndef remove_duplicate(list1):\r\n list.sort(list1)\r\n remove_duplicate = list(list1 for list1,_ in itertools.groupby(list1))\r\n return remove_duplicate"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "[omitted]"
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.60125
+      ],
+      [
+        0,
+        2,
+        0.39875
+      ],
+      [
+        2,
+        3,
+        0.464841
+      ],
+      [
+        1,
+        3,
+        0.272622
+      ],
+      [
+        0,
+        3,
+        0.262537
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "planner",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert remove_duplicate([[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]])==[[10, 20], [30, 56, 25], [33], [40]] ",
+      "assert remove_duplicate([\"a\", \"b\", \"a\", \"c\", \"c\"] )==[\"a\", \"b\", \"c\"]",
+      "assert remove_duplicate([1, 3, 5, 6, 3, 5, 6, 1] )==[1, 3, 5, 6]"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

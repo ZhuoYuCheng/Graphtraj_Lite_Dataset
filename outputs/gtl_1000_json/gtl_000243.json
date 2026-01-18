@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000243",
+  "task": {
+    "prompt": "Write a function to print the first n lucky numbers.",
+    "gold": "def lucky_num(n):\r\n List=range(-1,n*n+9,2)\r\n i=2\r\n while List[i:]:List=sorted(set(List)-set(List[List[i]::List[i]]));i+=1\r\n return List[1:n+1]"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to print the first n lucky numbers."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef lucky_num(n):\r\n List=range(-1,n*n+9,2)\r\n i=2\r\n while List[i:]:List=sorted(set(List)-set(List[List[i]::List[i]]));i+=1\r\n return List[1:n+1]"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.70512
+      ],
+      [
+        0,
+        2,
+        0.29488
+      ],
+      [
+        2,
+        3,
+        0.438798
+      ],
+      [
+        1,
+        3,
+        0.307252
+      ],
+      [
+        0,
+        3,
+        0.253951
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert lucky_num(10)==[1, 3, 7, 9, 13, 15, 21, 25, 31, 33] ",
+      "assert lucky_num(5)==[1, 3, 7, 9, 13]",
+      "assert lucky_num(8)==[1, 3, 7, 9, 13, 15, 21, 25]"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

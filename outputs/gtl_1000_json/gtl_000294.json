@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000294",
+  "task": {
+    "prompt": "Write a python function to find sum of inverse of divisors.",
+    "gold": "def Sum_of_Inverse_Divisors(N,Sum): \r\n    ans = float(Sum)*1.0 /float(N);  \r\n    return round(ans,2);"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a python function to find sum of inverse of divisors."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef Sum_of_Inverse_Divisors(N,Sum): \r\n    ans = float(Sum)*1.0 /float(N);  \r\n    return round(ans,2);"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.700236
+      ],
+      [
+        0,
+        2,
+        0.299764
+      ],
+      [
+        2,
+        3,
+        0.461821
+      ],
+      [
+        1,
+        3,
+        0.292385
+      ],
+      [
+        0,
+        3,
+        0.245794
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert Sum_of_Inverse_Divisors(6,12) == 2",
+      "assert Sum_of_Inverse_Divisors(9,13) == 1.44",
+      "assert Sum_of_Inverse_Divisors(1,4) == 4"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

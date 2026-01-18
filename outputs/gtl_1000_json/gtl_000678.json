@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000678",
+  "task": {
+    "prompt": "Tom is binge-watching a show on Netflix. The show has 90 episodes, each one of which is 20 minutes long because there are no commercials. If Tom can spend two hours a day watching the show, how many days will it take him to finish watching the show?",
+    "gold": "15"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "[omitted]"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 16"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.65057
+      ],
+      [
+        0,
+        2,
+        0.34943
+      ],
+      [
+        2,
+        3,
+        0.54242
+      ],
+      [
+        1,
+        3,
+        0.241484
+      ],
+      [
+        0,
+        3,
+        0.216096
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "researcher",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

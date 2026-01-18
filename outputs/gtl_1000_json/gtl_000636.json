@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000636",
+  "task": {
+    "prompt": "For some constants $a$ and $c,$\n\\[\\begin{pmatrix} a \\\\ -1 \\\\ c \\end{pmatrix} \\times \\begin{pmatrix} 7 \\\\ 3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -11 \\\\ -16 \\\\ 25 \\end{pmatrix}.\\]Enter the ordered pair $(a,c).$",
+    "gold": "(6,2)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: For some constants $a$ and $c,$\n\\[\\begin{pmatrix} a \\\\ -1 \\\\ c \\end{pmatrix} \\times \\begin{pmatrix} 7 \\\\ 3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -11 \\\\ -16 \\\\ 25 \\end{pmatrix}.\\]Enter the ordered pair $(a,c).$"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: (6,2)"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.850822
+      ],
+      [
+        0,
+        2,
+        0.149178
+      ],
+      [
+        2,
+        3,
+        0.673423
+      ],
+      [
+        1,
+        3,
+        0.259113
+      ],
+      [
+        0,
+        3,
+        0.067464
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "gtl_000749",
+  "task": {
+    "prompt": "In one week, Jake can eat 3 papayas, his brother can eat 5 papayas, and his father can eat 4 papayas.  To account for 4 weeks, how many papayas does Jake need to buy from the farmer\u2019s market?",
+    "gold": "48"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: In one week, Jake can eat 3 papayas, his brother can eat 5 papayas, and his father can eat 4 papayas.  To account for 4 weeks, how many papayas does Jake need to buy from the farmer\u2019s market?"
+    },
+    {
+      "r": "analyst",
+      "c": "[omitted]"
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 49"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.843179
+      ],
+      [
+        0,
+        2,
+        0.156821
+      ],
+      [
+        2,
+        3,
+        0.569217
+      ],
+      [
+        1,
+        3,
+        0.345489
+      ],
+      [
+        0,
+        3,
+        0.085294
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "analyst",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

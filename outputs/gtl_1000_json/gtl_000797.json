@@ -1,0 +1,93 @@
+{
+  "id": "gtl_000797",
+  "task": {
+    "prompt": "Marc bought 5 model cars that cost $20 each and 5 bottles of paint that cost $10 each. He also bought 5 paintbrushes that cost $2 each. How much did Marc spend in total?",
+    "gold": "160"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Marc bought 5 model cars that cost $20 each and 5 bottles of paint that cost $10 each. He also bought 5 paintbrushes that cost $2 each. How much did Marc spend in total?"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic"
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 161"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.842569
+      ],
+      [
+        0,
+        2,
+        0.157431
+      ],
+      [
+        2,
+        3,
+        0.666291
+      ],
+      [
+        1,
+        3,
+        0.257724
+      ],
+      [
+        0,
+        3,
+        0.075985
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "writer",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

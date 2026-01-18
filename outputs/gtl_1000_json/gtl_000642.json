@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000642",
+  "task": {
+    "prompt": "Lexie and Tom went apple picking. Lexie picked 12 apples and Tom picked twice as many apples. How many apples did they collect altogether?",
+    "gold": "36"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Lexie and Tom went apple picking. Lexie picked 12 apples and Tom picked twice as many apples. How many apples did they collect altogether?"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 36"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.752708
+      ],
+      [
+        0,
+        2,
+        0.247292
+      ],
+      [
+        2,
+        3,
+        0.570179
+      ],
+      [
+        1,
+        3,
+        0.293913
+      ],
+      [
+        0,
+        3,
+        0.135908
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

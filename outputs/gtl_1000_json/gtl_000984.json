@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000984",
+  "task": {
+    "prompt": "Let $a,$ $b,$ $c,$ $d$ be positive integers such that\n\\[\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 18 & 12 \\\\ -20 & -13 \\end{pmatrix}.\\]Find the smallest possible value of $a + b + c + d.$",
+    "gold": "16"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Let $a,$ $b,$ $c,$ $d$ be positive integers such that\n\\[\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 18 & 12 \\\\ -20 & -13 \\end{pmatrix}.\\]Find the smallest possible value of $a + b + c + d.$"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: corrupted output"
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 17"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.924593
+      ],
+      [
+        0,
+        2,
+        0.075407
+      ],
+      [
+        2,
+        3,
+        0.736327
+      ],
+      [
+        1,
+        3,
+        0.233083
+      ],
+      [
+        0,
+        3,
+        0.03059
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "writer",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

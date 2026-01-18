@@ -1,0 +1,96 @@
+{
+  "id": "gtl_000252",
+  "task": {
+    "prompt": "The line $y = \\frac{1}{2} x + 4$ is paramterized by the form\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ s \\end{pmatrix} + t \\begin{pmatrix} l \\\\ -5 \\end{pmatrix}.\\]Enter the ordered pair $(s,l).$",
+    "gold": "\\left( \\frac{1"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: The line $y = \\frac{1}{2} x + 4$ is paramterized by the form\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ s \\end{pmatrix} + t \\begin{pmatrix} l \\\\ -5 \\end{pmatrix}.\\]Enter the ordered pair $(s,l).$"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefull"
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 2"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.890429
+      ],
+      [
+        0,
+        2,
+        0.109571
+      ],
+      [
+        2,
+        3,
+        0.648217
+      ],
+      [
+        1,
+        3,
+        0.301425
+      ],
+      [
+        0,
+        3,
+        0.050358
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "executor",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

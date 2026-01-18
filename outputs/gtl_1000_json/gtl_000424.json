@@ -1,0 +1,97 @@
+{
+  "id": "gtl_000424",
+  "task": {
+    "prompt": "In triangle $ABC,$ $D$ lies on $\\overline{BC}$ extended past $C$ such that $BD:DC = 3:1,$ and $E$ lies on $\\overline{AC}$ such that $AE:EC = 5:3.$  Let $P$ be the intersection of lines $BE$ and $AD.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, C, D, E, F, P;\n\nA = (1,4);\nB = (0,0);\nC = (6,0);\nD = interp(B,C,3/2);\nE = interp(A,C,5/8);\nP = extension(A,D,B,E);\n\ndraw(A--B--C--cycle);\ndraw(A--D--C);\ndraw(B--P);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, S);\nlabel(\"$D$\", D, SE);\nlabel(\"$E$\", E, S);\nlabel(\"$P$\", P, NE);\n[/asy]\n\nThen\n\\[\\overrightarrow{P} = x \\overrightarrow{A} + y \\overrightarrow{B} + z \\overrightarrow{C},\\]where $x,$ $y,$ and $z$ are constants such that $x + y + z = 1.$  Enter the ordered triple $(x,y,z).$",
+    "gold": "\\left( \\frac{9"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "[omitted]"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 10"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.585706
+      ],
+      [
+        0,
+        2,
+        0.414294
+      ],
+      [
+        2,
+        3,
+        0.550898
+      ],
+      [
+        0,
+        3,
+        0.232745
+      ],
+      [
+        1,
+        3,
+        0.216358
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

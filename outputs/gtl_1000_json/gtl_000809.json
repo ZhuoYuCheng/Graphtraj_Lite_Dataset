@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000809",
+  "task": {
+    "prompt": "On Monday, while at work on the farm, Jeremy picks 100 oranges. On Tuesday, together with his brother, they pick thrice as much. On Wednesday he feels tired and is only able to pick 70 oranges. What's the total number of oranges they have?",
+    "gold": "470"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: On Monday, while at work on the farm, Jeremy picks 100 oranges. On Tuesday, together with his brother, they pick thrice as much. On Wednesday he feels tired and is only able to pick 70 oranges. What's the total number of oranges they have?"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 470"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.84585
+      ],
+      [
+        0,
+        2,
+        0.15415
+      ],
+      [
+        2,
+        3,
+        0.645606
+      ],
+      [
+        1,
+        3,
+        0.27981
+      ],
+      [
+        0,
+        3,
+        0.074584
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

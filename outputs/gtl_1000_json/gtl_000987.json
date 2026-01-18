@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000987",
+  "task": {
+    "prompt": "Write a python function to find the sum of fourth power of first n even natural numbers.",
+    "gold": "def even_Power_Sum(n): \r\n    sum = 0; \r\n    for i in range(1,n + 1): \r\n        j = 2*i; \r\n        sum = sum + (j*j*j*j); \r\n    return sum;"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a python function to find the sum of fourth power of first n even natural numbers."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\ndef even_Power_Sum(n): \r\n    sum = 0; \r\n    for i in range(1,n + 1): \r\n        j = 2*i; \r\n        sum = sum + (j*j*j*j); \r\n    return sum;"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.747323
+      ],
+      [
+        0,
+        2,
+        0.252677
+      ],
+      [
+        2,
+        3,
+        0.466388
+      ],
+      [
+        1,
+        3,
+        0.321927
+      ],
+      [
+        0,
+        3,
+        0.211685
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert even_Power_Sum(2) == 272",
+      "assert even_Power_Sum(3) == 1568",
+      "assert even_Power_Sum(4) == 5664"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

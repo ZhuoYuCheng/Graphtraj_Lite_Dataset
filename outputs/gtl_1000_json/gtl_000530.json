@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000530",
+  "task": {
+    "prompt": "Bill started reading a book on the first day of April. He read 8 pages every day and by the 12th of April, he had covered two-thirds of the book. How many pages does the book have?",
+    "gold": "144"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Bill started reading a book on the first day of April. He read 8 pages every day and by the 12th of April, he had covered two-thirds of the book. How many pages does the book have?"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 144"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.77453
+      ],
+      [
+        0,
+        2,
+        0.22547
+      ],
+      [
+        2,
+        3,
+        0.603443
+      ],
+      [
+        1,
+        3,
+        0.276391
+      ],
+      [
+        0,
+        3,
+        0.120165
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

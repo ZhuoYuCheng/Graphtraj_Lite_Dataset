@@ -1,0 +1,94 @@
+{
+  "id": "gtl_000565",
+  "task": {
+    "prompt": "There are 12 more green apples than red apples in a bowl. There are 16 red apples. How many apples are there in the bowl?",
+    "gold": "44"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: There are 12 more green apples than red apples in a bowl. There are 16 red apples. How many apples are there in the bowl?"
+    },
+    {
+      "r": "critic",
+      "c": "[omitted]"
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 45"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.756829
+      ],
+      [
+        0,
+        2,
+        0.243171
+      ],
+      [
+        2,
+        3,
+        0.533892
+      ],
+      [
+        1,
+        3,
+        0.319727
+      ],
+      [
+        0,
+        3,
+        0.146381
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "critic",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

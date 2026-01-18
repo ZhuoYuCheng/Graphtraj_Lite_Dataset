@@ -1,0 +1,100 @@
+{
+  "id": "gtl_000582",
+  "task": {
+    "prompt": "Write a function to display sign of the chinese zodiac for given year.",
+    "gold": "def chinese_zodiac(year):\r\n if (year - 2000) % 12 == 0:\r\n     sign = 'Dragon'\r\n elif (year - 2000) % 12 == 1:\r\n     sign = 'Snake'\r\n elif (year - 2000) % 12 == 2:\r\n     sign = 'Horse'\r\n elif (year - 2000) % 12 == 3:\r\n     sign = 'sheep'\r\n elif (year - 2000) % 12 == 4:\r\n     sign = 'Monkey'\r\n elif (year - 2000) % 12 == 5:\r\n     sign = 'Rooster'\r\n elif (year - 2000) % 12 == 6:\r\n     sign = 'Dog'\r\n elif (year - 2000) % 12 == 7:\r\n     sign = 'Pig'\r\n elif (year - 2000) % 12 == 8:\r\n     sign = 'Rat'\r\n elif (year - 2000) % 12 == 9:\r\n     sign = 'Ox'\r\n elif (year - 2000) % 12 == 10:\r\n     sign = 'Tiger'\r\n else:\r\n     sign = 'Hare'\r\n return sign"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to display sign of the chinese zodiac for given year. (incorrect)"
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.714113
+      ],
+      [
+        0,
+        2,
+        0.285887
+      ],
+      [
+        2,
+        3,
+        0.526832
+      ],
+      [
+        1,
+        3,
+        0.302105
+      ],
+      [
+        0,
+        3,
+        0.171063
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert chinese_zodiac(1997)==('Ox')",
+      "assert chinese_zodiac(1998)==('Tiger')",
+      "assert chinese_zodiac(1994)==('Dog')"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

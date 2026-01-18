@@ -1,0 +1,97 @@
+{
+  "id": "gtl_000593",
+  "task": {
+    "prompt": "Rational Man and Irrational Man both buy new cars, and they decide to drive around two racetracks from time $t = 0$ to $t = \\infty.$  Rational Man drives along the path parameterized by\n\\begin{align*}\nx &= \\cos t, \\\\\ny &= \\sin t,\n\\end{align*}and Irrational Man drives along the path parameterized by\n\\begin{align*}\nx &= 1 + 4 \\cos \\frac{t}{\\sqrt{2}}, \\\\\ny &= 2 \\sin \\frac{t}{\\sqrt{2}}.\n\\end{align*}If $A$ is a point on Rational Man's racetrack, and $B$ is a point on Irrational Man's racetrack, then find the smallest possible distance $AB.$",
+    "gold": "\\frac{\\sqrt{33"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "[omitted]"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 34"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.551378
+      ],
+      [
+        0,
+        2,
+        0.448622
+      ],
+      [
+        2,
+        3,
+        0.522009
+      ],
+      [
+        0,
+        3,
+        0.260659
+      ],
+      [
+        1,
+        3,
+        0.217332
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

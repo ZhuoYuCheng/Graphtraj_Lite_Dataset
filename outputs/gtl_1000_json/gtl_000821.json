@@ -1,0 +1,94 @@
+{
+  "id": "gtl_000821",
+  "task": {
+    "prompt": "Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1/10 less in Maths, what's the total number of marks she scored in all the subjects?",
+    "gold": "296"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1/10 less in Maths, what's the total number of marks she scored in all the subjects?"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefull"
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 297"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.863979
+      ],
+      [
+        0,
+        2,
+        0.136021
+      ],
+      [
+        2,
+        3,
+        0.5881
+      ],
+      [
+        1,
+        3,
+        0.340104
+      ],
+      [
+        0,
+        3,
+        0.071795
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "analyst",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000793",
+  "task": {
+    "prompt": "Let $\\mathbf{p}$ be the projection of $\\mathbf{v}$ onto $\\mathbf{w},$ and let $\\mathbf{q}$ be the projection of $\\mathbf{p}$ onto $\\mathbf{v}.$  If $\\frac{\\|\\mathbf{p}\\|}{\\|\\mathbf{v}\\|} = \\frac{5}{7},$ then find $\\frac{\\|\\mathbf{q}\\|}{\\|\\mathbf{v}\\|}.$",
+    "gold": "\\frac{25"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{p}$ be the projection of $\\mathbf{v}$ onto $\\mathbf{w},$ and let $\\mathbf{q}$ be the projection of $\\mathbf{p}$ onto $\\mathbf{v}.$  If $\\frac{\\|\\mathbf{p}\\|}{\\|\\mathbf{v}\\|} = \\frac{5}{7},$ then find $\\frac{\\|\\mathbf{q}\\|}{\\|\\mathbf{v}\\|}.$"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: \\frac{25"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.907263
+      ],
+      [
+        0,
+        2,
+        0.092737
+      ],
+      [
+        2,
+        3,
+        0.7016
+      ],
+      [
+        1,
+        3,
+        0.259306
+      ],
+      [
+        0,
+        3,
+        0.039094
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

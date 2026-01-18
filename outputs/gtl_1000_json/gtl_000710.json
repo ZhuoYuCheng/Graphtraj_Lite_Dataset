@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000710",
+  "task": {
+    "prompt": "Write a python function to move all zeroes to the end of the given list.",
+    "gold": "def move_zero(num_list):\r\n    a = [0 for i in range(num_list.count(0))]\r\n    x = [ i for i in num_list if i != 0]\r\n    x.extend(a)\r\n    return (x)"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a python function to move all zeroes to the end of the given list."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\ndef move_zero(num_list):\r\n    a = [0 for i in range(num_list.count(0))]\r\n    x = [ i for i in num_list if i != 0]\r\n    x.extend(a)\r\n    return (x)"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.749546
+      ],
+      [
+        0,
+        2,
+        0.250454
+      ],
+      [
+        2,
+        3,
+        0.480312
+      ],
+      [
+        1,
+        3,
+        0.320518
+      ],
+      [
+        0,
+        3,
+        0.19917
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert move_zero([1,0,2,0,3,4]) == [1,2,3,4,0,0]",
+      "assert move_zero([2,3,2,0,0,4,0,5,0]) == [2,3,2,4,5,0,0,0,0]",
+      "assert move_zero([0,1,0,1,1]) == [1,1,1,0,0]"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

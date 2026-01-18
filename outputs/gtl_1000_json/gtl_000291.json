@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000291",
+  "task": {
+    "prompt": "If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are unit vectors, then find the largest possible value of\n\\[\\|\\mathbf{a} - \\mathbf{b}\\|^2 + \\|\\mathbf{a} - \\mathbf{c}\\|^2 + \\|\\mathbf{b} - \\mathbf{c}\\|^2.\\]Note: A unit vector is a vector of magnitude 1.",
+    "gold": "9"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are unit vectors, then find the largest possible value of\n\\[\\|\\mathbf{a} - \\mathbf{b}\\|^2 + \\|\\mathbf{a} - \\mathbf{c}\\|^2 + \\|\\mathbf{b} - \\mathbf{c}\\|^2.\\]Note: A unit vector is a vector of magnitude 1."
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps. (incorrect)"
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 10"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.898327
+      ],
+      [
+        0,
+        2,
+        0.101673
+      ],
+      [
+        2,
+        3,
+        0.628045
+      ],
+      [
+        1,
+        3,
+        0.324929
+      ],
+      [
+        0,
+        3,
+        0.047026
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "tool",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

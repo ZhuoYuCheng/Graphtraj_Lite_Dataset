@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000087",
+  "task": {
+    "prompt": "If $\\cos \\theta = \\frac{2}{3},$ then find $\\cos 2 \\theta.$",
+    "gold": "-\\frac{1"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: If $\\cos \\theta = \\frac{2}{3},$ then find $\\cos 2 \\theta.$"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic"
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 2"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.751695
+      ],
+      [
+        0,
+        2,
+        0.248305
+      ],
+      [
+        2,
+        3,
+        0.651636
+      ],
+      [
+        1,
+        3,
+        0.235124
+      ],
+      [
+        0,
+        3,
+        0.11324
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "tool",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

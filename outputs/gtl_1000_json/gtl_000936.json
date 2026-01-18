@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000936",
+  "task": {
+    "prompt": "Find the angle between the vectors $\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix},$ in degrees.",
+    "gold": "150^\\circ"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Find the angle between the vectors $\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix},$ in degrees."
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 150^\\circ"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.819469
+      ],
+      [
+        0,
+        2,
+        0.180531
+      ],
+      [
+        2,
+        3,
+        0.665433
+      ],
+      [
+        1,
+        3,
+        0.256237
+      ],
+      [
+        0,
+        3,
+        0.07833
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000286",
+  "task": {
+    "prompt": "Write a python function to find the length of the last word in a given string.",
+    "gold": "def length_Of_Last_Word(a): \r\n    l = 0\r\n    x = a.strip() \r\n    for i in range(len(x)): \r\n        if x[i] == \" \": \r\n            l = 0\r\n        else: \r\n            l += 1\r\n    return l"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a python function to find the length of the last word in a given string."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef length_Of_Last_Word(a): \r\n    l = 0\r\n    x = a.strip() \r\n    for i in range(len(x)): \r\n        if x[i] == \" \": \r\n            l = 0\r\n        else: \r\n            l += 1\r\n    return l"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.724232
+      ],
+      [
+        0,
+        2,
+        0.275768
+      ],
+      [
+        2,
+        3,
+        0.461214
+      ],
+      [
+        1,
+        3,
+        0.302674
+      ],
+      [
+        0,
+        3,
+        0.236112
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert length_Of_Last_Word(\"python language\") == 8",
+      "assert length_Of_Last_Word(\"PHP\") == 3",
+      "assert length_Of_Last_Word(\"\") == 0"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

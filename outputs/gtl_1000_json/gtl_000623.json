@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000623",
+  "task": {
+    "prompt": "Write a function to find the minimum number of elements that should be removed such that amax-amin<=k.",
+    "gold": "def find_ind(key, i, n, \r\n\t\t\tk, arr):\r\n\tind = -1\r\n\tstart = i + 1\r\n\tend = n - 1;\r\n\twhile (start < end):\r\n\t\tmid = int(start +\r\n\t\t\t\t(end - start) / 2)\r\n\t\tif (arr[mid] - key <= k):\r\n\t\t\tind = mid\r\n\t\t\tstart = mid + 1\r\n\t\telse:\r\n\t\t\tend = mid\r\n\treturn ind\r\ndef removals(arr, n, k):\r\n\tans = n - 1\r\n\tarr.sort()\r\n\tfor i in range(0, n):\r\n\t\tj = find_ind(arr[i], i, \r\n\t\t\t\t\tn, k, arr)\r\n\t\tif (j != -1):\r\n\t\t\tans = min(ans, n -\r\n\t\t\t\t\t\t(j - i + 1))\r\n\treturn ans"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to find the minimum number of elements that should be removed such that amax-amin<=k."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef find_ind(key, i, n, \r\n\t\t\tk, arr):\r\n\tind = -1\r\n\tstart = i + 1\r\n\tend = n - 1;\r\n\twhile (start < end):\r\n\t\tmid = int(start +\r\n\t\t\t\t(end - start) / 2)\r\n\t\tif (arr[mid] - key <= k):\r\n\t\t\tind = mid\r\n\t\t\tstart = mid + 1\r\n\t\telse:\r\n\t\t\tend = mid\r\n\treturn ind\r\ndef removals(arr, n, k):\r\n\tans = n - 1\r\n\tarr.sort()\r\n\tfor i in range(0, n):\r\n\t\tj = find_ind(arr[i], i, \r\n\t\t\t\t\tn, k, arr)\r\n\t\tif (j != -1):\r\n\t\t\tans = min(ans, n -\r\n\t\t\t\t\t\t(j - i + 1))\r\n\treturn ans"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.743544
+      ],
+      [
+        0,
+        2,
+        0.256456
+      ],
+      [
+        2,
+        3,
+        0.409744
+      ],
+      [
+        1,
+        3,
+        0.348575
+      ],
+      [
+        0,
+        3,
+        0.241681
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert removals([1, 3, 4, 9, 10,11, 12, 17, 20], 9, 4) == 5",
+      "assert removals([1, 5, 6, 2, 8], 5, 2) == 3",
+      "assert removals([1, 2, 3 ,4, 5, 6], 6, 3) == 2"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

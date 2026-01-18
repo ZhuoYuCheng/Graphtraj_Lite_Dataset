@@ -1,0 +1,94 @@
+{
+  "id": "gtl_000169",
+  "task": {
+    "prompt": "Benjamin is tracking how many miles he walks in a week. He walks to work and home five days a week, walks his dog twice a day every day, walks to his best friend\u2019s house once a week, and walks to the convenience store twice a week. Work is six miles away, dog walks are two miles, his best friend\u2019s house is one mile, and the convenience store is three miles. How many miles does Benjamin walk in a week?",
+    "gold": "95"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Benjamin is tracking how many miles he walks in a week. He walks to work and home five days a week, walks his dog twice a day every day, walks to his best friend\u2019s house once a week, and walks to the convenience store twice a week. Work is six miles away, dog walks are two miles, his best friend\u2019s house is one mile, and the convenience store is three miles. How many miles does Benjamin walk in a week?"
+    },
+    {
+      "r": "executor",
+      "c": "[omitted]"
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 96"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.8906
+      ],
+      [
+        0,
+        2,
+        0.1094
+      ],
+      [
+        2,
+        3,
+        0.558608
+      ],
+      [
+        1,
+        3,
+        0.381699
+      ],
+      [
+        0,
+        3,
+        0.059693
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "executor",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

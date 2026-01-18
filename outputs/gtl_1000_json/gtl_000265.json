@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000265",
+  "task": {
+    "prompt": "Lizette scored 92 on her third quiz giving her an average of 94. What is Lizette's average in her first two quizzes?",
+    "gold": "95"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Lizette scored 92 on her third quiz giving her an average of 94. What is Lizette's average in her first two quizzes?"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 95"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.759895
+      ],
+      [
+        0,
+        2,
+        0.240105
+      ],
+      [
+        2,
+        3,
+        0.576468
+      ],
+      [
+        1,
+        3,
+        0.29516
+      ],
+      [
+        0,
+        3,
+        0.128372
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

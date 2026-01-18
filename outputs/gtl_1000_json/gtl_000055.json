@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000055",
+  "task": {
+    "prompt": "Quinton is looking to add 4 fruit trees to his backyard.  He wants to plant 2 apple trees that will be 10 feet wide each and need 12 feet between them.  The peach trees will be closer to the house and will grow to be 12 feet wide and will need 15 feet between each tree.  All told, how much space will these trees take up in his yard?",
+    "gold": "71"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Quinton is looking to add 4 fruit trees to his backyard.  He wants to plant 2 apple trees that will be 10 feet wide each and need 12 feet between them.  The peach trees will be closer to the house and will grow to be 12 feet wide and will need 15 feet between each tree.  All told, how much space will these trees take up in his yard?"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 71"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.871099
+      ],
+      [
+        0,
+        2,
+        0.128901
+      ],
+      [
+        2,
+        3,
+        0.628956
+      ],
+      [
+        1,
+        3,
+        0.307644
+      ],
+      [
+        0,
+        3,
+        0.0634
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

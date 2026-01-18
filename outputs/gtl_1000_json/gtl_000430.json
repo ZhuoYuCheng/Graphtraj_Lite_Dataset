@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000430",
+  "task": {
+    "prompt": "Write a python function to add a minimum number such that the sum of array becomes even.",
+    "gold": "def min_Num(arr,n):  \r\n    odd = 0\r\n    for i in range(n): \r\n        if (arr[i] % 2): \r\n            odd += 1 \r\n    if (odd % 2): \r\n        return 1\r\n    return 2"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a python function to add a minimum number such that the sum of array becomes even."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests. (incorrect)"
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.692756
+      ],
+      [
+        0,
+        2,
+        0.307244
+      ],
+      [
+        2,
+        3,
+        0.548854
+      ],
+      [
+        1,
+        3,
+        0.271253
+      ],
+      [
+        0,
+        3,
+        0.179893
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "critic",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert min_Num([1,2,3,4,5,6,7,8,9],9) == 1",
+      "assert min_Num([1,2,3,4,5,6,7,8],8) == 2",
+      "assert min_Num([1,2,3],3) == 2"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

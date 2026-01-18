@@ -1,0 +1,97 @@
+{
+  "id": "gtl_000306",
+  "task": {
+    "prompt": "Cube $ABCDEFGH,$ labeled as shown below, has edge length $1$ and is cut by a plane passing through vertex $D$ and the midpoints $M$ and $N$ of $\\overline{AB}$ and $\\overline{CG}$ respectively. The plane divides the cube into two solids.  Find the volume of the larger of the two solids.\n\n[asy]\nimport cse5;\nunitsize(8mm);\npathpen=black;\npair A = (0,0), B = (3.8,0), C = (5.876,1.564), D = (2.076,1.564), E = (0,3.8), F = (3.8,3.8), G = (5.876,5.364), H = (2.076,5.364), M = (1.9,0), N = (5.876,3.465);\npair[] dotted = {A,B,C,D,E,F,G,H,M,N};\nD(A--B--C--G--H--E--A);\nD(E--F--B);\nD(F--G);\npathpen=dashed;\nD(A--D--H);\nD(D--C);\ndot(dotted);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",D,NW);\nlabel(\"$E$\",E,W);\nlabel(\"$F$\",F,SE);\nlabel(\"$G$\",G,NE);\nlabel(\"$H$\",H,NW);\nlabel(\"$M$\",M,S);\nlabel(\"$N$\",N,NE);\n[/asy]",
+    "gold": "\\frac{41"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Cube $ABCDEFGH,$ labeled as shown below, has edge length $1$ and is cut by a plane passing through vertex $D$ and the midpoints $M$ and $N$ of $\\overline{AB}$ and $\\overline{CG}$ respectively. The plane divides the cube into two solids.  Find the volume of the larger of the two solids.\n\n[asy]\nimport cse5;\nunitsize(8mm);\npathpen=black;\npair A = (0,0), B = (3.8,0), C = (5.876,1.564), D = (2.076,1.564), E = (0,3.8), F = (3.8,3.8), G = (5.876,5.364), H = (2.076,5.364), M = (1.9,0), N = (5.876,3.465);\npair[] dotted = {A,B,C,D,E,F,G,H,M,N};\nD(A--B--C--G--H--E--A);\nD(E--F--B);\nD(F--G);\npathpen=dashed;\nD(A--D--H);\nD(D--C);\ndot(dotted);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",D,NW);\nlabel(\"$E$\",E,W);\nlabel(\"$F$\",F,SE);\nlabel(\"$G$\",G,NE);\nlabel(\"$H$\",H,NW);\nlabel(\"$M$\",M,S);\nlabel(\"$N$\",N,NE);\n[/asy]\nTool result: corrupted output"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 42"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.946205
+      ],
+      [
+        0,
+        2,
+        0.053795
+      ],
+      [
+        2,
+        3,
+        0.61407
+      ],
+      [
+        1,
+        3,
+        0.359418
+      ],
+      [
+        0,
+        3,
+        0.026512
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "planner",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 4",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

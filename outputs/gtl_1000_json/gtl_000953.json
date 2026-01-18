@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000953",
+  "task": {
+    "prompt": "Write a function to sum the length of the names of a given list of names after removing the names that start with a lowercase letter.",
+    "gold": "def sample_nam(sample_names):\r\n  sample_names=list(filter(lambda el:el[0].isupper() and el[1:].islower(),sample_names))\r\n  return len(''.join(sample_names))"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a function to sum the length of the names of a given list of names after removing the names that start with a lowercase letter."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that s"
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.829938
+      ],
+      [
+        0,
+        2,
+        0.170062
+      ],
+      [
+        2,
+        3,
+        0.489841
+      ],
+      [
+        1,
+        3,
+        0.392343
+      ],
+      [
+        0,
+        3,
+        0.117816
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "analyst",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert sample_nam(['sally', 'Dylan', 'rebecca', 'Diana', 'Joanne', 'keith'])==16",
+      "assert sample_nam([\"php\", \"res\", \"Python\", \"abcd\", \"Java\", \"aaa\"])==10",
+      "assert sample_nam([\"abcd\", \"Python\", \"abba\", \"aba\"])==6"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

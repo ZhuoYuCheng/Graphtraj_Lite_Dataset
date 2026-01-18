@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000349",
+  "task": {
+    "prompt": "Write a function to separate and print the numbers and their position of a given string.",
+    "gold": "import re\r\ndef num_position(text):\r\n for m in re.finditer(\"\\d+\", text):\r\n    return m.start()"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to separate and print the numbers and their position of a given string."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nimport re\r\ndef num_position(text):\r\n for m in re.finditer(\"\\d+\", text):\r\n    return m.start()"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.721738
+      ],
+      [
+        0,
+        2,
+        0.278262
+      ],
+      [
+        2,
+        3,
+        0.494076
+      ],
+      [
+        1,
+        3,
+        0.320424
+      ],
+      [
+        0,
+        3,
+        0.1855
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert num_position(\"there are 70 flats in this apartment\")==10",
+      "assert num_position(\"every adult have 32 teeth\")==17",
+      "assert num_position(\"isha has 79 chocolates in her bag\")==9"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

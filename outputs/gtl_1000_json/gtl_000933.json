@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000933",
+  "task": {
+    "prompt": "Write a function to calculate the sum of series 1\u00b3+2\u00b3+3\u00b3+\u2026.+n\u00b3.",
+    "gold": "import math \r\ndef sum_series(number):\r\n total = 0\r\n total = math.pow((number * (number + 1)) /2, 2)\r\n return total"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a function to calculate the sum of series 1\u00b3+2\u00b3+3\u00b3+\u2026.+n\u00b3."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\nimport math \r\ndef sum_series(number):\r\n total = 0\r\n total = math.pow((number * (number + 1)) /2, 2)\r\n return total"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.800951
+      ],
+      [
+        0,
+        2,
+        0.199049
+      ],
+      [
+        2,
+        3,
+        0.520012
+      ],
+      [
+        1,
+        3,
+        0.334829
+      ],
+      [
+        0,
+        3,
+        0.145159
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert sum_series(7)==784",
+      "assert sum_series(5)==225",
+      "assert sum_series(15)==14400"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

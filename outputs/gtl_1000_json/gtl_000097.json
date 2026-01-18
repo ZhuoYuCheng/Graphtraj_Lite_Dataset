@@ -1,0 +1,98 @@
+{
+  "id": "gtl_000097",
+  "task": {
+    "prompt": "Write a python function to check if the string is a concatenation of another string.",
+    "gold": "def check_Concat(str1,str2):\r\n    N = len(str1)\r\n    M = len(str2)\r\n    if (N % M != 0):\r\n        return False\r\n    for i in range(N):\r\n        if (str1[i] != str2[i % M]):\r\n            return False         \r\n    return True"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a python function to check if the string is a concatenation of another string."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: corrupted output"
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.730485
+      ],
+      [
+        0,
+        2,
+        0.269515
+      ],
+      [
+        2,
+        3,
+        0.591854
+      ],
+      [
+        1,
+        3,
+        0.263385
+      ],
+      [
+        0,
+        3,
+        0.144761
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "tool",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert check_Concat(\"abcabcabc\",\"abc\") == True",
+      "assert check_Concat(\"abcab\",\"abc\") == False",
+      "assert check_Concat(\"aba\",\"ab\") == False"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

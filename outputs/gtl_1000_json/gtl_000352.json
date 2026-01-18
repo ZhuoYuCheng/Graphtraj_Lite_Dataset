@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000352",
+  "task": {
+    "prompt": "For real numbers $t,$ the point\n\\[(x,y) = (\\cos^2 t, \\sin^2 t)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "gold": "\\text{(A)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "[omitted]"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: \\text{(A)_wrong"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.538236
+      ],
+      [
+        0,
+        2,
+        0.461764
+      ],
+      [
+        2,
+        3,
+        0.5116
+      ],
+      [
+        0,
+        3,
+        0.285912
+      ],
+      [
+        1,
+        3,
+        0.202488
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

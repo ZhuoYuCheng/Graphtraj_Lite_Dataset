@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000948",
+  "task": {
+    "prompt": "3 people run for president.  John manages to capture 150 votes. James captures 70% of the remaining vote.  If there were 1150 people voting, how many more votes did the third guy get than John?",
+    "gold": "150"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: 3 people run for president.  John manages to capture 150 votes. James captures 70% of the remaining vote.  If there were 1150 people voting, how many more votes did the third guy get than John?"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 150"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.817831
+      ],
+      [
+        0,
+        2,
+        0.182169
+      ],
+      [
+        2,
+        3,
+        0.614477
+      ],
+      [
+        1,
+        3,
+        0.287868
+      ],
+      [
+        0,
+        3,
+        0.097655
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000057",
+  "task": {
+    "prompt": "Write a function to create a new tuple from the given string and list.",
+    "gold": "def new_tuple(test_list, test_str):\r\n  res = tuple(test_list + [test_str])\r\n  return (res)"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to create a new tuple from the given string and list."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef new_tuple(test_list, test_str):\r\n  res = tuple(test_list + [test_str])\r\n  return (res)"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.725678
+      ],
+      [
+        0,
+        2,
+        0.274322
+      ],
+      [
+        2,
+        3,
+        0.476336
+      ],
+      [
+        1,
+        3,
+        0.319266
+      ],
+      [
+        0,
+        3,
+        0.204398
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert new_tuple([\"WEB\", \"is\"], \"best\") == ('WEB', 'is', 'best')",
+      "assert new_tuple([\"We\", \"are\"], \"Developers\") == ('We', 'are', 'Developers')",
+      "assert new_tuple([\"Part\", \"is\"], \"Wrong\") == ('Part', 'is', 'Wrong')"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

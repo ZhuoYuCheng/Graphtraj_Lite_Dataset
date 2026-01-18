@@ -1,0 +1,96 @@
+{
+  "id": "gtl_000450",
+  "task": {
+    "prompt": "Let $\\mathbf{a} = \\begin{pmatrix} 5 \\\\ 1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}.$  Find the area of the triangle with vertices $\\mathbf{0},$ $\\mathbf{a},$ and $\\mathbf{b}.$",
+    "gold": "9"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Let $\\mathbf{a} = \\begin{pmatrix} 5 \\\\ 1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}.$  Find the area of the triangle with vertices $\\mathbf{0},$ $\\mathbf{a},$ and $\\mathbf{b}.$"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values. (incorrect)"
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 10"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.850694
+      ],
+      [
+        0,
+        2,
+        0.149306
+      ],
+      [
+        2,
+        3,
+        0.68389
+      ],
+      [
+        1,
+        3,
+        0.253463
+      ],
+      [
+        0,
+        3,
+        0.062647
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "critic",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 2",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

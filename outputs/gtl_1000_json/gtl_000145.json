@@ -1,0 +1,100 @@
+{
+  "id": "gtl_000145",
+  "task": {
+    "prompt": "Write a function to sort the tuples alphabetically by the first item of each tuple.",
+    "gold": "def sort_tuple(tup): \r\n\tn = len(tup) \r\n\tfor i in range(n): \r\n\t\tfor j in range(n-i-1): \r\n\t\t\tif tup[j][0] > tup[j + 1][0]: \r\n\t\t\t\ttup[j], tup[j + 1] = tup[j + 1], tup[j] \r\n\treturn tup"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to sort the tuples alphabetically by the first item of each tuple. (incorrect)"
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.747572
+      ],
+      [
+        0,
+        2,
+        0.252428
+      ],
+      [
+        2,
+        3,
+        0.533266
+      ],
+      [
+        1,
+        3,
+        0.316252
+      ],
+      [
+        0,
+        3,
+        0.150482
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "planner",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert sort_tuple([(\"Amana\", 28), (\"Zenat\", 30), (\"Abhishek\", 29),(\"Nikhil\", 21), (\"B\", \"C\")]) == [('Abhishek', 29), ('Amana', 28), ('B', 'C'), ('Nikhil', 21), ('Zenat', 30)]",
+      "assert sort_tuple([(\"aaaa\", 28), (\"aa\", 30), (\"bab\", 29), (\"bb\", 21), (\"csa\", \"C\")]) == [('aa', 30), ('aaaa', 28), ('bab', 29), ('bb', 21), ('csa', 'C')]",
+      "assert sort_tuple([(\"Sarala\", 28), (\"Ayesha\", 30), (\"Suman\", 29),(\"Sai\", 21), (\"G\", \"H\")]) == [('Ayesha', 30), ('G', 'H'), ('Sai', 21), ('Sarala', 28), ('Suman', 29)]"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

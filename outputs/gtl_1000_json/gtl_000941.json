@@ -1,0 +1,97 @@
+{
+  "id": "gtl_000941",
+  "task": {
+    "prompt": "Let $a$ and $b$ be nonnegative real numbers such that\n\\[\\sin (ax + b) = \\sin 29x\\]for all integers $x.$  Find the smallest possible value of $a.$",
+    "gold": "10 \\pi - 29"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Let $a$ and $b$ be nonnegative real numbers such that\n\\[\\sin (ax + b) = \\sin 29x\\]for all integers $x.$  Find the smallest possible value of $a.$\nTool result: corrupted output"
+    },
+    {
+      "r": "analyst",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 30"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.796254
+      ],
+      [
+        0,
+        2,
+        0.203746
+      ],
+      [
+        2,
+        3,
+        0.565127
+      ],
+      [
+        1,
+        3,
+        0.335949
+      ],
+      [
+        0,
+        3,
+        0.098924
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "researcher",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000023",
+  "task": {
+    "prompt": "Write a function to find a pair with the highest product from a given array of integers.",
+    "gold": "def max_product(arr): \r\n    arr_len = len(arr) \r\n    if (arr_len < 2): \r\n        return None     \r\n    x = arr[0]; y = arr[1]    \r\n    for i in range(0, arr_len): \r\n        for j in range(i + 1, arr_len): \r\n            if (arr[i] * arr[j] > x * y): \r\n                x = arr[i]; y = arr[j] \r\n    return x,y"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to find a pair with the highest product from a given array of integers."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef max_product(arr): \r\n    arr_len = len(arr) \r\n    if (arr_len < 2): \r\n        return None     \r\n    x = arr[0]; y = arr[1]    \r\n    for i in range(0, arr_len): \r\n        for j in range(i + 1, arr_len): \r\n            if (arr[i] * arr[j] > x * y): \r\n                x = arr[i]; y = arr[j] \r\n    return x,y"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.750389
+      ],
+      [
+        0,
+        2,
+        0.249611
+      ],
+      [
+        2,
+        3,
+        0.423564
+      ],
+      [
+        1,
+        3,
+        0.33043
+      ],
+      [
+        0,
+        3,
+        0.246007
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert max_product([1, 2, 3, 4, 7, 0, 8, 4])==(7, 8)",
+      "assert max_product([0, -1, -2, -4, 5, 0, -6])==(-4, -6)",
+      "assert max_product([1, 3, 5, 6, 8, 9])==(8,9)"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

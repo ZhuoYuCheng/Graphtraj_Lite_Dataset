@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000295",
+  "task": {
+    "prompt": "Write a function to convert degrees to radians.",
+    "gold": "import math\r\ndef radian_degree(degree):\r\n radian = degree*(math.pi/180)\r\n return radian"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to convert degrees to radians."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nimport math\r\ndef radian_degree(degree):\r\n radian = degree*(math.pi/180)\r\n return radian"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.697335
+      ],
+      [
+        0,
+        2,
+        0.302665
+      ],
+      [
+        2,
+        3,
+        0.478299
+      ],
+      [
+        1,
+        3,
+        0.305538
+      ],
+      [
+        0,
+        3,
+        0.216163
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert radian_degree(90)==1.5707963267948966",
+      "assert radian_degree(60)==1.0471975511965976",
+      "assert radian_degree(120)==2.0943951023931953"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}

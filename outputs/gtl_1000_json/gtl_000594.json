@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000594",
+  "task": {
+    "prompt": "Write a python function to check if roots of a quadratic equation are reciprocal of each other or not.",
+    "gold": "def Check_Solution(a,b,c): \r\n    if (a == c): \r\n        return (\"Yes\"); \r\n    else: \r\n        return (\"No\");"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a python function to check if roots of a quadratic equation are reciprocal of each other or not."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests. (incorrect)"
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.712473
+      ],
+      [
+        0,
+        2,
+        0.287527
+      ],
+      [
+        2,
+        3,
+        0.556403
+      ],
+      [
+        1,
+        3,
+        0.275
+      ],
+      [
+        0,
+        3,
+        0.168596
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "critic",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert Check_Solution(2,0,2) == \"Yes\"",
+      "assert Check_Solution(2,-5,2) == \"Yes\"",
+      "assert Check_Solution(1,2,3) == \"No\""
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

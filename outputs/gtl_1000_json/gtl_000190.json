@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000190",
+  "task": {
+    "prompt": "For how many integers $n$ with $1 \\le n \\le 2012$ is the product\n\\[\n  \\prod_{k=0}^{n-1} \\left( \\left( 1 + e^{2 \\pi i k / n} \\right)^n + 1 \\right) \n\\]equal to zero?",
+    "gold": "335"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: For how many integers $n$ with $1 \\le n \\le 2012$ is the product\n\\[\n  \\prod_{k=0}^{n-1} \\left( \\left( 1 + e^{2 \\pi i k / n} \\right)^n + 1 \\right) \n\\]equal to zero?"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 335"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.832368
+      ],
+      [
+        0,
+        2,
+        0.167632
+      ],
+      [
+        2,
+        3,
+        0.662542
+      ],
+      [
+        1,
+        3,
+        0.262568
+      ],
+      [
+        0,
+        3,
+        0.07489
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 5",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

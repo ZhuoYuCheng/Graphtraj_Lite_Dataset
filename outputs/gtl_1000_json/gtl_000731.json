@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000731",
+  "task": {
+    "prompt": "Write a python function to access multiple elements of specified index from a given list.",
+    "gold": "def access_elements(nums, list_index):\r\n    result = [nums[i] for i in list_index]\r\n    return result"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a python function to access multiple elements of specified index from a given list."
+    },
+    {
+      "r": "analyst",
+      "c": "[omitted]"
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.753954
+      ],
+      [
+        0,
+        2,
+        0.246046
+      ],
+      [
+        2,
+        3,
+        0.521709
+      ],
+      [
+        1,
+        3,
+        0.314278
+      ],
+      [
+        0,
+        3,
+        0.164013
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "analyst",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert access_elements([2,3,8,4,7,9],[0,3,5]) == [2, 4, 9]",
+      "assert access_elements([1, 2, 3, 4, 5],[1,2]) == [2,3]",
+      "assert access_elements([1,0,2,3],[0,1]) == [1,0]"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

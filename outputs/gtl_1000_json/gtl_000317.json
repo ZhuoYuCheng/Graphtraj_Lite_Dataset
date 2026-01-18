@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000317",
+  "task": {
+    "prompt": "Write a function to check for the number of jumps required of given length to reach a point of form (d, 0) from origin in a 2d plane.",
+    "gold": "def min_Jumps(a, b, d): \r\n    temp = a \r\n    a = min(a, b) \r\n    b = max(temp, b) \r\n    if (d >= b): \r\n        return (d + b - 1) / b \r\n    if (d == 0): \r\n        return 0\r\n    if (d == a): \r\n        return 1\r\n    else:\r\n        return 2"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to check for the number of jumps required of given length to reach a point of form (d, 0) from origin in a 2d plane."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that s"
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.831689
+      ],
+      [
+        0,
+        2,
+        0.168311
+      ],
+      [
+        2,
+        3,
+        0.493592
+      ],
+      [
+        1,
+        3,
+        0.389894
+      ],
+      [
+        0,
+        3,
+        0.116514
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "executor",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert min_Jumps(3,4,11)==3.5",
+      "assert min_Jumps(3,4,0)==0",
+      "assert min_Jumps(11,14,11)==1"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

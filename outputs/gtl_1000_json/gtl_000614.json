@@ -1,0 +1,90 @@
+{
+  "id": "gtl_000614",
+  "task": {
+    "prompt": "Scout delivers groceries on the weekends.  His base pay is $10.00 an hour.  He also earns a $5.00 tip per customer that he delivers groceries to.  On Saturday he worked 4 hours and delivered groceries to 5 people.  Sunday he worked 5 hours and delivered groceries to 8 people.  How much did he make over the weekend?",
+    "gold": "155"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Scout delivers groceries on the weekends.  His base pay is $10.00 an hour.  He also earns a $5.00 tip per customer that he delivers groceries to.  On Saturday he worked 4 hours and delivered groceries to 5 people.  Sunday he worked 5 hours and delivered groceries to 8 people.  How much did he make over the weekend?"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 155"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.836023
+      ],
+      [
+        0,
+        2,
+        0.163977
+      ],
+      [
+        2,
+        3,
+        0.634016
+      ],
+      [
+        1,
+        3,
+        0.285431
+      ],
+      [
+        0,
+        3,
+        0.080553
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

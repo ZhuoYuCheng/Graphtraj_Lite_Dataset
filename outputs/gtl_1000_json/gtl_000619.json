@@ -1,0 +1,97 @@
+{
+  "id": "gtl_000619",
+  "task": {
+    "prompt": "The curve $y = \\sin x$ cuts the line whose equation is $y = \\sin 70^\\circ$ into segments having the successive ratios\n\\[\\dots p : q : p : q \\dots\\]with $p < q.$  Compute the ordered pair of relatively prime positive integers $(p,q).$",
+    "gold": "(1,8)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "[omitted]"
+    },
+    {
+      "r": "critic",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 9"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.554236
+      ],
+      [
+        0,
+        2,
+        0.445764
+      ],
+      [
+        2,
+        3,
+        0.530389
+      ],
+      [
+        0,
+        3,
+        0.256075
+      ],
+      [
+        1,
+        3,
+        0.213536
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "assistant",
+    "path": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

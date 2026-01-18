@@ -1,0 +1,94 @@
+{
+  "id": "gtl_000803",
+  "task": {
+    "prompt": "Tim gets 6 hours of sleep 2 days in a row.  To make up for it he sleeps 10 hours the next 2 days.  How much sleep did he get?",
+    "gold": "32"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Tim gets 6 hours of sleep 2 days in a row.  To make up for it he sleeps 10 hours the next 2 days.  How much sleep did he get?"
+    },
+    {
+      "r": "analyst",
+      "c": "[omitted]"
+    },
+    {
+      "r": "writer",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "reviewer",
+      "c": "Final answer: 33"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.808432
+      ],
+      [
+        0,
+        2,
+        0.191568
+      ],
+      [
+        2,
+        3,
+        0.540227
+      ],
+      [
+        1,
+        3,
+        0.347521
+      ],
+      [
+        0,
+        3,
+        0.112253
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "analyst",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "suite": "GSM8K",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "exact match"
+    }
+  }
+}

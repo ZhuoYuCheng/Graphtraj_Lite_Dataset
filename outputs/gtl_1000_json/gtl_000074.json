@@ -1,0 +1,98 @@
+{
+  "id": "gtl_000074",
+  "task": {
+    "prompt": "Write a function to find palindromes in a given list of strings using lambda function.",
+    "gold": "def palindrome_lambda(texts):\r\n  result = list(filter(lambda x: (x == \"\".join(reversed(x))), texts))\r\n  return result"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a function to find palindromes in a given list of strings using lambda function."
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: corrupted output"
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.748193
+      ],
+      [
+        0,
+        2,
+        0.251807
+      ],
+      [
+        2,
+        3,
+        0.577199
+      ],
+      [
+        1,
+        3,
+        0.284444
+      ],
+      [
+        0,
+        3,
+        0.138357
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "tool",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert palindrome_lambda([\"php\", \"res\", \"Python\", \"abcd\", \"Java\", \"aaa\"])==['php', 'aaa']",
+      "assert palindrome_lambda([\"abcd\", \"Python\", \"abba\", \"aba\"])==['abba', 'aba']",
+      "assert palindrome_lambda([\"abcd\", \"abbccbba\", \"abba\", \"aba\"])==['abbccbba', 'abba', 'aba']"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

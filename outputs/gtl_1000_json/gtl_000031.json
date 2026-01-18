@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000031",
+  "task": {
+    "prompt": "In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$",
+    "gold": "150 \\sqrt{3"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: 150 \\sqrt{3"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.797037
+      ],
+      [
+        0,
+        2,
+        0.202963
+      ],
+      [
+        2,
+        3,
+        0.597254
+      ],
+      [
+        1,
+        3,
+        0.279422
+      ],
+      [
+        0,
+        3,
+        0.123324
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

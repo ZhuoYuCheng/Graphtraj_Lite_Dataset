@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000603",
+  "task": {
+    "prompt": "Write a function to convert a date of yyyy-mm-dd format to dd-mm-yyyy format.",
+    "gold": "import re\r\ndef change_date_format(dt):\r\n        return re.sub(r'(\\d{4})-(\\d{1,2})-(\\d{1,2})', '\\\\3-\\\\2-\\\\1', dt)\r\n        return change_date_format(dt)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to convert a date of yyyy-mm-dd format to dd-mm-yyyy format."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests. (incorrect)"
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.758997
+      ],
+      [
+        0,
+        2,
+        0.241003
+      ],
+      [
+        2,
+        3,
+        0.557065
+      ],
+      [
+        1,
+        3,
+        0.299426
+      ],
+      [
+        0,
+        3,
+        0.143509
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 1,
+    "who": "critic",
+    "path": [
+      1,
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert change_date_format('2026-01-02')=='02-01-2026'",
+      "assert change_date_format('2021-01-04')=='04-01-2021'",
+      "assert change_date_format('2030-06-06')=='06-06-2030'"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

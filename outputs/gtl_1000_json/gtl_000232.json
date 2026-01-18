@@ -1,0 +1,99 @@
+{
+  "id": "gtl_000232",
+  "task": {
+    "prompt": "Write a python function to find the average of a list.",
+    "gold": "def Average(lst): \r\n    return sum(lst) / len(lst)"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: Write a python function to find the average of a list.\nTool result: corrupted output"
+    },
+    {
+      "r": "executor",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.653701
+      ],
+      [
+        0,
+        2,
+        0.346299
+      ],
+      [
+        2,
+        3,
+        0.466443
+      ],
+      [
+        1,
+        3,
+        0.322244
+      ],
+      [
+        0,
+        3,
+        0.211313
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 0,
+    "who": "planner",
+    "path": [
+      0,
+      1,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert Average([15, 9, 55, 41, 35, 20, 62, 49]) == 35.75",
+      "assert Average([4, 5, 1, 2, 9, 7, 10, 8]) == 5.75",
+      "assert Average([1,2,3]) == 2"
+    ],
+    "suite": "MBPP+",
+    "framework": "smolagents",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

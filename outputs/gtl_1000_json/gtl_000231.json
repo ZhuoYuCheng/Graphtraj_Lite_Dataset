@@ -1,0 +1,92 @@
+{
+  "id": "gtl_000231",
+  "task": {
+    "prompt": "In polar coordinates, the point $\\left( -2, \\frac{3 \\pi}{8} \\right)$ is equivalent to what other point, in the standard polar coordinate representation?  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+    "gold": "\\left( 2, \\frac{11 \\pi"
+  },
+  "steps": [
+    {
+      "r": "planner",
+      "c": "Plan: identify requirements from task. Task: In polar coordinates, the point $\\left( -2, \\frac{3 \\pi}{8} \\right)$ is equivalent to what other point, in the standard polar coordinate representation?  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$"
+    },
+    {
+      "r": "executor",
+      "c": "Work through the math carefully and keep intermediate values."
+    },
+    {
+      "r": "tool",
+      "c": "Tool result: arithmetic verified for key steps."
+    },
+    {
+      "r": "assistant",
+      "c": "Final answer: \\left( 2, \\frac{11 \\pi"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.85637
+      ],
+      [
+        0,
+        2,
+        0.14363
+      ],
+      [
+        2,
+        3,
+        0.614544
+      ],
+      [
+        1,
+        3,
+        0.279667
+      ],
+      [
+        0,
+        3,
+        0.105789
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "level": "Level 3",
+    "type": "Precalculus",
+    "suite": "MATH",
+    "framework": "smolagents",
+    "judge": {
+      "success": true,
+      "reason": "exact match"
+    }
+  }
+}

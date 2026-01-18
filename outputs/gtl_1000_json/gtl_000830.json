@@ -1,0 +1,98 @@
+{
+  "id": "gtl_000830",
+  "task": {
+    "prompt": "Write a function to find the length of the longest sub-sequence such that elements in the subsequences are consecutive integers.",
+    "gold": "def find_longest_conseq_subseq(arr, n): \r\n\tans = 0\r\n\tcount = 0\r\n\tarr.sort() \r\n\tv = [] \r\n\tv.append(arr[0]) \r\n\tfor i in range(1, n): \r\n\t\tif (arr[i] != arr[i - 1]): \r\n\t\t\tv.append(arr[i]) \r\n\tfor i in range(len(v)): \r\n\t\tif (i > 0 and v[i] == v[i - 1] + 1): \r\n\t\t\tcount += 1\r\n\t\telse: \r\n\t\t\tcount = 1\r\n\t\tans = max(ans, count) \r\n\treturn ans"
+  },
+  "steps": [
+    {
+      "r": "researcher",
+      "c": "Plan: identify requirements from task. Task: Write a function to find the length of the longest sub-sequence such that elements in the subsequences are consecutive integers."
+    },
+    {
+      "r": "analyst",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "writer",
+      "c": "[omitted]"
+    },
+    {
+      "r": "reviewer",
+      "c": "Final code:\nraise AssertionError('synthetic failure')"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.818058
+      ],
+      [
+        0,
+        2,
+        0.181942
+      ],
+      [
+        2,
+        3,
+        0.573736
+      ],
+      [
+        1,
+        3,
+        0.313953
+      ],
+      [
+        0,
+        3,
+        0.112311
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": 2,
+    "who": "writer",
+    "path": [
+      2,
+      3
+    ]
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert find_longest_conseq_subseq([1, 2, 2, 3], 4) == 3",
+      "assert find_longest_conseq_subseq([1, 9, 3, 10, 4, 20, 2], 7) == 4",
+      "assert find_longest_conseq_subseq([36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42], 11) == 5"
+    ],
+    "suite": "MBPP+",
+    "framework": "crewai",
+    "judge": {
+      "success": false,
+      "reason": "tests failed"
+    }
+  }
+}

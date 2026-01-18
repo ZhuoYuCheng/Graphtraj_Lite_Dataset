@@ -1,0 +1,95 @@
+{
+  "id": "gtl_000406",
+  "task": {
+    "prompt": "Write a function to find the maximum of nth column from the given tuple list.",
+    "gold": "def max_of_nth(test_list, N):\r\n  res = max([sub[N] for sub in test_list])\r\n  return (res)"
+  },
+  "steps": [
+    {
+      "r": "assistant",
+      "c": "Plan: identify requirements from task. Task: Write a function to find the maximum of nth column from the given tuple list."
+    },
+    {
+      "r": "critic",
+      "c": "Draft a Python function that satisfies the prompt and tests."
+    },
+    {
+      "r": "assistant",
+      "c": "Tool result: basic checks pass on the draft."
+    },
+    {
+      "r": "assistant",
+      "c": "Final code:\ndef max_of_nth(test_list, N):\r\n  res = max([sub[N] for sub in test_list])\r\n  return (res)"
+    }
+  ],
+  "graph": {
+    "kind": "attn_step",
+    "tgt": "final",
+    "edges": [
+      [
+        0,
+        1,
+        1.0
+      ],
+      [
+        1,
+        2,
+        0.715941
+      ],
+      [
+        0,
+        2,
+        0.284059
+      ],
+      [
+        2,
+        3,
+        0.469516
+      ],
+      [
+        1,
+        3,
+        0.32349
+      ],
+      [
+        0,
+        3,
+        0.206994
+      ]
+    ],
+    "cfg": {
+      "agg": "mean",
+      "top_k": 3,
+      "threshold": null,
+      "renorm": true,
+      "last_n_layers": 4,
+      "normalize_by_src_len": false
+    }
+  },
+  "label": {
+    "when": null,
+    "who": null,
+    "path": null
+  },
+  "views": {
+    "w_gold": {
+      "use_gold": true
+    },
+    "wo_gold": {
+      "use_gold": false
+    }
+  },
+  "meta": {
+    "test_list": [
+      "assert max_of_nth([(5, 6, 7), (1, 3, 5), (8, 9, 19)], 2) == 19",
+      "assert max_of_nth([(6, 7, 8), (2, 4, 6), (9, 10, 20)], 1) == 10",
+      "assert max_of_nth([(7, 8, 9), (3, 5, 7), (10, 11, 21)], 1) == 11"
+    ],
+    "suite": "MBPP+",
+    "framework": "autogen",
+    "judge": {
+      "success": true,
+      "reason": "tests"
+    }
+  }
+}
